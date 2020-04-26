@@ -10,11 +10,11 @@
 		<Menu DockPanel.Dock="Top">
 			<MenuItem Header="_Edit">
 				<MenuItem Name="SaveMenuItem" Header="Set Save File Path" Click="OpenSavePathWindow"/>
-				<MenuItem Name="PrefMenuItem" Header="Preferences" Click="PrefMenuItem_Click" /> -->
+				<MenuItem Name="PrefMenuItem" Header="Preferences" Click="PrefMenuItem_Click" />
 			</MenuItem>
 			<MenuItem Header="_Game">
-				<MenuItem Name="AsylumMenuItem" Header="Asylum" IsCheckable="True" IsChecked="False" Click="SwitchGameWindow" />
-				<MenuItem Name="CityMenuItem" Header="City" IsCheckable="True" IsChecked="True" Click="SwitchGameWindow" />
+				<MenuItem Name="AsylumMenuItem" Header="Asylum" IsCheckable="True" IsChecked="True" Click="SwitchGameWindow" />
+				<MenuItem Name="CityMenuItem" Header="City" IsCheckable="True" IsChecked="False" Click="SwitchGameWindow" />
 				<MenuItem Name="OriginsMenuItem" Header="Origins" IsCheckable="True" IsChecked="False" Click="SwitchGameWindow" />
 				<MenuItem Name="KnightMenuItem" Header="Knight" IsCheckable="True" IsChecked="False" Click="SwitchGameWindow" />
 			</MenuItem>

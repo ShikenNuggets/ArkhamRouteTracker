@@ -14,8 +14,8 @@
 			</MenuItem>
 			<MenuItem Header="_Game">
 				<MenuItem Name="AsylumMenuItem" Header="Asylum" IsCheckable="True" IsChecked="False" Click="SwitchGameWindow" />
-				<MenuItem Name="CityMenuItem" Header="City" IsCheckable="True" IsChecked="True" Click="SwitchGameWindow" />
-				<MenuItem Name="OriginsMenuItem" Header="Origins" IsCheckable="True" IsChecked="False" Click="SwitchGameWindow" />
+				<MenuItem Name="CityMenuItem" Header="City" IsCheckable="True" IsChecked="False" Click="SwitchGameWindow" />
+				<MenuItem Name="OriginsMenuItem" Header="Origins" IsCheckable="True" IsChecked="True" Click="SwitchGameWindow" />
 				<MenuItem Name="KnightMenuItem" Header="Knight" IsCheckable="True" IsChecked="False" Click="SwitchGameWindow" />
 			</MenuItem>
 		</Menu>
