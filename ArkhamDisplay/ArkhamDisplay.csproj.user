@@ -36,10 +36,16 @@
     <Page Update="CityWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="DarkTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="InitialSetGameWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="KnightWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LightTheme.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="OriginsWindow.xaml">

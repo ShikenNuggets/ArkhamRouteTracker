@@ -7,5 +7,11 @@
         <Style TargetType="{x:Type Window}">
             <Setter Property="FontSize" Value="12" />
         </Style>
-    </Application.Resources>
+
+		<ResourceDictionary x:Key="Themes">
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="DarkTheme.xaml" />
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</Application.Resources>
 </Application>

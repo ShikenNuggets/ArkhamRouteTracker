@@ -4,6 +4,8 @@ namespace ArkhamDisplay{
 	public partial class InitialSetGameWindow : Window{
 		public InitialSetGameWindow(){
 			Data.Load();
+			(Application.Current as App).ChangeSkin(Data.UseTheme());
+
 			if(OpenWindowForGame(Data.SelectedGame)){
 				Close();
 				return;

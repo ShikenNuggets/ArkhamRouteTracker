@@ -1,7 +1,15 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using Microsoft.Win32;
 using Newtonsoft.Json;
 
 namespace ArkhamDisplay{
+	public enum Theme{
+		Default = 0,
+		Light = 1,
+		Dark = 2
+	}
+
 	public enum Game{
 		None = -1,
 		Asylum = 0,
@@ -17,6 +25,7 @@ namespace ArkhamDisplay{
 	}
 
 	public class DataBlock{
+		public volatile Theme savedTheme = Theme.Default;
 		public volatile Game selectedGame = Game.None;
 		public volatile string[] saveLocations = { "", "", "", "" };
 		public volatile int[] saveIDs = { 0, 0, 0, 0 };
@@ -88,6 +97,34 @@ namespace ArkhamDisplay{
 			}
 
 			return routes[name];
+		}
+
+		public static void SetTheme(Theme theme){
+			if(data.savedTheme == Theme.Default && UseTheme() == theme){
+				return;
+			}else{
+				data.savedTheme = theme;
+			}
+		}
+
+		public static Theme UseTheme(){
+			if(data.savedTheme != Theme.Default){
+				return data.savedTheme;
+			}
+
+			try{
+				const string RegistryKeyPath = @"Software\Microsoft\Windows\CurrentVersion\Themes\Personalize";
+				const string RegistryValueName = "AppsUseLightTheme";
+
+				using RegistryKey key = Registry.CurrentUser.OpenSubKey(RegistryKeyPath);
+				object registryValueObject = key?.GetValue(RegistryValueName);
+				if(registryValueObject != null){
+					int registryValue = (int)registryValueObject;
+					return registryValue > 0 ? Theme.Light : Theme.Dark;
+				}
+			}catch(Exception){}
+
+			return Theme.Dark;
 		}
 	}
 }

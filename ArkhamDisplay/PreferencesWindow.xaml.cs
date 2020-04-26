@@ -20,6 +20,12 @@ namespace ArkhamDisplay{
 			ShowProgressCheckbox.IsChecked = Data.ShowPercent;
 			ShowRiddlesCheckbox.IsChecked = Data.ShowRiddleCount;
 
+			if(Data.UseTheme() == Theme.Dark){
+				DarkThemeCheckbox.IsChecked = true;
+			}else{
+				DarkThemeCheckbox.IsChecked = false;
+			}
+
 			switch(Data.DisplayType){
 				case DisplayType.All:
 					ShowAllButton.IsChecked = true;
@@ -44,6 +50,13 @@ namespace ArkhamDisplay{
 
 			Data.ShowPercent = ShowProgressCheckbox.IsChecked ?? false;
 			Data.ShowRiddleCount = ShowRiddlesCheckbox.IsChecked ?? false;
+			
+			if(DarkThemeCheckbox.IsChecked == true){
+				Data.SetTheme(Theme.Dark);
+			}else{
+				Data.SetTheme(Theme.Light);
+			}
+			(Application.Current as App).ChangeSkin(Data.UseTheme());
 
 			if(ShowAllButton.IsChecked == true){
 				Data.DisplayType = DisplayType.All;
