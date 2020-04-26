@@ -8,5 +8,9 @@
 		protected override void SetCurrentRoute(){
 			currentRoute = "AsylumDefault";
 		}
+
+		protected override string UpdateRiddleCount(){
+			return saveParser.GetMatch(@"\b\d*\/240\b");
+		}
 	}
 }
