@@ -63,26 +63,26 @@ namespace ArkhamDisplay{
 			lock(m_rawData) m_rawData = builder.ToString();
 		}
 
-		public virtual bool HasKey(Entry entry){
-			return HasKey(entry.id) || HasKey(entry.alternateID);
+		public virtual bool HasKey(Entry entry, int requiredMatches){
+			return HasKey(entry.id, requiredMatches) || HasKey(entry.alternateID, requiredMatches);
 		}
 
-		public virtual bool HasKey(string key){
+		public virtual bool HasKey(string key, int requiredMatches){
 			if(string.IsNullOrWhiteSpace(key)){
 				return false;
 			}
 
-			return HasKeyCustomRegex(@"\b" + key + @"\b");
+			return HasKeyCustomRegex(@"\b" + key + @"\b", requiredMatches);
 		}
 
-		public virtual bool HasKeyCustomRegex(string regex){
+		public virtual bool HasKeyCustomRegex(string regex, int requiredMatches){
 			if(string.IsNullOrWhiteSpace(regex)){
 				return false;
 			}
 
 			Regex rx = new Regex(regex);
 			MatchCollection collectibleMatches = rx.Matches(m_rawData);
-			return collectibleMatches.Count > 0;
+			return collectibleMatches.Count >= requiredMatches;
 		}
 
 		public virtual string GetMatch(string regex){

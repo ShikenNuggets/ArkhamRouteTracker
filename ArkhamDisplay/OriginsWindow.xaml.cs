@@ -36,7 +36,7 @@ namespace ArkhamDisplay{
 				Grid.SetRow(txt0, lineCount - 1);
 				CrimeInProgressGrid.Children.Add(txt0);
 
-				if(saveParser.HasKey(entry)){
+				if(saveParser.HasKey(entry, minRequiredMatches)){
 					TextBlock txt1 = new TextBlock();
 					txt1.Text = "Done";
 					Grid.SetColumn(txt1, 1);

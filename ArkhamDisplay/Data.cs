@@ -66,6 +66,8 @@ namespace ArkhamDisplay{
 			routes.Add("KnightDefault", new Route("Routes/Arkham Knight 100% Route - Route.tsv", Route.RouteType.KnightRoute));
 			routes.Add("KnightNG+", new Route("Routes/Arkham Knight 100% Route - NG+ Route.tsv", Route.RouteType.KnightRoute));
 			routes.Add("KnightFirstEnding", new Route("Routes/Arkham Knight 100% Route - First Ending.tsv", Route.RouteType.KnightRoute));
+			routes.Add("Knight120", new Route("Routes/Arkham Knight 100% Route - Route 120.tsv", Route.RouteType.KnightRoute));
+			routes.Add("KnightNG+120", new Route("Routes/Arkham Knight 100% Route - NG+ Route 120.tsv", Route.RouteType.KnightRoute));
 		}
 
 		public static void Save(){

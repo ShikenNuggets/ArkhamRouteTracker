@@ -41,7 +41,7 @@ namespace ArkhamDisplay{
 			int lineCount = 1;
 			int savedCount = 0;
 			foreach(Entry entry in Data.GetRoute(currentSecondaryRoute).entries){
-				bool isSaved = saveParser.HasKey(entry.id);
+				bool isSaved = saveParser.HasKey(entry.id, minRequiredMatches);
 
 				if(!isSaved){
 					PrisonerGrid.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(ROW_HEIGHT / 2) });

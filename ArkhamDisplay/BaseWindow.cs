@@ -8,6 +8,7 @@ namespace ArkhamDisplay{
 	public abstract class BaseWindow : Window{
 		protected Game game = Game.None;
 		protected SaveParser saveParser = null;
+		protected int minRequiredMatches = 1;
 		private BackgroundWorker updateWorker;
 		public const int COL1_WIDTH = 210;
 		public const int COL2_WIDTH = 40;
@@ -160,7 +161,7 @@ namespace ArkhamDisplay{
 				Grid.SetRow(txtBlock, lineCount - 1);
 				displayGrid.Children.Add(txtBlock);
 
-				if(saveParser.HasKey(entry)){
+				if(saveParser.HasKey(entry, minRequiredMatches)){
 					txtBlock = new TextBlock();
 					txtBlock.Text = "Done";
 					Grid.SetColumn(txtBlock, 1);
