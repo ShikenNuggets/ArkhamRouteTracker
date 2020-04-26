@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Threading;
 using System.Windows;
@@ -140,6 +141,18 @@ namespace ArkhamDisplay{
 			}
 		}
 
+		//TODO - This might be better with a predicate
+		private List<Entry> GetEntries(List<Entry> entries, bool completed){
+			List<Entry> entriesToUse = new List<Entry>();
+			foreach(Entry e in entries){
+				if(saveParser.HasKey(e, minRequiredMatches) == completed){
+					entriesToUse.Add(e);
+				}
+			}
+
+			return entriesToUse;
+		}
+
 		protected virtual void UpdateRouteWindow(){
 			displayGrid.Children.Clear();
 			displayGrid.RowDefinitions.Clear();
@@ -152,7 +165,20 @@ namespace ArkhamDisplay{
 			int lineCount = 1;
 			int firstNotDone = -1;
 			int numDone = 0;
-			foreach(Entry entry in Data.GetRoute(currentRoute).entries){
+
+			int totalEntries = Data.GetRoute(currentRoute).entries.Count;
+			int doneEntries = -1; //TODO - two values (numDone and doneEntries) for this is kinda weird
+
+			List<Entry> entriesToUse = Data.GetRoute(currentRoute).entries;
+			if(Data.DisplayType == DisplayType.SortDoneToTop){
+				entriesToUse = GetEntries(Data.GetRoute(currentRoute).entries, true);
+				entriesToUse.AddRange(GetEntries(Data.GetRoute(currentRoute).entries, false));
+			}else if(Data.DisplayType == DisplayType.HideDone){
+				entriesToUse = GetEntries(Data.GetRoute(currentRoute).entries, false);
+				doneEntries = totalEntries - entriesToUse.Count;
+			}
+
+			foreach(Entry entry in entriesToUse){
 				displayGrid.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(ROW_HEIGHT) });
 				TextBlock txtBlock = new TextBlock();
 				txtBlock.Text = entry.name;
@@ -181,8 +207,11 @@ namespace ArkhamDisplay{
 
 			//lineCount - 2 because the last row is "Done"
 			double percentDone = 100.0 * numDone / (lineCount - 2);
-			progressCounter.Text = String.Format("{0:0.0}", percentDone) + "%";
+			if(doneEntries >= 0){
+				percentDone = 100.0 * doneEntries / totalEntries;
+			}
 
+			progressCounter.Text = string.Format("{0:0.0}", percentDone) + "%";
 			riddleCounter.Text = UpdateRiddleCount();
 		}
 
