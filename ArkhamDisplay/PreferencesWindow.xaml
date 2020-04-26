@@ -1,0 +1,19 @@
+﻿<Window x:Class="ArkhamDisplay.PreferencesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ArkhamDisplay"
+        mc:Ignorable="d"
+        Title="Preferences" Height="150" Width="300">
+	<Grid>
+		<RadioButton Content="1" HorizontalAlignment="Left" Margin="152,10,0,0" VerticalAlignment="Top" Name="OneSecond" GroupName="RefreshRate" IsChecked="True"/>
+		<RadioButton Content="2" HorizontalAlignment="Left" Margin="184,10,0,0" VerticalAlignment="Top" Name="TwoSeconds" GroupName="RefreshRate"/>
+		<RadioButton Content="10" HorizontalAlignment="Left" Margin="218,10,0,0" VerticalAlignment="Top" Name="TenSeconds" GroupName="RefreshRate"/>
+		<TextBlock HorizontalAlignment="Left" Margin="10,8,0,0" Text="Refresh Rate (seconds)" TextWrapping="Wrap" VerticalAlignment="Top"/>
+		<CheckBox Name="ShowProgressCheckbox" Content="Show % Completion" HorizontalAlignment="Left" Margin="10,28,0,0" VerticalAlignment="Top" IsChecked="True"/>
+		<CheckBox Name="ShowRiddlesCheckbox" Content="Show Riddle Count" HorizontalAlignment="Left" Margin="10,48,0,0" VerticalAlignment="Top" IsChecked="True"/>
+		<Button Name="OKButton" Content="OK" HorizontalAlignment="Left" Margin="161,0,0,25" VerticalAlignment="Bottom" Width="55" Click="OKButton_Click"/>
+		<Button Name="CancelButton" Content="Cancel" HorizontalAlignment="Left" Margin="225,0,0,25" VerticalAlignment="Bottom" Width="55" Click="CancelButton_Click"/>
+	</Grid>
+</Window>

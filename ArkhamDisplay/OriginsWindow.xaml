@@ -1,0 +1,44 @@
+﻿<local:BaseWindow x:Class="ArkhamDisplay.OriginsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ArkhamDisplay"
+        mc:Ignorable="d"
+        Title="Arkham Origins Route Tracker" Height="980" Width="305">
+	<DockPanel>
+		<Menu DockPanel.Dock="Top">
+			<MenuItem Header="_Edit">
+				<MenuItem Name="SaveMenuItem" Header="Set Save File Path" Click="OpenSavePathWindow"/>
+				<MenuItem Name="PrefMenuItem" Header="Preferences" Click="PrefMenuItem_Click" />
+			</MenuItem>
+			<MenuItem Header="_Game">
+				<MenuItem Name="AsylumMenuItem" Header="Asylum" IsCheckable="True" IsChecked="False" Click="SwitchGameWindow" />
+				<MenuItem Name="CityMenuItem" Header="City" IsCheckable="True" IsChecked="True" Click="SwitchGameWindow" />
+				<MenuItem Name="OriginsMenuItem" Header="Origins" IsCheckable="True" IsChecked="False" Click="SwitchGameWindow" />
+				<MenuItem Name="KnightMenuItem" Header="Knight" IsCheckable="True" IsChecked="False" Click="SwitchGameWindow" />
+			</MenuItem>
+		</Menu>
+		<Grid>
+			<RadioButton Content="Save 0" HorizontalAlignment="Left" Margin="19.362,15,0,0" VerticalAlignment="Top" Grid.Column="1" GroupName="Save" Name="Save0" IsChecked="True" Click="UpdatePreferences"/>
+			<RadioButton Content="Save 1" HorizontalAlignment="Left" Margin="77.622,15,0,0" VerticalAlignment="Top" Grid.Column="1" GroupName="Save" Name="Save1" Click="UpdatePreferences"/>
+			<RadioButton Content="Save 2" HorizontalAlignment="Left" Margin="135.882,15,0,0" VerticalAlignment="Top" Grid.Column="1" GroupName="Save" Name="Save2" Click="UpdatePreferences"/>
+			<RadioButton Content="Save 3" HorizontalAlignment="Left" Margin="194.142,15,0,0" VerticalAlignment="Top" Grid.Column="1" GroupName="Save" Name="Save3" Click="UpdatePreferences"/>
+			<Button Content="Start" HorizontalAlignment="Left" Margin="16,40,0,0" VerticalAlignment="Top" Width="75" Click="Start_Button_Click" Name="StartButton"/>
+			<Button Content="Stop" HorizontalAlignment="Left" Margin="102,40,0,0" VerticalAlignment="Top" Width="75" Click="Stop_Button_Click" Name="StopButton" IsEnabled="False"/>
+
+
+			<TextBlock HorizontalAlignment="Left" Margin="16,80,0,0" Text="Route" TextWrapping="Wrap" VerticalAlignment="Top"/>
+			<TextBlock HorizontalAlignment="Left" Margin="135,80,0,0" Text="0%" TextWrapping="Wrap" VerticalAlignment="Top" Name="ProgressCounter" Height="14" Grid.Column="1"/>
+			<TextBlock HorizontalAlignment="Left" Margin="197,80,0,0" Text="0/400" TextWrapping="Wrap" VerticalAlignment="Top" Name="RiddleCounter" Height="14" Grid.Column="1"/>
+			<ScrollViewer HorizontalAlignment="Left" Height="580.912" VerticalAlignment="Top" Width="276.509" Margin="10,97.744,0,0" VerticalScrollBarVisibility="Auto" Name="GridScroll">
+				<Grid HorizontalAlignment="Left" Height="Auto" VerticalAlignment="Top" Width="Auto" Name="DisplayGrid"></Grid>
+			</ScrollViewer>
+
+			<TextBlock HorizontalAlignment="Left" Margin="17,700,0,0" Text="Crime in Progress" TextWrapping="Wrap" VerticalAlignment="Top"/>
+			<ScrollViewer HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="276.509" Margin="10,720,0,0" VerticalScrollBarVisibility="Auto" Name="CrimeInProgress">
+				<Grid HorizontalAlignment="Left" Height="Auto" VerticalAlignment="Top" Width="Auto" Name="CrimeInProgressGrid"></Grid>
+			</ScrollViewer>
+		</Grid>
+	</DockPanel>
+</local:BaseWindow>

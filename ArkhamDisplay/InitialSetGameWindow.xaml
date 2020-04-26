@@ -1,0 +1,17 @@
+﻿<Window x:Class="ArkhamDisplay.InitialSetGameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ArkhamDisplay"
+        mc:Ignorable="d"
+        Title="Set Game" Height="250" Width="250">
+    <Grid>
+		<TextBlock HorizontalAlignment="Center">What game are you using this for?</TextBlock>
+		<TextBlock HorizontalAlignment="Center" Margin="0,15,0,0">You can change this later</TextBlock>
+		<Button Name="AsylumButton" Content="Arkham Asylum" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top" Width="100" Click="AsylumButton_Click"/>
+		<Button Name="CityButton" Content="Arkham City" HorizontalAlignment="Center" Margin="0,80,0,0" VerticalAlignment="Top" Width="100" Click="CityButton_Click"/>
+		<Button Name="OriginsButton" Content="Arkham Origins" HorizontalAlignment="Center" Margin="0,110,0,0" VerticalAlignment="Top" Width="100" Click="OriginsButton_Click"/>
+		<Button Name="KnightButton" Content="Arkham Knight" HorizontalAlignment="Center" Margin="0,140,0,0" VerticalAlignment="Top" Width="100" Click="KnightButton_Click"/>
+	</Grid>
+</Window>

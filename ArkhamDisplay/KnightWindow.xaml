@@ -1,0 +1,40 @@
+﻿<local:BaseWindow x:Class="ArkhamDisplay.KnightWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ArkhamDisplay"
+        mc:Ignorable="d"
+        Title="Arkham Knight Route Tracker" Height="700" Width="300">
+	<DockPanel>
+		<Menu DockPanel.Dock="Top">
+			<MenuItem Header="_Edit">
+				<MenuItem Name="SaveMenuItem" Header="Set Save File Path" Click="OpenSavePathWindow"/>
+				<MenuItem Name="PrefMenuItem" Header="Preferences" Click="PrefMenuItem_Click" />
+				<MenuItem Name="FirstEndingMenuItem" Header="First Ending" IsCheckable="True" IsChecked="False" Click="UpdatePreferences"/>
+				<MenuItem Name="NGPlusMenuItem" Header="NG+" IsCheckable="True" IsChecked="False" Click="UpdatePreferences"/>
+				<!--<MenuItem Name="OneTwentyPercentMenuItem" Header="120%" IsCheckable="True" IsChecked="False" Click="UpdatePreferences"/> -->
+			</MenuItem>
+			<MenuItem Header="_Game">
+				<MenuItem Name="AsylumMenuItem" Header="Asylum" IsCheckable="True" IsChecked="False" Click="SwitchGameWindow" />
+				<MenuItem Name="CityMenuItem" Header="City" IsCheckable="True" IsChecked="True" Click="SwitchGameWindow" />
+				<MenuItem Name="OriginsMenuItem" Header="Origins" IsCheckable="True" IsChecked="False" Click="SwitchGameWindow" />
+				<MenuItem Name="KnightMenuItem" Header="Knight" IsCheckable="True" IsChecked="False" Click="SwitchGameWindow" />
+			</MenuItem>
+		</Menu>
+		<Grid>
+			<Button Content="Start" HorizontalAlignment="Left" Margin="20,40,0,0" VerticalAlignment="Top" Width="75" Click="Start_Button_Click" Name="StartButton"/>
+			<Button Content="Stop" HorizontalAlignment="Left" Margin="102,40,0,0" VerticalAlignment="Top" Width="75" Click="Stop_Button_Click" Name="StopButton" IsEnabled="False"/>
+			<RadioButton Content="Save 1" HorizontalAlignment="Left" Margin="19.362,15,0,0" VerticalAlignment="Top" GroupName="Save" Name="Save0" IsChecked="True" Click="UpdatePreferences"/>
+			<RadioButton Content="Save 2" HorizontalAlignment="Left" Margin="77.622,15,0,0" VerticalAlignment="Top" GroupName="Save" Name="Save1" Click="UpdatePreferences"/>
+			<RadioButton Content="Save 3" HorizontalAlignment="Left" Margin="135.882,15,0,0" VerticalAlignment="Top" GroupName="Save" Name="Save2" Click="UpdatePreferences"/>
+			<RadioButton Content="Save 4" HorizontalAlignment="Left" Margin="194.142,15,0,0" VerticalAlignment="Top" GroupName="Save" Name="Save3" Click="UpdatePreferences"/>
+			<TextBlock Name="ProgressRiddleLabel" HorizontalAlignment="Left" Margin="20,80,0,0" Text="Trophy/Story Route" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Grid.Column="1"/>
+			<TextBlock HorizontalAlignment="Left" Margin="155,80,0,0" Text="0%" TextWrapping="Wrap" VerticalAlignment="Top" Name="ProgressCounter" Height="14" Grid.Column="1"/>
+			<TextBlock HorizontalAlignment="Left" Margin="217,80,0,0" Text="0/400" TextWrapping="Wrap" VerticalAlignment="Top" Name="RiddleCounter" Height="14" Grid.Column="1"/>
+			<ScrollViewer HorizontalAlignment="Left" Height="520" VerticalAlignment="Top" Width="276" Margin="10,108,0,0" VerticalScrollBarVisibility="Auto" Name="GridScroll">
+				<Grid HorizontalAlignment="Left" Height="Auto" VerticalAlignment="Top" Width="Auto" Name="DisplayGrid"></Grid>
+			</ScrollViewer>
+		</Grid>
+	</DockPanel>
+</local:BaseWindow>
