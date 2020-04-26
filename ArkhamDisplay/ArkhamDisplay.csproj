@@ -50,7 +50,13 @@
     <None Update="Routes\Arkham Knight 100%25 Route - First Ending.tsv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Routes\Arkham Knight 100%25 Route - NG+ Route 120.tsv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Routes\Arkham Knight 100%25 Route - NG+ Route.tsv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Routes\Arkham Knight 100%25 Route - Route 120.tsv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Routes\Arkham Knight 100%25 Route - Route.tsv">
