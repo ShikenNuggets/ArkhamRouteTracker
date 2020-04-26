@@ -19,19 +19,39 @@ namespace ArkhamDisplay{
 
 			ShowProgressCheckbox.IsChecked = Data.ShowPercent;
 			ShowRiddlesCheckbox.IsChecked = Data.ShowRiddleCount;
+
+			switch(Data.DisplayType){
+				case DisplayType.All:
+					ShowAllButton.IsChecked = true;
+					break;
+				case DisplayType.SortDoneToTop:
+					SortDoneButton.IsChecked = true;
+					break;
+				case DisplayType.HideDone:
+					HideDoneButton.IsChecked = true;
+					break;
+			}
 		}
 
 		private void OKButton_Click(object sender, RoutedEventArgs e){
 			if(OneSecond.IsChecked == true){
 				Data.RefreshRate = 1000;
-			}else if (TwoSeconds.IsChecked == true){
+			}else if(TwoSeconds.IsChecked == true){
 				Data.RefreshRate = 2000;
-			}else if (TenSeconds.IsChecked == true){
+			}else if(TenSeconds.IsChecked == true){
 				Data.RefreshRate = 10000;
 			}
 
 			Data.ShowPercent = ShowProgressCheckbox.IsChecked ?? false;
 			Data.ShowRiddleCount = ShowRiddlesCheckbox.IsChecked ?? false;
+
+			if(ShowAllButton.IsChecked == true){
+				Data.DisplayType = DisplayType.All;
+			}else if(SortDoneButton.IsChecked == true){
+				Data.DisplayType = DisplayType.SortDoneToTop;
+			}else if(HideDoneButton.IsChecked == true){
+				Data.DisplayType = DisplayType.HideDone;
+			}
 
 			Data.Save();
 			DialogResult = true;

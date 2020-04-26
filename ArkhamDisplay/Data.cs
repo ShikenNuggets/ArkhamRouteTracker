@@ -10,6 +10,12 @@ namespace ArkhamDisplay{
 		Knight = 3
 	}
 
+	public enum DisplayType{
+		All = 0,
+		SortDoneToTop = 1,
+		HideDone = 2
+	}
+
 	public class DataBlock{
 		public volatile Game selectedGame = Game.None;
 		public volatile string[] saveLocations = { "", "", "", "" };
@@ -18,6 +24,7 @@ namespace ArkhamDisplay{
 		public volatile bool showPercent = true;
 		public volatile bool showRiddleCount = true;
 		public volatile int refreshRateInMS = 1000;
+		public volatile DisplayType displayType = DisplayType.All;
 
 		public volatile bool cityBreakablesAtEnd = false;
 		public volatile bool cityCatwoman = false;
@@ -38,6 +45,7 @@ namespace ArkhamDisplay{
 		public static bool ShowPercent { get { return data.showPercent; } set { data.showPercent = value; } }
 		public static bool ShowRiddleCount { get { return data.showRiddleCount; } set { data.showRiddleCount = value; } }
 		public static int RefreshRate { get { return data.refreshRateInMS; } set { data.refreshRateInMS = value; } }
+		public static DisplayType DisplayType { get { return data.displayType; } set { data.displayType = value; } }
 
 		public static bool CityBreakablesAtEnd { get { return data.cityBreakablesAtEnd; } set { data.cityBreakablesAtEnd = value; } }
 		public static bool CityCatwoman { get { return data.cityCatwoman; } set { data.cityCatwoman = value; } }

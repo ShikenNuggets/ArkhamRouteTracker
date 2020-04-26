@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ArkhamDisplay"
         mc:Ignorable="d"
-        Title="Preferences" Height="150" Width="300">
+        Title="Preferences" Height="200" Width="300">
 	<Grid>
 		<RadioButton Content="1" HorizontalAlignment="Left" Margin="152,10,0,0" VerticalAlignment="Top" Name="OneSecond" GroupName="RefreshRate" IsChecked="True"/>
 		<RadioButton Content="2" HorizontalAlignment="Left" Margin="184,10,0,0" VerticalAlignment="Top" Name="TwoSeconds" GroupName="RefreshRate"/>
@@ -15,5 +15,8 @@
 		<CheckBox Name="ShowRiddlesCheckbox" Content="Show Riddle Count" HorizontalAlignment="Left" Margin="10,48,0,0" VerticalAlignment="Top" IsChecked="True"/>
 		<Button Name="OKButton" Content="OK" HorizontalAlignment="Left" Margin="161,0,0,25" VerticalAlignment="Bottom" Width="55" Click="OKButton_Click"/>
 		<Button Name="CancelButton" Content="Cancel" HorizontalAlignment="Left" Margin="225,0,0,25" VerticalAlignment="Bottom" Width="55" Click="CancelButton_Click"/>
+		<RadioButton Name="ShowAllButton" Content="Show all entries" HorizontalAlignment="Left" Margin="10,-20,0,0" VerticalAlignment="Center" IsChecked="True"/>
+		<RadioButton Name="SortDoneButton" Content="Sort completed entries to top" HorizontalAlignment="Left" Margin="10,15,0,0" VerticalAlignment="Center" IsChecked="False"/>
+		<RadioButton Name="HideDoneButton" Content="Hide completed entries" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Center" IsChecked="False"/>
 	</Grid>
 </Window>
