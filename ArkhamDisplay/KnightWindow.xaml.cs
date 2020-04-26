@@ -33,7 +33,7 @@ namespace ArkhamDisplay{
 			base.UpdateUI();
 		}
 
-		protected override void UpdatePreferences(object sender = null, RoutedEventArgs e = null){\
+		protected override void UpdatePreferences(object sender = null, RoutedEventArgs e = null){
 			//First Ending and 120% are incompatible, so if one switches one make sure the other does too
 			if(sender == FirstEndingMenuItem && FirstEndingMenuItem.IsChecked){
 				OneTwentyPercentMenuItem.IsChecked = false;
