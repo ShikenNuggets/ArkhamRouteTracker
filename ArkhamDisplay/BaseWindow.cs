@@ -145,16 +145,14 @@ namespace ArkhamDisplay{
 			}
 		}
 
-		//TODO - This might be better with a predicate
-		private List<Entry> GetEntries(List<Entry> entries, bool completed){
-			List<Entry> entriesToUse = new List<Entry>();
-			foreach(Entry e in entries){
-				if(saveParser.HasKey(e, minRequiredMatches) == completed){
-					entriesToUse.Add(e);
-				}
+		private struct FinalEntry{
+			public FinalEntry(string name_, bool done_){
+				name = name_;
+				done = done_;
 			}
 
-			return entriesToUse;
+			public string name;
+			public bool done;
 		}
 
 		protected virtual void UpdateRouteWindow(){
@@ -168,21 +166,31 @@ namespace ArkhamDisplay{
 
 			int lineCount = 1;
 			int firstNotDone = -1;
-			int numDone = 0;
 
 			int totalEntries = Data.GetRoute(currentRoute).entries.Count;
-			int doneEntries = -1; //TODO - two values (numDone and doneEntries) for this is kinda weird
+			int doneEntries = 0;
 
-			List<Entry> entriesToUse = Data.GetRoute(currentRoute).entries;
-			if(Data.DisplayType == DisplayType.SortDoneToTop){
-				entriesToUse = GetEntries(Data.GetRoute(currentRoute).entries, true);
-				entriesToUse.AddRange(GetEntries(Data.GetRoute(currentRoute).entries, false));
-			}else if(Data.DisplayType == DisplayType.HideDone){
-				entriesToUse = GetEntries(Data.GetRoute(currentRoute).entries, false);
-				doneEntries = totalEntries - entriesToUse.Count;
+			List<FinalEntry> finalEntries = new List<FinalEntry>(totalEntries);
+			List<FinalEntry> bottomEntries = new List<FinalEntry>(totalEntries);
+			foreach(Entry entry in Data.GetRoute(currentRoute).entries){
+				if(saveParser.HasKey(entry, minRequiredMatches)){
+					doneEntries++;
+					if(Data.DisplayType == DisplayType.HideDone){
+						continue;
+					}
+
+					finalEntries.Add(new FinalEntry(entry.name, true));
+				}else{
+					if(Data.DisplayType == DisplayType.All || Data.DisplayType == DisplayType.HideDone){
+						finalEntries.Add(new FinalEntry(entry.name, false));
+					}else{
+						bottomEntries.Add(new FinalEntry(entry.name, false));
+					}
+				}
 			}
+			finalEntries.AddRange(bottomEntries);
 
-			foreach(Entry entry in entriesToUse){
+			foreach(FinalEntry entry in finalEntries){
 				displayGrid.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(ROW_HEIGHT) });
 				TextBlock txtBlock = new TextBlock();
 				txtBlock.Text = entry.name;
@@ -191,13 +199,12 @@ namespace ArkhamDisplay{
 				Grid.SetRow(txtBlock, lineCount - 1);
 				displayGrid.Children.Add(txtBlock);
 
-				if(saveParser.HasKey(entry, minRequiredMatches)){
+				if(entry.done){
 					txtBlock = new TextBlock();
 					txtBlock.Text = "Done";
 					Grid.SetColumn(txtBlock, 1);
 					Grid.SetRow(txtBlock, lineCount - 1);
 					displayGrid.Children.Add(txtBlock);
-					numDone++;
 				}else if(firstNotDone == -1){
 					firstNotDone = lineCount;
 				}
@@ -210,11 +217,7 @@ namespace ArkhamDisplay{
 			}
 
 			//lineCount - 2 because the last row is "Done"
-			double percentDone = 100.0 * numDone / (lineCount - 2);
-			if(doneEntries >= 0){
-				percentDone = 100.0 * doneEntries / totalEntries;
-			}
-
+			double percentDone = 100.0 * doneEntries / totalEntries;
 			progressCounter.Text = string.Format("{0:0.0}", percentDone) + "%";
 			riddleCounter.Text = UpdateRiddleCount();
 		}

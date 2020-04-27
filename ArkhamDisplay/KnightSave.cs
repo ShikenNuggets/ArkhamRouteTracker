@@ -12,6 +12,8 @@ namespace ArkhamDisplay{
 			if(System.IO.File.Exists(file)){
 				m_rawData = System.IO.File.ReadAllText(file);
 			}
+
+			m_rawData = m_rawData.Trim('\0');
 		}
 
 		protected override string GetFile(){
