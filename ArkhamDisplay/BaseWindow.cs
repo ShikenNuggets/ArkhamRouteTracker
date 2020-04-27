@@ -72,6 +72,17 @@ namespace ArkhamDisplay{
 			base.OnActivated(e);
 		}
 
+		protected override void OnClosed(EventArgs e){
+			stopButton.IsEnabled = false;
+			startButton.IsEnabled = true;
+
+			if(updateWorker != null && updateWorker.IsBusy){
+				updateWorker.CancelAsync();
+			}
+
+			base.OnClosed(e);
+		}
+
 		protected virtual SaveParser CreateSaveParser(){
 			return new SaveParser(Data.SaveLocations[(int)game], Data.SaveIDs[(int)game]);
 		}
