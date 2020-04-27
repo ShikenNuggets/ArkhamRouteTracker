@@ -280,13 +280,14 @@ namespace ArkhamDisplay{
 			}
 		}
 
-		private void KillWindow(Window newWindow, Game newGame){
+		private void KillWindow(Window newWindow, Game newGame, MenuItem sender){
 			if(newWindow != null){
 				if(string.IsNullOrWhiteSpace(Data.SaveLocations[(int)newGame])){
 					Window wnd = new SetSavePathWindow(newGame);
 					wnd.Activate();
 					if(wnd.ShowDialog() == false){
 						newWindow.Close();
+						sender.IsChecked = false;
 						return;
 					}
 				}
@@ -312,13 +313,13 @@ namespace ArkhamDisplay{
 			}
 
 			if(sender == asylumMenuItem && game != Game.Asylum){
-				KillWindow(new AsylumWindow(), Game.Asylum);
+				KillWindow(new AsylumWindow(), Game.Asylum, sender as MenuItem);
 			}else if(sender == cityMenuItem && game != Game.City){
-				KillWindow(new CityWindow(), Game.City);
+				KillWindow(new CityWindow(), Game.City, sender as MenuItem);
 			}else if(sender == originsMenuItem && game != Game.Origins){
-				KillWindow(new OriginsWindow(), Game.Origins);
+				KillWindow(new OriginsWindow(), Game.Origins, sender as MenuItem);
 			}else if(sender == knightMenuItem && game != Game.Knight){
-				KillWindow(new KnightWindow(), Game.Knight);
+				KillWindow(new KnightWindow(), Game.Knight, sender as MenuItem);
 			}else{
 				(sender as MenuItem).IsChecked = true;
 			}
