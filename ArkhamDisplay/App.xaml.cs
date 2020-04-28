@@ -21,6 +21,7 @@ namespace ArkhamDisplay{
             }else if (newTheme == Theme.Dark){
                 ApplyResources("DarkTheme.xaml");
             }
+            ApplyResources("BaseTheme.xaml");
         }
 
         private void ApplyResources(string src){
