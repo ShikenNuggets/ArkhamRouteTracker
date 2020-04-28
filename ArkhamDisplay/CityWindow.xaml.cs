@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Collections.Generic;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace ArkhamDisplay{
@@ -11,13 +12,16 @@ namespace ArkhamDisplay{
 		}
 
 		protected override void SetCurrentRoute(){
-			if(Data.CityBreakablesAtEnd){
-				currentRoute = "CityBreakablesAtBottom";
-			}else{
-				currentRoute = "CityDefault";
-			}
-
+			currentRoute = "CityDefault";
 			currentSecondaryRoute = "CityPrisoners";
+		}
+
+		protected override List<Entry> GetEntriesForDisplay(Route route){
+			if(!Data.CityBreakablesAtEnd){
+				return base.GetEntriesForDisplay(route);
+			}else{
+				return route.GetEntriesWithPlaceholdersMoved();
+			}
 		}
 
 		protected override void UpdateUI(){

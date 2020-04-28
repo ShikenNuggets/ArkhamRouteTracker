@@ -459,6 +459,8 @@ Trophy (Industrial, Freeze Nade mine ferris wheel [political prisoner])	Riddler 
 Trophy (Industrial, 3 fast question marks ferris wheel [political prisoner])	Riddler Trophies	PickedUp_OWC_Pickup_11		Map this to a political prisoner
 Trophy (Industrial, 3 switches near Subway)	Riddler Trophies	PickedUp_OWC_Pickup_20		Map this to a political prisoner
 Trophy (Industrial, Under Excavator)	Riddler Trophies	PickedUp_OWC_Pickup_21		Map this to a political prisoner
+Breakable Cameras (Industrial)	[PLACEHOLDER]			
+Balloons (Industrial)	[PLACEHOLDER]			
 Krank & co Riddle	Riddles	PickedUp_OWB_Riddle_10		
 Trophy (Amusement, Behind Bane Building)	Riddler Trophies	PickedUp_OWB_Pickup_29		
 Trophy (Amusement, Freeze Nade under Bane)	Riddler Trophies	PickedUp_OWB_Pickup_28		
@@ -468,12 +470,15 @@ Trophy (Amusement, Wood Wall GCPD)	Riddler Trophies	PickedUp_OWB_Pickup_22
 Gordon Parking Spot Riddle	Riddles	PickedUp_OWB_Riddle_7		
 Tyger Brain (Amusement)	Tyger Brains	PickedUp_OWB_CameraControl_1		
 Trophy (Amusement, Terrible Water Gel Puzzle)	Riddler Trophies	PickedUp_OWB_Pickup_9		
+Breakable Cameras (Amusement)	[PLACEHOLDER]			
+Balloons (Amusement)	[PLACEHOLDER]			
 Trophy (Amusement, Fly to switch [before zsasz call])	Riddler Trophies	PickedUp_OWB_Pickup_11		
 Trophy (Amusement, Next to Deadshot phone)	Riddler Trophies	PickedUp_OWB_Pickup_10		
 Trophy (Park Row, Rec Gun Alley Door [political prisoner])	Riddler Trophies	PickedUp_OWA_Pickup_30		Map this to a political prisoner
 Trophy (Park Row, Rec Gun Sphere near ace [political prisoner])	Riddler Trophies	PickedUp_OWA_Pickup_15		Map this to a political prisoner
 Trophy (Park Row, West of Courthouse [political prisoner])	Riddler Trophies	PickedUp_OWA_Pickup_23		Map this to a political prisoner
 Trophy (Park Row, Far question mark [political prisoner])	Riddler Trophies	PickedUp_OWA_Pickup_27		Map this to a political prisoner
+Breakable Cameras (Park Row)	[PLACEHOLDER]			
 Deadshot Done	Deadshot	SS_Deadshot_DeadshotDefeated		
 AR Challenge 6	AR Training	ARChallenge6_Complete		
 Best Behavior Tyger Riddle	Riddles	PickedUp_OWE_Riddle_9		
@@ -486,6 +491,7 @@ Trophy (Bowery, 2 far questionmarks [political prisoner])	Riddler Trophies	Picke
 Trophy (Bowery, Left of Museum)	Riddler Trophies	PickedUp_OWE_Pickup_25		Map this to a political prisoner
 Trophy (Bowery, Museum Roof)	Riddler Trophies	PickedUp_OWE_Pickup_23		Map this to a political prisoner
 Trophy (Bowery, Rec Door Near Back Museum Phone)	Riddler Trophies	PickedUp_OWE_Pickup_4		Map this to a political prisoner
+Breakable Cameras (Bowery)	[PLACEHOLDER]			
 Trophy (Bowery, Back of Museum)	Riddler Trophies	PickedUp_OWE_Pickup_3		Map this to a political prisoner
 (Industrial, Near Subway Entrance)	Political Prisoner	ArkhamBullyOWRC3_Saved		
 (Industrial, Ferris Wheel)	Political Prisoner	ArkhamBullyOWRC2a_Saved		

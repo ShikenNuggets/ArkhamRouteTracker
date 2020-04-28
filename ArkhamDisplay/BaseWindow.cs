@@ -166,6 +166,10 @@ namespace ArkhamDisplay{
 			public bool done;
 		}
 
+		protected virtual List<Entry> GetEntriesForDisplay(Route route){
+			return route.GetEntriesWithoutPlaceholders();
+		}
+
 		protected virtual void UpdateRouteWindow(){
 			displayGrid.Children.Clear();
 			displayGrid.RowDefinitions.Clear();
@@ -183,7 +187,7 @@ namespace ArkhamDisplay{
 
 			List<FinalEntry> finalEntries = new List<FinalEntry>(totalEntries);
 			List<FinalEntry> bottomEntries = new List<FinalEntry>(totalEntries);
-			foreach(Entry entry in Data.GetRoute(currentRoute).entries){
+			foreach(Entry entry in GetEntriesForDisplay(Data.GetRoute(currentRoute))){
 				if(saveParser.HasKey(entry, minRequiredMatches)){
 					doneEntries++;
 					if(Data.DisplayType == DisplayType.HideDone){

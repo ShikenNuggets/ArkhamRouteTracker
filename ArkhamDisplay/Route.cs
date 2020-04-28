@@ -17,6 +17,18 @@ namespace ArkhamDisplay{
 			this.alternateID = alternateID;
 			this.metadata = metadata;
 		}
+
+		public bool IsType(string type_){
+			if(string.IsNullOrWhiteSpace(type_)){
+				return false;
+			}
+
+			return type_.Equals(type);
+		}
+
+		public static bool IsPlaceholder(Entry e){
+			return e.IsType("[PLACEHOLDER]");
+		}
 	}
 
 	public class Route{
@@ -68,6 +80,26 @@ namespace ArkhamDisplay{
 						break;
 				}
 			}
+		}
+
+		public List<Entry> GetEntriesWithPlaceholdersMoved(){
+			List<Entry> newEntries = new List<Entry>(entries);
+
+			List<Entry> placeHolders = newEntries.FindAll(Entry.IsPlaceholder);
+			foreach(Entry p in placeHolders){
+				List<Entry> onesToMove = newEntries.FindAll(x => x.IsType(p.name));
+				newEntries.RemoveAll(x => x.IsType(p.name));
+				newEntries.InsertRange(newEntries.FindIndex(x => x == p), onesToMove);
+			}
+
+			newEntries.RemoveAll(Entry.IsPlaceholder);
+			return newEntries;
+		}
+
+		public List<Entry> GetEntriesWithoutPlaceholders(){
+			List<Entry> newEntries = new List<Entry>(entries);
+			newEntries.RemoveAll(Entry.IsPlaceholder);
+			return newEntries;
 		}
 
 		private Entry SplitRoute(string[] lineComponents){
