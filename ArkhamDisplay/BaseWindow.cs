@@ -180,12 +180,13 @@ namespace ArkhamDisplay{
 			int lineCount = 1;
 			int firstNotDone = -1;
 
-			int totalEntries = Data.GetRoute(currentRoute).entries.Count;
+			List<Entry> routeEntries = GetEntriesForDisplay(Data.GetRoute(currentRoute));
+			int totalEntries = routeEntries.Count;
 			int doneEntries = 0;
 
 			List<FinalEntry> finalEntries = new List<FinalEntry>(totalEntries);
 			List<FinalEntry> bottomEntries = new List<FinalEntry>(totalEntries);
-			foreach(Entry entry in GetEntriesForDisplay(Data.GetRoute(currentRoute))){
+			foreach(Entry entry in routeEntries){
 				if(saveParser.HasKey(entry, minRequiredMatches)){
 					doneEntries++;
 					if(Data.DisplayType == DisplayType.HideDone){
