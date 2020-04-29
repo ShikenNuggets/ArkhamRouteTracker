@@ -1,14 +1,15 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:local="clr-namespace:ArkhamDisplay">
-	<SolidColorBrush x:Key="{x:Static SystemColors.WindowBrushKey}" Color="#323232" />
-	<SolidColorBrush x:Key="{x:Static SystemColors.ControlBrushKey}" Color="#323232" />
+	<SolidColorBrush x:Key="{x:Static SystemColors.WindowBrushKey}" Color="#0f0f0f" />
+	<SolidColorBrush x:Key="{x:Static SystemColors.ControlBrushKey}" Color="#0f0f0f" />
 	<SolidColorBrush x:Key="{x:Static SystemColors.WindowTextBrushKey}" Color="White" />
 	<SolidColorBrush x:Key="{x:Static SystemColors.ControlTextBrushKey}" Color="White" />
+	<SolidColorBrush x:Key="{x:Static SystemColors.MenuHighlightBrushKey}" Color="Black" />
 
 	<Style TargetType="Menu">
 		<Setter Property="Background" Value="#363636" />
-		<Setter Property="TextBlock.Foreground" Value="White" />
+		<Setter Property="Foreground" Value="White" />
 	</Style>
 
 	<Style TargetType="MenuItem">
@@ -18,5 +19,20 @@
 
 	<Style TargetType="Button">
 		<Setter Property="TextBlock.Foreground" Value="Black"/>
+	</Style>
+
+	<Style TargetType="ScrollViewer">
+		<Setter Property="Background" Value="#191919" />
+	</Style>
+
+	<Style TargetType="ScrollBar">
+		<Setter Property="Background" Value="#171717" />
+		<Setter Property="Foreground" Value="#4d4d4d" />
+	</Style>
+
+	<Style x:Key="GridRectangle" TargetType="Rectangle">
+		<Setter Property="Stroke" Value="Black"></Setter>
+		<Setter Property="StrokeThickness" Value="2"></Setter>
+		<Setter Property="Fill" Value="Transparent"></Setter>
 	</Style>
 </ResourceDictionary>

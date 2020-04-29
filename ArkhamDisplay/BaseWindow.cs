@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Shapes;
 
 namespace ArkhamDisplay{
 	public abstract class BaseWindow : Window{
@@ -40,8 +41,6 @@ namespace ArkhamDisplay{
 	}
 
 		protected void PostInitialize(){
-			Style = (Style)FindResource(typeof(Window));
-
 			stopButton = FindName("StopButton") as Button;
 			startButton = FindName("StartButton") as Button;
 			displayGrid = FindName("DisplayGrid") as Grid;
@@ -175,7 +174,6 @@ namespace ArkhamDisplay{
 			displayGrid.RowDefinitions.Clear();
 			displayGrid.ColumnDefinitions.Clear();
 
-			displayGrid.ShowGridLines = true;
 			displayGrid.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(COL1_WIDTH) });
 			displayGrid.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(COL2_WIDTH) });
 
@@ -207,16 +205,33 @@ namespace ArkhamDisplay{
 
 			foreach(FinalEntry entry in finalEntries){
 				displayGrid.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(ROW_HEIGHT) });
-				TextBlock txtBlock = new TextBlock();
-				txtBlock.Text = entry.name;
-				txtBlock.TextWrapping = TextWrapping.Wrap;
+
+				Rectangle rectangle = new Rectangle{
+					Style = FindResource("GridRectangle") as Style
+				};
+				Grid.SetColumn(rectangle, 0);
+				Grid.SetRow(rectangle, lineCount - 1);
+				displayGrid.Children.Add(rectangle);
+
+				TextBlock txtBlock = new TextBlock{
+					Text = entry.name,
+					Style = FindResource("EntryText") as Style
+				};
 				Grid.SetColumn(txtBlock, 0);
 				Grid.SetRow(txtBlock, lineCount - 1);
 				displayGrid.Children.Add(txtBlock);
 
+				rectangle = new Rectangle{
+					Style = FindResource("GridRectangle") as Style
+				};
+				Grid.SetColumn(rectangle, 1);
+				Grid.SetRow(rectangle, lineCount - 1);
+				displayGrid.Children.Add(rectangle);
+
 				if(entry.done){
-					txtBlock = new TextBlock();
-					txtBlock.Text = "Done";
+					txtBlock = new TextBlock{
+						Style = FindResource("DoneText") as Style
+					};
 					Grid.SetColumn(txtBlock, 1);
 					Grid.SetRow(txtBlock, lineCount - 1);
 					displayGrid.Children.Add(txtBlock);
