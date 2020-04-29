@@ -20,10 +20,10 @@
 			</MenuItem>
 		</Menu>
 		<Grid>
-			<RadioButton Content="Save 0" HorizontalAlignment="Left" Margin="19.362,15,0,0" VerticalAlignment="Top" Grid.Column="1" GroupName="Save" Name="Save0" IsChecked="True" Click="UpdatePreferences"/>
-			<RadioButton Content="Save 1" HorizontalAlignment="Left" Margin="77.622,15,0,0" VerticalAlignment="Top" Grid.Column="1" GroupName="Save" Name="Save1" Click="UpdatePreferences"/>
-			<RadioButton Content="Save 2" HorizontalAlignment="Left" Margin="135.882,15,0,0" VerticalAlignment="Top" Grid.Column="1" GroupName="Save" Name="Save2" Click="UpdatePreferences"/>
-			<RadioButton Content="Save 3" HorizontalAlignment="Left" Margin="194.142,15,0,0" VerticalAlignment="Top" Grid.Column="1" GroupName="Save" Name="Save3" Click="UpdatePreferences"/>
+			<RadioButton Content="Save 0" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Grid.Column="1" GroupName="Save" Name="Save0" IsChecked="True" Click="UpdatePreferences"/>
+			<RadioButton Content="Save 1" HorizontalAlignment="Left" Margin="75,10,0,0" VerticalAlignment="Top" Grid.Column="1" GroupName="Save" Name="Save1" Click="UpdatePreferences"/>
+			<RadioButton Content="Save 2" HorizontalAlignment="Left" Margin="140,10,0,0" VerticalAlignment="Top" Grid.Column="1" GroupName="Save" Name="Save2" Click="UpdatePreferences"/>
+			<RadioButton Content="Save 3" HorizontalAlignment="Left" Margin="205,10,0,0" VerticalAlignment="Top" Grid.Column="1" GroupName="Save" Name="Save3" Click="UpdatePreferences"/>
 			<Button Content="Start" HorizontalAlignment="Left" Margin="16,40,0,0" VerticalAlignment="Top" Width="75" Click="Start_Button_Click" Name="StartButton"/>
 			<Button Content="Stop" HorizontalAlignment="Left" Margin="102,40,0,0" VerticalAlignment="Top" Width="75" Click="Stop_Button_Click" Name="StopButton" IsEnabled="False"/>
 
