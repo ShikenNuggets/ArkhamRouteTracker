@@ -5,12 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ArkhamDisplay"
         mc:Ignorable="d"
-        Title="Set Save File Path" Height="150" Width="500">
+        Title="Set Save File Path" Height="150" Width="500"
+		MinWidth="500" MaxWidth="500">
 	<Grid>
-		<TextBox HorizontalAlignment="Left" Margin="111,10,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="320"  Height="35" Name="SavePathBox"/>
-		<TextBlock HorizontalAlignment="Left" Margin="7,13,0,0" Text="Save File (Full Path)" TextWrapping="Wrap" VerticalAlignment="Top"/>
-		<Button Name="FileButton" Content="..." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="436,18,0,0" Width="25" Height="20" Click="FileButton_Click"/>
-		<Button Name="OKButton" Content="OK" HorizontalAlignment="Left" Margin="261,0,0,25" VerticalAlignment="Bottom" Width="75" Click="OKButton_Click"/>
-		<Button Name="CancelButton" Content="Cancel" HorizontalAlignment="Left" Margin="355,0,0,25" VerticalAlignment="Bottom" Width="75" Click="CancelButton_Click"/>
+		<Grid.RowDefinitions>
+			<RowDefinition/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+		
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+			<ColumnDefinition Width="50"/>
+		</Grid.ColumnDefinitions>
+
+		<TextBlock Text="Save File (Full Path)" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,13,0,0"/>
+		<TextBox Name="SavePathBox" Text="" TextWrapping="Wrap" Grid.Row="0" Grid.Column="0" MinWidth="400"	MinHeight="22" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,33,0,0"/>
+		<Button Name="FileButton" Content="..." Grid.Row="0" Grid.Column="1" Width="25" Height="22" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,33,0,0" Click="FileButton_Click"/>
+
+		<Button Name="OKButton" Content="OK" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" Margin="0,0,100,25" VerticalAlignment="Bottom" Width="75" Click="OKButton_Click"/>
+		<Button Name="CancelButton" Content="Cancel" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Right" Margin="0,0,0,25" VerticalAlignment="Bottom" Width="75" Click="CancelButton_Click"/>
 	</Grid>
 </Window>

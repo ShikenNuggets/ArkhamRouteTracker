@@ -5,13 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ArkhamDisplay"
         mc:Ignorable="d"
-        Title="Set Game" Height="250" Width="250">
+        Title="Set Game" Height="250" Width="250"
+		MinWidth="250"
+		MinHeight="250">
     <Grid>
-		<TextBlock HorizontalAlignment="Center">What game are you using this for?</TextBlock>
-		<TextBlock HorizontalAlignment="Center" Margin="0,15,0,0">You can change this later</TextBlock>
-		<Button Name="AsylumButton" Content="Arkham Asylum" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top" Width="100" Click="AsylumButton_Click"/>
-		<Button Name="CityButton" Content="Arkham City" HorizontalAlignment="Center" Margin="0,80,0,0" VerticalAlignment="Top" Width="100" Click="CityButton_Click"/>
-		<Button Name="OriginsButton" Content="Arkham Origins" HorizontalAlignment="Center" Margin="0,110,0,0" VerticalAlignment="Top" Width="100" Click="OriginsButton_Click"/>
-		<Button Name="KnightButton" Content="Arkham Knight" HorizontalAlignment="Center" Margin="0,140,0,0" VerticalAlignment="Top" Width="100" Click="KnightButton_Click"/>
+		<Grid.RowDefinitions>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition/>
+			<RowDefinition  Height="10"/>
+		</Grid.RowDefinitions>
+
+		<TextBlock Text="What game are you using this for?"	Grid.Row="0" HorizontalAlignment="Center" Margin="0,4,0,0"/>
+		<TextBlock Text="You can change this later"			Grid.Row="0" HorizontalAlignment="Center" Margin="0,22,0,0"/>
+		<Button Name="AsylumButton" Content="Arkham Asylum"		Width="120" Height="25" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Click="AsylumButton_Click"/>
+		<Button Name="CityButton" Content="Arkham City"			Width="120" Height="25" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Click="CityButton_Click"/>
+		<Button Name="OriginsButton" Content="Arkham Origins"	Width="120" Height="25" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Click="OriginsButton_Click"/>
+		<Button Name="KnightButton" Content="Arkham Knight"		Width="120" Height="25" Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" Click="KnightButton_Click"/>
 	</Grid>
 </Window>

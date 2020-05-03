@@ -3,21 +3,31 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ArkhamDisplay"
-        mc:Ignorable="d"
-        Title="Preferences" Height="250" Width="300">
+		mc:Ignorable="d"
+        Title="Preferences" Height="250" Width="300"
+		ResizeMode="NoResize">
 	<Grid>
-		<RadioButton Content="1" HorizontalAlignment="Left" Margin="152,10,0,0" VerticalAlignment="Top" Name="OneSecond" GroupName="RefreshRate" IsChecked="True"/>
-		<RadioButton Content="2" HorizontalAlignment="Left" Margin="184,10,0,0" VerticalAlignment="Top" Name="TwoSeconds" GroupName="RefreshRate"/>
-		<RadioButton Content="10" HorizontalAlignment="Left" Margin="218,10,0,0" VerticalAlignment="Top" Name="TenSeconds" GroupName="RefreshRate"/>
-		<TextBlock HorizontalAlignment="Left" Margin="10,8,0,0" Text="Refresh Rate (seconds)" TextWrapping="Wrap" VerticalAlignment="Top"/>
-		<CheckBox Name="ShowProgressCheckbox" Content="Show % Completion" HorizontalAlignment="Left" Margin="10,28,0,0" VerticalAlignment="Top" IsChecked="True"/>
-		<CheckBox Name="ShowRiddlesCheckbox" Content="Show Riddle Count" HorizontalAlignment="Left" Margin="10,48,0,0" VerticalAlignment="Top" IsChecked="True"/>
-		<CheckBox x:Name="DarkThemeCheckbox" Content="Dark Mode" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top" IsChecked="True"/>
-		<RadioButton Name="ShowAllButton" Content="Show all entries" HorizontalAlignment="Left" Margin="10,-20,0,0" VerticalAlignment="Center" IsChecked="True"/>
-		<RadioButton Name="SortDoneButton" Content="Sort completed entries to top" HorizontalAlignment="Left" Margin="10,15,0,0" VerticalAlignment="Center" IsChecked="False"/>
-		<RadioButton Name="HideDoneButton" Content="Hide completed entries" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Center" IsChecked="False"/>
-		<Button Name="OKButton" Content="OK" HorizontalAlignment="Left" Margin="161,0,0,25" VerticalAlignment="Bottom" Width="55" Click="OKButton_Click"/>
-		<Button Name="CancelButton" Content="Cancel" HorizontalAlignment="Left" Margin="225,0,0,25" VerticalAlignment="Bottom" Width="55" Click="CancelButton_Click"/>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="10*"/>
+			<RowDefinition Height="25*"/>
+			<RowDefinition Height="25*"/>
+			<RowDefinition Height="15*"/>
+		</Grid.RowDefinitions>
+
+		<TextBlock Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,8,0,0" Text="Refresh Rate (seconds)" />
+		<RadioButton Name="OneSecond"	Content="1"		Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="152,10,0,0" GroupName="RefreshRate" IsChecked="True"/>
+		<RadioButton Name="TwoSeconds"	Content="2"		Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="184,10,0,0" GroupName="RefreshRate" IsChecked="False"/>
+		<RadioButton Name="TenSeconds"	Content="10"	Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="218,10,0,0" GroupName="RefreshRate" IsChecked="False"/>
+
+		<CheckBox Name="ShowProgressCheckbox"	Content="Show % Completion"	Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" IsChecked="True"/>
+		<CheckBox Name="ShowRiddlesCheckbox"	Content="Show Riddle Count"	Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,28,0,0" IsChecked="True"/>
+		<CheckBox Name="DarkThemeCheckbox"		Content="Dark Mode"			Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,48,0,0" IsChecked="True"/>
+
+		<RadioButton Name="ShowAllButton"	Content="Show all entries"				Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" IsChecked="True"/>
+		<RadioButton Name="SortDoneButton"	Content="Sort completed entries to top"	Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,30,0,0" IsChecked="False"/>
+		<RadioButton Name="HideDoneButton"	Content="Hide completed entries"		Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0" IsChecked="False"/>
+
+		<Button Name="OKButton"		Content="OK"		Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,80,0" Width="55" Click="OKButton_Click"/>
+		<Button Name="CancelButton"	Content="Cancel"	Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,15,0" Width="55" Click="CancelButton_Click"/>
 	</Grid>
 </Window>
