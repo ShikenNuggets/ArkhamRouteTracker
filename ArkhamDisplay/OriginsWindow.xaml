@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ArkhamDisplay"
         mc:Ignorable="d"
-        Title="Arkham Origins Route Tracker" Height="980" Width="305">
+        Title="Arkham Origins Route Tracker" Height="700" Width="300">
 	<DockPanel>
 		<Menu DockPanel.Dock="Top">
 			<MenuItem Header="_Edit">
@@ -20,24 +20,29 @@
 			</MenuItem>
 		</Menu>
 		<Grid>
-			<RadioButton Content="Save 0" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Grid.Column="1" GroupName="Save" Name="Save0" IsChecked="True" Click="UpdatePreferences"/>
-			<RadioButton Content="Save 1" HorizontalAlignment="Left" Margin="75,10,0,0" VerticalAlignment="Top" Grid.Column="1" GroupName="Save" Name="Save1" Click="UpdatePreferences"/>
-			<RadioButton Content="Save 2" HorizontalAlignment="Left" Margin="140,10,0,0" VerticalAlignment="Top" Grid.Column="1" GroupName="Save" Name="Save2" Click="UpdatePreferences"/>
-			<RadioButton Content="Save 3" HorizontalAlignment="Left" Margin="205,10,0,0" VerticalAlignment="Top" Grid.Column="1" GroupName="Save" Name="Save3" Click="UpdatePreferences"/>
-			<Button Content="Start" HorizontalAlignment="Left" Margin="16,40,0,0" VerticalAlignment="Top" Width="75" Click="Start_Button_Click" Name="StartButton"/>
-			<Button Content="Stop" HorizontalAlignment="Left" Margin="102,40,0,0" VerticalAlignment="Top" Width="75" Click="Stop_Button_Click" Name="StopButton" IsEnabled="False"/>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="7*"/>
+				<RowDefinition Height="3*"/>
+			</Grid.RowDefinitions>
+			<RadioButton Name="Save0" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"		Content="Save 0" GroupName="Save" IsChecked="True"	Click="UpdatePreferences"/>
+			<RadioButton Name="Save1" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,10,0,0"		Content="Save 1" GroupName="Save" IsChecked="False"	Click="UpdatePreferences"/>
+			<RadioButton Name="Save2" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="140,10,0,0"	Content="Save 2" GroupName="Save" IsChecked="False" Click="UpdatePreferences"/>
+			<RadioButton Name="Save3" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="205,10,0,0"	Content="Save 3" GroupName="Save" IsChecked="False"	Click="UpdatePreferences"/>
 
+			<Button Name="StartButton"	Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,35,0,0"	Content="Start"	Click="Start_Button_Click"	IsEnabled="True"/>
+			<Button Name="StopButton"	Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="100,35,0,0"	Content="Stop"	Click="Stop_Button_Click"	IsEnabled="False"/>
 
-			<TextBlock HorizontalAlignment="Left" Margin="16,80,0,0" Text="Route" TextWrapping="Wrap" VerticalAlignment="Top"/>
-			<TextBlock HorizontalAlignment="Left" Margin="135,80,0,0" Text="0%" TextWrapping="Wrap" VerticalAlignment="Top" Name="ProgressCounter" Height="14" Grid.Column="1"/>
-			<TextBlock HorizontalAlignment="Left" Margin="197,80,0,0" Text="0/400" TextWrapping="Wrap" VerticalAlignment="Top" Name="RiddleCounter" Height="14" Grid.Column="1"/>
-			<ScrollViewer HorizontalAlignment="Left" Height="580.912" VerticalAlignment="Top" Width="276.509" Margin="10,97.744,0,0" VerticalScrollBarVisibility="Auto" Name="GridScroll">
-				<Grid HorizontalAlignment="Left" Height="Auto" VerticalAlignment="Top" Width="Auto" Name="DisplayGrid"></Grid>
+			<TextBlock							Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,75,0,0"	Text="Route"/>
+			<TextBlock Name="ProgressCounter"	Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="155,75,0,0"	Text="0%"/>
+			<TextBlock Name="RiddleCounter"		Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="217,75,0,0"	Text="0/400"/>
+
+			<ScrollViewer Name="GridScroll" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,108,5,0" VerticalScrollBarVisibility="Auto">
+				<Grid Name="DisplayGrid"/>
 			</ScrollViewer>
 
-			<TextBlock HorizontalAlignment="Left" Margin="17,700,0,0" Text="Crime in Progress" TextWrapping="Wrap" VerticalAlignment="Top"/>
-			<ScrollViewer HorizontalAlignment="Left" Height="200" VerticalAlignment="Top" Width="276.509" Margin="10,720,0,0" VerticalScrollBarVisibility="Auto" Name="CrimeInProgress">
-				<Grid HorizontalAlignment="Left" Height="Auto" VerticalAlignment="Top" Width="Auto" Name="CrimeInProgressGrid"></Grid>
+			<TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Text="Crime in Progress"/>
+			<ScrollViewer Name="CrimeInProgress" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,32,5,0" VerticalScrollBarVisibility="Auto">
+				<Grid Name="CrimeInProgressGrid"/>
 			</ScrollViewer>
 		</Grid>
 	</DockPanel>
