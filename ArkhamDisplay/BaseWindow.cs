@@ -38,7 +38,7 @@ namespace ArkhamDisplay{
 			this.game = game;
 			Data.SelectedGame = game;
 			Data.Save();
-	}
+		}
 
 		protected void PostInitialize(){
 			stopButton = FindName("StopButton") as Button;
@@ -61,6 +61,9 @@ namespace ArkhamDisplay{
 			}
 
 			UpdateUI();
+
+			MinWidth = 280;
+			MinHeight = 360;
 		}
 
 		protected override void OnActivated(EventArgs e){
@@ -174,7 +177,7 @@ namespace ArkhamDisplay{
 			displayGrid.RowDefinitions.Clear();
 			displayGrid.ColumnDefinitions.Clear();
 
-			displayGrid.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(COL1_WIDTH) });
+			displayGrid.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(0.8, GridUnitType.Star) });
 			displayGrid.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(COL2_WIDTH) });
 
 			int lineCount = 1;
