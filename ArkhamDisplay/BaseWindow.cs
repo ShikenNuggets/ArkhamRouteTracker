@@ -90,10 +90,10 @@ namespace ArkhamDisplay{
 		}
 
 		protected void Stop_Button_Click(object sender, RoutedEventArgs e){
-			saveParser = null;
+			updateWorker.CancelAsync();
 			stopButton.IsEnabled = false;
 			startButton.IsEnabled = true;
-			updateWorker.CancelAsync();
+			lock(saveParser){ saveParser = null; }
 		}
 
 		protected void Start_Button_Click(object sender, RoutedEventArgs e){
@@ -146,7 +146,10 @@ namespace ArkhamDisplay{
 			if(string.IsNullOrWhiteSpace(saveFile)){
 				throw new Exception("Save file path is not valid");
 			}
-			saveParser.Update();
+
+			if(saveParser != null){
+				saveParser.Update();
+			}
 
 			SetCurrentRoute();
 			if(!string.IsNullOrWhiteSpace(currentRoute)){
