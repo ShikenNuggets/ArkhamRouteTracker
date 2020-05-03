@@ -263,21 +263,23 @@ namespace ArkhamDisplay{
 		protected virtual string UpdateRiddleCount(){ return ""; }
 
 		protected virtual void UpdateUI(){
-			if(saveParser != null){
-				switch(saveParser.GetID()){
-					case 0:
-						saveSelector0.IsChecked = true;
-						break;
-					case 1:
-						saveSelector1.IsChecked = true;
-						break;
-					case 2:
-						saveSelector2.IsChecked = true;
-						break;
-					case 3:
-						saveSelector3.IsChecked = true;
-						break;
-				}
+			int value = Data.SaveIDs[(int)game];
+			switch(value){
+				case 0:
+					saveSelector0.IsChecked = true;
+					break;
+				case 1:
+					saveSelector1.IsChecked = true;
+					break;
+				case 2:
+					saveSelector2.IsChecked = true;
+					break;
+				case 3:
+					saveSelector3.IsChecked = true;
+					break;
+				default:
+					saveSelector0.IsChecked = true;
+					break;
 			}
 
 			if(Data.ShowPercent){
