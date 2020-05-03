@@ -32,7 +32,7 @@
 			<TextBlock Name="ProgressCounter"	HorizontalAlignment="Left" VerticalAlignment="Top" Margin="155,75,0,0"	Text="0%"/>
 			<TextBlock Name="RiddleCounter"		HorizontalAlignment="Left" VerticalAlignment="Top" Margin="217,75,0,0"	Text="0/240"/>
 
-			<ScrollViewer Name="GridScroll" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5,108,5,0" VerticalScrollBarVisibility="Auto">
+			<ScrollViewer Name="GridScroll" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,108,5,0" VerticalScrollBarVisibility="Auto">
 				<Grid Name="DisplayGrid"/>
 			</ScrollViewer>
 		</Grid>

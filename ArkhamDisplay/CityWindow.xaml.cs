@@ -40,7 +40,7 @@ namespace ArkhamDisplay{
 			PrisonerGrid.RowDefinitions.Clear();
 			PrisonerGrid.ColumnDefinitions.Clear();
 
-			PrisonerGrid.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(SECONDARY_COL_WIDTH) });
+			PrisonerGrid.ColumnDefinitions.Add(new ColumnDefinition(){ Width = new GridLength(1.0, GridUnitType.Star) });
 
 			int lineCount = 1;
 			int savedCount = 0;
@@ -48,7 +48,7 @@ namespace ArkhamDisplay{
 				bool isSaved = saveParser.HasKey(entry.id, minRequiredMatches);
 
 				if(!isSaved){
-					PrisonerGrid.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(ROW_HEIGHT / 2) });
+					PrisonerGrid.RowDefinitions.Add(new RowDefinition(){ Height = new GridLength(ROW_HEIGHT / 2) });
 
 					Rectangle rectangle = new Rectangle{
 						Style = FindResource("GridRectangle") as Style

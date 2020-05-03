@@ -9,7 +9,7 @@
 	<Style x:Key="EntryText" TargetType="TextBlock">
 		<Setter Property="TextWrapping" Value="Wrap"/>
 		<Setter Property="VerticalAlignment" Value="Center"/>
-		<Setter Property="Margin" Value="5,0,0,0"/>
+		<Setter Property="Margin" Value="5,0,5,0"/>
 	</Style>
 
 	<Style x:Key="DoneText" TargetType="TextBlock">
