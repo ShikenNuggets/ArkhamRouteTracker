@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Windows;
 using Microsoft.Win32;
 using Newtonsoft.Json;
 
@@ -29,6 +30,7 @@ namespace ArkhamDisplay{
 		public volatile Game selectedGame = Game.None;
 		public volatile string[] saveLocations = { "", "", "", "" };
 		public volatile int[] saveIDs = { 0, 0, 0, 0 };
+		public volatile Rect[] windowRects = { new Rect(), new Rect(), new Rect(), new Rect() };
 
 		public volatile bool showPercent = true;
 		public volatile bool showRiddleCount = true;
@@ -45,12 +47,13 @@ namespace ArkhamDisplay{
 
 	public class Data{
 		private static readonly string saveFileName = "settings.json";
-		private static DataBlock data = new DataBlock();
+		private static volatile DataBlock data = new DataBlock();
 		private static volatile Dictionary<string, Route> routes = new Dictionary<string, Route>();
 
 		public static Game SelectedGame { get { return data.selectedGame; } set { data.selectedGame = value; } }
 		public static string[] SaveLocations { get { return data.saveLocations; } }
 		public static int[] SaveIDs { get { return data.saveIDs; } }
+		public static Rect[] WindowRect { get{ return data.windowRects; } }
 
 		public static bool ShowPercent { get { return data.showPercent; } set { data.showPercent = value; } }
 		public static bool ShowRiddleCount { get { return data.showRiddleCount; } set { data.showRiddleCount = value; } }
@@ -70,7 +73,7 @@ namespace ArkhamDisplay{
 				Save();
 			}
 
-			lock(data) { data = JsonConvert.DeserializeObject<DataBlock>(System.IO.File.ReadAllText(saveFileName)); }
+			lock(data){ data = JsonConvert.DeserializeObject<DataBlock>(System.IO.File.ReadAllText(saveFileName)); }
 
 			//Load Routes (TODO - Don't have the routes hardcoded like this)
 			//TODO - Lazy initialize routes instead of always having all of them in memory
