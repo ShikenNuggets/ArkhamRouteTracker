@@ -21,6 +21,14 @@ namespace ArkhamDisplay{
 				currentRoute = "KnightNG+120";
 			}else if(Data.Knight120 && !Data.KnightNGPlus){
 				currentRoute = "Knight120";
+			}else if(Data.Knight240){
+				if(saveParser != null && saveParser.HasKey("Knightmare", 1)){
+					minRequiredMatches = 2;
+					currentRoute = "KnightNG+120";
+				}else{
+					minRequiredMatches = 1;
+					currentRoute = "Knight120";
+				}
 			}else{
 				currentRoute = "KnightDefault";
 			}
@@ -30,15 +38,22 @@ namespace ArkhamDisplay{
 			FirstEndingMenuItem.IsChecked = Data.KnightFirstEnding;
 			NGPlusMenuItem.IsChecked = Data.KnightNGPlus;
 			OneTwentyPercentMenuItem.IsChecked = Data.Knight120;
+			TwoFortyPercentMenuItem.IsChecked = Data.Knight240;
 			base.UpdateUI();
 		}
 
 		protected override void UpdatePreferences(object sender = null, RoutedEventArgs e = null){
-			//First Ending and 120% are incompatible, so if one switches one make sure the other does too
+			//Some settings are incompatible, so if one switches one make sure the other does too
 			if(sender == FirstEndingMenuItem && FirstEndingMenuItem.IsChecked){
 				OneTwentyPercentMenuItem.IsChecked = false;
+				TwoFortyPercentMenuItem.IsChecked = false;
 			}else if(sender == OneTwentyPercentMenuItem && OneTwentyPercentMenuItem.IsChecked){
 				FirstEndingMenuItem.IsChecked = false;
+				TwoFortyPercentMenuItem.IsChecked = false;
+			}else if(sender == TwoFortyPercentMenuItem && TwoFortyPercentMenuItem.IsChecked){
+				NGPlusMenuItem.IsChecked = false;
+				FirstEndingMenuItem.IsChecked = false;
+				OneTwentyPercentMenuItem.IsChecked = false;
 			}
 
 			if(NGPlusMenuItem.IsChecked){
@@ -50,6 +65,7 @@ namespace ArkhamDisplay{
 			Data.KnightFirstEnding = FirstEndingMenuItem.IsChecked;
 			Data.KnightNGPlus = NGPlusMenuItem.IsChecked;
 			Data.Knight120 = OneTwentyPercentMenuItem.IsChecked;
+			Data.Knight240 = TwoFortyPercentMenuItem.IsChecked;
 
 			base.UpdatePreferences(sender, e);
 		}

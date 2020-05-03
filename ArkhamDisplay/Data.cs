@@ -40,6 +40,7 @@ namespace ArkhamDisplay{
 		public volatile bool knightFirstEnding = false;
 		public volatile bool knightNGPlus = false;
 		public volatile bool knight120 = false;
+		public volatile bool knight240 = false;
 	}
 
 	public class Data{
@@ -61,6 +62,8 @@ namespace ArkhamDisplay{
 		public static bool KnightFirstEnding { get { return data.knightFirstEnding; } set { data.knightFirstEnding = value; } }
 		public static bool KnightNGPlus { get { return data.knightNGPlus; } set { data.knightNGPlus = value; } }
 		public static bool Knight120 { get { return data.knight120; } set { data.knight120 = value; } }
+
+		public static bool Knight240 { get { return data.knight240; } set { data.knight240 = value; } }
 
 		public static void Load(){
 			if(!System.IO.File.Exists(saveFileName)){
