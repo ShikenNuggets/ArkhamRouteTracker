@@ -31,11 +31,11 @@
 			<Button Name="StartButton"	HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,35,0,0"	Content="Start"	Click="Start_Button_Click"	IsEnabled="True"/>
 			<Button Name="StopButton"	HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="100,35,0,0"	Content="Stop"	Click="Stop_Button_Click"	IsEnabled="False"/>
 
-			<TextBlock							HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,75,0,0"	Text="Trophy/Story Route"/>
-			<TextBlock Name="ProgressCounter"	HorizontalAlignment="Left" VerticalAlignment="Top" Margin="155,75,0,0"	Text="0%"/>
-			<TextBlock Name="RiddleCounter"		HorizontalAlignment="Left" VerticalAlignment="Top" Margin="217,75,0,0"/>
+			<TextBlock							HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,65,0,0"	Text="Trophy/Story Route"/>
+			<TextBlock Name="ProgressCounter"	HorizontalAlignment="Left" VerticalAlignment="Top" Margin="155,65,0,0"	Text="0%"/>
+			<TextBlock Name="RiddleCounter"		HorizontalAlignment="Left" VerticalAlignment="Top" Margin="217,65,0,0"/>
 
-			<ScrollViewer Name="GridScroll" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,108,5,0" VerticalScrollBarVisibility="Auto">
+			<ScrollViewer Name="GridScroll" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,85,5,0" VerticalScrollBarVisibility="Auto">
 				<Grid Name="DisplayGrid"/>
 			</ScrollViewer>
 		</Grid>

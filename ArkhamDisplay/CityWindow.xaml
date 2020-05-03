@@ -33,18 +33,18 @@
 			<Button Name="StartButton"	Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="10,35,0,0"	Content="Start"	Click="Start_Button_Click"	IsEnabled="True"/>
 			<Button Name="StopButton"	Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="100,35,0,0"	Content="Stop"	Click="Stop_Button_Click"	IsEnabled="False"/>
 
-			<TextBlock							Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,75,0,0"	Text="Trophy/Story Route"/>
-			<TextBlock Name="ProgressCounter"	Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="155,75,0,0"	Text="0%"/>
-			<TextBlock Name="RiddleCounter"		Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="217,75,0,0"	Text="0/400"/>
+			<TextBlock							Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,65,0,0"	Text="Trophy/Story Route"/>
+			<TextBlock Name="ProgressCounter"	Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="155,65,0,0"	Text="0%"/>
+			<TextBlock Name="RiddleCounter"		Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="217,65,0,0"	Text="0/400"/>
 
-			<ScrollViewer Name="GridScroll" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,108,5,0" VerticalScrollBarVisibility="Auto">
+			<ScrollViewer Name="GridScroll" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,85,5,0" VerticalScrollBarVisibility="Auto">
 				<Grid Name="DisplayGrid"/>
 			</ScrollViewer>
 
 			<TextBlock							Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,10,0,0"	Text="Remaining Political Prisoners"/>
 			<TextBlock Name="SavedPrisoners"	Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,10,0,0"	Text="0 Saved"/>
 
-			<ScrollViewer Name="PrisonerScroll" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,32,5,0" VerticalScrollBarVisibility="Auto">
+			<ScrollViewer Name="PrisonerScroll" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="5,32,5,10" VerticalScrollBarVisibility="Auto">
 				<Grid Name="PrisonerGrid"/>
 			</ScrollViewer>
 		</Grid>

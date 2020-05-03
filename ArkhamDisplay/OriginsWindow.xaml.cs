@@ -45,16 +45,17 @@ namespace ArkhamDisplay{
 				Grid.SetRow(txt0, lineCount - 1);
 				CrimeInProgressGrid.Children.Add(txt0);
 
-				if(saveParser.HasKey(entry, minRequiredMatches)){
-					rectangle = new Rectangle{
-						Style = FindResource("GridRectangle") as Style
-					};
-					Grid.SetColumn(rectangle, 1);
-					Grid.SetRow(rectangle, lineCount - 1);
-					CrimeInProgressGrid.Children.Add(rectangle);
+				rectangle = new Rectangle{
+					Style = FindResource("GridRectangle") as Style
+				};
+				Grid.SetColumn(rectangle, 1);
+				Grid.SetRow(rectangle, lineCount - 1);
+				CrimeInProgressGrid.Children.Add(rectangle);
 
+				if(saveParser.HasKey(entry, minRequiredMatches)){
 					TextBlock txt1 = new TextBlock{
-						Style = FindResource("DoneText") as Style
+						Style = FindResource("DoneText") as Style,
+						FontSize = 15.0
 					};
 					Grid.SetColumn(txt1, 1);
 					Grid.SetRow(txt1, lineCount - 1);
