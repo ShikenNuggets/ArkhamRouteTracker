@@ -15,6 +15,10 @@ namespace ArkhamDisplay{
 		protected override void SetCurrentRoute(){
 			currentRoute = "CityDefault";
 			currentSecondaryRoute = "CityPrisoners";
+
+			if(Data.CityCatwoman){
+				currentRoute = "CityCatwoman";
+			}
 		}
 
 		protected override List<Entry> GetEntriesForDisplay(Route route){
@@ -27,11 +31,13 @@ namespace ArkhamDisplay{
 
 		protected override void UpdateUI(){
 			BreakablesAtBottomMenuItem.IsChecked = Data.CityBreakablesAtEnd;
+			CatwomanMenuItem.IsChecked = Data.CityCatwoman;
 			base.UpdateUI();
 		}
 
 		protected override void UpdatePreferences(object sender = null, RoutedEventArgs e = null){
 			Data.CityBreakablesAtEnd = BreakablesAtBottomMenuItem.IsChecked;
+			Data.CityCatwoman = CatwomanMenuItem.IsChecked;
 			base.UpdatePreferences(sender, e);
 	}
 

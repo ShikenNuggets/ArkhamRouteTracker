@@ -68,6 +68,9 @@
     <None Update="Routes\Arkham Origins 100%25 Route - Route.tsv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Routes\Catwoman.tsv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

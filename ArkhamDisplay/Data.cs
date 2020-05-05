@@ -80,6 +80,7 @@ namespace ArkhamDisplay{
 			routes.Add("AsylumDefault", new Route("Routes/Arkham Asylum 100% Route - Route.tsv"));
 
 			routes.Add("CityDefault", new Route("Routes/Arkham City 100% Route - Route.tsv"));
+			routes.Add("CityCatwoman", new Route("Routes/Catwoman.tsv"));
 			routes.Add("CityBreakablesAtBottom", new Route("Routes/Arkham City 100% Route - Route (Cameras and Balloons at Bottom).tsv"));
 			routes.Add("CityPrisoners", new Route("Routes/Arkham City 100% Route - Political Prisoners.tsv", Route.RouteType.CityPrisoners));
 

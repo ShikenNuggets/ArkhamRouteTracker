@@ -12,6 +12,7 @@
 				<MenuItem Name="SaveMenuItem" Header="Set Save File Path" Click="OpenSavePathWindow"/>
 				<MenuItem Name="PrefMenuItem" Header="Preferences" Click="PrefMenuItem_Click" />
 				<MenuItem Name="BreakablesAtBottomMenuItem" Header="Cameras and Balloons at Bottom" IsCheckable="True" IsChecked="False" Click="UpdatePreferences"/>
+				<MenuItem Name="CatwomanMenuItem" Header="Catwoman" IsCheckable="True" IsChecked="False" Click="UpdatePreferences"/>
 			</MenuItem>
 			<MenuItem Header="_Game">
 				<MenuItem Name="AsylumMenuItem" Header="Asylum" IsCheckable="True" IsChecked="False" Click="SwitchGameWindow" />
