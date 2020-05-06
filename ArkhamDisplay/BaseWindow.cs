@@ -94,6 +94,17 @@ namespace ArkhamDisplay{
 				Top = rect.Y;
 			}
 
+			var mainGrid = FindName("MainGrid");
+			if(mainGrid != null && mainGrid is Grid){
+				foreach(RowDefinition row in (mainGrid as Grid).RowDefinitions){
+					if(row.Name == "MainRow"){
+						row.Height = new GridLength(Data.MainRowHeight, GridUnitType.Star);
+					}else if(row.Name == "SecondaryRow"){
+						row.Height = new GridLength(Data.SecondaryRowHeight, GridUnitType.Star);
+					}
+				}
+			}
+
 			base.OnInitialized(e);
 		}
 
@@ -118,6 +129,17 @@ namespace ArkhamDisplay{
 			Data.WindowRect[(int)game].Y = Top;
 			Data.WindowRect[(int)game].Width = Width;
 			Data.WindowRect[(int)game].Height = Height;
+
+			var mainGrid = FindName("MainGrid");
+			if(mainGrid != null && mainGrid is Grid){
+				foreach(RowDefinition row in (mainGrid as Grid).RowDefinitions){
+					if(row.Name == "MainRow"){
+						Data.MainRowHeight = row.Height.Value;
+					}else if(row.Name == "SecondaryRow"){
+						Data.SecondaryRowHeight = row.Height.Value;
+					}
+				}
+			}
 			Data.Save();
 
 			base.OnClosed(e);

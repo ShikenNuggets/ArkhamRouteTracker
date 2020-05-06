@@ -19,10 +19,10 @@
 				<MenuItem Name="KnightMenuItem" Header="Knight" IsCheckable="True" IsChecked="False" Click="SwitchGameWindow" />
 			</MenuItem>
 		</Menu>
-		<Grid>
+		<Grid Name="MainGrid">
 			<Grid.RowDefinitions>
-				<RowDefinition Height="8*"/>
-				<RowDefinition Height="2*" MinHeight="220"/>
+				<RowDefinition Name="MainRow" Height="7*"/>
+				<RowDefinition Name="SecondaryRow" Height="3*"/>
 			</Grid.RowDefinitions>
 			<RadioButton Name="Save0" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"		Content="Save 0" GroupName="Save" IsChecked="True"	Click="UpdatePreferences"/>
 			<RadioButton Name="Save1" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="75,10,0,0"		Content="Save 1" GroupName="Save" IsChecked="False"	Click="UpdatePreferences"/>
@@ -39,6 +39,8 @@
 			<ScrollViewer Name="GridScroll" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,85,5,0" VerticalScrollBarVisibility="Auto">
 				<Grid Name="DisplayGrid"/>
 			</ScrollViewer>
+
+			<GridSplitter Grid.ColumnSpan="1" Width="Auto" Height="10" HorizontalAlignment="Stretch" VerticalAlignment="Bottom"></GridSplitter>
 
 			<TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" Text="Crime in Progress"/>
 			<ScrollViewer Name="CrimeInProgress" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,30,5,10" VerticalScrollBarVisibility="Auto">

@@ -31,6 +31,8 @@ namespace ArkhamDisplay{
 		public volatile string[] saveLocations = { "", "", "", "" };
 		public volatile int[] saveIDs = { 0, 0, 0, 0 };
 		public volatile Rect[] windowRects = { new Rect(), new Rect(), new Rect(), new Rect() };
+		public volatile float mainRowHeight = 7.0f;
+		public volatile float secondaryRowHeight = 3.0f;
 
 		public volatile bool showPercent = true;
 		public volatile bool showRiddleCount = true;
@@ -54,6 +56,8 @@ namespace ArkhamDisplay{
 		public static string[] SaveLocations { get { return data.saveLocations; } }
 		public static int[] SaveIDs { get { return data.saveIDs; } }
 		public static Rect[] WindowRect { get{ return data.windowRects; } }
+		public static double MainRowHeight { get { return (double)data.mainRowHeight; } set { data.mainRowHeight = (float)value; } }
+		public static double SecondaryRowHeight { get { return (double)data.secondaryRowHeight; } set { data.secondaryRowHeight = (float)value; } }
 
 		public static bool ShowPercent { get { return data.showPercent; } set { data.showPercent = value; } }
 		public static bool ShowRiddleCount { get { return data.showRiddleCount; } set { data.showRiddleCount = value; } }
