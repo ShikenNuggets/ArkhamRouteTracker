@@ -30,6 +30,10 @@
 		<Setter Property="Foreground" Value="#4d4d4d" />
 	</Style>
 
+	<Style TargetType="GridSplitter">
+		<Setter Property="Background" Value="#363636"/>
+	</Style>
+
 	<Style x:Key="GridRectangle" TargetType="Rectangle">
 		<Setter Property="Stroke" Value="Black"></Setter>
 		<Setter Property="StrokeThickness" Value="2"></Setter>
