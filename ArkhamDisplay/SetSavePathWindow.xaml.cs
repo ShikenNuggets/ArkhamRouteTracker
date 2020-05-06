@@ -66,14 +66,19 @@ namespace ArkhamDisplay{
 				return;
 			}
 
-			if(!Directory.Exists(SavePathBox.Text)){
+			if(!Directory.Exists(SavePathBox.Text) && !File.Exists(SavePathBox.Text)){
 				MessageBox.Show("Error - File path must be a valid path. Make sure you've typed it correctly, and then try again.");
 				return;
 			}
 
 			GetDataFromFile(SavePathBox.Text);
 			Data.SelectedGame = selectedGame;
-			Data.SaveLocations[(int)selectedGame] = SavePathBox.Text;
+			if(!string.IsNullOrWhiteSpace(savedPath)){
+				Data.SaveLocations[(int)selectedGame] = savedPath;
+			}else{
+				Data.SaveLocations[(int)selectedGame] = SavePathBox.Text;
+			}
+
 			if(savedID.HasValue){
 				Data.SaveIDs[(int)selectedGame] = savedID.Value;
 			}
