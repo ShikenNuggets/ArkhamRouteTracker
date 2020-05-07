@@ -37,8 +37,9 @@ namespace ArkhamDisplay{
 		}
 
 		private void GetDataFromFile(string fullPath){
-			savedPath = Path.GetDirectoryName(fullPath);
-			if(Path.HasExtension(fullPath) && Path.GetExtension(fullPath) == ".sgd"){
+			savedPath = fullPath;
+			if(Path.HasExtension(fullPath)){
+				savedPath = Path.GetDirectoryName(fullPath);
 				string id = Path.GetFileNameWithoutExtension(fullPath);
 				if(id.EndsWith('0')){
 					savedID = 0;
