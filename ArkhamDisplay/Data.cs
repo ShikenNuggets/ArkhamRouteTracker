@@ -81,21 +81,20 @@ namespace ArkhamDisplay{
 
 			//Load Routes (TODO - Don't have the routes hardcoded like this)
 			//TODO - Lazy initialize routes instead of always having all of them in memory
-			routes.Add("AsylumDefault", new Route("Routes/Arkham Asylum 100% Route - Route.tsv"));
+			routes.Add("AsylumDefault", new Route("Routes/Asylum.tsv"));
 
-			routes.Add("CityDefault", new Route("Routes/Arkham City 100% Route - Route.tsv"));
-			routes.Add("CityCatwoman", new Route("Routes/Catwoman.tsv"));
-			routes.Add("CityBreakablesAtBottom", new Route("Routes/Arkham City 100% Route - Route (Cameras and Balloons at Bottom).tsv"));
-			routes.Add("CityPrisoners", new Route("Routes/Arkham City 100% Route - Political Prisoners.tsv", Route.RouteType.CityPrisoners));
+			routes.Add("CityDefault", new Route("Routes/City.tsv"));
+			routes.Add("CityCatwoman", new Route("Routes/City-Catwoman.tsv"));
+			routes.Add("CityPrisoners", new Route("Routes/City-Prisoners.tsv", Route.RouteType.CityPrisoners));
 
-			routes.Add("OriginsDefault", new Route("Routes/Arkham Origins 100% Route - Route.tsv", Route.RouteType.OriginsRoute));
-			routes.Add("OriginsCrime", new Route("Routes/Arkham Origins 100% Route - CrimeInProgress.tsv", Route.RouteType.OriginsCrimes));
+			routes.Add("OriginsDefault", new Route("Routes/Origins.tsv", Route.RouteType.OriginsRoute));
+			routes.Add("OriginsCrime", new Route("Routes/Origins-Crimes.tsv", Route.RouteType.OriginsCrimes));
 
-			routes.Add("KnightDefault", new Route("Routes/Arkham Knight 100% Route - Route.tsv", Route.RouteType.KnightRoute));
-			routes.Add("KnightNG+", new Route("Routes/Arkham Knight 100% Route - NG+ Route.tsv", Route.RouteType.KnightRoute));
-			routes.Add("KnightFirstEnding", new Route("Routes/Arkham Knight 100% Route - First Ending.tsv", Route.RouteType.KnightRoute));
-			routes.Add("Knight120", new Route("Routes/Arkham Knight 100% Route - Route 120.tsv", Route.RouteType.KnightRoute));
-			routes.Add("KnightNG+120", new Route("Routes/Arkham Knight 100% Route - NG+ Route 120.tsv", Route.RouteType.KnightRoute));
+			routes.Add("KnightDefault", new Route("Routes/Knight.tsv", Route.RouteType.KnightRoute));
+			routes.Add("KnightNG+", new Route("Routes/Knight-NGPlus.tsv", Route.RouteType.KnightRoute));
+			routes.Add("KnightFirstEnding", new Route("Routes/Knight-FirstEnding.tsv", Route.RouteType.KnightRoute));
+			routes.Add("Knight120", new Route("Routes/Knight-120.tsv", Route.RouteType.KnightRoute));
+			routes.Add("KnightNG+120", new Route("Routes/Knight-NGPlus120.tsv", Route.RouteType.KnightRoute));
 		}
 
 		public static void Save(){

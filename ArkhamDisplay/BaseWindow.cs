@@ -313,7 +313,7 @@ namespace ArkhamDisplay{
 				gridScroll.ScrollToVerticalOffset(scrollHeight);
 			}
 
-			double percentDone = 100.0 * doneEntries / (totalEntries - 1);
+			double percentDone = 100.0 * doneEntries / totalEntries;
 			progressCounter.Text = string.Format("{0:0.0}", percentDone) + "%";
 			riddleCounter.Text = UpdateRiddleCount();
 		}
