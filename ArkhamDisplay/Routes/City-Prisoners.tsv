@@ -1,16 +1,16 @@
-Political Prisoner	Save file Id Prefix	Save File ID Active	Savefile id Saved
-(Industrial, Near Subway Entrance)	ArkhamBullyOWRC3	ArkhamBullyOWRC3_Active	ArkhamBullyOWRC3_Saved
-(Industrial, Ferris Wheel)	ArkhamBullyOWRC2a	ArkhamBullyOWRC2a_Active	ArkhamBullyOWRC2a_Saved
-(Industrial, Gotham Hardware [near city wall])	ArkhamBullyOWRC1a	ArkhamBullyOWRC1a_Active	ArkhamBullyOWRC1a_Saved
-(Industrial, North near ferris wheel)	ArkhamBullyOWRC2b	ArkhamBullyOWRC2b_Active	ArkhamBullyOWRC2b_Saved
-(Industrial, Near Water across Hot Dog)	ArkhamBullyOWRC1b	ArkhamBullyOWRC1b_Active	ArkhamBullyOWRC1b_Saved
-(Park Row, Narrow Alley near City Wall)	ArkhamBullyOWA7b	ArkhamBullyOWA7b_Active	ArkhamBullyOWA7b_Saved
-(Park Row, Near Ace)	ArkhamBullyOWA8	ArkhamBullyOWA8_Active	ArkhamBullyOWA8_Saved
-(Park Row, Between Courthouse and church)	ArkhamBullyOWA7a	ArkhamBullyOWA7a_Active	ArkhamBullyOWA7a_Saved
-(Park Row, South West of courthouse)	ArkhamBullyOWR3	ArkhamBullyOWR3_Active	ArkhamBullyOWR3_Saved
-(Park Row, Near Church)	ArkhamBullyOWA7c	ArkhamBullyOWA7c_Active	ArkhamBullyOWA7c_Saved
-(Bowery, Behind Museum)	ArkhamBullyOWE1a	ArkhamBullyOWE1a_Active	ArkhamBullyOWE1a_Saved
-(Bowery, Near Wonder Tower Entrance)	ArkhamBullyOWRE1	ArkhamBullyOWRE1_Active	ArkhamBullyOWRE1_Saved
-(Bowery, Middle)	ArkhamBullyOWE4	ArkhamBullyOWE4_Active	ArkhamBullyOWE4_Saved
-(Bowery, Left of Museum)	ArkhamBullyOWE5	ArkhamBullyOWE5_Active	ArkhamBullyOWE5_Saved
-(Bowery, Back Right of Museum)	ArkhamBullyOWE1b	ArkhamBullyOWE1b_Active	ArkhamBullyOWE1b_Saved
+Political Prisoner	Type	Save File ID	Alternate ID	Metadata	Save file Id Prefix	Save File ID Active
+(Industrial, Near Subway Entrance)	Political Prisoner	ArkhamBullyOWRC3_Saved			ArkhamBullyOWRC3	ArkhamBullyOWRC3_Active
+(Industrial, Ferris Wheel)	Political Prisoner	ArkhamBullyOWRC2a_Saved			ArkhamBullyOWRC2a	ArkhamBullyOWRC2a_Active
+(Industrial, Gotham Hardware [near city wall])	Political Prisoner	ArkhamBullyOWRC1a_Saved			ArkhamBullyOWRC1a	ArkhamBullyOWRC1a_Active
+(Industrial, North near ferris wheel)	Political Prisoner	ArkhamBullyOWRC2b_Saved			ArkhamBullyOWRC2b	ArkhamBullyOWRC2b_Active
+(Industrial, Near Water across Hot Dog)	Political Prisoner	ArkhamBullyOWRC1b_Saved			ArkhamBullyOWRC1b	ArkhamBullyOWRC1b_Active
+(Park Row, Narrow Alley near City Wall)	Political Prisoner	ArkhamBullyOWA7b_Saved			ArkhamBullyOWA7b	ArkhamBullyOWA7b_Active
+(Park Row, Near Ace)	Political Prisoner	ArkhamBullyOWA8_Saved			ArkhamBullyOWA8	ArkhamBullyOWA8_Active
+(Park Row, Between Courthouse and church)	Political Prisoner	ArkhamBullyOWA7a_Saved			ArkhamBullyOWA7a	ArkhamBullyOWA7a_Active
+(Park Row, South West of courthouse)	Political Prisoner	ArkhamBullyOWR3_Saved			ArkhamBullyOWR3	ArkhamBullyOWR3_Active
+(Park Row, Near Church)	Political Prisoner	ArkhamBullyOWA7c_Saved			ArkhamBullyOWA7c	ArkhamBullyOWA7c_Active
+(Bowery, Behind Museum)	Political Prisoner	ArkhamBullyOWE1a_Saved			ArkhamBullyOWE1a	ArkhamBullyOWE1a_Active
+(Bowery, Near Wonder Tower Entrance)	Political Prisoner	ArkhamBullyOWRE1_Saved			ArkhamBullyOWRE1	ArkhamBullyOWRE1_Active
+(Bowery, Middle)	Political Prisoner	ArkhamBullyOWE4_Saved			ArkhamBullyOWE4	ArkhamBullyOWE4_Active
+(Bowery, Left of Museum)	Political Prisoner	ArkhamBullyOWE5_Saved			ArkhamBullyOWE5	ArkhamBullyOWE5_Active
+(Bowery, Back Right of Museum)	Political Prisoner	ArkhamBullyOWE1b_Saved			ArkhamBullyOWE1b	ArkhamBullyOWE1b_Active

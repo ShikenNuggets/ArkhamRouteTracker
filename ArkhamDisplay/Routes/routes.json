@@ -1,0 +1,13 @@
+{
+  "AsylumDefault": "Routes/Asylum.tsv",
+  "CityDefault": "Routes/City.tsv",
+  "CityCatwoman": "Routes/City-Catwoman.tsv",
+  "CityPrisoners": "Routes/City-Prisoners.tsv",
+  "OriginsDefault": "Routes/Origins.tsv",
+  "OriginsCrime": "Routes/OriginsCrime.tsv",
+  "KnightDefault": "Routes/Knight.tsv",
+  "KnightNG+": "Routes/Knight-NGPlus.tsv",
+  "KnightFirstEnding": "Routes/Knight-FirstEnding.tsv",
+  "Knight120": "Routes/Knight-120.tsv",
+  "KnightNG+120": "Routes/Knight-NGPlus120.tsv",
+}

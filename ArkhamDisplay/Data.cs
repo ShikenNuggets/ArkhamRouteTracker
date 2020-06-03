@@ -49,7 +49,9 @@ namespace ArkhamDisplay{
 
 	public class Data{
 		private static readonly string saveFileName = "settings.json";
+		private static readonly string routeFileName = "Routes/routes.json";
 		private static volatile DataBlock data = new DataBlock();
+		private static volatile Dictionary<string, string> routeFiles = new Dictionary<string, string>();
 		private static volatile Dictionary<string, Route> routes = new Dictionary<string, Route>();
 
 		public static Game SelectedGame { get { return data.selectedGame; } set { data.selectedGame = value; } }
@@ -77,24 +79,13 @@ namespace ArkhamDisplay{
 				Save();
 			}
 
-			lock(data){ data = JsonConvert.DeserializeObject<DataBlock>(System.IO.File.ReadAllText(saveFileName)); }
+			lock(data){
+				data = JsonConvert.DeserializeObject<DataBlock>(System.IO.File.ReadAllText(saveFileName));
+			}
 
-			//Load Routes (TODO - Don't have the routes hardcoded like this)
-			//TODO - Lazy initialize routes instead of always having all of them in memory
-			routes.Add("AsylumDefault", new Route("Routes/Asylum.tsv"));
-
-			routes.Add("CityDefault", new Route("Routes/City.tsv"));
-			routes.Add("CityCatwoman", new Route("Routes/City-Catwoman.tsv"));
-			routes.Add("CityPrisoners", new Route("Routes/City-Prisoners.tsv", Route.RouteType.CityPrisoners));
-
-			routes.Add("OriginsDefault", new Route("Routes/Origins.tsv", Route.RouteType.OriginsRoute));
-			routes.Add("OriginsCrime", new Route("Routes/Origins-Crimes.tsv", Route.RouteType.OriginsCrimes));
-
-			routes.Add("KnightDefault", new Route("Routes/Knight.tsv", Route.RouteType.KnightRoute));
-			routes.Add("KnightNG+", new Route("Routes/Knight-NGPlus.tsv", Route.RouteType.KnightRoute));
-			routes.Add("KnightFirstEnding", new Route("Routes/Knight-FirstEnding.tsv", Route.RouteType.KnightRoute));
-			routes.Add("Knight120", new Route("Routes/Knight-120.tsv", Route.RouteType.KnightRoute));
-			routes.Add("KnightNG+120", new Route("Routes/Knight-NGPlus120.tsv", Route.RouteType.KnightRoute));
+			lock(routeFiles){
+				routeFiles = JsonConvert.DeserializeObject<Dictionary<string, string>>(System.IO.File.ReadAllText(routeFileName));
+			}
 		}
 
 		public static void Save(){
@@ -103,7 +94,11 @@ namespace ArkhamDisplay{
 
 		public static Route GetRoute(string name){
 			if(!routes.ContainsKey(name)){
-				return null;
+				if(!routeFiles.ContainsKey(name)){
+					return null;
+				}
+
+				routes.Add(name, new Route(routeFiles[name]));
 			}
 
 			return routes[name];
