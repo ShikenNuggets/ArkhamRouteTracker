@@ -7,7 +7,6 @@ Deacon Riddle (Chinatown)	Riddles	PickedUp_CityZ_Riddler_10			https://static.gos
 Ivy	Main Story	Ch1bc_CityZ_Light_Tank_Reinforcements_Destroyed 				
 Breakable Shield (Bleake, NW Skyway)	Breakable Objects	PickedUp_CityZ_MilitiaShield_3			https://static.gosunoob.com/img/1/2015/06/bleake-island-militia-shields-1024x576.jpg	https://youtu.be/0SnppYd7wSg?t=644
 Breakable Shield (Bleake, Dixon Dock)	Breakable Objects	PickedUp_CityZ_MilitiaShield_2			https://static.gosunoob.com/img/1/2015/06/bak-bleake-island-militia-shields-1024x576.jpg	
-Riddler Trophy (Bleake Island, North Warehouse)	Riddler Trophies	PickedUp_CityZ_Pickup_33			https://static.gosunoob.com/img/1/2015/06/riddler-trophies-bak-bleake-1024x576.jpg	
 Diagnostics	Main Story	Ch1_CityZ_Battle_Mode_Tutorial_Complete 				
 Breakable Shield (Bleake Island, Center Residential Building)	Breakable Objects	PickedUp_CityZ_MilitiaShield_13 			https://static.gosunoob.com/img/1/2015/06/bak-militia-shields-first-island-1024x576.jpg	
 Breakable Shield (Bleake Island, Canal)	Breakable Objects	PickedUp_CityZ_MilitiaShield_11 			https://static.gosunoob.com/img/1/2015/06/bak-destructible-locations-1024x576.jpg	
@@ -56,7 +55,7 @@ Riddler Trophy (Bleake Island, WinchNearClockTower)	Riddler Trophies	PickedUp_Ci
 Riddler Trophy (Bleake, CrappyBuildingPierClockTower)	Riddler Trophies	PickedUp_CityZ_Pickup_35 			https://static.gosunoob.com/img/1/2015/06/batman-arkham-knight-clock-tower-riddler-trophy-1024x576.jpg	
 Firemen (Bleake Island, PierNearClockTower)	Firemen	SS_FireCrew_13_Rescued 			https://static.gosunoob.com/img/1/2015/07/Bleake_Island_Missing_Firefithter_Location_Bleake_Island_Batman_Arkham_Knight_1-1024x576.jpg	
 Riddler Trophy (Bleake, UnderPierClockTower)	Riddler Trophies	PickedUp_CityZ_Pickup_37 			https://static.gosunoob.com/img/1/2015/06/bleake-island-riddler-trophy-clock-tower-1024x576.jpg	
-Special Combo Batarang upgrade	Upgrades	Unlocked_SpecialComboBatarang				
+Tank Body Shot Upgrade	Upgrades	Unlocked_BmblHeavyCannonBodyShot 				
 Cannon Reload Speed upgrade	Upgrades	Unlocked_BmblHeavyCannonReload				
 Escort Gordon to Clock Tower (Main Story)	Main Story	Ch3a_CityZ_Protect_Gordon_Chase_Started     				
 Riddler Trophy (Bleake, GothamGas Near Panessa Bridge)	Riddler Trophies	PickedUp_CityZ_Pickup_4 			https://static.gosunoob.com/img/1/2015/06/gotham-gas-puzzle-trophy-1024x576.jpg	
@@ -77,10 +76,12 @@ Riddler Trophy (Miagani Island, Botanical Upper)	Riddler Trophies	PickedUp_CityX
 Hell's Gate Riddle	Riddles	PickedUp_CityX_Riddler_38 			https://static.gosunoob.com/img/1/2015/06/batman-arkham-knight-miagani-island-riddles-1024x576.jpg	
 Riddler Trophy (Miagani Island, Monorail Car)	Riddler Trophies	PickedUp_CityX_Pickup_39 			https://static.gosunoob.com/img/1/2015/06/bak-riddler-trophy-monorail-1024x576.jpg	
 Vicki Vale Riddle	Riddles	PickedUp_CityX_Riddler_39 			https://static.gosunoob.com/img/1/2015/06/arkham-knight-riddles-billboard-1024x576.jpg	
+Riddler Trophy (Miagani Island, Wood Wall Near Vicki Vale)	Riddler Trophies	PickedUp_CityX_Pickup_21 			https://static.gosunoob.com/img/1/2015/06/arkham-knight-riddler-trophy-miagani-island-1024x576.jpg	
 Riddler Trophy (Miagani Island, Gotham Herald Wood Wall)	Riddler Trophies	PickedUp_CityX_Pickup_22 			https://static.gosunoob.com/img/1/2015/06/riddler-trophy-gotham-herald-1024x576.jpg	
 Firemen (Miagani Island, Gotham Herald)	Firemen	SS_FireCrew_5_Rescued 			https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Missing_Firefighter_Miagani_Island-1024x576.jpg	
 Riddler Bomb (Miagani Island, NearParking)	Riddler Bomb	BombRiot_X14_Succeeded 			https://static.gosunoob.com/img/1/2015/07/Riddler_Victim_Batman_Arkham_Knight_Miagani_Island_1-1024x576.jpg	
-Combo Boost Upgrade	Upgrades	Unlocked_SpecialMoveCost				
+Tank Head Shot Upgrade	Upgrades	Unlocked_BmblHeavyCannonHeadShot 				
+Vulcan Stabalizer Upgrade	Upgrades	Unlocked_BmblVulcanGunAccuracy				
 Breakable Shield (Miagani Island, BankOfGotham)	Breakable Objects	PickedUp_CityX_MilitiaShield_14 			https://resource.supercheats.com/library/300w/batman-arkham-knight/BO_Miagani12B.jpg	
 Breakable Shield (Miagani Island, AcrossParkingGarage)	Breakable Objects	PickedUp_CityX_MilitiaShield_15 			https://resource.supercheats.com/library/300w/batman-arkham-knight/BO_Miagani13B.jpg	
 Breakable Shield (Miagani Island, Koul Brau Near Parking)	Breakable Objects	PickedUp_CityX_MilitiaShield_1 			https://resource.supercheats.com/library/300w/batman-arkham-knight/BO_Miagani14B.jpg	
@@ -96,8 +97,10 @@ Riddler Trophy (Miagani Island, Diner Near Parking Lot)	Riddler Trophies	PickedU
 Riddler Trophy (Miagani Island, Donut)	Riddler Trophies	PickedUp_CityX_Pickup_34 			https://static.gosunoob.com/img/1/2015/06/riddler-trophy-dang-good-donuts-250x140.jpg	
 Quincy Sharp Riddle (Cinema Alley)	Riddles	PickedUp_CityX_Riddler_31 			https://static.gosunoob.com/img/1/2015/06/riddle-solution-miagani-island-1024x576.jpg	
 Riddler Trophy (Miagani Island, Lacey Sign Next to Cinema)	Riddler Trophies	PickedUp_CityX_Pickup_7 			https://static.gosunoob.com/img/1/2015/06/arkham-knight-lacey-puzzle-trophy-1024x576.jpg	
-Vulcan Stabalizer Upgrade	Upgrades	Unlocked_BmblVulcanGunAccuracy				
+Breakable Shield (Miagani, Before Plaza Road Signs [get during bomb])	Breakable Objects	PickedUp_CityX_MilitiaShield_10 			https://resource.supercheats.com/library/300w/batman-arkham-knight/BO_Miagani8B.jpg	
 Bomb (Miagani Island, Lacey Sign)	Bombs	SS_CommandBeacons_CityX_11_ChD1ab_Ch3456789.RCommandBeacon_3_destroyed 			https://static.gosunoob.com/img/1/2015/07/miagani-island-explosive-device-1024x576.jpg	
+Riddler Trophy (Miagani Island, Top of Building Near Grand Avenue)	Riddler Trophies	PickedUp_CityX_Pickup_36 			https://static.gosunoob.com/img/1/2015/06/riddler-trophy-vicky-vale-miagani-island-1024x576.jpg	
+Riddler Trophy (Miagani Island, Grand Avenue Room)	Riddler Trophies	PickedUp_CityX_Pickup_10 			https://static.gosunoob.com/img/1/2015/06/arkham-knight-hotel-riddler-trophy-1024x576.jpg	
 Riddler Trophy (Miagani, Wayne Tower Stairs Inside)	Riddler Trophies	PickedUp_CityX_Pickup_20 			https://static.gosunoob.com/img/1/2015/06/wayne-tower-riddler-trophy-1024x576.jpg	
 Wayne Family Riddle	Riddles	PickedUp_CityX_Riddler_26 				
 Riddler Trophy (Miagani Island, GlassBuildingLobby)	Riddler Trophies	PickedUp_CityX_Pickup_41 			https://static.gosunoob.com/img/1/2015/06/batman-riddler-trophy-miagani-island-1024x576.jpg	
@@ -113,19 +116,14 @@ Grapnel Boost Mk3 Upgrade	Upgrades	Unlocked_GrappleBoostMk3
 Breakable Shield (Miagani Island, Mercy Bridge)	Breakable Objects	PickedUp_CityX_MilitiaShield_13 			https://resource.supercheats.com/library/300w/batman-arkham-knight/BO_Miagani11B.jpg	
 Breakable Shield (Miagani, DolphinBuildingNearPenguinTruck)	Breakable Objects	PickedUp_CityX_MilitiaShield_12 				
 Breakable Shield (Miagani Island, OverpassNearDolphinBuilding)	Breakable Objects	PickedUp_CityX_MilitiaShield_11 				
-Penguin Start	Main Story	Ch3d_CityX_07_PenguinThugsDead 				
+Penguin Start	Main Story	CityX6_Ch3d_PenguinCacheEntered				
 Riddler Trophy (Miagani Island, ChurchNearPenguinTruck)	Riddler Trophies	PickedUp_CityX_Pickup_35 			https://static.gosunoob.com/img/1/2015/06/riddler-trophy-miagani-island-church-1024x576.jpg	
-Riddler Trophy (Miagani Island, Wood Wall Near Vicki Vale)	Riddler Trophies	PickedUp_CityX_Pickup_21 			https://static.gosunoob.com/img/1/2015/06/arkham-knight-riddler-trophy-miagani-island-1024x576.jpg	
-Riddler Trophy (Miagani Island, Top of Building Near Grand Avenue)	Riddler Trophies	PickedUp_CityX_Pickup_36 			https://static.gosunoob.com/img/1/2015/06/riddler-trophy-vicky-vale-miagani-island-1024x576.jpg	
-Riddler Trophy (Miagani Island, Grand Avenue Room)	Riddler Trophies	PickedUp_CityX_Pickup_10 			https://static.gosunoob.com/img/1/2015/06/arkham-knight-hotel-riddler-trophy-1024x576.jpg	
 First Cache Destroyed (Near Parking)	Main Story	Penguin_Cache_Completed 				
 Riddler Trophy (Miagani Island, GarageJump)	Riddler Trophies	PickedUp_CityX_Pickup_1 			https://static.gosunoob.com/img/1/2015/06/riddler-puzzle-trophy-parking-roof-1024x576.jpg	
 League of Assassin's Riddle (Miagani Alley Parking Lot Entrance)	Riddles	PickedUp_CityX_Riddler_32 			https://static.gosunoob.com/img/1/2015/06/miagani-island-underpass-riddle-1024x576.jpg	
 APC 2	APC	SS_APC_APC2Complete 				
 Firemen (Miagani Island, Mercy Bridge)	Firemen	SS_FireCrew_8_Rescued 			https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_The_Line_of_Duty_Miagani_Island-1024x576.jpg	
 Firefly (Bleake Island, Fire Station by Water Near GCPD)	Firefly	SS_Firefly_CityZ_Complete 			https://static.gosunoob.com/img/1/2015/07/bleake-island-cauldron-fire-station-1024x576.jpg	
-Grapnel Boost Takedown Upgrade	Upgrades	Unlocked_GrappleBoostTd 				
-Fear Takedown x4 Upgrade	Upgrades	Unlocked_4FearTakedowns				
 Riddler Challenge 1 (Bleake, Auto Repair [or use map] 0 3)	Riddler Mission	Orphan_C2_Done 			https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Balancing_Act_Riddlers_Revenge-1024x576.jpg	
 Riddler Trophy (Founders Island, Lighthouse)	Riddler Trophies	PickedUp_CityY_Pickup_35 			https://static.gosunoob.com/img/1/2015/06/batman-arkham-knight-riddler-trophies-ace-chemicals-1024x576.jpg	
 Riddler Trophy (Founders, Wooden Wall Near fireman)	Riddler Trophies	PickedUp_CityY_Pickup_20 			https://static.gosunoob.com/img/1/2015/06/founders-island-riddler-trophies-trade-house-1024x576.jpg	
@@ -170,10 +168,11 @@ Oracle Dies	Main Story	Ch5a_CityZ_07_OracleDead
 Riddler Trophy (Bleake, Chinatown Rooftop 9 Robot Fight)	Riddler Trophies	PickedUp_CityZ_Pickup_14 			https://static.gosunoob.com/img/1/2015/06/fighting-riddler-trophy-bleake-island-1024x576.jpg	
 Riddler Bomb (Bleake, Near Clock Tower and Rail Tracks)	Riddler Bomb	BombRiot_Z18_Succeeded 			https://static.gosunoob.com/img/1/2015/06/Bleake_Island_Riddler_Victim_Batman_Arkham_Knight_11-1024x576.jpg	
 APC 3	APC	SS_APC_APC3Complete 				
-GCPD/Ivy/Cobras	Main Story	Ch5b_CityZ_17_Heavy_Tank_Scanning_Complete 				
+Reload Speed 2 Upgrade	Upgrades	Unlocked_BmblHeavyCannonReload2 				
 Cobra Lure Upgrade	Upgrades	Unlocked_BmblHeavyCannonLure				
-Sabatoge Drone Controller Upgrade	Upgrades	Unlocked_DisruptorMiniDroneCont				
-Sabatoge Medic Upgrade	Upgrades	Unlocked_DisruptorSabMedic				
+Tank Emergency Energy Upgrade	Upgrades	Unlocked_BmblGeneratorShielding1				
+Tank Energy Absorption Upgrade	Upgrades	Unlocked_BmblEnergyAbsorbtion1 				
+GCPD/Ivy/Cobras	Main Story	Ch5b_CityZ_17_Heavy_Tank_Scanning_Complete 				
 Riddler Trophy (Miagani, Hospital Scan)	Riddler Trophies	PickedUp_CityX_Pickup_18 			https://static.gosunoob.com/img/1/2015/06/hospital-riddler-trophy-scan-miagani-island-1024x576.jpg	
 Checkpoint (Miagani, Near Orphanage)	Checkpoints	Checkpoint_X_KDestroyed 			https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Own_the_Roads_Miagani_Island_1-1024x576.jpg	
 Riddler Trophy (Miagani, next to checkpoint)	Riddler Trophies	PickedUp_CityX_Pickup_4 			https://guides.gamepressure.com/batmanarkhamknight/gfx/word/428455578.jpg	
@@ -187,9 +186,7 @@ Checkpoint (Miagani, North NearWater Across Lady Gotham)	Checkpoints	Checkpoint_
 Riddler Challenge 2 (Miagani, Casino [or use map] 0 1)	Riddler Mission	Orphan_C3_Done 			https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Flight_School_Riddlers_Revenge-1024x576.jpg	
 Watchtower (Miagani, Hospital [2 consoles])	Watchtower	SS_Watchtowers_CityX_04_ChX1_Ch56789_LOD1.RRadarTower_2_destroyed 			https://static.gosunoob.com/img/1/2015/07/hospital-militia-watchtower-miagani-island-1024x576.jpg	
 Riddler Orphanage 3 	Riddler Mission	Orphan_04_Complete 				
-Reload Speed 2 Upgrade	Upgrades	Unlocked_BmblHeavyCannonReload2 				
-Tank Head Shot Upgrade	Upgrades	Unlocked_BmblHeavyCannonHeadShot 				
-Tank Body Shot Upgrade	Upgrades	Unlocked_BmblHeavyCannonBodyShot 				
+Tank Energy Storage Protection Upgrade	Upgrades	Unlocked_BmblGeneratorShielding2				
 Bomb (Miagani Island, Botanical Gardens)	Bombs	SS_CommandBeacons_CityX_14_ChD1ab_Ch56789.RCommandBeacon_5_destroyed 			https://static.gosunoob.com/img/1/2015/07/campaign-for-disarmament-miagani-island-1024x576.jpg	
 Riddler Bomb (Miagani, Near Wayne Tower)	Riddler Bomb	BombRiot_X15_Succeeded 			https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Riddler_Victim_Miagani_Island_1-1024x576.jpg	
 Breakable Shield (Miagani, Side of Wayne Tower)	Breakable Objects	PickedUp_CityX_MilitiaShield_8 			https://resource.supercheats.com/library/300w/batman-arkham-knight/BO_Miagani6B.jpg	
@@ -197,7 +194,6 @@ Firemen (Miagani, Wayne Tower)	Firemen	SS_FireCrew_4_Rescued 			https://static.g
 Riddler Trophy (Miagani, Wayne Tower scan)	Riddler Trophies	PickedUp_CityX_Pickup_19 			https://static.gosunoob.com/img/1/2015/06/wayne-tower-time-trial-riddler-trophy-1024x576.jpg	
 Riddler Trophy (Miagani, WayneTowerDestructibleWall [pathofscan])	Riddler Trophies	PickedUp_CityX_Pickup_26 			https://static.gosunoob.com/img/1/2015/06/miagani-island-riddler-trophy-wayne-tower-1024x576.jpg	
 Breakable Shield (Miagani, Right After Jump [pathofscan] Indian)	Breakable Objects	PickedUp_CityX_MilitiaShield_9 			https://resource.supercheats.com/library/300w/batman-arkham-knight/BO_Miagani7B.jpg	
-Breakable Shield (Miagani, Before Plaza [pathofscan] Road Signs)	Breakable Objects	PickedUp_CityX_MilitiaShield_10 			https://resource.supercheats.com/library/300w/batman-arkham-knight/BO_Miagani8B.jpg	
 Firemen (Miagani, EndOfScan)	Firemen	SS_FireCrew_11_Rescued 			https://static.gosunoob.com/img/1/2015/07/Missing_Firefighter_Miagani_Island_Batman_Arkham_Knight-1024x576.jpg	
 Riddler Trophy (Miagani, Top of Rail Cars)	Riddler Trophies	PickedUp_CityX_Pickup_40 			https://static.gosunoob.com/img/1/2015/06/riddler-trophy-train-station-miagani-island-1024x576.jpg	
 Wayne Tower Tank Fight	Main Story	Ch5b_WayneTower_Tanks_Complete 				
@@ -208,7 +204,6 @@ Watchtower (Miagani, TowerBridge South 2Statues)	Watchtower	SS_Watchtowers_CityX
 Riddler Trophy (Bleake, StartAtSouthMiaganiPowerWinch)	Riddler Trophies	PickedUp_CityZ_Pickup_19 			https://static.gosunoob.com/img/1/2015/06/miagani-bridge-time-trial-riddler-trophy-1024x576.jpg	
 Riddler Trophy (Bleake Island, Center Skyway)	Riddler Trophies	PickedUp_CityZ_Pickup_40			https://static.gosunoob.com/img/1/2015/06/arkham-knight-mendo-riddler-trophy-1024x576.jpg	
 APC 4	APC	SS_APC_APC4Complete 				
-Tank Energy Absorption Upgrade	Upgrades	Unlocked_BmblEnergyAbsorbtion1 				
 Penguin 1 (Falcone)	Penguin	PenguinCache_C2_Thugs_Done 				
 Bat Symbol Riddle	Riddles	PickedUp_CityZ_Riddler_15     			https://static.gosunoob.com/img/1/2015/06/bak-riddles-collectible-1024x576.jpg	
 Lady of Gotham Riddle	Riddles	PickedUp_CityZ_Riddler_22     			https://static.gosunoob.com/img/1/2015/06/arkham-knight-bleake-island-statue-riddle-1024x576.jpg	
@@ -216,6 +211,7 @@ Arkham Asylum Riddle	Riddles	PickedUp_CityZ_Riddler_21 			https://static.gosunoo
 Wonder Tower Riddle	Riddles	PickedUp_CityX_Riddler_2 			https://static.gosunoob.com/img/1/2015/06/miagani-riddle-wayne-tower-1024x576.jpg	
 Bomb (Bleake, Outside Falcone Penguin Cache)	Bombs	SS_CommandBeacons_CityZ_19_ChD1ab_Ch3456789.RCommandBeacon_1_destroyed 			https://static.gosunoob.com/img/1/2015/07/bleake-island-explosive-device-1024x576.jpg	
 Riddler Trophy (Bleake, Falcone Drag Question Marks)	Riddler Trophies	PickedUp_CityZ_Pickup_6 			https://static.gosunoob.com/img/1/2015/06/underpass-riddler-trophy-1024x576.jpg	
+Fear Takedown x4 Upgrade	Upgrades	Unlocked_4FearTakedowns				
 Fear Takedown x5 Upgrade	Upgrades	Unlocked_5FearTakedowns 				
 Firemen (Bleake, Dock SouthEastBleake)	Firemen	SS_FireCrew_12_Rescued 			https://static.gosunoob.com/img/1/2015/07/The_Line_of_Duty_Firefighter_Arkham_Knight_Bleake_Island_Batman-1024x576.jpg	
 Firemen (Bleake, EastBleake)	Firemen	SS_FireCrew_2_Rescued 			https://static.gosunoob.com/img/1/2015/07/The_Line_of_Duty_Firefighter_Bleake_Island_Batman_Arkham_Knight-1024x576.jpg	
@@ -246,7 +242,6 @@ Watchtower (Founders, West Cobblepot [away from marker])	Watchtower	SS_Watchtowe
 Penguin Manor Riddle	Riddles	PickedUp_CityY_Riddler_29 			https://static.gosunoob.com/img/1/2015/06/arkham-knight-founders-island-riddle-penguin-1024x576.jpg	
 Goth Corp Riddle	Riddles	PickedUp_CityY_Riddler_14 			https://static.gosunoob.com/img/1/2015/06/bak-riddle-founders-island-freeze-1024x576.jpg	
 Watchtower (Founders, North West [Near Marker])	Watchtower	SS_Watchtowers_CityY_08_ChX1_Ch3456789_LOD1.RRadarTower_0_destroyed 			https://static.gosunoob.com/img/1/2015/07/founders-island-militia-watchtower-1024x576.jpg	
-Combo Batclaw Upgrade	Upgrades	Unlocked_SpecialComboBatclaw				
 Radar 2 (Main Story)	Main Story	Ch5c_CityY_Radar_2_Destroyed 				
 Firemen (Founders, MiddleRaisedPlatform)	Firemen	SS_FireCrew_7_Rescued 			https://static.gosunoob.com/img/1/2015/07/Missing_Firefighter_Founders_Island_Batman_Arkham_Knight-1024x576.jpg	
 Long Range Missle Launcher (Main Story)	Main Story	CityY_Missile_Launcher_2_Dead 				
@@ -281,8 +276,10 @@ Batgirl Riddle (Go to Bleake Clocktower)	Riddles	PickedUp_CityZ_Riddler_5
 Manbat Give Medicine	ManBat	SS_ManBat_Cure_FullDose1 				
 Riddler Trophy (Bleake, Panessa Roof [during Harley fight])	Riddler Trophies	PickedUp_CityZ_Pickup_31 			https://static.gosunoob.com/img/1/2015/06/panessa-studios-riddler-trophy-1024x576.jpg	
 Panessa	Main Story	Ch6_CityZ_MovieStudioRoof_VoiceSynth_Obtained 				
+Sabatoge Medic Upgrade	Upgrades	Unlocked_DisruptorSabMedic				
 Sabotoge Mine Upgrade	Upgrades	Unlocked_DisruptorSabMine				
 Drone Hack 2 Upgrade	Upgrades	Unlocked_RHDDroneHackMK2				
+Sabatoge Drone Controller Upgrade	Upgrades	Unlocked_DisruptorMiniDroneCont				
 Smoke Pellet Duration Upgrade	Upgrades	Unlocked_SmokePelletDuration 				
 Smoke Pellet Area Upgrade	Upgrades	Unlocked_SmokePelletAOE				
 Riddler Trophy (Panessa, ElectricBatarang)	Riddler Trophies	PickedUp_Film_Pickup_26 			https://static.gosunoob.com/img/1/2015/06/panessa-studios-riddler-trophy-locations-1024x576.jpg	
@@ -320,6 +317,7 @@ Riddler Trophy (Bleake, Column Near Upgrade)	Riddler Trophies	PickedUp_CityZ_Pic
 Batmobile Upgrade/Trigger Hush	Main Story	SS_Hush_WayneTower				
 Riddler Trophy (Bleake, Panessa Scan)	Riddler Trophies	PickedUp_CityZ_Pickup_22 			https://static.gosunoob.com/img/1/2015/06/rooftop-time-trial-puzzle-trophy-1024x576.jpg	
 Riddler Trophy (Bleake, Panessa Questionwall [pathtoscan])	Riddler Trophies	PickedUp_CityZ_Pickup_5 			https://static.gosunoob.com/img/1/2015/06/panessa-studios-puzzle-trophy-outside-1024x576.jpg	
+Riddler Trophy (Bleake Island, North Warehouse)	Riddler Trophies	PickedUp_CityZ_Pickup_33			https://static.gosunoob.com/img/1/2015/06/riddler-trophies-bak-bleake-1024x576.jpg	
 Bomb (Bleake, Chinatown Roundabout)	Bombs	SS_CommandBeacons_CityZ_08_ChD1ab_Ch789.RCommandBeacon_3_destroyed 			https://static.gosunoob.com/img/1/2015/07/campaign-for-disarmamanet-bleake-island-1024x576.jpg	
 Azrael 3 (Roundabout, use map)	Azrael	SS_Azrael_Fight3_Complete				
 Watchtower (Bleake, Chinatown Roundabout)	Watchtower	SS_Watchtowers_CityZ_08_ChX1_Ch789_LOD1.RRadarTower_0_destroyed 			https://static.gosunoob.com/img/1/2015/07/occupy-gotham-bleake-island-1024x576.jpg	
@@ -349,9 +347,6 @@ Riddler Trophy (Stagg Alpha, Above Sentry Gun Corridor)	Riddler Trophies	PickedU
 Riddler Trophy (Stagg Alpha, Crash Glass)	Riddler Trophies	PickedUp_Stagg_Pickup_7 			https://static.gosunoob.com/img/1/2015/06/airlock-puzzle-stagg-airships-1024x576.jpg	
 Riddler Trophy (Stagg Beta, Fallen Trophy)	Riddler Trophies	PickedUp_Stagg_Pickup_18			https://static.gosunoob.com/img/1/2015/06/stagg-airship-riddler-trophy-dropped-cliff-1024x576.jpg	
 Azrael 4 (LadyGotham)	Azrael	SS_Azrael_Fight4_Complete				
-Sabotoge Drone Upgrade	Upgrades	Unlocked_DisruptorSabDrone				
-Sabotoge Detective Scanner Upgrade	Upgrades	Unlocked_DisruptorSabDectModeDect				
-Sabotoge Jammer Upgrade	Upgrades	Unlocked_DisruptorSabDectModeJam				
 Watchtower (Miagani, NorthNearLadyOfGotham)	Watchtower	SS_Watchtowers_CityX_05_ChX1_Ch56789_LOD1.RRadarTower_3_destroyed 			https://static.gosunoob.com/img/1/2015/07/miagani-island-occupy-gotham-1024x576.jpg	
 Checkpoint (Miagani, Theater)	Checkpoints	Checkpoint_X_GDestroyed 			https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Own_the_Roads_Miagani_Island_7.jpg	
 Watchtower (Miagani, Drone skybridge)	Watchtower	SS_Watchtowers_CityX_10_ChX1_Ch56789_LOD1.RRadarTower_7_destroyed 			https://static.gosunoob.com/img/1/2015/07/turret-puzzle-watchtower-miagani-island-1024x576.jpg	
@@ -372,8 +367,9 @@ Riddler Trophy (Bleake, [Cloudburst] Near Clocktower Founders)	Riddler Trophies	
 Azrael Done (5 16 28 41) 	Azrael	SS_Azrael_Clocktower_ForensicsStarted				
 Riddler Trophy (Miagani, Midtown Mall Donut Plaza)	Riddler Trophies	PickedUp_CityX_Pickup_6 			https://static.gosunoob.com/img/1/2015/06/riddler-trophy-puzzle-mall-solution-1024x576.jpg	
 Freeflow Focus Mk2 Upgrade	Upgrades	Unlocked_FreeflowFocusMk2				
-Tank Emergency Energy Upgrade	Upgrades	Unlocked_BmblGeneratorShielding1				
-Tank Energy Storage Protection Upgrade	Upgrades	Unlocked_BmblGeneratorShielding2				
+Special Combo Batarang upgrade	Upgrades	Unlocked_SpecialComboBatarang				
+Combo Boost Upgrade	Upgrades	Unlocked_SpecialMoveCost				
+Batmobile Dodge Upgrade	Upgrades	Unlocked_BmblDoubleDodge 				
 Riddler Trophy (Miagani, SE BlockedBridge Gears)	Riddler Trophies	PickedUp_CityX_Pickup_3 			https://static.gosunoob.com/img/1/2015/06/riddler-trophy-bridge-puzzle-bak-1024x576.jpg	
 Hush (use map)	Hush	SS_Hush_ShowdownStart 				
 Checkpoint (Miagani, South)	Checkpoints	Checkpoint_X_HDestroyed 			https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Own_the_Roads_Final_Militia_Compound-1024x576.jpg	
@@ -393,7 +389,6 @@ Watchtower (Miagani, Gotham Bank)	Watchtower	SS_Watchtowers_CityX_11_ChX1_Ch789_
 Two Face Bank 3 (Miagani)	Two Face	Bank03_Empty 				
 APC 7	APC	SS_APC_APC7Complete 				
 Manbat Done	ManBat	SS_ManBat_Cure_FullDose2 				
-Batmobile Dodge Upgrade	Upgrades	Unlocked_BmblDoubleDodge 				
 Speak to GCPD Dude	Main Story	Ch8_Track_Gordon_Objective_Added 				
 Bomb (Founders, BleakBridge)	Bombs	SS_CommandBeacons_CityY_05_ChD1ab_Ch789_LOD1.RCommandBeacon_0_destroyed 			https://static.gosunoob.com/img/1/2015/07/founders-island-disarm-landmine-1024x576.jpg	
 Riddler Trophy (Founders, Pyg)	Riddler Trophies	PickedUp_CityY_Pickup_30 				
@@ -436,6 +431,7 @@ Riddler Bomb (Bleake Island, North Urbarail Hotel)	Riddler Bomb	PickedUp_CityZ_B
 Checkpoint (Bleake, Chinatown 3 turrets)	Checkpoints	Checkpoint_Z_BDestroyed 			https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Own_the_Roads_Bleake_Island_1-1024x576.jpg	
 Checkpoint (Bleake, SE Chinatown)	Checkpoints	Checkpoint_Z_CDestroyed 			https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Own_the_Roads_Bleake_Island_4-1024x576.jpg	
 Checkpoint (Bleake, NextToFoundersBridge)	Checkpoints	Checkpoint_Z_ADestroyed			https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Own_the_Roads_Bleake_Island_2-1024x576.jpg	
+Sabotoge Drone Upgrade	Upgrades	Unlocked_DisruptorSabDrone				
 Checkpoint (Bleake, Next to previous checkpoint)	Checkpoints	Checkpoint_Z_UDestroyed			https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Own_the_Roads_Bleake_Island_3-1024x576.jpg	
 Checkpoint (Founders, North)	Checkpoints	Checkpoint_Y_TDestroyed 			https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Own_the_Roads_Founders_Island_3-1024x576.jpg	
 Riddler Trophy (Founders, In Checkpoint)	Riddler Trophies	PickedUp_CityY_Pickup_10			https://static.gosunoob.com/img/1/2015/06/arkham-knight-riddler-puzzle-drivethrough-1024x576.jpg	
@@ -499,4 +495,3 @@ APC 9	APC	SS_APC_APC9Complete
 Riddler Riddle	Riddles	PickedUp_CityX_Riddler_33 				
 Riddler Orphanage 5+6+7	Riddler Mission	Lockup_B1_Riddler_Lockedup 				
 Scarecrow Done	Main Story	AK_Main_Game_Complete				
-Knightfall	Main Story					

@@ -4,7 +4,7 @@
   "CityCatwoman": "Routes/City-Catwoman.tsv",
   "CityPrisoners": "Routes/City-Prisoners.tsv",
   "OriginsDefault": "Routes/Origins.tsv",
-  "OriginsCrime": "Routes/OriginsCrime.tsv",
+  "OriginsCrime": "Routes/Origins-Crimes.tsv",
   "KnightDefault": "Routes/Knight.tsv",
   "KnightNG+": "Routes/Knight-NGPlus.tsv",
   "KnightFirstEnding": "Routes/Knight-FirstEnding.tsv",
