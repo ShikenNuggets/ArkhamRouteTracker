@@ -69,5 +69,20 @@ namespace ArkhamDisplay{
 
 			base.UpdatePreferences(sender, e);
 		}
+
+		protected override void UpdatePercent(int doneEntries, int totalEntries)
+		{
+			double percentDone = 100.0 * doneEntries / totalEntries;
+			if (TwoFortyPercentMenuItem.IsChecked)
+			{
+				percentDone = 1.2 * percentDone;
+				if ("KnightNG+120".Equals(currentRoute))
+				{
+					percentDone += 120.0;
+				}
+			}
+			progressCounter.Text = string.Format("{0:0.0}", percentDone) + "%";
+			riddleCounter.Text = UpdateRiddleCount();
+		}
 	}
 }

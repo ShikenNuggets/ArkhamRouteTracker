@@ -18,13 +18,13 @@ namespace ArkhamDisplay{
 
 		protected string currentRoute = "";
 		protected string currentSecondaryRoute = "";
+		protected TextBlock progressCounter;
+		protected TextBlock riddleCounter;
 
 		private Button stopButton;
 		private Button startButton;
 		private Grid displayGrid;
 		private ScrollViewer gridScroll;
-		private TextBlock progressCounter;
-		private TextBlock riddleCounter;
 		private MenuItem asylumMenuItem;
 		private MenuItem cityMenuItem;
 		private MenuItem originsMenuItem;
@@ -312,7 +312,10 @@ namespace ArkhamDisplay{
 				int scrollHeight = (firstNotDone - 4) * (ROW_HEIGHT);
 				gridScroll.ScrollToVerticalOffset(scrollHeight);
 			}
-
+			UpdatePercent(doneEntries, totalEntries);
+		}
+		protected virtual void UpdatePercent(int doneEntries, int totalEntries)
+		{
 			double percentDone = 100.0 * doneEntries / totalEntries;
 			progressCounter.Text = string.Format("{0:0.0}", percentDone) + "%";
 			riddleCounter.Text = UpdateRiddleCount();
