@@ -98,6 +98,9 @@
     <None Update="Routes\Knight.tsv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Routes\MatterOfFamily.tsv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Routes\Origins-Crimes.tsv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

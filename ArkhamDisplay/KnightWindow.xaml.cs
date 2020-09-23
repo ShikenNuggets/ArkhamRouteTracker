@@ -13,22 +13,24 @@ namespace ArkhamDisplay{
 		}
 
 		protected override void SetCurrentRoute(){
-			if(Data.KnightFirstEnding){
+			if (Data.KnightFirstEnding) {
 				currentRoute = "KnightFirstEnding";
-			}else if(Data.KnightNGPlus && !Data.Knight120){
+			} else if (Data.KnightNGPlus && !Data.Knight120) {
 				currentRoute = "KnightNG+";
-			}else if(Data.KnightNGPlus && Data.Knight120){
+			} else if (Data.KnightNGPlus && Data.Knight120) {
 				currentRoute = "KnightNG+120";
-			}else if(Data.Knight120 && !Data.KnightNGPlus){
+			} else if (Data.Knight120 && !Data.KnightNGPlus) {
 				currentRoute = "Knight120";
-			}else if(Data.Knight240){
-				if(saveParser != null && saveParser.HasKey("Knightmare", 1)){
+			} else if (Data.Knight240) {
+				if (saveParser != null && saveParser.HasKey("Knightmare", 1)) {
 					minRequiredMatches = 2;
 					currentRoute = "KnightNG+120";
-				}else{
+				} else {
 					minRequiredMatches = 1;
 					currentRoute = "Knight120";
 				}
+			} else if (Data.KnightMoF) {
+				currentRoute = "KnightMoF";
 			}else{
 				currentRoute = "KnightDefault";
 			}
@@ -39,6 +41,7 @@ namespace ArkhamDisplay{
 			NGPlusMenuItem.IsChecked = Data.KnightNGPlus;
 			OneTwentyPercentMenuItem.IsChecked = Data.Knight120;
 			TwoFortyPercentMenuItem.IsChecked = Data.Knight240;
+			MatterOfFamilyMenuItem.IsChecked = Data.KnightMoF;
 			base.UpdateUI();
 		}
 
@@ -47,13 +50,25 @@ namespace ArkhamDisplay{
 			if(sender == FirstEndingMenuItem && FirstEndingMenuItem.IsChecked){
 				OneTwentyPercentMenuItem.IsChecked = false;
 				TwoFortyPercentMenuItem.IsChecked = false;
-			}else if(sender == OneTwentyPercentMenuItem && OneTwentyPercentMenuItem.IsChecked){
+				MatterOfFamilyMenuItem.IsChecked = false;
+			}
+			else if(sender == OneTwentyPercentMenuItem && OneTwentyPercentMenuItem.IsChecked){
 				FirstEndingMenuItem.IsChecked = false;
 				TwoFortyPercentMenuItem.IsChecked = false;
-			}else if(sender == TwoFortyPercentMenuItem && TwoFortyPercentMenuItem.IsChecked){
+				MatterOfFamilyMenuItem.IsChecked = false;
+			}
+			else if(sender == TwoFortyPercentMenuItem && TwoFortyPercentMenuItem.IsChecked){
 				NGPlusMenuItem.IsChecked = false;
 				FirstEndingMenuItem.IsChecked = false;
 				OneTwentyPercentMenuItem.IsChecked = false;
+				MatterOfFamilyMenuItem.IsChecked = false;
+			}
+			else if (sender == MatterOfFamilyMenuItem && MatterOfFamilyMenuItem.IsChecked)
+			{
+				NGPlusMenuItem.IsChecked = false;
+				FirstEndingMenuItem.IsChecked = false;
+				OneTwentyPercentMenuItem.IsChecked = false;
+				TwoFortyPercentMenuItem.IsChecked = false;
 			}
 
 			if(NGPlusMenuItem.IsChecked){
@@ -66,6 +81,7 @@ namespace ArkhamDisplay{
 			Data.KnightNGPlus = NGPlusMenuItem.IsChecked;
 			Data.Knight120 = OneTwentyPercentMenuItem.IsChecked;
 			Data.Knight240 = TwoFortyPercentMenuItem.IsChecked;
+			Data.KnightMoF = MatterOfFamilyMenuItem.IsChecked;
 
 			base.UpdatePreferences(sender, e);
 		}
