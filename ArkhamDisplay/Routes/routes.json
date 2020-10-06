@@ -1,5 +1,6 @@
 {
   "AsylumDefault": "Routes/Asylum.tsv",
+  "AsylumGlitchless": "Routes/Asylum-Glitchless.tsv",
   "CityDefault": "Routes/City.tsv",
   "CityCatwoman": "Routes/City-Catwoman.tsv",
   "CityPrisoners": "Routes/City-Prisoners.tsv",

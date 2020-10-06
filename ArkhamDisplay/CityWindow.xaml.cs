@@ -39,7 +39,7 @@ namespace ArkhamDisplay{
 			Data.CityBreakablesAtEnd = BreakablesAtBottomMenuItem.IsChecked;
 			Data.CityCatwoman = CatwomanMenuItem.IsChecked;
 			base.UpdatePreferences(sender, e);
-	}
+		}
 
 		protected override void UpdateSecondaryRouteWindow(){
 			PrisonerGrid.Children.Clear();

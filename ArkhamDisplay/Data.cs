@@ -39,6 +39,7 @@ namespace ArkhamDisplay{
 		public volatile int refreshRateInMS = 1000;
 		public volatile DisplayType displayType = DisplayType.All;
 
+		public volatile bool asylumGlitchless = false;
 		public volatile bool cityBreakablesAtEnd = false;
 		public volatile bool cityCatwoman = false;
 		public volatile bool knightFirstEnding = false;
@@ -67,6 +68,7 @@ namespace ArkhamDisplay{
 		public static int RefreshRate { get { return data.refreshRateInMS; } set { data.refreshRateInMS = value; } }
 		public static DisplayType DisplayType { get { return data.displayType; } set { data.displayType = value; } }
 
+		public static bool AsylumGlitchless { get { return data.asylumGlitchless; } set { data.asylumGlitchless = value; } }
 		public static bool CityBreakablesAtEnd { get { return data.cityBreakablesAtEnd; } set { data.cityBreakablesAtEnd = value; } }
 		public static bool CityCatwoman { get { return data.cityCatwoman; } set { data.cityCatwoman = value; } }
 		public static bool KnightFirstEnding { get { return data.knightFirstEnding; } set { data.knightFirstEnding = value; } }
