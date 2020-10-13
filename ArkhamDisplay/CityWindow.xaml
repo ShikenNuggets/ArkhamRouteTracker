@@ -47,7 +47,7 @@
 			<TextBlock							Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="11,10,0,0"	Text="Remaining Political Prisoners"/>
 			<TextBlock Name="SavedPrisoners"	Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,10,0,0"	Text="0 Saved"/>
 
-			<ScrollViewer Name="PrisonerScroll" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="5,32,5,10" VerticalScrollBarVisibility="Auto">
+			<ScrollViewer Name="PrisonerScroll" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,32,5,10" VerticalScrollBarVisibility="Auto">
 				<Grid Name="PrisonerGrid"/>
 			</ScrollViewer>
 		</Grid>
