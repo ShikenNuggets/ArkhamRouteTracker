@@ -110,7 +110,6 @@ Trophy (Bowery, 3 switches gliding)	Riddler Trophies	PickedUp_OWE_Pickup_30
 Trophy (Bowery, Gel Wall after 3 switches)	Riddler Trophies	PickedUp_OWE_Pickup_29			
 Titan Container (Bowery, Near Subway)	Bane	OW_E6_ChB19.RTitanCrate_6.Broken			
 Camera (Bowery, Near Subway)	Breakable Cameras (Bowery)	PickedUp_OWE_Camera_7			
-Trophy (Museum, Left of entrance)	Riddler Trophies	PickedUp_Museum_Pickup_1			
 Trophy (Museum, Gel Wall Dino Room)	Riddler Trophies	PickedUp_Museum_Pickup_2			
 Trophy (Museum, Dino Room Ceiling)	Riddler Trophies	PickedUp_Museum_Pickup_3			
 Penguin (Museum, Freeze Room Lobby)	Penguins	PickedUp_Museum_Penguin_8			
@@ -121,6 +120,7 @@ Penguin (Museum, Center Predator Room)	Penguins	PickedUp_Museum_Penguin_9
 Penguin (Museum, Right of Center Predator Room)	Penguins	PickedUp_Museum_Penguin_10			
 Grundy Fight	Main Story	CH4_Museum_C1_NinjasBlood			
 Penguin (Museum, Dino Room)	Penguins	PickedUp_Museum_Penguin_2			
+Trophy (Museum, Left of entrance)	Riddler Trophies	PickedUp_Museum_Pickup_1			
 Camera (Bowery, Across from Museum)	Breakable Cameras (Bowery)	PickedUp_OWE_Camera_11			
 Trophy (Bowery, Building Left Across from Museum)	Riddler Trophies	PickedUp_OWE_Pickup_17			
 Demon Seal (Wonder, Elevator)	Demon Seals	PickedUp_Underworld_DemonSeal_1			
@@ -139,10 +139,10 @@ Trophy (Wonder, Stroller)	Riddler Trophies	PickedUp_Underworld_Pickup_22
 Trophy (Wonder, Across Question Mark)	Riddler Trophies	PickedUp_Underworld_Pickup_21			
 Trophy (Wonder, Questionmark Gel)	Riddler Trophies	PickedUp_Underworld_Pickup_20			
 Statue Riddle	Riddles	PickedUp_Underworld_Riddle_5			
-Demon Seal (Wonder, By Exit Door)	Demon Seals	PickedUp_Underworld_DemonSeal_8			
-Demon Seal (Wonder, By Exit Door)	Demon Seals	PickedUp_Underworld_DemonSeal_7			
 Trophy (Wonder, Left Chamber Door)	Riddler Trophies	PickedUp_Underworld_Pickup_24			
 Grundy Riddle	Riddles	PickedUp_Underworld_Riddle_4			
+Demon Seal (Wonder, By Exit Door)	Demon Seals	PickedUp_Underworld_DemonSeal_8			
+Demon Seal (Wonder, By Exit Door)	Demon Seals	PickedUp_Underworld_DemonSeal_7			
 Demon Seal (Wonder, Pothole)	Demon Seals	PickedUp_Underworld_DemonSeal_6			
 Camera (Bowery, Quincy Sharp Alley)	Breakable Cameras (Bowery)	PickedUp_OWE_Camera_6			
 Camera (Bowery, City Wall Near Quincy Sharp)	Breakable Cameras (Bowery)	PickedUp_OWE_Camera_5			
@@ -206,10 +206,10 @@ Penguin (Museum, Next to dino skeleton hack)	Penguins	PickedUp_Museum_Penguin_3
 Trophy (Museum, Line Launch Ceiling)	Riddler Trophies	PickedUp_Museum_Pickup_6			
 Trophy (Museum, Right below line launch ceiling)	Riddler Trophies	PickedUp_Museum_Pickup_21			
 Penguin Family Riddle	Riddles	PickedUp_Museum_Riddle_3			
-Penguin (Museum, Gladiator Pit Right)	Penguins	PickedUp_Museum_Penguin_5			
-Penguin (Museum, Gladiator Pit Cage)	Penguins	PickedUp_Museum_Penguin_6			
 Trophy (Museum, Elevator Gel)	Riddler Trophies	PickedUp_Museum_Pickup_7			
 Trophy (Museum, Pipe over Wonder City posters)	Riddler Trophies	PickedUp_Museum_Pickup_8			
+Penguin (Museum, Gladiator Pit Right)	Penguins	PickedUp_Museum_Penguin_5			
+Penguin (Museum, Gladiator Pit Cage)	Penguins	PickedUp_Museum_Penguin_6			
 Museum Question Mark Riddle	Riddles	PickedUp_Museum_Riddle_1			
 Trophy (Museum, Pipe under water room entrance)	Riddler Trophies	PickedUp_Museum_Pickup_10			
 Trophy (Museum, Predator Room Right Upper)	Riddler Trophies	PickedUp_Museum_Pickup_19			
@@ -416,8 +416,8 @@ Trophy (Subway, Vent near Vicki poster)	Riddler Trophies	PickedUp_OWD_Pickup_1
 Trophy (Subway, vent gel upper station)	Riddler Trophies	PickedUp_OWD_Pickup_4			
 Trophy (Subway, Hack upper station)	Riddler Trophies	PickedUp_OWD_Pickup_2			
 Teeth (Subway, Upper station)	Joker Teeth	PickedUp_OWD_Teeth_11			
-Hush 3 Start (near ACE)	Hush	SS_Hush_Victim3_SceneComplete			
 Puppet Riddle	Riddles	PickedUp_OWE_Riddle_8			
+Hush 3 Start (near ACE)	Hush	SS_Hush_Victim3_SceneComplete			
 Camera (Park Row, Monarch Theater)	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_4			
 Strange Riddle	Riddles	PickedUp_OWA_Riddle_11			
 AR Challenge 8	AR Training	ARChallenge8_Complete			
