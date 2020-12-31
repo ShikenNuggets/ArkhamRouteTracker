@@ -253,6 +253,7 @@ Worst Nightmare (No Detective Vision, Not Seen)	Worst Nightmare	WorstNightmare_S
 Datapack (Hotel, Lobby Under Floor Grate Middle)	Datapacks	PickedUp_Hotel_Pickup_4				
 Datapack (Hotel, 10th Floor East Tower Behind Electric Charge Gate)	Datapacks	PickedUp_Hotel_Pickup_5				
 Datapack (Hotel, 19th Floor Elevator Shaft)	Datapacks	PickedUp_Hotel_Pickup_6				
+Datapack (Hotel, Ventilation Shaft)	Datapacks	PickedUp_Hotel_Pickup_11				
 Datapack (Hotel, Ventilation Shaft Shimmy)	Datapacks	PickedUp_Hotel_Pickup_7				
 Datapack (Hotel, Hack After Rescuing electric chair victims [ballroom])	Datapacks	PickedUp_Hotel_Pickup_8				
 Datapack (Hotel, Slide under Train Tracks [ballroom])	Datapacks	PickedUp_Hotel_Pickup_10				
@@ -405,7 +406,6 @@ Datapack (Diamond, Top of Movie Theater)	Datapacks	PickedUp_Diamond_Pickup_6
 Data Handler (Diamond, Front of Hotel)	Data Handler	SS_Enigma_DataHandler17				
 Datapack (Diamond, Hotel Main Entrance)	Datapacks	PickedUp_Diamond_Pickup_8				
 Datapack (Hotel, Parking near Entrance [glue])	Datapacks	PickedUp_Hotel_Pickup_1				
-Datapack (Hotel, Ventilation Shaft)	Datapacks	PickedUp_Hotel_Pickup_11				
 Coventry Fire (Coventry, Next to GCR)	Crime Scene	CrimeScene04_CaseFileScanningComplete				
 Datapack (Amusement, Dixon Docks Roof)	Datapacks	PickedUp_AmusementMile_Pickup_17				
 Data Handler (Amusement, Behind Dixon Docks across Final Offer)	Data Handler	SS_Enigma_DataHandler06				
