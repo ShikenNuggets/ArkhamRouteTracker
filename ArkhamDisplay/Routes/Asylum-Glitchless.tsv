@@ -19,7 +19,7 @@ Chronicle (IT, Elevator near Top)	Arkham Chronicle	Global.Riddler_Max_Cipher_1
 Teeth (IT, Elevator Top)	Joker Teeth (Intensive)	2Max_B1_CH234567_LiftDebris.RChatterTeeth_1.Broken			
 Teeth (IT, Lobby by Boles Body)	Joker Teeth (Intensive)	Max_A1_CH2567.RChatterTeeth_7.Broken			
 Teeth (IT, Lobby by Boles Body)	Joker Teeth (Intensive)	Max_A1_CH2567.RChatterTeeth_8.Broken			
-Teeth (IT, Lobby Boles Body)	Joker Teeth (Intensive)	Max_A1_CH2567.RChatterTeeth_0.Broken			
+Teeth (IT, Lobby by Boles Body)	Joker Teeth (Intensive)	Max_A1_CH2567.RChatterTeeth_0.Broken			
 Tape (IT, Lobby Office)	Interview Tape	Global.Riddler_Max_Tape_2			
 Portrait Riddle (IT, Lobby)	Riddles	Global.Riddler_Max_Riddle_1			
 Question Mark Riddle (IT, Lobby)	Riddles	Global.Riddler_Max_Riddle_8			
@@ -62,7 +62,7 @@ Teeth (Medical, 3 goon door)	Joker Teeth (Medical)	Medical_C2.RChatterTeeth_11.B
 Trophy (Medical, Bane Room above Harley)	Riddler Trophies	Global.Riddler_Medical_Pickup_9			
 Trophy (Arkham West, Shack)	Riddler Trophies	Global.Riddler_OverworldWest_Pickup_7			
 Tape (Arkham West, Shack)	Interview Tape	Global.Riddler_OverworldWest_Tape_1			
-Chronicle (Arkham West, below Cellblock Gel Wall)	Arkham Chronicle	Global.Riddler_OverworldWest_Cipher_1			
+Chronicle (Arkham West, below Cell Block Gel Wall)	Arkham Chronicle	Global.Riddler_OverworldWest_Cipher_1			
 Chronicle (Arkham North, Cave Entrance)	Arkham Chronicle	Global.Riddler_Overworld_Cipher_4			
 Trophy (Arkham North, Cave Entrance Gel Wall)	Riddler Trophies	Global.Riddler_Overworld_Pickup_33			
 Batclaw	Main Story	Global.Equip_HarpoonGun			
@@ -82,7 +82,7 @@ Teeth (Arkham North, East Door)	Joker Teeth (Arkham North)	Overworld_A2.RChatter
 Teeth (Arkham North, East Door)	Joker Teeth (Arkham North)	Overworld_A2.RChatterTeeth_2.Broken			
 Trophy (Arkham East, Pier by Mansion)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_31			
 Trophy (Mansion, Entrance Vent)	Riddler Trophies	Global.Riddler_Admin_Pickup_1			
-Chronicle (Mansion, Roof Vent)	Arkham Chronicle	Global.Riddler_Admin_Cipher_1			
+Chronicle (Mansion, Ceiling Vent)	Arkham Chronicle	Global.Riddler_Admin_Cipher_1			
 Teeth (Mansion, Main Hall by West Wing)	Joker Teeth (Mansion)	Admin_A.RChatterTeeth_1.Broken			
 Teeth (Mansion, Main Hall by West Wing)	Joker Teeth (Mansion)	Admin_A.RChatterTeeth_2.Broken			
 Teeth (Mansion, North Corridor by Dizzy Circles)	Joker Teeth (Mansion)	Admin_C5.RChatterTeeth_3.Broken			
