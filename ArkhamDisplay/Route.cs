@@ -51,13 +51,25 @@ namespace ArkhamDisplay{
 			entries.Capacity = allLines.Count();
 			foreach(string line in allLines){
 				string[] lineComponents = line.Split('\t');
+				if(lineComponents.Length < 3){
+					throw new Exception("Could not load route! All entries must have at least 3 columns!");
+				}
+
+				string optionalAltID = null;
+				string optionalMetaData = null;
+				if(lineComponents.Length >= 4){
+					optionalAltID = lineComponents[3].Trim();
+				}
+				if(lineComponents.Length >= 5){
+					optionalMetaData = lineComponents[4].Trim();
+				}
 
 				entries.Add(new Entry(
 					lineComponents[0].Trim(),
 					lineComponents[1].Trim(),
 					lineComponents[2].Trim(),
-					lineComponents[3].Trim(),
-					lineComponents[4].Trim()
+					optionalAltID,
+					optionalMetaData
 				));
 			}
 		}
