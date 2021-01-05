@@ -88,13 +88,6 @@ Trophy (Arkham North, Watchtower)	Riddler Trophies	Global.Riddler_Overworld_Pick
 Teeth (Arkham North, East Door)	Joker Teeth (Arkham North)	Overworld_A2.RChatterTeeth_1.Broken			
 Teeth (Arkham North, East Door)	Joker Teeth (Arkham North)	Overworld_A2.RChatterTeeth_0.Broken			
 Teeth (Arkham North, East Door)	Joker Teeth (Arkham North)	Overworld_A2.RChatterTeeth_2.Broken			
-Trophy (Arkham East, Gel Floor by Mansion)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_25			
-Chronicle (Arkham East, beside Mansion)	Arkham Chronicle	Global.Riddler_OverworldEast_Cipher_5			
-Trophy (Arkham East, Mansion Balcony)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_26			
-Trophy (Arkham East, Mansion Roof)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_28			
-Question Mark Riddle (Arkham East, Clock Tower)	Riddles	Global.Riddler_OverworldEast_Riddle_4			
-Trophy (Arkham East, Clock Tower)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_22			
-Trophy (Arkham East, Mansion Roof)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_27			
 Trophy (Mansion, Entrance Vent)	Riddler Trophies	Global.Riddler_Admin_Pickup_1			
 Chronicle (Mansion, Ceiling Vent)	Arkham Chronicle	Global.Riddler_Admin_Cipher_1			
 Teeth (Mansion, Main Hall by West Wing)	Joker Teeth (Mansion)	Admin_A.RChatterTeeth_1.Broken			
@@ -105,7 +98,7 @@ Dizzy Circles Riddle (Mansion, North Corridor)	Riddles	Global.Riddler_Admin_Ridd
 Trophy (Mansion, North Corridor Ceiling)	Riddler Trophies	Global.Riddler_Admin_Pickup_4			
 Body Bag Riddle (Mansion, Young’s Office)	Riddles	Global.Riddler_Admin_Riddle_3			
 Black Mask Riddle (Mansion, Young’s Office)	Riddles	Global.Riddler_Admin_Riddle_9			
-Tape (Mansion, Young's Office)	Interview Tape	Global.Riddler_Admin_Tape_3			
+Tape (Mansion, Young’s Office)	Interview Tape	Global.Riddler_Admin_Tape_3			
 Teeth (Mansion, West Wing)	Joker Teeth (Mansion)	Admin_C8.RChatterBox_2.Broken2			
 Teeth (Mansion, West Wing)	Joker Teeth (Mansion)	Admin_C8.RChatterBox_2.Broken0			
 Teeth (Mansion, West Wing)	Joker Teeth (Mansion)	Admin_C8.RChatterBox_2.Broken1			
@@ -330,6 +323,13 @@ Teeth (Arkham East, by Office)	Joker Teeth (Arkham East)	Overworld_A3.RChatterTe
 Teeth (Arkham East, by Office)	Joker Teeth (Arkham East)	Overworld_A3.RChatterTeeth_4.Broken			
 Trophy (Arkham East, Hack Office)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_24			
 Secrets Map (Arkham East, Hack Office)	Secrets Map	Global.Riddler_OverworldEast_Map			
+Trophy (Arkham East, Gel Floor by Mansion)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_25			
+Chronicle (Arkham East, beside Mansion)	Arkham Chronicle	Global.Riddler_OverworldEast_Cipher_5			
+Trophy (Arkham East, Mansion Balcony)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_26			
+Trophy (Arkham East, Mansion Roof)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_28			
+Question Mark Riddle (Arkham East, Clock Tower)	Riddles	Global.Riddler_OverworldEast_Riddle_4			
+Trophy (Arkham East, Clock Tower)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_22			
+Trophy (Arkham East, Mansion Roof)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_27			
 Tape (Mansion, Library Entry Level)	Interview Tape	Global.Riddler_Admin_Tape_4			
 Trophy (Mansion, South Corridor Batclaw Vent)	Riddler Trophies	Global.Riddler_Admin_Pickup_7			
 Trophy (Mansion, Main Hall Statue Vent)	Riddler Trophies	Global.Riddler_Admin_Pickup_2			
