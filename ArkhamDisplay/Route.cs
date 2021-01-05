@@ -50,6 +50,10 @@ namespace ArkhamDisplay{
 			var allLines = System.IO.File.ReadAllLines(fileName).Skip(1);
 			entries.Capacity = allLines.Count();
 			foreach(string line in allLines){
+				if(string.IsNullOrWhiteSpace(line)){
+					continue; //Ignore blank lines
+				}
+
 				string[] lineComponents = line.Split('\t');
 				if(lineComponents.Length < 3){
 					throw new Exception("Could not load route! All entries must have at least 3 columns!");
