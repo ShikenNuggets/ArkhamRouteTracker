@@ -33,7 +33,6 @@ Balloon (Amusement, GCR)	Balloons (Amusement)	PickedUp_OWB_Balloons_3
 Balloon (Amusement, Before Bridge)	Balloons (Amusement)	PickedUp_OWB_Balloons_4			
 Camera (Amusement, Before Bridge)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_10			
 Grapnel Boost	AR Training	ARChallenge_Grapple_Boost_Collected			
-Trophy (Industrial, Running Questionmarks)	Riddler Trophies	PickedUp_OWC_Pickup_5			
 Balloon (Industrial, Tricorner Naval Sign)	Balloons (Industrial)	PickedUp_OWC_Balloons_7			
 Trophy (Industrial, Tricorner building glide)	Riddler Trophies	PickedUp_OWC_Pickup_22			
 Camera (Industrial, Steel Mill Gate)	Breakable Cameras (Industrial)	PickedUp_OWC_Camera_7			
@@ -112,7 +111,6 @@ Trophy (Bowery, 3 switches gliding)	Riddler Trophies	PickedUp_OWE_Pickup_30
 Trophy (Bowery, Gel Wall after 3 switches)	Riddler Trophies	PickedUp_OWE_Pickup_29			
 Titan Container (Bowery, Near Subway)	Bane	OW_E6_ChB19.RTitanCrate_6.Broken			
 Camera (Bowery, Near Subway)	Breakable Cameras (Bowery)	PickedUp_OWE_Camera_7			
-Trophy (Museum, Left of entrance)	Riddler Trophies	PickedUp_Museum_Pickup_1			
 Trophy (Museum, Gel Wall Dino Room)	Riddler Trophies	PickedUp_Museum_Pickup_2			
 Trophy (Museum, Dino Room Ceiling)	Riddler Trophies	PickedUp_Museum_Pickup_3			
 Penguin (Museum, Freeze Room Lobby)	Penguins	PickedUp_Museum_Penguin_8			
@@ -123,9 +121,11 @@ Penguin (Museum, Center Predator Room)	Penguins	PickedUp_Museum_Penguin_9
 Penguin (Museum, Right of Center Predator Room)	Penguins	PickedUp_Museum_Penguin_10			
 Grundy Fight	Main Story	CH4_Museum_C1_NinjasBlood			
 Penguin (Museum, Dino Room)	Penguins	PickedUp_Museum_Penguin_2			
+Trophy (Museum, Left of entrance)	Riddler Trophies	PickedUp_Museum_Pickup_1			
 Camera (Bowery, Across from Museum)	Breakable Cameras (Bowery)	PickedUp_OWE_Camera_11			
 Trophy (Bowery, Building Left Across from Museum)	Riddler Trophies	PickedUp_OWE_Pickup_17			
 Demon Seal (Wonder, Elevator)	Demon Seals	PickedUp_Underworld_DemonSeal_1			
+Titan Container (Wonder Tower)	Bane	Under_A3.RTitanCrate_3.Broken			
 Globe Riddle	Riddles	PickedUp_Underworld_Riddle_2			
 Trophy (Wonder Tower, Gel East Elevator Room)	Riddler Trophies	PickedUp_Underworld_Pickup_11			
 Trophy (Wonder Tower, East lower level)	Riddler Trophies	PickedUp_Underworld_Pickup_10			
@@ -255,16 +255,8 @@ Balloon (Amusement, City Wall)	Balloons (Amusement)	PickedUp_OWB_Balloons_9
 Trophy (Amusement, Disrupt Mines near City Wall)	Riddler Trophies	PickedUp_OWB_Pickup_14			
 Trophy (Amusement, Under Bridge)	Riddler Trophies	PickedUp_OWB_Pickup_26			
 Scarecrow Riddle	Riddles	PickedUp_OWB_Riddle_9			
-Trophy (Industrial, 5 running questionmarks)	Riddler Trophies	PickedUp_OWC_Pickup_19			
-Trophy (Industrial, Spinning Wheel Question Marks)	Riddler Trophies	PickedUp_OWC_Pickup_29			
-Titan Container (Industrial)	Bane	OW_RC5_ChB1.RTitanCrate_7.Broken			
-Trophy (Industrial, Gel Wall Hack near Titan)	Riddler Trophies	PickedUp_OWC_Pickup_30			
-Trophy (Industrial, Wood Wall Sionis)	Riddler Trophies	PickedUp_OWC_Pickup_35			
-Camera (Industrial, Super Dodgems)	Breakable Cameras (Industrial)	PickedUp_OWC_Camera_11			
-Balloon (Industrial, Excavator)	Balloons (Industrial)	PickedUp_OWC_Balloons_8			
-Trophy (Industrial, Alley Super Dodgems [gel])	Riddler Trophies	PickedUp_OWC_Pickup_23			
-Trophy(Industrial, Alley Super Dodgems  [hack])	Riddler Trophies	PickedUp_OWC_Pickup_24			
-Camera (Industrial, Across Super Dodgems)	Breakable Cameras (Industrial)	PickedUp_OWC_Camera_12			
+Falcone Boat Riddle	Riddles	PickedUp_OWC_Riddle_2			
+Nora	Freeze	SS_Nora_RoomExitUnlocked			
 Balloon (Industrial, Super Dodgems Roof))	Balloons (Industrial)	PickedUp_OWC_Balloons_9			
 AR Challenge 5	AR Training	ARChallenge5_Complete			
 Balloon (Industrial, Big Toy Soldier)	Balloons (Industrial)	PickedUp_OWC_Balloons_12			
@@ -294,6 +286,7 @@ Trophy (Steel Mill, Stacey 2 Cart)	Riddler Trophies	PickedUp_Steel_Pickup_15
 Hammer Riddle	Riddles	PickedUp_Steel_Riddle_5			
 Harley Head (Steel Mill, Smelting Predator)	Harley Head	PickedUp_Steel_HarleyHead_6			
 Joker Riddle	Riddles	PickedUp_Steel_Riddle_4			
+Cat Trophy (Park Row, behind Church)	Riddler Trophies (Catwoman)	PickedUp_OWA_CWPickup_4			
 Harley Head (Steel Mill, Loading Bay Corner)	Harley Head	PickedUp_Steel_HarleyHead_1			
 Trophy (Steel Mill, Pipe near Elevator)	Riddler Trophies	PickedUp_Steel_Pickup_6			
 Trophy (Steel Mill, Under Elevator)	Riddler Trophies	PickedUp_Steel_Pickup_8			
@@ -315,46 +308,7 @@ Twins Riddle	Riddles	PickedUp_Steel_Riddle_3
 Trophy (Steel Mill, Hack)	Riddler Trophies	PickedUp_Steel_Pickup_3			
 Harley Head (Steel Mill, Joker Room)	Harley Head	PickedUp_Steel_HarleyHead_2			
 Harley Outfit Riddle	Riddles	PickedUp_Steel_Riddle_2			
-Zsasz Riddle	Riddles	PickedUp_OWC_Riddle_6			
-Trophy (Industrial, Water Alley Pipe)	Riddler Trophies	PickedUp_OWC_Pickup_25			
-Pest Control Riddle	Riddles	PickedUp_OWC_Riddle_5			
-Trophy (Industrial, Rec Gun Ball)	Riddler Trophies	PickedUp_OWC_Pickup_13			
-Falcone Billboard Riddle	Riddles	PickedUp_OWC_Riddle_4			
-Trophy (Industrial, Gel Roof Edge near Water)	Riddler Trophies	PickedUp_OWC_Pickup_9			
-Trophy (Industrial, Line Launch near Water)	Riddler Trophies	PickedUp_OWC_Pickup_8			
-Falcone Boat Riddle	Riddles	PickedUp_OWC_Riddle_2			
-Nora	Freeze	SS_Nora_RoomExitUnlocked			
-Queston Mark Riddle (Industrial)	Riddles	PickedUp_OWC_Riddle_1			
-Trophy (Amusement, Water Alcove Under GCPD)	Riddler Trophies	PickedUp_OWB_Pickup_24			
-Visit Freeze	Freeze	SS_Nora_NoraLocKnownToFreeze			
-Arkham Asylum Riddle	Riddles	PickedUp_OWB_Riddle_2			
-Batsignal Riddle	Riddles	PickedUp_OWB_Riddle_8			
-Trophy (Amusement, GCPD Under Stairs)	Riddler Trophies	PickedUp_OWB_Pickup_25			
-Ace Chemicals Riddle	Riddles	PickedUp_OWA_Riddle_15			
-Tyger Brain (Bowery)	Tyger Brains	PickedUp_OWE_CameraControl_1			
-Arkham City Plaque Riddle	Riddles	PickedUp_OWE_Riddle_6			
-Trophy (Bowery, Wonder Tower Wall)	Riddler Trophies	PickedUp_OWE_Pickup_22			
-Question Mark Riddle (Wonder Tower Entrance)	Riddles	PickedUp_OWE_Riddle_1			
-Trophy (Bowery, Wonder Tower Entrance Water)	Riddler Trophies	PickedUp_OWE_Pickup_36			
-Trophy (Bowery, Wonder Tower Entrance hack door)	Riddler Trophies	PickedUp_OWE_Pickup_39			
-Dead Guard Riddle	Riddles	PickedUp_OWE_Riddle_10			
-Trophy (Bowery, Wonder Tower Entrance Mirror)	Riddler Trophies	PickedUp_OWE_Pickup_37			
-Trophy (Bowery, Wonder Tower Entrance Gel)	Riddler Trophies	PickedUp_OWE_Pickup_38			
-Trophy (Wonder Tower, Collapsed West Freeze Water Batclaw)	Riddler Trophies	PickedUp_Underworld_Pickup_13			
-Trophy (Wonder Tower, Collapsed West Corner Platform)	Riddler Trophies	PickedUp_Underworld_Pickup_15			
-Trophy (Wonder Tower, Collapsed West Hack on Wall)	Riddler Trophies	PickedUp_Underworld_Pickup_14			
-Trophy (Wonder Tower, Collapsed West Frozen on Water)	Riddler Trophies	PickedUp_Underworld_Pickup_16			
-Trophy (Wonder Tower, Collapsed West Questionmark Gel)	Riddler Trophies	PickedUp_Underworld_Pickup_17			
-Titan Contaner (Wonder Tower)	Bane	Under_A3.RTitanCrate_3.Broken			
-Trophy (Wonder Tower, Hack)	Riddler Trophies	PickedUp_Underworld_Pickup_9			
-Trophy (Wonder Tower, Collapsed South Across Door)	Riddler Trophies	PickedUp_Underworld_Pickup_3			
-Trophy (Wonder Tower, Collapsed South Hack Door)	Riddler Trophies	PickedUp_Underworld_Pickup_8			
-Trophy (Wonder Tower, Collapsed South Freeze Water)	Riddler Trophies	PickedUp_Underworld_Pickup_7			
-Trophy (Wonder Tower, Collapsed South Grapnel Boost)	Riddler Trophies	PickedUp_Underworld_Pickup_4			
-Trophy (Wonder Tower, Collapsed South Freeze Pipes)	Riddler Trophies	PickedUp_Underworld_Pickup_2			
-Trophy (Wonder Tower, Collapsed South Room up top)	Riddler Trophies	PickedUp_Underworld_Pickup_1			
-Trophy (Wonder Tower, Collapsed South Gel Hack)	Riddler Trophies	PickedUp_Underworld_Pickup_5			
-Trophy (Wonder Tower, Collapsed South Upper Room Ceiling)	Riddler Trophies	PickedUp_Underworld_Pickup_6			
+Teeth (Subway, Wonder Tower Door)	Joker Teeth	PickedUp_OWD_Teeth_6			
 Demon Head (Wonder Tower, Elevator Shaft)	Demon Heads	PickedUp_Underworld_DemonSeal_11			
 Gotham City Plaque Riddle	Riddles	PickedUp_Underworld_Riddle_6			
 Demon Seal (Wonder Tower, Elevator Entrance)	Demon Seals	PickedUp_Underworld_DemonSeal_9			
@@ -374,11 +328,32 @@ Trophy (Park Row, 2 mine disrupts [with zsasz call])	Riddler Trophies	PickedUp_O
 Trophy (Park Row, 3 questionmark gel by hoboshelter)	Riddler Trophies	PickedUp_OWA_Pickup_9			
 Deadshot Victim 2	Deadshot	SS_DeadShot_Hobo2_RustScanned			
 Camera (Amusement, Across Church)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_1			
+Arkham Asylum Riddle	Riddles	PickedUp_OWB_Riddle_2			
+Batsignal Riddle	Riddles	PickedUp_OWB_Riddle_8			
+Trophy (Amusement, Water Alcove Under GCPD)	Riddler Trophies	PickedUp_OWB_Pickup_24			
+Visit Freeze	Freeze	SS_Nora_NoraLocKnownToFreeze			
+Trophy (Industrial, Line Launch near Water)	Riddler Trophies	PickedUp_OWC_Pickup_8			
+Trophy (Industrial, Gel Roof Edge near Water)	Riddler Trophies	PickedUp_OWC_Pickup_9			
+Falcone Billboard Riddle	Riddles	PickedUp_OWC_Riddle_4			
+Trophy (Industrial, Rec Gun Ball)	Riddler Trophies	PickedUp_OWC_Pickup_13			
+Pest Control Riddle	Riddles	PickedUp_OWC_Riddle_5			
+Trophy (Industrial, Water Alley Pipe)	Riddler Trophies	PickedUp_OWC_Pickup_25			
+Zsasz Riddle	Riddles	PickedUp_OWC_Riddle_6			
 Trophy (Industrial, 3 switch tower)	Riddler Trophies	PickedUp_OWC_Pickup_4			
 Tyger Brain (Industrial)	Tyger Brains	PickedUp_OWC_CameraControl_1			
 Trophy (Industrial, Dive bomb near city wall)	Riddler Trophies	PickedUp_OWC_Pickup_3			
-Trophy (Industrial, Gel Rec near dive bomb switch)	Riddler Trophies	PickedUp_OWC_Pickup_2			
+Trophy (Industrial, Running Questionmarks)	Riddler Trophies	PickedUp_OWC_Pickup_5			
 Trophy (Industrial, City Wall near Tunnels)	Riddler Trophies	PickedUp_OWC_Pickup_18			
+Trophy (Industrial, 5 running questionmarks)	Riddler Trophies	PickedUp_OWC_Pickup_19			
+Trophy (Industrial, Spinning Wheel Question Marks)	Riddler Trophies	PickedUp_OWC_Pickup_29			
+Titan Container (Industrial)	Bane	OW_RC5_ChB1.RTitanCrate_7.Broken			
+Trophy (Industrial, Gel Wall Hack near Titan)	Riddler Trophies	PickedUp_OWC_Pickup_30			
+Trophy (Industrial, Wood Wall Sionis)	Riddler Trophies	PickedUp_OWC_Pickup_35			
+Camera (Industrial, Super Dodgems)	Breakable Cameras (Industrial)	PickedUp_OWC_Camera_11			
+Balloon (Industrial, Excavator)	Balloons (Industrial)	PickedUp_OWC_Balloons_8			
+Trophy (Industrial, Alley Super Dodgems [gel])	Riddler Trophies	PickedUp_OWC_Pickup_23			
+Trophy(Industrial, Alley Super Dodgems  [hack])	Riddler Trophies	PickedUp_OWC_Pickup_24			
+Camera (Industrial, Across Super Dodgems)	Breakable Cameras (Industrial)	PickedUp_OWC_Camera_12			
 Teeth (Subway, Industrial entrance)	Joker Teeth	PickedUp_OWD_Teeth_1			
 Trophy (Subway, Electric Switch)	Riddler Trophies	PickedUp_OWD_Pickup_27			
 Teeth (Subway, After Trophy)	Joker Teeth	PickedUp_OWD_Teeth_2			
@@ -394,7 +369,15 @@ Teeth (Subway, After line launch)	Joker Teeth	PickedUp_OWD_Teeth_4
 Teeth (Subway, Predator Room Entrance from Industrial)	Joker Teeth	PickedUp_OWD_Teeth_5			
 Trophy (Subway, Grate Room Left of Entrance)	Riddler Trophies	PickedUp_OWD_Pickup_12			
 Trophy (Subway, Corner Terminal Rec door)	Riddler Trophies	PickedUp_OWD_Pickup_18			
-Teeth (Subway, Wonder Tower Door)	Joker Teeth	PickedUp_OWD_Teeth_6			
+Trophy (Wonder Tower, Collapsed South Gel Batclaw)	Riddler Trophies	PickedUp_Underworld_Pickup_5			
+Trophy (Wonder Tower, Collapsed South Upper Room Ceiling)	Riddler Trophies	PickedUp_Underworld_Pickup_6			
+Trophy (Wonder Tower, Hack)	Riddler Trophies	PickedUp_Underworld_Pickup_9			
+Trophy (Wonder Tower, Collapsed South Across Door)	Riddler Trophies	PickedUp_Underworld_Pickup_3			
+Trophy (Wonder Tower, Collapsed South Hack Door)	Riddler Trophies	PickedUp_Underworld_Pickup_8			
+Trophy (Wonder Tower, Collapsed South Freeze Water)	Riddler Trophies	PickedUp_Underworld_Pickup_7			
+Trophy (Wonder Tower, Collapsed South Grapnel Boost)	Riddler Trophies	PickedUp_Underworld_Pickup_4			
+Trophy (Wonder Tower, Collapsed South Freeze Pipes)	Riddler Trophies	PickedUp_Underworld_Pickup_2			
+Trophy (Wonder Tower, Collapsed South Room up top)	Riddler Trophies	PickedUp_Underworld_Pickup_1			
 Trophy (Subway, Hack Wonder Tower Door)	Riddler Trophies	PickedUp_OWD_Pickup_20			
 Trophy (Subway, Frozen Water Wonder Tower Door)	Riddler Trophies	PickedUp_OWD_Pickup_19			
 Santa Prisca Riddle	Riddles	PickedUp_OWD_Riddle_4			
@@ -423,6 +406,19 @@ Trophy (Subway, Vent near Vicki poster)	Riddler Trophies	PickedUp_OWD_Pickup_1
 Trophy (Subway, vent gel upper station)	Riddler Trophies	PickedUp_OWD_Pickup_4			
 Trophy (Subway, Hack upper station)	Riddler Trophies	PickedUp_OWD_Pickup_2			
 Teeth (Subway, Upper station)	Joker Teeth	PickedUp_OWD_Teeth_11			
+Trophy (Bowery, Wonder Tower Entrance Mirror)	Riddler Trophies	PickedUp_OWE_Pickup_37			
+Trophy (Wonder Tower, Collapsed West Freeze Water Batclaw)	Riddler Trophies	PickedUp_Underworld_Pickup_13			
+Trophy (Wonder Tower, Collapsed West Corner Platform)	Riddler Trophies	PickedUp_Underworld_Pickup_15			
+Trophy (Wonder Tower, Collapsed West Hack on Wall)	Riddler Trophies	PickedUp_Underworld_Pickup_14			
+Trophy (Wonder Tower, Collapsed West Frozen on Water)	Riddler Trophies	PickedUp_Underworld_Pickup_16			
+Trophy (Wonder Tower, Collapsed West Questionmark Gel)	Riddler Trophies	PickedUp_Underworld_Pickup_17			
+Trophy (Bowery, Wonder Tower Entrance hack door)	Riddler Trophies	PickedUp_OWE_Pickup_39			
+Trophy (Bowery, Wonder Tower Entrance Gel)	Riddler Trophies	PickedUp_OWE_Pickup_38			
+Dead Guard Riddle	Riddles	PickedUp_OWE_Riddle_10			
+Trophy (Bowery, Wonder Tower Entrance Water)	Riddler Trophies	PickedUp_OWE_Pickup_36			
+Question Mark Riddle (Wonder Tower Entrance)	Riddles	PickedUp_OWE_Riddle_1			
+Tyger Brain (Bowery)	Tyger Brains	PickedUp_OWE_CameraControl_1			
+Ace Chemicals Riddle	Riddles	PickedUp_OWA_Riddle_15			
 Hush 3 Start (near ACE)	Hush	SS_Hush_Victim3_SceneComplete			
 Puppet Riddle	Riddles	PickedUp_OWE_Riddle_8			
 Camera (Park Row, Monarch Theater)	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_4			
@@ -453,6 +449,7 @@ Trophy (Amusement, City Wall near Ivy)	Riddler Trophies	PickedUp_OWB_Pickup_3
 Ivy Container Riddle	Riddles	PickedUp_OWB_Riddle_3			
 Trophy (Amusement, Gel Wall Near Ivy)	Riddler Trophies	PickedUp_OWB_Pickup_1			
 Last Riddler Hostage/Zsasz Call	Riddler Mission	SS_Riddler_Hostage5_Saved			
+Trophy (Amusement, GCPD Under Stairs)	Riddler Trophies	PickedUp_OWB_Pickup_25			
 Freeze/Nora Riddle	Riddles	PickedUp_OWC_Riddle_9			
 Trophy (Industrial, Near Zsasz)	Riddler Trophies	PickedUp_OWC_Pickup_17			
 News Stand Riddle	Riddles	PickedUp_OWC_Riddle_3			
@@ -466,8 +463,10 @@ Trophy (Industrial, Freeze Nade mine ferris wheel [political prisoner])	Riddler 
 Trophy (Industrial, 3 fast question marks ferris wheel [political prisoner])	Riddler Trophies	PickedUp_OWC_Pickup_11			Map this to a political prisoner
 Trophy (Industrial, 3 switches near Subway)	Riddler Trophies	PickedUp_OWC_Pickup_20			Map this to a political prisoner
 Trophy (Industrial, Under Excavator)	Riddler Trophies	PickedUp_OWC_Pickup_21			Map this to a political prisoner
+Trophy (Industrial, Gel Rec near dive bomb switch)	Riddler Trophies	PickedUp_OWC_Pickup_2			
 Breakable Cameras (Industrial)	[PLACEHOLDER]				
 Balloons (Industrial)	[PLACEHOLDER]				
+Queston Mark Riddle (Industrial)	Riddles	PickedUp_OWC_Riddle_1			
 Krank & co Riddle	Riddles	PickedUp_OWB_Riddle_10			
 Trophy (Amusement, Behind Bane Building)	Riddler Trophies	PickedUp_OWB_Pickup_29			
 Trophy (Amusement, Freeze Nade under Bane)	Riddler Trophies	PickedUp_OWB_Pickup_28			
@@ -492,6 +491,8 @@ Best Behavior Tyger Riddle	Riddles	PickedUp_OWE_Riddle_9
 Trophy (Bowery, City Wall Bottom Left)	Riddler Trophies	PickedUp_OWE_Pickup_32			
 Camera (Bowery, Across from City Wall Trophy)	Breakable Cameras (Bowery)	PickedUp_OWE_Camera_4			
 Trophy (Bowery, Freeze Nade near Wonder Tower Entrance)	Riddler Trophies	PickedUp_OWE_Pickup_19			Map this to a political prisoner
+Trophy (Bowery, Wonder Tower Wall)	Riddler Trophies	PickedUp_OWE_Pickup_22			
+Arkham City Plaque Riddle	Riddles	PickedUp_OWE_Riddle_6			
 Trophy (Bowery, Hack Building Across Wonder Tower Entrance)	Riddler Trophies	PickedUp_OWE_Pickup_34			
 Trophy (Bowery, 6 Questionmarks under bridge)	Riddler Trophies	PickedUp_OWE_Pickup_14			
 Trophy (Bowery, 2 far questionmarks [political prisoner])	Riddler Trophies	PickedUp_OWE_Pickup_21			Map this to a political prisoner
@@ -524,7 +525,6 @@ Cat Trophy (Park Row, ceiling near Jack Ryder)	Riddler Trophies (Catwoman)	Picke
 Cat Trophy (Park Row, alley west of Courthouse)	Riddler Trophies (Catwoman)	PickedUp_OWA_CWPickup_1			
 Cat Trophy (Park Row, ceiling grate near Hush)	Riddler Trophies (Catwoman)	PickedUp_OWA_CWPickup_2			
 Loot Done (Catwoman)	Catwoman Loot	CH9_CW_MainLootComplete			
-Cat Trophy (Park Row, behind Church)	Riddler Trophies (Catwoman)	PickedUp_OWA_CWPickup_4			
 Cat Trophy (Amusement, GCR wood wall)	Riddler Trophies (Catwoman)	PickedUp_OWB_CWPickup_3			
 Cat Trophy (Amusement, under center highway)	Riddler Trophies (Catwoman)	PickedUp_OWB_CWPickup_2			
 Cat Trophy (Amusement, Under GCPD)	Riddler Trophies (Catwoman)	PickedUp_OWB_CWPickup_4			
