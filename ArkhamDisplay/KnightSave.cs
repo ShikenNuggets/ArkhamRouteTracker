@@ -20,9 +20,11 @@ namespace ArkhamDisplay{
 			string filename0 = System.IO.Path.Combine(m_filePath, SAVE_FILE_PREFIX + m_id + "x0" + SAVE_FILE_SUFFIX);
 			string filename1 = System.IO.Path.Combine(m_filePath, SAVE_FILE_PREFIX + m_id + "x1" + SAVE_FILE_SUFFIX);
 			string filename2 = System.IO.Path.Combine(m_filePath, SAVE_FILE_PREFIX + m_id + "x2" + SAVE_FILE_SUFFIX);
+			string filename3 = System.IO.Path.Combine(m_filePath, SAVE_FILE_PREFIX + m_id + "x3" + SAVE_FILE_SUFFIX);
 			DateTime writetime0 = DateTime.MinValue;
 			DateTime writetime1 = DateTime.MinValue;
 			DateTime writetime2 = DateTime.MinValue;
+			DateTime writetime3 = DateTime.MinValue;
 			if(System.IO.File.Exists(filename0)){
 				writetime0 = System.IO.File.GetLastWriteTimeUtc(filename0);
 			}
@@ -35,6 +37,10 @@ namespace ArkhamDisplay{
 				writetime2 = System.IO.File.GetLastWriteTimeUtc(filename2);
 			}
 
+			if(System.IO.File.Exists(filename3)){
+				writetime3 = System.IO.File.GetLastWriteTimeUtc(filename3);
+			}
+
 			string currentfile = filename0;
 			DateTime currentwritetime = writetime0;
 			if(currentwritetime < writetime1){
@@ -43,6 +49,11 @@ namespace ArkhamDisplay{
 
 			if(currentwritetime < writetime2){
 				currentfile = filename2;
+			}
+
+			
+			if(currentwritetime < writetime3){
+				currentfile = filename3;
 			}
 
 			return currentfile;
