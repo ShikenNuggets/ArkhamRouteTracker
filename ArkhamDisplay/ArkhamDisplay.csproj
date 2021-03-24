@@ -6,16 +6,28 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="batmancompressor\**" />
+    <EmbeddedResource Remove="batmancompressor\**" />
+    <None Remove="batmancompressor\**" />
+    <Page Remove="batmancompressor\**" />
+  </ItemGroup>
+
   <ItemGroup>
     <Compile Remove="MainWindow.xaml.cs" />
+    <Compile Remove="MiniLZO.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <Page Remove="MainWindow.xaml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="batmancompressor\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -30,9 +42,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Arkham City 100%25 Route - Route.tsv">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="batmancompressor\batman.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Routes\Arkham Asylum 100%25 Route - Route.tsv">

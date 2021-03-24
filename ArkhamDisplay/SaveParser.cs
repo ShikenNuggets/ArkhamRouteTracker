@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
 
 namespace ArkhamDisplay{
 	public class SaveParser{
-		private static readonly string DECOMPRESSED_FILE_PREFIX = "batmancompressor/decompressed.sgd";
 		protected string m_filePath;
 		protected int m_id;
 		protected string m_rawData;
@@ -27,40 +28,85 @@ namespace ArkhamDisplay{
 			m_rawData = string.Empty;
 		}
 
-		protected void Decompress(){
-			var files = System.IO.Directory.GetFiles("batmancompressor");
-			foreach(string file in files){
-				if(file.Contains("decompressed.sgd")){
-					System.IO.File.Delete(file);
-				}
+		protected string Decompress(){
+			string finalResult = "";
+			if(!File.Exists(GetFile())){
+				return finalResult;
 			}
 
-			System.Diagnostics.Process pProcess = new System.Diagnostics.Process();
-			pProcess.StartInfo.Arguments = "-d \"" + GetFile() + "\" " + DECOMPRESSED_FILE_PREFIX;
-			pProcess.StartInfo.UseShellExecute = false;
-			pProcess.StartInfo.RedirectStandardOutput = true;
-			pProcess.StartInfo.FileName = "batmancompressor/batman.exe";
-			pProcess.StartInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
-			pProcess.StartInfo.CreateNoWindow = true; //not diplay a windows
-			pProcess.Start();
-			_ = pProcess.StandardOutput.ReadToEnd(); //The output result
-			pProcess.WaitForExit();
+			var buffer = File.ReadAllBytes(GetFile());
+
+			var offsets = ExtractSaveOffsets(buffer);
+
+			var reader = new BinaryReader(new MemoryStream(buffer));
+
+			for(int i = 0; i < offsets.Length; i++){
+				reader.BaseStream.Seek(offsets[i], SeekOrigin.Begin);
+				//- Header: 0x9e2a83c1 (2653586369)
+				var header = Get32(reader);
+				var unknown = Get32(reader); // + 4
+				var compressedSize = Get32(reader); // + 8
+				var decompressedSize = Get32(reader); // + 12
+
+				reader.BaseStream.Position += 8;
+
+				var compressedBuffer = new byte[compressedSize];
+				reader.Read(compressedBuffer, 0, (int)compressedSize);
+				//var compressedBuffer = reader.ReadBytes((int)compressedSize);
+
+				byte[] decompressed = new byte[decompressedSize];
+				MiniLZO.MiniLZO.Decompress(compressedBuffer, decompressed);
+
+				finalResult += Encoding.ASCII.GetString(decompressed);
+			}
+
+			return finalResult;
+		}
+
+		private static uint Get32(BinaryReader reader){
+			var pos = reader.BaseStream.Position;
+
+			var a1 = reader.ReadUInt32();
+			/*var a2 = */
+			reader.ReadUInt32();
+			var a3 = reader.ReadUInt32();
+			var a4 = reader.ReadUInt32();
+
+			// get32
+			var val = a3 << 16 | a1 | a4 << 24;
+
+			// myswap32
+			var ret = ((val & 0xFF00) << 8) | ((val & 0xFF0000) >> 8) | (val >> 24) | (val << 24);
+
+			reader.BaseStream.Position = pos + 4;
+
+			return ret;
+		}
+
+		private static int[] ExtractSaveOffsets(byte[] buffer){
+			var offsets = new List<int>();
+
+			for(int i = 0; i < buffer.Length - 4; i++){
+				if(buffer[i] != 0x9E)
+					continue;
+
+				if(buffer[i + 1] != 0x2A)
+					continue;
+
+				if(buffer[i + 2] != 0x83)
+					continue;
+
+				if(buffer[i + 3] != 0xC1)
+					continue;
+
+				offsets.Add(i);
+			}
+
+			return offsets.ToArray();
 		}
 
 		public virtual void Update(){
-			Decompress();
-
-			StringBuilder builder = new StringBuilder();
-
-			int i = 1;
-			string fileName = DECOMPRESSED_FILE_PREFIX + i.ToString();
-			while(System.IO.File.Exists(fileName)){
-				builder.Append(System.IO.File.ReadAllText(fileName));
-				i++;
-				fileName = DECOMPRESSED_FILE_PREFIX + i.ToString();
-			}
-
-			lock(m_rawData) m_rawData = builder.ToString();
+			lock(m_rawData) m_rawData = Decompress();
 		}
 
 		public virtual bool HasKey(Entry entry, int requiredMatches){
