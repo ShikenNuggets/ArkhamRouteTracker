@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArkhamDisplay", "ArkhamDisplay\ArkhamDisplay.csproj", "{CF3A5B2B-648A-4236-AF58-917BAD60B797}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArkhamDisplayUpdater", "ArkhamDisplayUpdater\ArkhamDisplayUpdater.csproj", "{B74AE906-2625-4CBA-9760-F8923C611CDF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{CF3A5B2B-648A-4236-AF58-917BAD60B797}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF3A5B2B-648A-4236-AF58-917BAD60B797}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF3A5B2B-648A-4236-AF58-917BAD60B797}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B74AE906-2625-4CBA-9760-F8923C611CDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B74AE906-2625-4CBA-9760-F8923C611CDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B74AE906-2625-4CBA-9760-F8923C611CDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B74AE906-2625-4CBA-9760-F8923C611CDF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
