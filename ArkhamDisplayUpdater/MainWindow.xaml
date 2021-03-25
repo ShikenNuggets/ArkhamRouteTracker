@@ -9,6 +9,7 @@
 	<Grid>
 		<TextBlock Name="UpdaterText" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Updating..." TextWrapping="Wrap"/>
 		<!--<ProgressBar Name="ProgressBar" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,164,0,0" Width="300" Height="10"/>-->
-		<Button Name="OKButton" Content="OK" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,107,0,0" Width="45" Click="OnOKClicked" Visibility="Hidden"/>
+		<Button Name="UpdateButton" Content="OK" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,107,0,0" Width="45" Click="OnUpdateClicked" Visibility="Hidden"/>
+		<Button Name="CloseButton" Content="OK" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,107,0,0" Width="45" Click="OnCloseClicked" Visibility="Hidden"/>
 	</Grid>
 </Window>
