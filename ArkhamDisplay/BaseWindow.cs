@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
+using System.IO;
 using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
@@ -426,6 +428,16 @@ namespace ArkhamDisplay{
 				KillWindow(new KnightWindow(), Game.Knight, sender as MenuItem);
 			}else{
 				(sender as MenuItem).IsChecked = true;
+			}
+		}
+
+		protected virtual void OpenGitHubPage(object sender, RoutedEventArgs e){
+			Process.Start(new ProcessStartInfo("cmd", $"/c start https://github.com/ShikenNuggets/ArkhamRouteTracker"){ CreateNoWindow = true });
+		}
+
+		protected virtual void CheckForUpdates(object sender, RoutedEventArgs e){
+			if(File.Exists("ArkhamDisplayUpdater.exe")){
+				Process.Start("ArkhamDisplayUpdater.exe");
 			}
 		}
 	}

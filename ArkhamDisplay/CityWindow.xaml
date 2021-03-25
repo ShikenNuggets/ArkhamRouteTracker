@@ -20,6 +20,10 @@
 				<MenuItem Name="OriginsMenuItem" Header="Origins" IsCheckable="True" IsChecked="False" Click="SwitchGameWindow" />
 				<MenuItem Name="KnightMenuItem" Header="Knight" IsCheckable="True" IsChecked="False" Click="SwitchGameWindow" />
 			</MenuItem>
+			<MenuItem Header="_Help">
+				<MenuItem Name="GitHub"			Header="GitHub"				Click="OpenGitHubPage" />
+				<MenuItem Name="UpdateMenuItem"	Header="Check for Updates"	Click="CheckForUpdates" />
+			</MenuItem>
 		</Menu>
 		<Grid Name="MainGrid">
 			<Grid.RowDefinitions>
