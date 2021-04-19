@@ -44,9 +44,9 @@ namespace ArkhamDisplay{
 				reader.BaseStream.Seek(offsets[i], SeekOrigin.Begin);
 				//- Header: 0x9e2a83c1 (2653586369)
 				var header = Get32(reader);
-				var unknown = Get32(reader); // + 4
+				var unknown = Get32(reader, true); // + 4
 				var compressedSize = Get32(reader); // + 8
-				var decompressedSize = Get32(reader); // + 12
+				var decompressedSize = Get32(reader, true); // + 12
 
 				reader.BaseStream.Position += 8;
 
@@ -63,20 +63,22 @@ namespace ArkhamDisplay{
 			return finalResult;
 		}
 
-		private static uint Get32(BinaryReader reader){
+		private static uint Get32(BinaryReader reader, bool skip = false){
 			var pos = reader.BaseStream.Position;
 
 			var a1 = reader.ReadUInt32();
-			/*var a2 = */
-			reader.ReadUInt32();
+			if(!skip){
+				/*var a2 = */
+				reader.ReadUInt32();
+			}
 			var a3 = reader.ReadUInt32();
 			var a4 = reader.ReadUInt32();
 
 			// get32
-			var val = a3 << 16 | a1 | a4 << 24;
+			uint val = (a3 << 16) | a1 | (a4 << 24);
 
 			// myswap32
-			var ret = ((val & 0xFF00) << 8) | ((val & 0xFF0000) >> 8) | (val >> 24) | (val << 24);
+			uint ret = ((val & 0xFF00) << 8) | ((val & 0xFF0000) >> 8) | (val >> 24) | (val << 24);
 
 			reader.BaseStream.Position = pos + 4;
 
