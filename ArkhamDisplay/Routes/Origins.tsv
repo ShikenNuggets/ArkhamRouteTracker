@@ -67,7 +67,6 @@ Anarky Tag (Park Row, Ace Building)	Anarky Tags	PickedUp_AnarkyScan_Anarky_27
 Anarky Tag (Park Row, Near Monarch Theater)	Anarky Tags	PickedUp_AnarkyScan_Anarky_21				
 Datapack (Park Row, Slide Under Light Bulb Sign)	Datapacks	PickedUp_ParkRow_Pickup_11				
 Datapack (Park Row, Gel Wall Roof Behind Monarch Theater)	Datapacks	PickedUp_ParkRow_Pickup_9				
-Relay (Park Row, Alley Across Gotham Hardware [behind monarch])	Relays (Park Row)	PickedUp_ParkRow_Camera_8				
 Datapack (Park Row, Gotham Hardware Building by Vent)	Datapacks	PickedUp_ParkRow_Pickup_10				
 Relay (Park Row, Building near Bridge Across Church)	Relays (Park Row)	PickedUp_ParkRow_Camera_4				
 Relay (Park Row, Finnigans Under Beer Sign)	Relays (Park Row)	PickedUp_ParkRow_Camera_3				
@@ -425,6 +424,7 @@ Burnley Hit & Run (Burnley, Near GCPD)	Crime Scene	CrimeScene03_C3PaintChip
 Solve Burnley Hit & Run (Burnley, Across GCR)	Crime Scene	CrimeScene03_CaseFileClosed				
 Amusement Mile Mauling (Amusement, Gotham Casino)	Crime Scene	CrimeScene02_CaseFileScanningComplete				
 Solve Amusement Mile Mauling (Park Row, Auto Repair/Live Nudes)	Crime Scene	CrimeScene02_CaseFileClosed				
+Relay (Park Row, Alley Across Gotham Hardware [behind monarch])	Relays (Park Row)	PickedUp_ParkRow_Camera_8				
 Crime Alley Shootings (Park Row, Between Monarch Theater and Church)	Crime Scene	CrimeScene06_CaseFileScanningComplete				
 Solve Crime Alley Shootings (Industrial, Behind Steel Mill)	Crime Scene	CrimeScene06_CaseFileClosed				
 Blackgate Prisoner (Industrial, Between Steel Mill and Bridge)	Blackgate Prisoners	MW_BGP_Prisoner_06_Captured				
