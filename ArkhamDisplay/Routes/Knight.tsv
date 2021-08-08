@@ -49,8 +49,8 @@ Riddler Trophy (Bleake Island, WinchNearClockTower)	Riddler Trophies	PickedUp_Ci
 Riddler Trophy (Bleake, CrappyBuildingPierClockTower)	Riddler Trophies	PickedUp_CityZ_Pickup_35 			https://static.gosunoob.com/img/1/2015/06/batman-arkham-knight-clock-tower-riddler-trophy-1024x576.jpg	
 Firemen (Bleake Island, PierNearClockTower)	Firemen	SS_FireCrew_13_Rescued 			https://static.gosunoob.com/img/1/2015/07/Bleake_Island_Missing_Firefithter_Location_Bleake_Island_Batman_Arkham_Knight_1-1024x576.jpg	
 Riddler Trophy (Bleake, UnderPierClockTower)	Riddler Trophies	PickedUp_CityZ_Pickup_37 			https://static.gosunoob.com/img/1/2015/06/bleake-island-riddler-trophy-clock-tower-1024x576.jpg	
-Tank Body Shot Upgrade	Upgrades	Unlocked_BmblHeavyCannonBodyShot 				
 Cannon Reload Speed upgrade	Upgrades	Unlocked_BmblHeavyCannonReload				
+Tank Body Shot Upgrade	Upgrades	Unlocked_BmblHeavyCannonBodyShot 				
 Escort Gordon to Clock Tower (Main Story)	Main Story	Ch3a_CityZ_Protect_Gordon_Chase_Started     				
 Riddler Trophy (Bleake, GothamGas Near Panessa Bridge)	Riddler Trophies	PickedUp_CityZ_Pickup_4 			https://static.gosunoob.com/img/1/2015/06/gotham-gas-puzzle-trophy-1024x576.jpg	
 Track Oracle (Main Story)	Main Story	Ch3b_TireTrailActive 				
@@ -387,6 +387,8 @@ Two Face Bank 3 (Miagani)	Two Face	Bank03_Empty
 Batmobile Dodge Upgrade	Upgrades	Unlocked_BmblDoubleDodge 				
 Ram Charge Upgrade	Upgrades	Unlocked_BmblRamCharge				
 Sabotoge Drone Upgrade	Upgrades	Unlocked_DisruptorSabDrone				
+Super Eject 1	Upgrades	Unlocked_BmblSuperEject1				
+Super Eject 2	Upgrades	Unlocked_BmblSuperEject2				
 APC 7	APC	SS_APC_APC7Complete 				
 Manbat Done	ManBat	SS_ManBat_Cure_FullDose2 				
 Speak to GCPD Dude	Main Story	Ch8_Track_Gordon_Objective_Added 				
@@ -495,4 +497,4 @@ APC 9	APC	SS_APC_APC9Complete
 Riddler Riddle	Riddles	PickedUp_CityX_Riddler_33 				
 Riddler Orphanage 5+6+7	Riddler Mission	Lockup_B1_Riddler_Lockedup 				
 Scarecrow Done	Main Story	AK_Main_Game_Complete				
-Knightfall	Main Story					
+Knightfall	Main Story	CH9K_CityZ_TriggerKnightfall				

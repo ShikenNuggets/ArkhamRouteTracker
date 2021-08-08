@@ -1,10 +1,10 @@
 Name	Type	SaveFileId	Image	Video
 Visit Gordon	Main Story	Ch1b_CityZ_Met_Gordon 		
+Pyg (Bleake, South Failure; Arm Chest Knee)	Pyg	SS_Pyg_Victim1Done	https://static.gosunoob.com/img/1/2015/07/The_Perfect_Crime_Batman_Arkham_Knight_1-1024x576.jpg	
 Even the Odds	Main Story	Ch1b_CityZ_Suspicious_Vehicle_Driver_Interrogated 		
 Ivy	Main Story	Ch1bc_CityZ_Light_Tank_Reinforcements_Destroyed 		
 Firemen (Bleake Island, Dixon Docks)	Firemen	SS_FireCrew_0_Rescued 	https://static.gosunoob.com/img/1/2015/07/Bleake_Island_Missing_Firefighter_Batman_Arkham_Knight-1024x576.jpg	
 PanessaTankFight	Main Story	Ch1b_CityZ_All_Light_Tanks_Destroyed 		
-Pyg (Bleake, MerchantBridge; Ear Abdomen Hip)	Pyg	SS_Pyg_Victim2Done	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_The_Perfect_Crime_Bleake_Island_1-1024x576.jpg	
 IvyToGCPD	Main Story	Ch1bc_CityZ_Gordon_Ivy_Convo_done 		
 Clock Tower (Main Story)	Main Story	Ch1c2_Clocktower_C1_Meet_Oracle_Cine_Complete 		
 Panessa Antenna (Main Story)	Main Story	Ch2_CityZ_10_Batman_On_Movie_Studios		
@@ -21,19 +21,17 @@ First Bomb (Part of main story)	Bombs	SS_CommandBeacons_CityZ_15_ChD1_Ch3456789_
 Pyg (Miagani, NearMercyBridge; Chest Arm Toe)	Pyg	SS_Pyg_Victim3Done 	https://static.gosunoob.com/img/1/2015/07/Miagani_Island_The_Perfect_Crime_Batman_Arkham_Knight_1-1024x576.jpg	
 Riddler Orphanage 1	Riddler Mission	Orphan_A1_Intro_Robots_Done 		
 Firemen (Miagani Island, Gotham Herald)	Firemen	SS_FireCrew_5_Rescued 	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Missing_Firefighter_Miagani_Island-1024x576.jpg	
-Bomb (Miagani Island, Botanical Gardens Overpass)	Bombs	SS_CommandBeacons_CityX_09_ChD1ab_Ch3456789.RCommandBeacon_0_destroyed	https://static.gosunoob.com/img/1/2015/07/arkham-knight-miagani-island-landmine-1024x576.jpg	
 Investigate Oracle Crash	Main Story	Ch3_CityX_08_APC_Forensics_Complete		
 Firefly (Miagani Island, Bristol Fire Station near Fairgrounds)	Firefly	SS_Firefly_CityX_Complete 	https://static.gosunoob.com/img/1/2015/07/miagani-island-bristol-fire-station-1024x576.jpg	
-Azrael 1 (Near Parking, use map)	Azrael	SS_Azrael_Fight1_Complete 		
-Bomb (Miagani Island, Lacey Sign)	Bombs	SS_CommandBeacons_CityX_11_ChD1ab_Ch3456789.RCommandBeacon_3_destroyed 	https://static.gosunoob.com/img/1/2015/07/miagani-island-explosive-device-1024x576.jpg	
 Wayne Tower/Miagani Tunnel System Entrance	Main Story	CityX_T10_Ch3c_Tunnel_WinchUsed 		
 Miagani Tunnel Done	Main Story	CityX_T10_Tunnel_Cleared 		
-APC 1	APC	SS_APC_APC1Complete 		
 Start League of Assassins	League of Assassins	DLC_Ras_Ninja_Forensics_Start		
+Azrael 1 (Near Parking, use map)	Azrael	SS_Azrael_Fight1_Complete 		
+Firemen (Miagani Island, Mercy Bridge)	Firemen	SS_FireCrew_8_Rescued 	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_The_Line_of_Duty_Miagani_Island-1024x576.jpg	
+APC 1	APC	SS_APC_APC1Complete 		
 Penguin Start	Main Story	Ch3d_CityX_07_PenguinThugsDead 		
 First Cache Destroyed (Near Parking)	Main Story	Penguin_Cache_Completed 		
 APC 2	APC	SS_APC_APC2Complete 		
-Firemen (Miagani Island, Mercy Bridge)	Firemen	SS_FireCrew_8_Rescued 	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_The_Line_of_Duty_Miagani_Island-1024x576.jpg	
 Firefly (Bleake Island, Fire Station by Water Near GCPD)	Firefly	SS_Firefly_CityZ_Complete 	https://static.gosunoob.com/img/1/2015/07/bleake-island-cauldron-fire-station-1024x576.jpg	
 Riddler Challenge 1 (Bleake, Auto Repair [or use map] 1 4)	Riddler Mission	Orphan_C2_Done 	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Balancing_Act_Riddlers_Revenge-1024x576.jpg	
 Firemen (FoundersIsland, Lighthouse)	Firemen	SS_FireCrew_10_Rescued 	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Missing_Firefighter_Founders_Island-1024x576.jpg	
@@ -45,6 +43,7 @@ APC 3	APC	SS_APC_APC3Complete
 Start Mad Hatter	Mad Hatter	SS_DLC_MadHatter_IntroDone 		
 Mad Hatter First Victim [After First Cobra Fight]	Mad Hatter	SS_DLC_MadHatter_X01Saved		
 GCPD/Ivy/Cobras	Main Story	Ch5b_CityZ_17_Heavy_Tank_Scanning_Complete 		
+Bomb (Miagani Island, Botanical Gardens Overpass)	Bombs	SS_CommandBeacons_CityX_09_ChD1ab_Ch3456789.RCommandBeacon_0_destroyed	https://static.gosunoob.com/img/1/2015/07/arkham-knight-miagani-island-landmine-1024x576.jpg	
 Checkpoint (Miagani, Near Orphanage)	Checkpoints	Checkpoint_X_KDestroyed 	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Own_the_Roads_Miagani_Island_1-1024x576.jpg	
 Pyg (Miagani, NearFoundersIsland; Torso Eye Arm)	Pyg	SS_Pyg_Victim4Done 	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Mutilated_Body_Miagani_Island_1-1024x576.jpg	
 Watchtower (Miagani, Near Bridge By Orphanage)	Watchtower	SS_Watchtowers_CityX_28_ChX1_Ch56789_LOD1.RRadarTower_12_destroyed 	https://static.gosunoob.com/img/1/2015/07/miagani-island-militia-watchtower-1024x576.jpg	
@@ -57,13 +56,13 @@ League of Assassins (Hospital)	League of Assassins	DLC_Ras_Morgue_Puzzle_4
 Riddler Orphanage 3 	Riddler Mission	Orphan_04_Complete 		
 Bomb (Miagani Island, Botanical Gardens)	Bombs	SS_CommandBeacons_CityX_14_ChD1ab_Ch56789.RCommandBeacon_5_destroyed 	https://static.gosunoob.com/img/1/2015/07/campaign-for-disarmament-miagani-island-1024x576.jpg	
 Firemen (Miagani, Wayne Tower)	Firemen	SS_FireCrew_4_Rescued 	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Firefighter_Location_Miagani_Island-1024x576.jpg	
-Firemen (Miagani, EndOfScan)	Firemen	SS_FireCrew_11_Rescued 	https://static.gosunoob.com/img/1/2015/07/Missing_Firefighter_Miagani_Island_Batman_Arkham_Knight-1024x576.jpg	
+Firemen (Miagani, Grand Avenue Station)	Firemen	SS_FireCrew_11_Rescued 	https://static.gosunoob.com/img/1/2015/07/Missing_Firefighter_Miagani_Island_Batman_Arkham_Knight-1024x576.jpg	
+Bomb (Miagani Island, Lacey Sign)	Bombs	SS_CommandBeacons_CityX_11_ChD1ab_Ch3456789.RCommandBeacon_3_destroyed 	https://static.gosunoob.com/img/1/2015/07/miagani-island-explosive-device-1024x576.jpg	
 Wayne Tower Tank Fight	Main Story	Ch5b_WayneTower_Tanks_Complete 		
 Use Sonar	Main Story	Ch5b_ProtectIvyPlantSiteX_ObjectiveComplete 		
 Manbat blood sample	Manbat	SS_ManBat_SampleTaken 		
 Watchtower (Miagani, TowerBridge South 2Statues)	Watchtower	SS_Watchtowers_CityX_17_ChX1_Ch56789_LOD1.RRadarTower_10_destroyed     	https://static.gosunoob.com/img/1/2015/07/miagani-island-skyway-watchtower-1024x576.jpg	
 APC 4	APC	SS_APC_APC4Complete 		
-Two Face Bank 1 (Bleake)	Two Face	Bank01_Empty 		
 Manbat Lab (use map)	ManBat	SS_ManBat_CreatedCure 		
 Mad Hatter Second Victim [Ace Lighthouse]	Mad Hatter	SS_DLC_MadHatter_Z21Saved		
 Penguin 1 (Falcone)	Penguin	PenguinCache_C2_Thugs_Done 		
@@ -71,12 +70,11 @@ Bomb (Bleake, Outside Falcone Penguin Cache)	Bombs	SS_CommandBeacons_CityZ_19_Ch
 Firemen (Bleake, Dock SouthEastBleake)	Firemen	SS_FireCrew_12_Rescued 	https://static.gosunoob.com/img/1/2015/07/The_Line_of_Duty_Firefighter_Arkham_Knight_Bleake_Island_Batman-1024x576.jpg	
 Firemen (Bleake, EastBleake)	Firemen	SS_FireCrew_2_Rescued 	https://static.gosunoob.com/img/1/2015/07/The_Line_of_Duty_Firefighter_Bleake_Island_Batman_Arkham_Knight-1024x576.jpg	
 Killer Croc	Killer Croc	KillerCroc_FirstFight_Done		
-Pyg (Bleake, South Failure; Arm Chest Knee)	Pyg	SS_Pyg_Victim1Done	https://static.gosunoob.com/img/1/2015/07/The_Perfect_Crime_Batman_Arkham_Knight_1-1024x576.jpg	
+Pyg (Bleake, MerchantBridge; Ear Abdomen Hip)	Pyg	SS_Pyg_Victim2Done	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_The_Perfect_Crime_Bleake_Island_1-1024x576.jpg	
 Mad Hatter Victim (Between Panessa and Merchant Bridge)	Mad Hatter	SS_DLC_MadHatter_Z20Saved		
 League of Assassins (Lazarus Pit)	League of Assassins	DLC_Ras_Lazarus_Ninjas_Defeated		
 Killer Croc Guard 1 Found (Shipping container)	Killer Croc	KillerCroc_CityGuard_02_Done		
 Robin Zip/Drone + Radar 1 (Main Story)	Main Story	Ch5c_CityY_Radar_1_Destroyed 		
-Watchtower (Founders, West Cobblepot [away from marker])	Watchtower	SS_Watchtowers_CityY_12_ChX1_Ch56789_LOD1.RRadarTower_0_destroyed 	https://static.gosunoob.com/img/1/2015/07/cobblepot-manor-militia-watchtower-1024x576.jpg	
 Watchtower (Founders, North West [Near Marker])	Watchtower	SS_Watchtowers_CityY_08_ChX1_Ch3456789_LOD1.RRadarTower_0_destroyed 	https://static.gosunoob.com/img/1/2015/07/founders-island-militia-watchtower-1024x576.jpg	
 Radar 2 (Main Story)	Main Story	Ch5c_CityY_Radar_2_Destroyed 		
 Firemen (Founders, MiddleRaisedPlatform)	Firemen	SS_FireCrew_7_Rescued 	https://static.gosunoob.com/img/1/2015/07/Missing_Firefighter_Founders_Island_Batman_Arkham_Knight-1024x576.jpg	
@@ -93,9 +91,9 @@ Riddler Challenge 3 (Founders, use map 2 0)	Riddler Mission	Orphan_C4_ReturnedPo
 Watchtower (Founders, Continue To Water)	Watchtower	SS_Watchtowers_CityY_18_ChX1_Ch3456789_LOD1.RRadarTower_20_destroyed 	https://static.gosunoob.com/img/1/2015/07/founders-island-watchtower-side-mission-1024x576.jpg	
 Checkpoint (Founders, ContinueAlongWater)	Checkpoints	Checkpoint_Y_QDestroyed 	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Own_the_Roads_Founders_Island_8-1024x576.jpg	
 Bomb (Founders, SE Intersection near Bank)	Bombs	SS_CommandBeacons_CityY_17_ChD1ab_Ch3456789.RCommandBeacon_4_destroyed 	https://static.gosunoob.com/img/1/2015/07/campaign-for-disarmament-founders-island-1024x576.jpg	
-Two Face Bank 2 (Founders)	Two Face	Bank02_Empty 		
 APC 5	APC	SS_APC_APC5Complete 		
 Azrael 2 (near firefly, use map)	Azrael	SS_Azrael_Fight2_Complete		
+Watchtower (Founders, West Cobblepot [away from marker])	Watchtower	SS_Watchtowers_CityY_12_ChX1_Ch56789_LOD1.RRadarTower_0_destroyed 	https://static.gosunoob.com/img/1/2015/07/cobblepot-manor-militia-watchtower-1024x576.jpg	
 Firefly (Founders, Near Gothcorp)	Firefly	SS_Firefly_CityY_Complete		
 Killer Croc Guard 2 Found	Killer Croc	KillerCroc_CityGuard_01_Done 		
 ClockTower/Manbat Give Medicine	ManBat	SS_ManBat_Cure_FullDose1 		
@@ -104,8 +102,8 @@ Batmobile Upgrade/Trigger Hush	Main Story	SS_Hush_WayneTower
 Croc Done	Killer Croc	KillerCroc_Done		
 Mad Hatter Done	Mad Hatter	Lockup_B2_MadHatter_LockedUp		
 Bomb (Bleake, Chinatown Roundabout)	Bombs	SS_CommandBeacons_CityZ_08_ChD1ab_Ch789.RCommandBeacon_3_destroyed 	https://static.gosunoob.com/img/1/2015/07/campaign-for-disarmamanet-bleake-island-1024x576.jpg	
-Azrael 3 (Roundabout, use map)	Azrael	SS_Azrael_Fight3_Complete		
 Watchtower (Bleake, Chinatown Roundabout)	Watchtower	SS_Watchtowers_CityZ_08_ChX1_Ch789_LOD1.RRadarTower_0_destroyed 	https://static.gosunoob.com/img/1/2015/07/occupy-gotham-bleake-island-1024x576.jpg	
+Azrael 3 (Roundabout, use map)	Azrael	SS_Azrael_Fight3_Complete		
 Penguin 2	Penguin	PenguinCache_C3_Thugs_Done 		
 Bomb (Founders, North Underground Tunnel Near Pyg)	Bombs	SS_CommandBeacons_CityY_04_ChD1ab_Ch3456789.RCommandBeacon_1_destroyed 	https://static.gosunoob.com/img/1/2015/07/founders-island-side-mission-landmine-1024x576.jpg	
 Pyg (Founders, North; Thigh Shoulder Hand)	Pyg	SS_Pyg_Victim6Done	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_The_Perfect_Crime_Body_Founders_Island_1-1024x576.jpg	
@@ -126,7 +124,7 @@ Checkpoint (Miagani, South)	Checkpoints	Checkpoint_X_HDestroyed 	https://static.
 Freeze Start	Freeze	DLC_Freeze_Boat_Predator_Complete		
 Riddler Orphanage 4 (Look at linked image)	Riddler Mission	Orphan_09_Complete 	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Advanced_Deathtraps_Riddlers_Revenge-1024x576.jpg	
 League of Assassins Done [let Ras live]	League of Assassins	DLC_Ras_Hospital_Choice		
-Riddler Race 3 (use map 0 1)	Riddler Mission	Orphan_C7_RaceComplete 		
+Riddler Race 3 (use map 1 0)	Riddler Mission	Orphan_C7_RaceComplete 		
 Checkpoint (Miagani, SouthOfMercyBridge)	Checkpoints	Checkpoint_X_EDestroyed 	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Own_the_Roads_Miagani_Island_6-1024x576.jpg	
 Watchtower (Miagani, NextToBridgeAcrossFromGCPD)	Watchtower	SS_Watchtowers_CityX_06_ChX1_Ch789_LOD1.RRadarTower_1_destroyed 	https://static.gosunoob.com/img/1/2015/07/miagani-island-militia-watchtower-side-mission-1024x576.jpg	
 Checkpoint (Miagani, NextToBridgeAcrossFromGCPD)	Checkpoints	Checkpoint_X_DDestroyed 	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Own_the_Roads_Miagani_Island_5-1024x576.jpg	
@@ -134,12 +132,10 @@ Bomb (Miagani, NextToParkingGarage)	Bombs	SS_CommandBeacons_CityX_06_ChD1ab_Ch78
 Watchtower (Miagani, Gotham Bank)	Watchtower	SS_Watchtowers_CityX_11_ChX1_Ch789_LOD1.RRadarTower_8_destroyed 	https://static.gosunoob.com/img/1/2015/07/bank-of-gotham-militia-watchtower-miagani-island-1024x576.jpg	
 Two Face Bank 3 (Miagani)	Two Face	Bank03_Empty 		
 Speak to GCPD Dude	Main Story	Ch8_Track_Gordon_Objective_Added 		
+Checkpoint (Bleake, SE Chinatown after ArkhamHQ)	Checkpoints	Checkpoint_Z_CDestroyed 	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Own_the_Roads_Bleake_Island_4-1024x576.jpg	
 ArkhamHQ + Deacon	Deacon	SS_Deacon_COMPLETE 		
 APC 7	APC	SS_APC_APC7Complete 		
 Riddler Orphanage 5+6+7	Riddler Mission	Lockup_B1_Riddler_Lockedup 		
-Checkpoint (Bleake, SE Chinatown)	Checkpoints	Checkpoint_Z_CDestroyed 	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Own_the_Roads_Bleake_Island_4-1024x576.jpg	
-Checkpoint (Bleake, NextToFoundersBridge)	Checkpoints	Checkpoint_Z_ADestroyed	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Own_the_Roads_Bleake_Island_2-1024x576.jpg	
-Checkpoint (Bleake, Next to previous checkpoint)	Checkpoints	Checkpoint_Z_UDestroyed	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Own_the_Roads_Bleake_Island_3-1024x576.jpg	
 Manbat Done	ManBat	SS_ManBat_Cure_FullDose2 		
 Bomb (Founders, BleakBridge)	Bombs	SS_CommandBeacons_CityY_05_ChD1ab_Ch789_LOD1.RCommandBeacon_0_destroyed 	https://static.gosunoob.com/img/1/2015/07/founders-island-disarm-landmine-1024x576.jpg	
 Checkpoint (Founders, North)	Checkpoints	Checkpoint_Y_TDestroyed 	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Own_the_Roads_Founders_Island_3-1024x576.jpg	
@@ -148,6 +144,8 @@ APC 8	APC	SS_APC_APC8Complete
 Penguin 3	Penguin	PenguinCache_C4_Thugs_Done 		
 Checkpoint (Bleake, Chinatown 3 turrets)	Checkpoints	Checkpoint_Z_BDestroyed 	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Own_the_Roads_Bleake_Island_1-1024x576.jpg	
 Freeze Fight	Freeze	DLC_Freeze_First_Location_Combat_Finished		
+Checkpoint (Bleake, NextToFoundersBridge)	Checkpoints	Checkpoint_Z_ADestroyed	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Own_the_Roads_Bleake_Island_2-1024x576.jpg	
+Checkpoint (Bleake, Next to previous checkpoint)	Checkpoints	Checkpoint_Z_UDestroyed	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Own_the_Roads_Bleake_Island_3-1024x576.jpg	
 Penguin Done	Penguin	PenguinCache_C5_Thugs_Done 		
 GCPD Assault	Main Story	Ch9c_Assault_on_GCPD_Complete 		
 Bomb (Bleake, In Canal)	Bombs	SS_CommandBeacons_CityZ_09_ChD1ab_Ch9.RCommandBeacon_2_destroyed	https://static.gosunoob.com/img/1/2015/07/bleake-island-explosive-ordnance-campaign-for-disarmament-1024x576.jpg	
@@ -166,4 +164,3 @@ APC 9	APC	SS_APC_APC9Complete
 Bomb (Miagani, NearFirstPenguin)	Bombs	SS_CommandBeacons_CityX_12_ChD1ab_Ch9.RCommandBeacon_4_destroyed 	https://static.gosunoob.com/img/1/2015/07/miagani-island-militia-ordnance-landmine-1024x576.jpg	
 Deathstroke Done	Deathstroke	Lockup_B1_Deathstroke_Lockedup 		
 Scarecrow Done	Main Story	AK_Main_Game_Complete		
-Knightfall	Main Story			
