@@ -6,7 +6,6 @@ Coventry Relay Tower	Relay Towers	SS_Enigma_Tower1_Deactivated
 Datapack (Coventry, Gel Near Relay Tower)	Datapacks	PickedUp_Coventry_Pickup_7				
 Relay (Coventry, Bottom of Jammer Building)	Relays (Coventry)	PickedUp_Coventry_Camera_10				
 Relay (Coventry, Outside Warehouse)	Relays (Coventry)	PickedUp_Coventry_Camera_4				
-Relay (Coventry, Near Water Towers Across Jammer)	Relays (Coventry)	PickedUp_Coventry_Camera_2				
 Datapack (Coventry, Warehouse)	Datapacks	PickedUp_Coventry_Pickup_9				
 Relay (Coventry, Inside Warehouse)	Relays (Coventry)	PickedUp_Coventry_Camera_5				
 Datapack (Coventry, Hack Warehouse)	Datapacks	PickedUp_Coventry_Pickup_11				
@@ -22,6 +21,7 @@ Relay (Coventry, Went Building Across from Lacey Towers)	Relays (Coventry)	Picke
 Relay (Coventry, Lacey Towers)	Relays (Coventry)	PickedUp_Coventry_Camera_9				
 Datapack (Coventry, Next to GCR tunnel)	Datapacks	PickedUp_Coventry_Pickup_15				
 Datapack (Coventry, Cale Anderson Bottom)	Datapacks	PickedUp_Coventry_Pickup_17				
+Relay (Coventry, Near Water Towers Across Jammer)	Relays (Coventry)	PickedUp_Coventry_Camera_2				
 Datapack (Coventry, Cale Anderson Tunnel Roof)	Datapacks	PickedUp_Coventry_Pickup_5				
 Anarky Tag (Coventry, Cale Anderson Lower)	Anarky Tags	PickedUp_AnarkyScan_Anarky_31				
 Datapack (Coventry, Remote Batarang Across Anarky Tag)	Datapacks	PickedUp_Coventry_Pickup_3				
@@ -76,11 +76,11 @@ Datapack (Amusement, Gel Wall Gotham Casino)	Datapacks	PickedUp_AmusementMile_Pi
 SIM Card 1	Main Story	CH2_OW_3rdJammerDown				
 Shadow Vigilante (Combo Variation)	Shadow Vigilante	ShadowVigilante_ConcussionDetonatorKnockdown				
 Shadow Vigilante (3 Gel)	Shadow Vigilante	ShadowVigilante_TripMultipleEnemyWithOneSlide				
+Shadow Vigilante (Double Trip)	Shadow Vigilante	ShadowVigilante_CounterDuringBeatdown				
+Shadow Vigilante (Counter During Beatdown)	Shadow Vigilante	ShadowVigilante_HightThreatAndGradeA				
 Relay (Amusement, Across Casino)	Relays (Amusement)	PickedUp_AmusementMile_Camera_10				
 Datapack (Amusement, Vents Across Casino)	Datapacks	PickedUp_AmusementMile_Pickup_4				
 Relay (Amusement, Train Station)	Relays (Amusement)	PickedUp_AmusementMile_Camera_2				
-Shadow Vigilante (Double Trip)	Shadow Vigilante	ShadowVigilante_CounterDuringBeatdown				
-Shadow Vigilante (Counter During Beatdown)	Shadow Vigilante	ShadowVigilante_HightThreatAndGradeA				
 Datapack (Amusement, Train Station Hack)	Datapacks	PickedUp_AmusementMile_Pickup_7				
 Pinkney Plaque (Amusement, Train Station)	Pinkney Plaques	PickedUp_PinkeyPlaque_Pinkney_3				
 Anarky Tag (Amusement, Tunnel Next to Station)	Anarky Tags	PickedUp_AnarkyScan_Anarky_23				
@@ -102,8 +102,6 @@ Gotham Protector (Smoke Bomb Takedown)	Gotham Protector	SilentGuardian_GlideWith
 Worst Nightmare (3 silent takedowns)	Worst Nightmare	WorstNightmare_Unseen				
 Relay (Industrial, SIM Card Building)	Relays (Industrial)	PickedUp_Industrial_Camera_4				
 Datapack (Industrial, Hack next to sim card)	Datapacks	PickedUp_Industrial_Pickup_10				
-Relay (Industrial, Sionis Industries Gate)	Relays (Industrial)	PickedUp_Industrial_Camera_5				
-Relay (Industrial, Building in front of GCR)	Relays (Industrial)	PickedUp_Industrial_Camera_1				
 Datapack (Industrial, Hack 3rd Tower)	Datapacks	PickedUp_Industrial_Pickup_2				
 Datapack (Industrial, Switch Lights Behind Amertek)	Datapacks	PickedUp_Industrial_Pickup_6				
 Datapack (Industrial, Gel Wall Amertek)	Datapacks	PickedUp_Industrial_Pickup_5				
@@ -123,7 +121,6 @@ Datapack (Final Offer, Boiler Deck Ceiling [after deathstroke])	Datapacks	Picked
 Datapack (Final Offer, Deck Access Corridor Hack Door)	Datapacks	PickedUp_FinalOffer_Pickup_10				
 Anarky Bomb (Final Offer -> South Bowery)	Anarky Bomb	ChA12_BombDeactivated				
 Datapack (Amusement, Fly through Wall Shipping Container [with bomb])	Datapacks	PickedUp_AmusementMile_Pickup_1				
-Anarky Tag (Sheldon Park, Wonder Tower)	Anarky Tags	PickedUp_AnarkyScan_Anarky_22				
 Datapack (Sheldon Park, Pier in Cage)	Datapacks	PickedUp_Industrial_Pickup_16				
 Datapack (Sheldon Park, Boat Crane Switch)	Datapacks	PickedUp_Industrial_Pickup_17				
 Anarky Tag (Bowery, First Anarky Bomb Building)	Anarky Tags	PickedUp_AnarkyScan_Anarky_26				
@@ -186,7 +183,6 @@ Datapack (Industrial, South Building Batarang Switches)	Datapacks	PickedUp_Indus
 Relay (Industrial, South Building)	Relays (Industrial)	PickedUp_Industrial_Camera_8				
 Datapack (Industrial, Sionis Slide Under Cage)	Datapacks	PickedUp_Industrial_Pickup_13				
 Datapack (Industrial, Sionis Roof by Chimneys)	Datapacks	PickedUp_Industrial_Pickup_11				
-Relay (Industrial, Steel Mill)	Relays (Industrial)	PickedUp_Industrial_Camera_6				
 Datapack (Steel Mill, Gel Brick Wall Computer Office)	Datapacks	PickedUp_SteelMill_Pickup_2				
 Datapack (Steel Mill, Ceiling Across Computer Office)	Datapacks	PickedUp_SteelMill_Pickup_1				
 Datapack (Steel Mill, Gel Wall Loading Bay Depot)	Datapacks	PickedUp_SteelMill_Pickup_3				
@@ -197,6 +193,9 @@ Datapack (Steel Mill, Concealed Room Remote Batarang)	Datapacks	PickedUp_SteelMi
 Datapack (Steel Mill, Hidden Facility Maintenance Cell through Pipe)	Datapacks	PickedUp_SteelMill_Pickup_10				
 Worst Nightmare (No Takedowns)	Worst Nightmare	WorstNightmare_UnseenDetectiveVision				
 Copperhead	Main Story	Ch4_SteelMill_CopperHeadDefeated				
+Relay (Industrial, Building in front of GCR)	Relays (Industrial)	PickedUp_Industrial_Camera_1				
+Relay (Industrial, Sionis Industries Gate)	Relays (Industrial)	PickedUp_Industrial_Camera_5				
+Relay (Industrial, Steel Mill)	Relays (Industrial)	PickedUp_Industrial_Camera_6				
 Data Handler (Industrial, Steel Mill)	Data Handler	SS_Enigma_DataHandler10				
 Datapack (Bridge, Disrupt Hack North Bottom)	Datapacks	PickedUp_Bridge_Pickup_7				
 Drug Stash (Bridge)	Black Mask	CHJ1_Stash04_Destroyed				
@@ -206,15 +205,14 @@ Data Handler (Coventry, Lacey Towers)	Data Handler	SS_Enigma_DataHandler14
 Data Handler (Coventry, Across Lounge Near Shiva)	Data Handler	SS_Enigma_DataHandler19				
 Relay (Burnley, NW By 23 Door)	Relays (Burnley)	PickedUp_Burnley_Camera_5				
 Shiva Victim 1 (Coventry/Diamond, shopping complex)	Shiva	MWShiva_CrimeScene01_MWShiva_AssassinTrail				
-Datapack (Diamond, Shopping Complex Roof 6 switches)	Datapacks	PickedUp_Diamond_Pickup_17				
-Datapack (Diamond, Disrupt Hack by Airship Truck near Hotel)	Datapacks	PickedUp_Diamond_Pickup_18				
 Relay (Diamond, Lower Gotham News)	Relays (Diamond)	PickedUp_Diamond_Camera_6				
 Datapack (Diamond, batclaw vent between Gotham News and Hotel)	Datapacks	PickedUp_Diamond_Pickup_11				
+Datapack (Diamond, Shopping Complex Roof 6 switches)	Datapacks	PickedUp_Diamond_Pickup_17				
+Datapack (Diamond, Disrupt Hack by Airship Truck near Hotel)	Datapacks	PickedUp_Diamond_Pickup_18				
 Datapack (Diamond, Red/Green switch between Gotham News and Hotel)	Datapacks	PickedUp_Diamond_Pickup_12				
 Relay (Diamond, GCR Across Hotel)	Relays (Diamond)	PickedUp_Diamond_Camera_3				
 Datapack (Diamond, GCR Side Cage)	Datapacks	PickedUp_Diamond_Pickup_1				
 Datapack (Diamond, Furniture Company [lower GCR])	Datapacks	PickedUp_Diamond_Pickup_2				
-Relay (Diamond, Blue Building Across GCR)	Relays (Diamond)	PickedUp_Diamond_Camera_5				
 Relay (Diamond, Statue Near GCR Plaza)	Relays (Diamond)	PickedUp_Diamond_Camera_9				
 Datapack (Diamond, Gel Wall near GCR Plaza Statue)	Datapacks	PickedUp_Diamond_Pickup_10				
 Anarky Tag (Diamond, Near Gel Wall/GCR Plaza Statue)	Anarky Tags	PickedUp_AnarkyScan_Anarky_16				
@@ -222,9 +220,9 @@ Datapack (Diamond, Gotham City News Flying Switches)	Datapacks	PickedUp_Diamond_
 Datapack (Diamond, Switch Electric Batarang Vent Auto Repair)	Datapacks	PickedUp_Diamond_Pickup_16				
 Relay (Diamond, Furniture)	Relays (Diamond)	PickedUp_Diamond_Camera_10				
 Relay (Diamond, Sake Graffiti Alley)	Relays (Diamond)	PickedUp_Diamond_Camera_8				
-Datapack (Diamond, Switch Batarang Furniture Sign)	Datapacks	PickedUp_Diamond_Pickup_14				
 Datapack (Diamond, Remote Batarang Maze across Lounge)	Datapacks	PickedUp_Diamond_Pickup_13				
 Anarky Tag (Diamond, Furniture)	Anarky Tags	PickedUp_AnarkyScan_Anarky_8				
+Datapack (Diamond, Switch Batarang Furniture Sign)	Datapacks	PickedUp_Diamond_Pickup_14				
 Relay (Diamond, Across Soder Cola)	Relays (Diamond)	PickedUp_Diamond_Camera_7				
 Solve Jezebel Fall (Diamond, Balcony Across Soder Cola)	Crime Scene	CrimeScene05_CaseFileClosed				
 Anarky Tag (Diamond, Soder Cola)	Anarky Tags	PickedUp_AnarkyScan_Anarky_10				
@@ -233,12 +231,14 @@ Gotham Protector (Top of Diamond Soder Cola)	Gotham Protector	SilentGuardian_Big
 Anarky Bomb (Diamond, Soder Cola)	Anarky Bomb	ChA23_Bomb2Deactivated				
 Gotham Protector (150 meter glide no grapnel)	Gotham Protector	SilentGuardian_ARAdvanced1				
 Data Handler (Industrial, [with bomb])	Data Handler	SS_Enigma_DataHandler09				
+Anarky Tag (Sheldon Park, Wonder Tower)	Anarky Tags	PickedUp_AnarkyScan_Anarky_22				
 Datapack (Sheldon Park, Wonder Tower Batarang Switch [with bomb])	Datapacks	PickedUp_Industrial_Pickup_15				
 Penguin Cache (Sheldon Park, Across Wonder Tower Entrance [with bomb])	Penguin	CHP1_Cache04_Destroyed				
 Anarky Tag (Diamond, Dock near Soder Cola)	Anarky Tags	PickedUp_AnarkyScan_Anarky_18				
 Penguin Cache (Diamond, Dock near Soder Cola)	Penguin	CHP1_Cache02_Destroyed				
 Relay (Diamond, Dock near Soder Cola)	Relays (Diamond)	PickedUp_Diamond_Camera_2				
 Datapack (Diamond, Fly to Cage near Water)	Datapacks	PickedUp_Diamond_Pickup_7				
+Relay (Diamond, Blue Building Across GCR)	Relays (Diamond)	PickedUp_Diamond_Camera_5				
 Datapack (Diamond, 3 gel wall train tracks near Soder Cola)	Datapacks	PickedUp_Diamond_Pickup_5				
 Anarky Tag (Diamond, Movie Poster across Hotel)	Anarky Tags	PickedUp_AnarkyScan_Anarky_17				
 Relay (Diamond, GCR Across Hotel)	Relays (Diamond)	PickedUp_Diamond_Camera_1				
@@ -411,12 +411,12 @@ Data Handler (Amusement, Behind Dixon Docks across Final Offer)	Data Handler	SS_
 Anarky Tag (Amusement, Behind Dixon Docks across Final Offer)	Anarky Tags	PickedUp_AnarkyScan_Anarky_20				
 Relay (Amusement, Behind Dixon Docks across Final Offer)	Relays (Amusement)	PickedUp_AmusementMile_Camera_8				
 Penguin Cache (Amusement, Final Offer Shipping Container)	Penguin	CHP1_Cache05_Destroyed				
+Datapack (Final Offer, On Water Path [deck 1])	Datapacks	PickedUp_FinalOffer_Pickup_2				
+Datapack (Final Offer, Boiler Deck Glue Pipe)	Datapacks	PickedUp_FinalOffer_Pickup_3				
 Datapack (Amusement, Final Offer Left)	Datapacks	PickedUp_AmusementMile_Pickup_18				
 Relay (Amusement, Final Offer)	Relays (Amusement)	PickedUp_AmusementMile_Camera_7				
 Solve Coventry Fire (Amusement, Final Offer)	Crime Scene	CrimeScene04_CaseFileClosed				
 Datapack (Amusement, Final Offer Back)	Datapacks	PickedUp_AmusementMile_Pickup_14				
-Datapack (Final Offer, On Water Path [deck 1])	Datapacks	PickedUp_FinalOffer_Pickup_2				
-Datapack (Final Offer, Boiler Deck Glue Pipe)	Datapacks	PickedUp_FinalOffer_Pickup_3				
 Datapack (Burnley, Pinkney Door Behind GCR)	Datapacks	PickedUp_Burnley_Pickup_8				
 Pinkney Plaque (Burnley, Tomb Behind GCR)	Pinkney Plaques	PickedUp_PinkeyPlaque_Pinkney_7				
 Penguin Cache (Burnley, Near Relay Tower)	Penguin	CHP1_Cache01_Destroyed				
@@ -450,3 +450,4 @@ Enigma Trophy	Enigma Hideout	PickedUp_FirstTrophy_0
 Blackgate Prisoner (Burnley, Behind GCR)	Blackgate Prisoners	MW_BGP_Prisoner_17_Captured				
 Gotham Protector (Crime in Progress in Each District)	Gotham Protector	1SilentGuardian_StopCrimeInProgressInEachDistrict		DarkKnightFinish		
 All Upgrades [verify manually]	Upgrades					
+Done						
