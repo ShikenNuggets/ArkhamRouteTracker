@@ -150,6 +150,17 @@ namespace ArkhamDisplay{
 			return match.ToString();
 		}
 
+		public virtual string GetLastMatch(string regex){
+			Regex rx = new Regex(regex);
+			MatchCollection matches = rx.Matches(m_rawData);
+
+			if(matches.Count > 0){
+				return matches[matches.Count - 1].ToString();
+			}
+
+			return "";
+		}
+
 		protected virtual string GetFile(){
 			return System.IO.Path.Combine(m_filePath, "Save" + m_id.ToString() + ".sgd");
 		}

@@ -100,5 +100,9 @@ namespace ArkhamDisplay{
 			progressCounter.Text = string.Format("{0:0.0}", percentDone) + "%";
 			riddleCounter.Text = UpdateRiddleCount();
 		}
+
+		protected override string UpdateRiddleCount(){
+			return saveParser.GetLastMatch(@"\b\d*\/243\b");
+		}
 	}
 }
