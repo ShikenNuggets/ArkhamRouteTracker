@@ -6,8 +6,9 @@ namespace ArkhamDisplay{
 
 		public override bool HasKey(Entry entry, int requiredMatches){
 			if("Data Handler".Equals(entry.type)){
-				return !HasKey(entry.id, requiredMatches) && !HasKey(entry.alternateID, requiredMatches);
-			}else if("DarkKnightFinish".Equals(entry.metadata)){
+				return HasKey("SS_Enigma_EnigmaHQ_Visited", requiredMatches) && !HasKey(entry.id, requiredMatches) && !HasKey(entry.alternateID, requiredMatches);
+			}
+			else if("DarkKnightFinish".Equals(entry.metadata)){
 				return HasKeyCustomRegex(@"\b" + entry.id + @"............" + Convert.ToChar(Convert.ToByte("0x1", 16)), requiredMatches);
 			}
 
