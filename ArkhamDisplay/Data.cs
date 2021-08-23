@@ -73,7 +73,6 @@ namespace ArkhamDisplay{
 		public static bool CityCatwoman { get { return data.cityCatwoman; } set { data.cityCatwoman = value; } }
 		public static bool KnightFirstEnding { get { return data.knightFirstEnding; } set { data.knightFirstEnding = value; } }
 		public static bool KnightNGPlus { get { return data.knightNGPlus; } set { data.knightNGPlus = value; } }
-		public static bool Knight120 { get { return data.knight120; } set { data.knight120 = value; } }
 
 		public static bool Knight240 { get { return data.knight240; } set { data.knight240 = value; } }
 		public static bool KnightMoF {  get { return data.knightMoF;  } set { data.knightMoF = value; } }

@@ -13,8 +13,7 @@
 				<MenuItem Name="PrefMenuItem" Header="Preferences" Click="PrefMenuItem_Click" />
 				<MenuItem Name="UpdateMenuItem" Header="Check for Updated Routes" Click="CheckForUpdatedRoutes" />
 				<MenuItem Name="FirstEndingMenuItem" Header="First Ending" IsCheckable="True" IsChecked="False" Click="UpdatePreferences"/>
-				<MenuItem Name="NGPlusMenuItem" Header="NG+" IsCheckable="True" IsChecked="False" Click="UpdatePreferences"/>
-				<MenuItem Name="OneTwentyPercentMenuItem" Header="120%" IsCheckable="True" IsChecked="False" Click="UpdatePreferences"/>
+                <MenuItem Name="NGPlusMenuItem" Header="NG+" IsCheckable="True" IsChecked="False" Click="UpdatePreferences"/>
                 <MenuItem Name="TwoFortyPercentMenuItem" Header="240%" IsCheckable="True" IsChecked="False" Click="UpdatePreferences"/>
                 <MenuItem Name="MatterOfFamilyMenuItem" Header="Matter of Family" IsCheckable="True" IsChecked="False" Click="UpdatePreferences"/>
             </MenuItem>

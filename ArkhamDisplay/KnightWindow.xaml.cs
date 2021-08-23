@@ -12,23 +12,22 @@ namespace ArkhamDisplay{
 			return new KnightSave(Data.SaveLocations[(int)game], Data.SaveIDs[(int)game]);
 		}
 
+		protected override string GetEntryName(Entry entry)
+		{
+			if (TwoFortyPercentMenuItem.IsChecked && "NG+".Equals(entry.metadata))
+			{
+				return entry.name + " (" + entry.metadata + ")";
+			}
+			return base.GetEntryName(entry);
+		}
+
 		protected override void SetCurrentRoute(){
 			if (Data.KnightFirstEnding) {
 				currentRoute = "KnightFirstEnding";
-			} else if (Data.KnightNGPlus && !Data.Knight120) {
+			} else if (Data.KnightNGPlus) {
 				currentRoute = "KnightNG+";
-			} else if (Data.KnightNGPlus && Data.Knight120) {
-				currentRoute = "KnightNG+120";
-			} else if (Data.Knight120 && !Data.KnightNGPlus) {
-				currentRoute = "Knight120";
 			} else if (Data.Knight240) {
-				if (saveParser != null && saveParser.HasKey("Knightmare", 1)) {
-					minRequiredMatches = 2;
-					currentRoute = "KnightNG+120";
-				} else {
-					minRequiredMatches = 1;
-					currentRoute = "Knight120";
-				}
+				currentRoute = "Knight240";
 			} else if (Data.KnightMoF) {
 				currentRoute = "KnightMoF";
 			}else{
@@ -39,7 +38,6 @@ namespace ArkhamDisplay{
 		protected override void UpdateUI(){
 			FirstEndingMenuItem.IsChecked = Data.KnightFirstEnding;
 			NGPlusMenuItem.IsChecked = Data.KnightNGPlus;
-			OneTwentyPercentMenuItem.IsChecked = Data.Knight120;
 			TwoFortyPercentMenuItem.IsChecked = Data.Knight240;
 			MatterOfFamilyMenuItem.IsChecked = Data.KnightMoF;
 			base.UpdateUI();
@@ -48,29 +46,27 @@ namespace ArkhamDisplay{
 		protected override void UpdatePreferences(object sender = null, RoutedEventArgs e = null){
 			//Some settings are incompatible, so if one switches one make sure the other does too
 			if(sender == FirstEndingMenuItem && FirstEndingMenuItem.IsChecked){
-				OneTwentyPercentMenuItem.IsChecked = false;
-				TwoFortyPercentMenuItem.IsChecked = false;
-				MatterOfFamilyMenuItem.IsChecked = false;
-			}
-			else if(sender == OneTwentyPercentMenuItem && OneTwentyPercentMenuItem.IsChecked){
-				FirstEndingMenuItem.IsChecked = false;
 				TwoFortyPercentMenuItem.IsChecked = false;
 				MatterOfFamilyMenuItem.IsChecked = false;
 			}
 			else if(sender == TwoFortyPercentMenuItem && TwoFortyPercentMenuItem.IsChecked){
 				NGPlusMenuItem.IsChecked = false;
 				FirstEndingMenuItem.IsChecked = false;
-				OneTwentyPercentMenuItem.IsChecked = false;
 				MatterOfFamilyMenuItem.IsChecked = false;
 			}
 			else if (sender == MatterOfFamilyMenuItem && MatterOfFamilyMenuItem.IsChecked)
 			{
 				NGPlusMenuItem.IsChecked = false;
 				FirstEndingMenuItem.IsChecked = false;
-				OneTwentyPercentMenuItem.IsChecked = false;
 				TwoFortyPercentMenuItem.IsChecked = false;
 			}
+			else if (sender == NGPlusMenuItem && NGPlusMenuItem.IsChecked)
+			{
+				TwoFortyPercentMenuItem.IsChecked = false;
+				MatterOfFamilyMenuItem.IsChecked = false;
+			}
 
+			// TODO: We can probably get rid of this
 			if(NGPlusMenuItem.IsChecked){
 				minRequiredMatches = 2;
 			}else{
@@ -79,7 +75,6 @@ namespace ArkhamDisplay{
 
 			Data.KnightFirstEnding = FirstEndingMenuItem.IsChecked;
 			Data.KnightNGPlus = NGPlusMenuItem.IsChecked;
-			Data.Knight120 = OneTwentyPercentMenuItem.IsChecked;
 			Data.Knight240 = TwoFortyPercentMenuItem.IsChecked;
 			Data.KnightMoF = MatterOfFamilyMenuItem.IsChecked;
 
@@ -91,10 +86,17 @@ namespace ArkhamDisplay{
 			double percentDone = 100.0 * doneEntries / totalEntries;
 			if (TwoFortyPercentMenuItem.IsChecked)
 			{
-				percentDone = 1.2 * percentDone;
-				if ("KnightNG+120".Equals(currentRoute))
+				// TODO: This is just a hack. Ideally, we'd know the number of rows that are NG+
+				// and scale that to be 120%, while the remaining would scale to 120%. However,
+				// that's too much work for me to bother.
+				int newGameEntries = 532;
+				if (doneEntries <= newGameEntries)
 				{
-					percentDone += 120.0;
+					// The number of newGame entries should be equal to 119%
+					percentDone = 119.0 * doneEntries / newGameEntries;
+				}else{
+					// The remaining entries (totalEntries - newGameEntries) should be equal to 121%
+					percentDone = 119.0 + (doneEntries - newGameEntries) * 121 / (totalEntries - newGameEntries);
 				}
 			}
 			progressCounter.Text = string.Format("{0:0.0}", percentDone) + "%";
