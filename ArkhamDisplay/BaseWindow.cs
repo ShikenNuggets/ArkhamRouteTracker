@@ -379,6 +379,60 @@ namespace ArkhamDisplay{
 			Data.Save();
 		}
 
+		protected void CheckForUpdatedRoutes(object sender = null, RoutedEventArgs e = null){
+			string routesWithUpdates = "";
+			Dictionary<string, byte[]> routeFileData = new Dictionary<string, byte[]>();
+
+			try{
+				var client = new Octokit.GitHubClient(new Octokit.ProductHeaderValue("ArkhamRouteTracker"));
+				var routes = client.Repository.Content.GetAllContents("ShikenNuggets", "ArkhamRouteTracker", "ArkhamDisplay/Routes").Result;
+				foreach(var r in routes){
+					routeFileData.Add(r.Name, client.Repository.Content.GetRawContent("ShikenNuggets", "ArkhamRouteTracker", r.Path).Result);
+				
+					if(!Data.HasRouteFile(r.Name)){
+						routesWithUpdates += "\n" + r.Name;
+						continue;
+					}
+
+					//Check SHA1 hash against route file
+					if(Utils.GetSHA1Hash("Routes/" + r.Name) != Utils.GetSHA1Hash(routeFileData[r.Name])){
+						routesWithUpdates += "\n" + r.Name;
+						continue;
+					}
+				}
+			}catch(Exception){
+				MessageBox.Show("An error occurred while checking for updates, please try again later.");
+				return;
+			}
+
+			MessageBoxResult result = MessageBoxResult.No;
+			if(routesWithUpdates.Length > 0){
+				result = MessageBox.Show("The following routes have updates. Would you like to download?\n" + routesWithUpdates, "Updates Available", MessageBoxButton.YesNo);
+			}else{
+				MessageBox.Show("Routes are already up to date.");
+			}
+
+			try{
+				if(result == MessageBoxResult.Yes){
+					foreach(var v in routeFileData){
+						System.IO.File.WriteAllBytes("Routes/" + v.Key, v.Value);
+					}
+
+					stopButton.IsEnabled = false;
+					startButton.IsEnabled = true;
+
+					if(updateWorker != null && updateWorker.IsBusy){
+						updateWorker.CancelAsync();
+					}
+
+					Data.ReloadRoutes();
+					MessageBox.Show("Routes successfully updated.");
+				}
+			}catch(System.IO.IOException){
+				MessageBox.Show("An error occurred while updating the route files!");
+			}
+		}
+
 		protected void OpenSavePathWindow(object sender = null, RoutedEventArgs e = null){
 			SetSavePathWindow wnd = new SetSavePathWindow(game);
 			wnd.Activate();

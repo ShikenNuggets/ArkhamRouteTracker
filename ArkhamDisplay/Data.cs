@@ -107,6 +107,18 @@ namespace ArkhamDisplay{
 
 			return routes[name];
 		}
+		
+		public static bool HasRouteFile(string fileName){
+			if(fileName == System.IO.Path.GetFileName(routeFileName)){
+				return true;
+			}
+
+			return routeFiles.ContainsValue(fileName) || routeFiles.ContainsValue("Routes/" + fileName);
+		}
+
+		public static void ReloadRoutes(){
+			routes.Clear(); //This function doesn't actually reload the routes, it just deloads them
+		}
 
 		public static void SetTheme(Theme theme){
 			if(data.savedTheme == Theme.Default && UseTheme() == theme){
