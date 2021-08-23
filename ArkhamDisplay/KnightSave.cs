@@ -7,13 +7,24 @@ namespace ArkhamDisplay{
 
 		public KnightSave(string filePath, int id) : base(filePath, id){}
 
-		public override void Update(){
+		public override bool Update(){
 			string file = GetFile();
-			if(System.IO.File.Exists(file)){
-				m_rawData = System.IO.File.ReadAllText(file);
+
+			var lastWriteTime = System.IO.File.GetLastWriteTimeUtc(file);
+			if(lastWriteTime == m_LastWriteTime){
+				return false; //No need to update, file hasn't been written to since last check
 			}
 
+			m_LastWriteTime = lastWriteTime;
+
+			if(!System.IO.File.Exists(file)){
+				return false;
+			}
+
+			m_rawData = System.IO.File.ReadAllText(file);
 			m_rawData = m_rawData.Trim('\0');
+
+			return true;
 		}
 
 		protected override string GetFile(){

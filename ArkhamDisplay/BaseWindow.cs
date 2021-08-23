@@ -208,7 +208,10 @@ namespace ArkhamDisplay{
 			}
 
 			if(saveParser != null){
-				saveParser.Update();
+				bool updated = saveParser.Update();
+				if(!updated){
+					return; //Save file didn't change, no need to do anythign else
+				}
 			}
 
 			SetCurrentRoute();

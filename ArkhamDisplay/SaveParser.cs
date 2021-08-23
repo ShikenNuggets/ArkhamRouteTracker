@@ -9,6 +9,7 @@ namespace ArkhamDisplay{
 		protected string m_filePath;
 		protected int m_id;
 		protected string m_rawData;
+		protected DateTime m_LastWriteTime;
 
 		public SaveParser(string filePath, int id){
 			if(string.IsNullOrWhiteSpace(filePath)){
@@ -26,6 +27,7 @@ namespace ArkhamDisplay{
 			m_filePath = filePath;
 			m_id = id;
 			m_rawData = string.Empty;
+			m_LastWriteTime = DateTime.MinValue;
 		}
 
 		protected string Decompress(){
@@ -107,8 +109,17 @@ namespace ArkhamDisplay{
 			return offsets.ToArray();
 		}
 
-		public virtual void Update(){
+		public virtual bool Update(){
+			var lastWriteTime = File.GetLastWriteTimeUtc(GetFile());
+			if(lastWriteTime == m_LastWriteTime){
+				return false; //No need to update, file hasn't been written to since last check
+			}
+
+			m_LastWriteTime = lastWriteTime;
+
 			lock(m_rawData) m_rawData = Decompress();
+
+			return true;
 		}
 
 		public virtual bool HasKey(Entry entry, int requiredMatches){
