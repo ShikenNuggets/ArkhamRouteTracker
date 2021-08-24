@@ -1,16 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 
 namespace ArkhamDisplay{
 	class Utils{
 		public static string GetSHA1Hash(string filePath){
-			if(!System.IO.File.Exists(filePath)){
+			if(!File.Exists(filePath)){
 				return "";
 			}
 
-			return GetSHA1Hash(System.IO.File.ReadAllBytes(filePath));
+			return GetSHA1Hash(File.ReadAllBytes(filePath));
+		}
+
+		public static string GetSHA1Hash(List<string> data){
+			string final = string.Concat(data);
+			return GetSHA1Hash(Encoding.UTF8.GetBytes(final));
 		}
 
 		public static string GetSHA1Hash(byte[] data){

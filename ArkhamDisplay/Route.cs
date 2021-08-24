@@ -35,19 +35,25 @@ namespace ArkhamDisplay{
 		private string fileName;
 		public List<Entry> entries;
 
-		public Route(string file){
+		public Route(string file, List<string> data = null){
 			fileName = file;
 			entries = new List<Entry>();
 
-			if(string.IsNullOrWhiteSpace(fileName)){
+			if(string.IsNullOrWhiteSpace(fileName) && data == null){
 				throw new NullReferenceException();
 			}
 
-			if(!System.IO.File.Exists(fileName)){
-				throw new System.IO.FileNotFoundException();
-			}
+			IEnumerable<string> allLines = new List<string>();
+			if(fileName != null){
+				if(!System.IO.File.Exists(fileName)){
+					throw new System.IO.FileNotFoundException();
+				}
 
-			var allLines = System.IO.File.ReadAllLines(fileName).Skip(1);
+				allLines = System.IO.File.ReadAllLines(fileName).Skip(1);
+			}else if(data != null){
+				allLines = data.Skip(1);
+			}
+			
 			entries.Capacity = allLines.Count();
 			foreach(string line in allLines){
 				if(string.IsNullOrWhiteSpace(line)){
@@ -96,6 +102,20 @@ namespace ArkhamDisplay{
 			List<Entry> newEntries = new List<Entry>(entries);
 			newEntries.RemoveAll(Entry.IsPlaceholder);
 			return newEntries;
+		}
+
+		public bool IsEqual(Route other){
+			if(other == null || other.entries.Count != entries.Count){
+				return false;
+			}
+
+			for(int i = 0; i < entries.Count; i++){
+				if(entries[i].id != other.entries[i].id || entries[i].alternateID != other.entries[i].alternateID){
+					return false;
+				}
+			}
+
+			return true;
 		}
 	}
 }

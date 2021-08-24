@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Windows;
 using System.Windows.Controls;
@@ -380,25 +382,45 @@ namespace ArkhamDisplay{
 		}
 
 		protected void CheckForUpdatedRoutes(object sender = null, RoutedEventArgs e = null){
-			string routesWithUpdates = "";
-			Dictionary<string, byte[]> routeFileData = new Dictionary<string, byte[]>();
+			string routesWithUpdatesStr = "";
+			List<string> routesWithUpdates = new List<string>();
+			Dictionary<string, string> routeFileData = new Dictionary<string, string>();
 
 			try{
 				var client = new Octokit.GitHubClient(new Octokit.ProductHeaderValue("ArkhamRouteTracker"));
 				var routes = client.Repository.Content.GetAllContents("ShikenNuggets", "ArkhamRouteTracker", "ArkhamDisplay/Routes").Result;
 				foreach(var r in routes){
-					routeFileData.Add(r.Name, client.Repository.Content.GetRawContent("ShikenNuggets", "ArkhamRouteTracker", r.Path).Result);
-				
+					var rawData = client.Repository.Content.GetRawContent("ShikenNuggets", "ArkhamRouteTracker", r.Path).Result;
+
+					string dataString = System.Text.Encoding.UTF8.GetString(rawData);
+					dataString = dataString.Replace("\n", "\r\n"); //Replace Unix line endings with Windows line endings
+					routeFileData.Add(r.Name, dataString);
+					
+					var split = Regex.Split(dataString, @"(?<=[\n])").ToList();
+
 					if(!Data.HasRouteFile(r.Name)){
-						routesWithUpdates += "\n" + r.Name;
+						routesWithUpdates.Add(r.Name);
+						routesWithUpdatesStr += "\n" + r.Name;
 						continue;
 					}
 
-					//Check SHA1 hash against route file
-					if(Utils.GetSHA1Hash("Routes/" + r.Name) != Utils.GetSHA1Hash(routeFileData[r.Name])){
-						routesWithUpdates += "\n" + r.Name;
-						continue;
+					if(r.Name.Contains("json")){
+						if(Utils.GetSHA1Hash("Routes/" + r.Name) != Utils.GetSHA1Hash(split)){
+							routesWithUpdates.Add(r.Name);
+							routesWithUpdatesStr += "\n" + r.Name;
+							continue;
+						}
+					}else{
+						Route r1 = new Route("Routes/" + r.Name);
+						Route r2 = new Route(null, split);
+						if(r1.IsEqual(r2) == false){
+							routesWithUpdates.Add(r.Name);
+							routesWithUpdatesStr += "\n" + r.Name;
+							continue;
+						}
 					}
+
+					
 				}
 			}catch(Exception){
 				MessageBox.Show("An error occurred while checking for updates, please try again later.");
@@ -406,8 +428,8 @@ namespace ArkhamDisplay{
 			}
 
 			MessageBoxResult result = MessageBoxResult.No;
-			if(routesWithUpdates.Length > 0){
-				result = MessageBox.Show("The following routes have updates. Would you like to download?\n" + routesWithUpdates, "Updates Available", MessageBoxButton.YesNo);
+			if(routesWithUpdates.Count > 0){
+				result = MessageBox.Show("The following routes have updates. Would you like to download? Any custom changes will be lost.\n" + routesWithUpdatesStr, "Updates Available", MessageBoxButton.YesNo);
 			}else{
 				MessageBox.Show("Routes are already up to date.");
 			}
@@ -415,7 +437,9 @@ namespace ArkhamDisplay{
 			try{
 				if(result == MessageBoxResult.Yes){
 					foreach(var v in routeFileData){
-						System.IO.File.WriteAllBytes("Routes/" + v.Key, v.Value);
+						if(routesWithUpdates.Contains(v.Key)){
+							System.IO.File.WriteAllText("Routes/" + v.Key, v.Value);
+						}
 					}
 
 					stopButton.IsEnabled = false;

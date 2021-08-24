@@ -117,7 +117,13 @@ namespace ArkhamDisplay{
 		}
 
 		public static void ReloadRoutes(){
-			routes.Clear(); //This function doesn't actually reload the routes, it just deloads them
+			lock(routes){
+				routes.Clear(); //Routes will be reloaded later when used
+			}
+
+			lock(routeFiles){
+				routeFiles = JsonConvert.DeserializeObject<Dictionary<string, string>>(System.IO.File.ReadAllText(routeFileName));
+			}
 		}
 
 		public static void SetTheme(Theme theme){
