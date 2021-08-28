@@ -382,7 +382,6 @@ namespace ArkhamDisplay{
 		}
 
 		protected void CheckForUpdatedRoutes(object sender = null, RoutedEventArgs e = null){
-			string routesWithUpdatesStr = "";
 			List<string> routesWithUpdates = new List<string>();
 			Dictionary<string, string> routeFileData = new Dictionary<string, string>();
 
@@ -400,14 +399,12 @@ namespace ArkhamDisplay{
 
 					if(!Data.HasRouteFile(r.Name)){
 						routesWithUpdates.Add(r.Name);
-						routesWithUpdatesStr += "\n" + r.Name;
 						continue;
 					}
 
 					if(r.Name.Contains("json")){
 						if(Utils.GetSHA1Hash("Routes/" + r.Name) != Utils.GetSHA1Hash(split)){
 							routesWithUpdates.Add(r.Name);
-							routesWithUpdatesStr += "\n" + r.Name;
 							continue;
 						}
 					}else{
@@ -415,7 +412,6 @@ namespace ArkhamDisplay{
 						Route r2 = new Route(null, split);
 						if(r1.IsEqual(r2) == false){
 							routesWithUpdates.Add(r.Name);
-							routesWithUpdatesStr += "\n" + r.Name;
 							continue;
 						}
 					}
@@ -429,7 +425,7 @@ namespace ArkhamDisplay{
 
 			MessageBoxResult result = MessageBoxResult.No;
 			if(routesWithUpdates.Count > 0){
-				result = MessageBox.Show("The following routes have updates. Would you like to download? Any custom changes will be lost.\n" + routesWithUpdatesStr, "Updates Available", MessageBoxButton.YesNo);
+				result = MessageBox.Show("The following routes have updates. Would you like to download? Any custom changes will be lost.\n" + Utils.ListToNewlinedString(routesWithUpdates), "Updates Available", MessageBoxButton.YesNo);
 			}else{
 				MessageBox.Show("Routes are already up to date.");
 			}

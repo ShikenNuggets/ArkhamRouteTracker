@@ -23,5 +23,15 @@ namespace ArkhamDisplay{
 			using var cryptoProvider = new SHA1CryptoServiceProvider();
 			return BitConverter.ToString(cryptoProvider.ComputeHash(data));
 		}
+
+		public static string ListToNewlinedString(List<string> list){
+			string final = "";
+
+			foreach(string s in list){
+				final += "\n" + s;
+			}
+
+			return final;
+		}
 	}
 }
