@@ -9,7 +9,6 @@
   "KnightDefault": "Routes/Knight.tsv",
   "KnightNG+": "Routes/Knight-NGPlus.tsv",
   "KnightFirstEnding": "Routes/Knight-FirstEnding.tsv",
-  "Knight120": "Routes/Knight-120.tsv",
-  "KnightNG+120": "Routes/Knight-NGPlus120.tsv",
   "KnightMoF": "Routes/MatterOfFamily.tsv",
+  "Knight240": "Routes/Knight-240.tsv"
 }

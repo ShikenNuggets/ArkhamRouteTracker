@@ -27,6 +27,31 @@ namespace ArkhamDisplay{
 			return true;
 		}
 
+		public override bool HasKey(Entry entry, int requiredMatches)
+		{
+			requiredMatches = 1;
+			if ("NG+".Equals(entry.metadata))
+			{
+				requiredMatches = 2;
+				//Hush is a weird case, since it appears twice in NG until you finish Hush.
+				if ("SS_Hush_WayneTower".Equals(entry.id) && !base.HasKey("SS_Hush_ShowdownStart", 1))
+				{
+					requiredMatches = 3;
+				}
+				// This is a special case in NG+ 100% and 240%, because you do NG+ riddler before NG riddler
+				if ("Lockup_B1_Riddler_Lockedup".Equals(entry.id))
+				{
+					requiredMatches = 1;
+				}
+			}
+			// This is a special case in 240%, where you do NG riddler last.
+			if ("240".Equals(entry.metadata))
+			{
+				requiredMatches = 2;
+			}
+			return base.HasKey(entry, requiredMatches);
+		}
+
 		protected override string GetFile(){
 			string filename0 = System.IO.Path.Combine(m_filePath, SAVE_FILE_PREFIX + m_id + "x0" + SAVE_FILE_SUFFIX);
 			string filename1 = System.IO.Path.Combine(m_filePath, SAVE_FILE_PREFIX + m_id + "x1" + SAVE_FILE_SUFFIX);

@@ -264,12 +264,12 @@ namespace ArkhamDisplay{
 						continue;
 					}
 
-					finalEntries.Add(new FinalEntry(entry.name, true));
+					finalEntries.Add(new FinalEntry(GetEntryName(entry), true));
 				}else{
 					if(Data.DisplayType == DisplayType.All || Data.DisplayType == DisplayType.HideDone){
-						finalEntries.Add(new FinalEntry(entry.name, false));
+						finalEntries.Add(new FinalEntry(GetEntryName(entry), false));
 					}else{
-						bottomEntries.Add(new FinalEntry(entry.name, false));
+						bottomEntries.Add(new FinalEntry(GetEntryName(entry), false));
 					}
 				}
 			}
@@ -329,6 +329,8 @@ namespace ArkhamDisplay{
 		protected virtual void UpdateSecondaryRouteWindow(){}
 
 		protected virtual string UpdateRiddleCount(){ return ""; }
+
+		protected virtual string GetEntryName(Entry entry) { return entry.name; }
 
 		protected virtual void UpdateUI(){
 			int value = Data.SaveIDs[(int)game];
