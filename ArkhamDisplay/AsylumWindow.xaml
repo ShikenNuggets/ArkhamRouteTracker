@@ -20,6 +20,7 @@
 				<MenuItem Name="OriginsMenuItem"	Header="Origins"	IsCheckable="True" IsChecked="False"	Click="SwitchGameWindow" />
 				<MenuItem Name="KnightMenuItem"		Header="Knight"		IsCheckable="True" IsChecked="False"	Click="SwitchGameWindow" />
 			</MenuItem>
+			<MenuItem Header="_Stats" Click="OpenStatsWindow"/>
 		</Menu>
 		<Grid>
 			<RadioButton Name="Save0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"		Content="Save 0" GroupName="Save" IsChecked="True"	Click="UpdatePreferences"/>

@@ -65,5 +65,11 @@ namespace ArkhamDisplay{
 				lineCount++;
 			}
 		}
+
+		protected override void SetStatsWindowStats(){
+			if(statsWindow != null){
+				statsWindow.SetStats(progressCounter.Text, "", ""); //TODO - If we ever get the actual Crime in Progress counter, display that here
+			}
+		}
 	}
 }

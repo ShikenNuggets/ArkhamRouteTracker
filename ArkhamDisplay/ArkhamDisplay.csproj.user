@@ -28,6 +28,9 @@
     <Compile Update="SetSavePathWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="StatsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="AsylumWindow.xaml">
@@ -58,6 +61,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="SetSavePathWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StatsWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

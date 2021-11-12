@@ -75,11 +75,17 @@ namespace ArkhamDisplay{
 					savedCount++;
 				}
 			}
-			SavedPrisoners.Text = savedCount + " saved";
+			SavedPrisoners.Text = savedCount + "/15 saved";
 		}
 
-		protected override string UpdateRiddleCount(){
+		protected override string GetRiddleCount(){
 			return saveParser.GetMatch(@"\b\d*\/400|\d*\/440\b");
+		}
+
+		protected override void SetStatsWindowStats(){
+			if(statsWindow != null){
+				statsWindow.SetStats(progressCounter.Text, riddleCounter.Text + " riddles", SavedPrisoners.Text);
+			}
 		}
 	}
 }

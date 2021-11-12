@@ -23,6 +23,8 @@ namespace ArkhamDisplay{
 		protected TextBlock progressCounter;
 		protected TextBlock riddleCounter;
 
+		protected StatsWindow statsWindow = null;
+
 		private Button stopButton;
 		private Button startButton;
 		private Grid displayGrid;
@@ -144,6 +146,10 @@ namespace ArkhamDisplay{
 			}
 			Data.Save();
 
+			if(statsWindow != null){
+				statsWindow.Close();
+			}
+
 			base.OnClosed(e);
 		}
 
@@ -224,6 +230,8 @@ namespace ArkhamDisplay{
 			if(!string.IsNullOrWhiteSpace(currentSecondaryRoute)){
 				UpdateSecondaryRouteWindow();
 			}
+
+			SetStatsWindowStats();
 		}
 
 		private struct FinalEntry{
@@ -319,16 +327,19 @@ namespace ArkhamDisplay{
 			}
 			UpdatePercent(doneEntries, totalEntries);
 		}
+
 		protected virtual void UpdatePercent(int doneEntries, int totalEntries)
 		{
 			double percentDone = 100.0 * doneEntries / totalEntries;
 			progressCounter.Text = string.Format("{0:0.0}", percentDone) + "%";
-			riddleCounter.Text = UpdateRiddleCount();
+			riddleCounter.Text = GetRiddleCount();
+
+			SetStatsWindowStats();
 		}
 
 		protected virtual void UpdateSecondaryRouteWindow(){}
 
-		protected virtual string UpdateRiddleCount(){ return ""; }
+		protected virtual string GetRiddleCount(){ return ""; }
 
 		protected virtual string GetEntryName(Entry entry) { return entry.name; }
 
@@ -479,6 +490,10 @@ namespace ArkhamDisplay{
 				newWindow.Show();
 			}
 
+			if(statsWindow != null){
+				statsWindow.Close();
+			}
+
 			Close();
 		}
 
@@ -505,6 +520,29 @@ namespace ArkhamDisplay{
 				KillWindow(new KnightWindow(), Game.Knight, sender as MenuItem);
 			}else{
 				(sender as MenuItem).IsChecked = true;
+			}
+		}
+
+		protected virtual void OpenStatsWindow(object sender, RoutedEventArgs e){
+			if(statsWindow != null){
+				if(statsWindow.IsVisible){
+					statsWindow.Focus();
+					return;
+				}else{
+					statsWindow.Close();
+					statsWindow = null;
+				}
+			}
+
+			statsWindow = new StatsWindow();
+			statsWindow.Activate();
+			statsWindow.Show();
+			SetStatsWindowStats();
+		}
+
+		protected virtual void SetStatsWindowStats(){
+			if(statsWindow != null){
+				statsWindow.SetStats(progressCounter.Text, riddleCounter.Text + " riddles");
 			}
 		}
 	}

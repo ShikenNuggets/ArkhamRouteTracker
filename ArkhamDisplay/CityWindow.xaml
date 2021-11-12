@@ -21,6 +21,7 @@
 				<MenuItem Name="OriginsMenuItem" Header="Origins" IsCheckable="True" IsChecked="False" Click="SwitchGameWindow" />
 				<MenuItem Name="KnightMenuItem" Header="Knight" IsCheckable="True" IsChecked="False" Click="SwitchGameWindow" />
 			</MenuItem>
+			<MenuItem Header="_Stats" Click="OpenStatsWindow"/>
 		</Menu>
 		<Grid Name="MainGrid">
 			<Grid.RowDefinitions>
