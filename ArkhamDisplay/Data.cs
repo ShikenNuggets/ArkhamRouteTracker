@@ -33,6 +33,7 @@ namespace ArkhamDisplay{
 		public volatile Rect[] windowRects = { new Rect(), new Rect(), new Rect(), new Rect() };
 		public volatile float mainRowHeight = 7.0f;
 		public volatile float secondaryRowHeight = 3.0f;
+		public volatile bool statsWindowOpen = false;
 
 		public volatile bool showPercent = true;
 		public volatile bool showRiddleCount = true;
@@ -62,6 +63,7 @@ namespace ArkhamDisplay{
 		public static Rect[] WindowRect { get{ return data.windowRects; } }
 		public static double MainRowHeight { get { return (double)data.mainRowHeight; } set { data.mainRowHeight = (float)value; } }
 		public static double SecondaryRowHeight { get { return (double)data.secondaryRowHeight; } set { data.secondaryRowHeight = (float)value; } }
+		public static bool StatsWindowOpen { get { return data.statsWindowOpen; } set { data.statsWindowOpen = value; } }
 
 		public static bool ShowPercent { get { return data.showPercent; } set { data.showPercent = value; } }
 		public static bool ShowRiddleCount { get { return data.showRiddleCount; } set { data.showRiddleCount = value; } }

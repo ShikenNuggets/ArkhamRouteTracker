@@ -83,7 +83,7 @@ namespace ArkhamDisplay{
 		}
 
 		protected override void SetStatsWindowStats(){
-			if(statsWindow != null){
+			if(statsWindow != null && progressCounter != null && riddleCounter != null && SavedPrisoners != null){
 				statsWindow.SetStats(progressCounter.Text, riddleCounter.Text + " riddles", SavedPrisoners.Text);
 			}
 		}

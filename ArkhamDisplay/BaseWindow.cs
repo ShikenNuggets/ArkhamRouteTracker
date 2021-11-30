@@ -109,14 +109,18 @@ namespace ArkhamDisplay{
 				}
 			}
 
-			base.OnInitialized(e);
-		}
-
-		protected override void OnActivated(EventArgs e){
 			if(string.IsNullOrWhiteSpace(Data.SaveLocations[(int)game])){
 				OpenSavePathWindow();
 			}
 
+			if(Data.StatsWindowOpen){
+				OpenStatsWindow();
+			}
+
+			base.OnInitialized(e);
+		}
+
+		protected override void OnActivated(EventArgs e){
 			base.OnActivated(e);
 		}
 
@@ -147,6 +151,7 @@ namespace ArkhamDisplay{
 			Data.Save();
 
 			if(statsWindow != null){
+				statsWindow.isClosedByMainWindow = true;
 				statsWindow.Close();
 			}
 
@@ -490,10 +495,6 @@ namespace ArkhamDisplay{
 				newWindow.Show();
 			}
 
-			if(statsWindow != null){
-				statsWindow.Close();
-			}
-
 			Close();
 		}
 
@@ -523,7 +524,7 @@ namespace ArkhamDisplay{
 			}
 		}
 
-		protected virtual void OpenStatsWindow(object sender, RoutedEventArgs e){
+		protected virtual void OpenStatsWindow(object sender = null, RoutedEventArgs e = null){
 			if(statsWindow != null){
 				if(statsWindow.IsVisible){
 					statsWindow.Focus();
@@ -538,10 +539,13 @@ namespace ArkhamDisplay{
 			statsWindow.Activate();
 			statsWindow.Show();
 			SetStatsWindowStats();
+
+			Data.StatsWindowOpen = true;
+			Data.Save();
 		}
 
 		protected virtual void SetStatsWindowStats(){
-			if(statsWindow != null){
+			if(statsWindow != null && progressCounter != null && riddleCounter != null){
 				statsWindow.SetStats(progressCounter.Text, riddleCounter.Text + " riddles");
 			}
 		}

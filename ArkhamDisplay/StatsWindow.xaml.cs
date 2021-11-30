@@ -12,8 +12,19 @@ using System.Windows.Shapes;
 
 namespace ArkhamDisplay{
 	public partial class StatsWindow : Window{
+		public bool isClosedByMainWindow = false;
+
 		public StatsWindow(){
 			InitializeComponent();
+		}
+
+		protected override void OnClosed(EventArgs e){
+			if(!isClosedByMainWindow){ //This feels stupid and gross but whatever it works
+				Data.StatsWindowOpen = false;
+				Data.Save();
+			}
+
+			base.OnClosed(e);
 		}
 
 		public void SetStats(string percent, string riddles, string extra = ""){
