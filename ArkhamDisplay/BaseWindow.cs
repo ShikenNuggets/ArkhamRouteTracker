@@ -118,9 +118,9 @@ namespace ArkhamDisplay{
 				OpenSavePathWindow();
 			}
 
-			if(Data.StatsWindowOpen){
-				OpenStatsWindow();
-			}
+			//if(Data.StatsWindowOpen){
+			//	OpenStatsWindow(); //This is convenient but causes problems that I'll address later
+			//}
 
 			base.OnActivated(e);
 		}
