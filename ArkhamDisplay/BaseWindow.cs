@@ -109,10 +109,6 @@ namespace ArkhamDisplay{
 				}
 			}
 
-			if(string.IsNullOrWhiteSpace(Data.SaveLocations[(int)game])){
-				OpenSavePathWindow();
-			}
-
 			if(Data.StatsWindowOpen){
 				OpenStatsWindow();
 			}
@@ -121,6 +117,10 @@ namespace ArkhamDisplay{
 		}
 
 		protected override void OnActivated(EventArgs e){
+			if(string.IsNullOrWhiteSpace(Data.SaveLocations[(int)game])){
+				OpenSavePathWindow();
+			}
+
 			base.OnActivated(e);
 		}
 
