@@ -16,12 +16,12 @@ namespace ArkhamDisplay{
 				throw new NullReferenceException("Invalid file name!");
 			}
 
-			if(!System.IO.Directory.Exists(filePath)){
-				throw new System.IO.FileNotFoundException();
+			if(!Directory.Exists(filePath)){
+				throw new FileNotFoundException("Could not find save file path at [" + filePath + "]!", filePath);
 			}
 
 			if(id < 0 || id > 3){
-				throw new ArgumentOutOfRangeException();
+				throw new ArgumentOutOfRangeException("SaveParser::id", "SaveParser ID value was invalid (must be between 0 and 3), value was " + id.ToString());
 			}
 
 			m_filePath = filePath;

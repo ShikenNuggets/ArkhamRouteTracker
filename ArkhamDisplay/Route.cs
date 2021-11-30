@@ -40,13 +40,13 @@ namespace ArkhamDisplay{
 			entries = new List<Entry>();
 
 			if(string.IsNullOrWhiteSpace(fileName) && data == null){
-				throw new NullReferenceException();
+				throw new NullReferenceException("Invalid route file name or data!");
 			}
 
 			IEnumerable<string> allLines = new List<string>();
 			if(fileName != null){
 				if(!System.IO.File.Exists(fileName)){
-					throw new System.IO.FileNotFoundException();
+					throw new System.IO.FileNotFoundException("Could not find route file at [" + fileName + "]", fileName);
 				}
 
 				allLines = System.IO.File.ReadAllLines(fileName).Skip(1);

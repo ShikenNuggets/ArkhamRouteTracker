@@ -32,7 +32,7 @@ namespace ArkhamDisplay{
 					Title = "Arkham Knight - Set Save File Path";
 					break;
 				case Game.None:
-					throw new ArgumentException();
+					throw new ArgumentException("Selected Game was somehow invalid!");
 			}
 		}
 

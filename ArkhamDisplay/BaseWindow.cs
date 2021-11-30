@@ -61,7 +61,8 @@ namespace ArkhamDisplay{
 			saveSelector3 = FindName("Save3") as RadioButton;
 
 			if(stopButton == null || startButton == null || displayGrid == null || gridScroll == null || progressCounter == null || riddleCounter == null || saveSelector0 == null || saveSelector1 == null || saveSelector2 == null || saveSelector3 == null){
-				throw new NullReferenceException();
+				MessageBox.Show("Could not find all expected elements in the main window!");
+				throw new NullReferenceException("Could not find all expected elements in the main window!");
 			}
 
 			UpdateUI();
@@ -109,16 +110,16 @@ namespace ArkhamDisplay{
 				}
 			}
 
-			if(Data.StatsWindowOpen){
-				OpenStatsWindow();
-			}
-
 			base.OnInitialized(e);
 		}
 
 		protected override void OnActivated(EventArgs e){
 			if(string.IsNullOrWhiteSpace(Data.SaveLocations[(int)game])){
 				OpenSavePathWindow();
+			}
+
+			if(Data.StatsWindowOpen){
+				OpenStatsWindow();
 			}
 
 			base.OnActivated(e);
@@ -528,7 +529,7 @@ namespace ArkhamDisplay{
 		protected virtual void OpenStatsWindow(object sender = null, RoutedEventArgs e = null){
 			if(statsWindow != null){
 				if(statsWindow.IsVisible){
-					statsWindow.Focus();
+					//statsWindow.Focus(); //This is convenient but it causes problems that I'll addres later
 					return;
 				}else{
 					statsWindow.Close();

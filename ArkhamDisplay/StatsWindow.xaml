@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="Stats" Height="320" Width="400">
 	<Grid>
-		<TextBlock Name="PercentageLabel" Text="100%" HorizontalAlignment="Right" Margin="10,10,10,0" VerticalAlignment="Top" Height="100" Width="Auto" FontSize="50"/>
-		<TextBlock Name="RiddleLabel" Text="400/400 riddles" HorizontalAlignment="Right" Margin="10,110,10,0" VerticalAlignment="Top" Height="100" Width="Auto" FontSize="50"/>
-		<TextBlock Name="ExtraLabel" Text="15/15 saved" HorizontalAlignment="Right" Margin="0,210,10,0" VerticalAlignment="Top" Height="100" Width="Auto" FontSize="50"/>
+		<TextBlock Name="PercentageLabel" Text="0%" HorizontalAlignment="Right" Margin="10,10,10,0" VerticalAlignment="Top" Height="100" Width="Auto" FontSize="50"/>
+		<TextBlock Name="RiddleLabel" Text="" HorizontalAlignment="Right" Margin="10,110,10,0" VerticalAlignment="Top" Height="100" Width="Auto" FontSize="50"/>
+		<TextBlock Name="ExtraLabel" Text="" HorizontalAlignment="Right" Margin="0,210,10,0" VerticalAlignment="Top" Height="100" Width="Auto" FontSize="50"/>
 	</Grid>
 </Window>
