@@ -487,6 +487,7 @@ namespace ArkhamDisplay{
 					if(wnd.ShowDialog() == false){
 						newWindow.Close();
 						sender.IsChecked = false;
+						Data.SelectedGame = game;
 						return;
 					}
 				}
