@@ -3,6 +3,7 @@
   "AsylumGlitchless": "Routes/Asylum-Glitchless.tsv",
   "CityDefault": "Routes/City.tsv",
   "CityCatwoman": "Routes/City-Catwoman.tsv",
+  "CityNG+": "Routes/City-NGPlus.tsv",
   "CityPrisoners": "Routes/City-Prisoners.tsv",
   "OriginsDefault": "Routes/Origins.tsv",
   "OriginsCrime": "Routes/Origins-Crimes.tsv",

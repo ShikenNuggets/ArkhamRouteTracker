@@ -43,6 +43,7 @@ namespace ArkhamDisplay{
 		public volatile bool asylumGlitchless = false;
 		public volatile bool cityBreakablesAtEnd = false;
 		public volatile bool cityCatwoman = false;
+		public volatile bool cityNGPlus = false;
 		public volatile bool knightFirstEnding = false;
 		public volatile bool knightNGPlus = false;
 		public volatile bool knight120 = false;
@@ -73,6 +74,7 @@ namespace ArkhamDisplay{
 		public static bool AsylumGlitchless { get { return data.asylumGlitchless; } set { data.asylumGlitchless = value; } }
 		public static bool CityBreakablesAtEnd { get { return data.cityBreakablesAtEnd; } set { data.cityBreakablesAtEnd = value; } }
 		public static bool CityCatwoman { get { return data.cityCatwoman; } set { data.cityCatwoman = value; } }
+		public static bool CityNGPlus { get { return data.cityCatwoman; } set { data.cityNGPlus = value; } }
 		public static bool KnightFirstEnding { get { return data.knightFirstEnding; } set { data.knightFirstEnding = value; } }
 		public static bool KnightNGPlus { get { return data.knightNGPlus; } set { data.knightNGPlus = value; } }
 

@@ -19,6 +19,10 @@ namespace ArkhamDisplay{
 			if(Data.CityCatwoman){
 				currentRoute = "CityCatwoman";
 			}
+
+			if(Data.CityNGPlus){
+				currentRoute = "CityNG+";
+			}
 		}
 
 		protected override List<Entry> GetEntriesForDisplay(Route route){
@@ -38,6 +42,14 @@ namespace ArkhamDisplay{
 		protected override void UpdatePreferences(object sender = null, RoutedEventArgs e = null){
 			Data.CityBreakablesAtEnd = BreakablesAtBottomMenuItem.IsChecked;
 			Data.CityCatwoman = CatwomanMenuItem.IsChecked;
+			Data.CityNGPlus = NGPlusMenuItem.IsChecked;
+
+			if(NGPlusMenuItem.IsChecked){
+				minRequiredMatches = 2;
+			}else{
+				minRequiredMatches = 1;
+			}
+
 			base.UpdatePreferences(sender, e);
 		}
 
