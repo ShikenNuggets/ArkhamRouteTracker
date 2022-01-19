@@ -242,9 +242,9 @@ Trophy (Sewer, Pumps Left Batclaw Wall)	Riddler Trophies	Global.Riddler_Cave_Pic
 Teeth (Sewer, Pumps Left)	Joker Teeth (Sewer)	Cave_C6.RChatterTeeth_0.Broken			
 Teeth (Sewer, Pumps Left)	Joker Teeth (Sewer)	Cave_C6.RChatterTeeth_1.Broken			
 Tape (Sewer, Pump Room Line Launch)	Interview Tape	Global.Riddler_Cave_Tape_4			
-Teeth (Sewer, Pumps Left Box)	Joker Teeth (Sewer)	Cave_C6.RChatterTeethFromBox_4.Broken			
-Teeth (Sewer, Pumps Left Box)	Joker Teeth (Sewer)	Cave_C6.RChatterTeethFromBox_5.Broken			
-Teeth (Sewer, Pumps Left Box)	Joker Teeth (Sewer)	Cave_C6.RChatterTeethFromBox_3.Broken			
+Teeth (Sewer, Pumps Left Box)	Joker Teeth (Sewer)	Cave_C6.RChatterTeethFromBox_4.Broken	Cave_C6.RChatterTeethFromBox_1.Broken		
+Teeth (Sewer, Pumps Left Box)	Joker Teeth (Sewer)	Cave_C6.RChatterTeethFromBox_5.Broken	Cave_C6.RChatterTeethFromBox_2.Broken		
+Teeth (Sewer, Pumps Left Box)	Joker Teeth (Sewer)	Cave_C6.RChatterTeethFromBox_3.Broken	Cave_C6.RChatterTeethFromBox_0.Broken		
 Chronicle (Sewer, Pumps Elevator)	Arkham Chronicle	Global.Riddler_Cave_Cipher_2			
 Teeth (Arkham West, Watchtower)	Joker Teeth (Arkham West)	Overworld_A1.RChatterTeeth_1.Broken			
 Teeth (Arkham West, Watchtower)	Joker Teeth (Arkham West)	Overworld_A1.RChatterTeeth_0.Broken			
