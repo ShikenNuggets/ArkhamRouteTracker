@@ -272,7 +272,15 @@ namespace ArkhamDisplay{
 			List<FinalEntry> finalEntries = new List<FinalEntry>(totalEntries);
 			List<FinalEntry> bottomEntries = new List<FinalEntry>(totalEntries);
 			foreach(Entry entry in routeEntries){
-				if(saveParser.HasKey(entry, minRequiredMatches)){
+				//Hardcoded bullshit
+				int mrm = minRequiredMatches;
+				if(Data.CityNGPlus && "RiddlerBeaten".Equals(entry.id)){
+					mrm = 1; //Optimal file setup does not defeat Riddler in NG
+				}else if(Data.CityNGPlus && "SS_Riddler_Hostage5_Saved".Equals(entry.id)){
+					mrm = 3; //This appears twice for some reason after doing it in NG
+				}
+
+				if(saveParser.HasKey(entry, mrm)){
 					doneEntries++;
 					if(Data.DisplayType == DisplayType.HideDone){
 						continue;
