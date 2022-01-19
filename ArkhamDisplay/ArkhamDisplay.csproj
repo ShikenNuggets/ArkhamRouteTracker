@@ -90,6 +90,12 @@
     <None Update="Routes\City-Catwoman.tsv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Routes\City-NGPlus-Catwoman.tsv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Routes\City-NGPlus.tsv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Routes\City-Prisoners.tsv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

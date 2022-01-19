@@ -4,6 +4,7 @@
   "CityDefault": "Routes/City.tsv",
   "CityCatwoman": "Routes/City-Catwoman.tsv",
   "CityNG+": "Routes/City-NGPlus.tsv",
+  "CityNG+Catwoman": "Routes/City-NGPlus-Catwoman.tsv",
   "CityPrisoners": "Routes/City-Prisoners.tsv",
   "OriginsDefault": "Routes/Origins.tsv",
   "OriginsCrime": "Routes/Origins-Crimes.tsv",

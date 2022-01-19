@@ -16,11 +16,11 @@ namespace ArkhamDisplay{
 			currentRoute = "CityDefault";
 			currentSecondaryRoute = "CityPrisoners";
 
-			if(Data.CityCatwoman){
+			if(Data.CityNGPlus && Data.CityCatwoman){
+				currentRoute = "CityNG+Catwoman";
+			}else if(Data.CityCatwoman){
 				currentRoute = "CityCatwoman";
-			}
-
-			if(Data.CityNGPlus){
+			}else if(Data.CityNGPlus){
 				currentRoute = "CityNG+";
 			}
 		}

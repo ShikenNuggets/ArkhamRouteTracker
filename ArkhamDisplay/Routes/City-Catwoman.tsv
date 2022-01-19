@@ -193,6 +193,7 @@ Trophy (Bowery, Lower Level Near Back of Museum Phone)	Riddler Trophies	PickedUp
 Trophy (Bowery, Hack Near Back Museum Phone)	Riddler Trophies	PickedUp_OWE_Pickup_8			
 Trophy (Bowery, Back Museum Statue)	Riddler Trophies	PickedUp_OWE_Pickup_6			
 Camera (Bowery, Across from Back of Museum)	Breakable Cameras (Bowery)	PickedUp_OWE_Camera_1			
+Mine Disruptor	Mine Disruptor	MuseumRear_CopOpenPlayed 			
 Umbrella Cop Riddle	Riddles	PickedUp_Museum_Riddle_8			
 Top Hats Riddle	Riddles	PickedUp_Museum_Riddle_7			
 Trophy (Back Museum, Mines)	Riddler Trophies	PickedUp_Museum_Pickup_20			
@@ -243,6 +244,7 @@ Trophy (Amusement, Freeze Nade Rec Gun Sphere)	Riddler Trophies	PickedUp_OWB_Pic
 Trophy (Amusement, Fly 3 switches)	Riddler Trophies	PickedUp_OWB_Pickup_6			
 Rec Gun Question Mark Riddle	Riddles	PickedUp_OWB_Riddle_1			
 Trophy (Amusement, Timed Slide)	Riddler Trophies	PickedUp_OWB_Pickup_8			
+Trigger Deadshot 2 (Near Ace Chemicals)	Deadshot	SS_DeadShot_Victim2GunShot 			
 Camera (Park Row, City Wall near Church)	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_9			
 Camera (Park Row, Liquors/across Finnigans)	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_8			
 Trophy (Park Row, Hack top of church)	Riddler Trophies	PickedUp_OWA_Pickup_18			
@@ -295,7 +297,7 @@ Harley Head (Steel Mill, Before Freeze Cluster Room)	Harley Head	PickedUp_Steel_
 Harley Head (Steel Mill, Cluster Grenade Room)	Harley Head	PickedUp_Steel_HarleyHead_12			
 Trophy (Steel Mill, Penguins)	Riddler Trophies	PickedUp_Steel_Pickup_23			
 Box of Tricks Riddle	Riddles	PickedUp_Steel_Riddle_7			
-Freeze Cluster Grenade	Freeze Cluster Grenade	Equip_FreezeClusterGrenade			
+Freeze Cluster Grenade	Freeze Cluster Grenade	Ch6_ClusterBombCollected			
 Trophy (Steel Mill, Explosive Gel Freeze Cluster Room)	Riddler Trophies	PickedUp_Steel_Pickup_24			
 Trophy (Steel Mill, Behind Fan and Lava)	Riddler Trophies	PickedUp_Steel_Pickup_5			
 Trophy (Steel Mill, Behind Fan)	Riddler Trophies	PickedUp_Steel_Pickup_4			
@@ -417,6 +419,7 @@ Trophy (Bowery, Wonder Tower Entrance Gel)	Riddler Trophies	PickedUp_OWE_Pickup_
 Dead Guard Riddle	Riddles	PickedUp_OWE_Riddle_10			
 Trophy (Bowery, Wonder Tower Entrance Water)	Riddler Trophies	PickedUp_OWE_Pickup_36			
 Question Mark Riddle (Wonder Tower Entrance)	Riddles	PickedUp_OWE_Riddle_1			
+Trigger Deadshot 3 (Near Ace Chemicals)	Deadshot	SS_DeadShot_Victim3GunShot 			
 Tyger Brain (Bowery)	Tyger Brains	PickedUp_OWE_CameraControl_1			
 Ace Chemicals Riddle	Riddles	PickedUp_OWA_Riddle_15			
 Hush 3 Start (near ACE)	Hush	SS_Hush_Victim3_SceneComplete			
