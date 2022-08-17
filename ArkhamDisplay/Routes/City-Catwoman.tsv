@@ -4,7 +4,6 @@ Rescue Jack Ryder	Political Prisoner	ArkhamBullyR2_JackRyder_Saved
 Rescue Catwoman	Main Story	TwofaceObjectionFinished			
 Camera (Park Row, Next to Courthouse)	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_5			
 Camera (Park Row, Near Lounge near courthouse)	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_7			
-Camera (Park Row, Near Stripclub near courthouse)	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_6			
 Azrael (near courthouse)	Azrael	SS_Azrael_A6_Glyph3			
 Camera (Park Row, Near Church)	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_10			
 Zsasz start/Church	Main Story	Ch2_Church_HarleyGone			
@@ -13,27 +12,27 @@ Trophy (Church, Near Entrance)	Riddler Trophies	PickedUp_OWA_Pickup_16
 Trophy (Church, Path to Belltower)	Riddler Trophies	PickedUp_OWA_Pickup_17			
 Trophy (Park Row, QuestionMark After Belltower)	Riddler Trophies	PickedUp_OWA_Pickup_11			
 Camera (Park Row, by phone)	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_11			
+Balloon (Amusement, GCR)	Balloons (Amusement)	PickedUp_OWB_Balloons_3			
 Trophy (Industrial, next to phone [get with Zsasz call])	Riddler Trophies	PickedUp_OWC_Pickup_6			
-Camera (Industrial, east of phone)	Breakable Cameras (Industrial)	PickedUp_OWC_Camera_5			
 Balloon (Industrial, south of phone)	Balloons (Industrial)	PickedUp_OWC_Balloons_3			
-Camera (Industrial, west of phone)	Breakable Cameras (Industrial)	PickedUp_OWC_Camera_4			
 Camera (Industrial, Behind Truck)	Breakable Cameras (Industrial)	PickedUp_OWC_Camera_3			
 Balloon (Industrial, Joker's Funland Sign)	Balloons (Industrial)	PickedUp_OWC_Balloons_6			
 Balloon (Industrial, Path to AR training)	Balloons (Industrial)	PickedUp_OWC_Balloons_1			
 Balloon (Amusement, On Bridge)	Balloons (Amusement)	PickedUp_OWB_Balloons_5			
 Camera (Amusement, On Bridge)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_9			
 AR Training 1	AR Training	ARChallenge1_Complete			
+Camera (Industrial, west of phone)	Breakable Cameras (Industrial)	PickedUp_OWC_Camera_4			
 AR Training 2	AR Training	ARChallenge2_Complete			
+Camera (Industrial, east of phone)	Breakable Cameras (Industrial)	PickedUp_OWC_Camera_5			
 AR Training 3	AR Training	ARChallenge3_Complete			
 Camera (Industrial, NorthWest)	Breakable Cameras (Industrial)	PickedUp_OWC_Camera_1			
 Camera (Industrial, Alley near AR4 [north])	Breakable Cameras (Industrial)	PickedUp_OWC_Camera_2			
 AR Training 4	AR Training	ARChallenge4_Complete			
 Trophy (Industrial, 13524 43152 35214)	Riddler Trophies	PickedUp_OWB_Pickup_31			
-Balloon (Amusement, GCR)	Balloons (Amusement)	PickedUp_OWB_Balloons_3			
 Balloon (Amusement, Before Bridge)	Balloons (Amusement)	PickedUp_OWB_Balloons_4			
 Camera (Amusement, Before Bridge)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_10			
 Grapnel Boost	AR Training	ARChallenge_Grapple_Boost_Collected			
-Balloon (Industrial, Tricorner Naval Sign)	Balloons (Industrial)	PickedUp_OWC_Balloons_7			
+Trophy (Industrial, 2 switches near ferris wheel and caged mines)	Riddler Trophies	PickedUp_OWC_Pickup_15			
 Trophy (Industrial, Tricorner building glide)	Riddler Trophies	PickedUp_OWC_Pickup_22			
 Camera (Industrial, Steel Mill Gate)	Breakable Cameras (Industrial)	PickedUp_OWC_Camera_7			
 Camera (Industrial, Funland Gate)	Breakable Cameras (Industrial)	PickedUp_OWC_Camera_8			
@@ -45,10 +44,10 @@ Trophy (Steel Mill, Wall Behind Smelting Office)	Riddler Trophies	PickedUp_Steel
 Harley Head (Steel Mill, Smelting Office)	Harley Head	PickedUp_Steel_HarleyHead_7			
 Harley Head (Steel Mill, Assembly Line before loading bay)	Harley Head	PickedUp_Steel_HarleyHead_4			
 Cat Trophy (Park Row, building east of Deadshot 2 victim)	Riddler Trophies (Catwoman)	PickedUp_OWA_CWPickup_3			
+Trophy (Amusement, Gotham Casino Terrace)	Riddler Trophies	PickedUp_OWB_Pickup_4			
 Cat Trophy (Amusement, Ivy)	Riddler Trophies (Catwoman)	PickedUp_OWB_CWPickup_1			
 Trophy (Industrial, Side of Steel Mill)	Riddler Trophies	PickedUp_OWC_Pickup_26			
 Trophy (Industrial, Steel Mill Gel)	Riddler Trophies	PickedUp_OWC_Pickup_27			
-Trophy (Industrial, 2 switches near ferris wheel and caged mines)	Riddler Trophies	PickedUp_OWC_Pickup_15			
 Trophy (Industrial, cage mines)	Riddler Trophies	PickedUp_OWC_Pickup_16			
 Camera (Industrial, Joker Funland Sign/phone)	Breakable Cameras (Industrial)	PickedUp_OWC_Camera_6			
 Balloon (Industrial, Ferris Wheel)	Balloons (Industrial)	PickedUp_OWC_Balloons_5			
@@ -57,9 +56,9 @@ Trophy (Industrial, Ferris Wheel)	Riddler Trophies	PickedUp_OWC_Pickup_12
 Azrael (Ferris Wheel)	Azrael	SS_Azrael_C3_Glyph2a	SS_Azrael_C3_Glyph2b		
 Trophy (Industrial, Timed Switch near Ferris Wheel)	Riddler Trophies	PickedUp_OWC_Pickup_14			
 Trophy (Amusement, Rec Gun Ball Next to Deadshot Victim)	Riddler Trophies	PickedUp_OWB_Pickup_19			
+Camera (Amusement, Bridge)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_2			
 Deadshot Victim 1	Deadshot	SS_DeadShot_Hobo1Dead			
 Trophy (Amusement, GCR)	Riddler Trophies	PickedUp_OWB_Pickup_20			
-Camera (Amusement, Bridge)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_2			
 Trophy (Amusement, Gliding Switches)	Riddler Trophies	PickedUp_OWB_Pickup_27			
 Balloon (Industrial, Crane)	Balloons (Industrial)	PickedUp_OWC_Balloons_2			
 Trophy (Industrial, Lower Crane)	Riddler Trophies	PickedUp_OWC_Pickup_1			
@@ -160,6 +159,7 @@ Trophy (Park Row, 5 question marks)	Riddler Trophies	PickedUp_OWA_Pickup_35
 Trophy (Park Row, Roof Punch Wood Wall)	Riddler Trophies	PickedUp_OWA_Pickup_26			
 Trophy (Park Row, Remote Batarang Vent)	Riddler Trophies	PickedUp_OWA_Pickup_25			
 Hush 2 (next to trophy) (do zsasz call after by dent riddle)	Hush	SS_Hush_Victim2_SceneComplete			
+Camera (Park Row, Near Stripclub near courthouse)	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_6			
 Camera (Amusement, Next to phone Casino)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_3			
 Balloon (Amusement, Olympus)	Balloons (Amusement)	PickedUp_OWB_Balloons_2			
 Olympus Riddle	Riddles	PickedUp_OWB_Riddle_6			
@@ -182,8 +182,8 @@ Circus Riddle	Riddles	PickedUp_OWB_Riddle_4
 Rescue Vicki Vale	Main Story	Ch6_OW_R7_Vicki_Vale_Rescued			
 Trophy (Amusement, 2 wood walls near Vicki)	Riddler Trophies	PickedUp_OWB_Pickup_5			
 Azrael (Amusement)	Azrael	SS_Azrael_B4_Glyph1			
-Camera (Amusement, Sea Pier)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_4			
 Trophy (Amusement, Timed Question Marks on Water)	Riddler Trophies	PickedUp_OWB_Pickup_12			
+Camera (Amusement, Sea Pier)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_4			
 Trophy (Park Row, Freeze Nade [with zsasz call])	Riddler Trophies	PickedUp_OWA_Pickup_33			
 Camera (Park Row, Near Beginning  [with zsasz call])	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_2			
 Trophy (Park Row, Under Car Near Beginning  [with zsasz call])	Riddler Trophies	PickedUp_OWA_Pickup_31			
@@ -207,7 +207,6 @@ Penguin (Museum, Behind Grate)	Penguins	PickedUp_Museum_Penguin_4
 Trophy (Museum, Behind Grate Disruptor)	Riddler Trophies	PickedUp_Museum_Pickup_5			
 Trophy (Museum, Hack Near Dino Skeleton)	Riddler Trophies	PickedUp_Museum_Pickup_4			
 Penguin (Museum, Next to dino skeleton hack)	Penguins	PickedUp_Museum_Penguin_3			
-Trophy (Museum, Line Launch Ceiling)	Riddler Trophies	PickedUp_Museum_Pickup_6			
 Trophy (Museum, Right below line launch ceiling)	Riddler Trophies	PickedUp_Museum_Pickup_21			
 Penguin Family Riddle	Riddles	PickedUp_Museum_Riddle_3			
 Penguin (Museum, Gladiator Pit Right)	Penguins	PickedUp_Museum_Penguin_5			
@@ -239,7 +238,6 @@ Construction Riddle	Riddles	PickedUp_OWA_Riddle_6
 Trophy (Park Row, Flashing questionmarks)	Riddler Trophies	PickedUp_OWA_Pickup_14			
 Balloon (Amusement, Gotham Casino)	Balloons (Amusement)	PickedUp_OWB_Balloons_12			
 Trophy (Park Row, Freeze Nade on Water)	Riddler Trophies	PickedUp_OWA_Pickup_36			
-Trophy (Amusement, Gotham Casino Terrace)	Riddler Trophies	PickedUp_OWB_Pickup_4			
 Trophy (Amusement, Freeze Nade Rec Gun Sphere)	Riddler Trophies	PickedUp_OWB_Pickup_7			
 Trophy (Amusement, Fly 3 switches)	Riddler Trophies	PickedUp_OWB_Pickup_6			
 Rec Gun Question Mark Riddle	Riddles	PickedUp_OWB_Riddle_1			
@@ -249,7 +247,6 @@ Camera (Park Row, City Wall near Church)	Breakable Cameras (Park Row)	PickedUp_O
 Camera (Park Row, Liquors/across Finnigans)	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_8			
 Trophy (Park Row, Hack top of church)	Riddler Trophies	PickedUp_OWA_Pickup_18			
 Azrael Done	Azrael	SS_Azrael_FinalConversationFinished			
-Trophy (Park Row, Line Launch Switches Behind church)	Riddler Trophies	PickedUp_OWA_Pickup_20			
 Trophy (Park Row, City Wall Behind Church)	Riddler Trophies	PickedUp_OWA_Pickup_21			
 Trophy (Amusement, 3 Question Mark switches [across Olympus])	Riddler Trophies	PickedUp_OWB_Pickup_15			
 Balloon (Amusement, GCR)	Balloons (Amusement)	PickedUp_OWB_Balloons_6			
@@ -259,6 +256,7 @@ Trophy (Amusement, Under Bridge)	Riddler Trophies	PickedUp_OWB_Pickup_26
 Scarecrow Riddle	Riddles	PickedUp_OWB_Riddle_9			
 Falcone Boat Riddle	Riddles	PickedUp_OWC_Riddle_2			
 Nora	Freeze	SS_Nora_RoomExitUnlocked			
+Balloon (Industrial, Tricorner Naval Sign)	Balloons (Industrial)	PickedUp_OWC_Balloons_7			
 Balloon (Industrial, Super Dodgems Roof))	Balloons (Industrial)	PickedUp_OWC_Balloons_9			
 AR Challenge 5	AR Training	ARChallenge5_Complete			
 Balloon (Industrial, Big Toy Soldier)	Balloons (Industrial)	PickedUp_OWC_Balloons_12			
@@ -289,6 +287,7 @@ Hammer Riddle	Riddles	PickedUp_Steel_Riddle_5
 Harley Head (Steel Mill, Smelting Predator)	Harley Head	PickedUp_Steel_HarleyHead_6			
 Joker Riddle	Riddles	PickedUp_Steel_Riddle_4			
 Cat Trophy (Park Row, behind Church)	Riddler Trophies (Catwoman)	PickedUp_OWA_CWPickup_4			
+Trophy (Park Row, Line Launch Switches Behind church)	Riddler Trophies	PickedUp_OWA_Pickup_20			
 Harley Head (Steel Mill, Loading Bay Corner)	Harley Head	PickedUp_Steel_HarleyHead_1			
 Trophy (Steel Mill, Pipe near Elevator)	Riddler Trophies	PickedUp_Steel_Pickup_6			
 Trophy (Steel Mill, Under Elevator)	Riddler Trophies	PickedUp_Steel_Pickup_8			
@@ -299,15 +298,12 @@ Trophy (Steel Mill, Penguins)	Riddler Trophies	PickedUp_Steel_Pickup_23
 Box of Tricks Riddle	Riddles	PickedUp_Steel_Riddle_7			
 Freeze Cluster Grenade	Freeze Cluster Grenade	Ch6_ClusterBombCollected			
 Trophy (Steel Mill, Explosive Gel Freeze Cluster Room)	Riddler Trophies	PickedUp_Steel_Pickup_24			
-Trophy (Steel Mill, Behind Fan and Lava)	Riddler Trophies	PickedUp_Steel_Pickup_5			
-Trophy (Steel Mill, Behind Fan)	Riddler Trophies	PickedUp_Steel_Pickup_4			
 Trophy (Steel Mill, In Floor)	Riddler Trophies	PickedUp_Steel_Pickup_2			
 Trophy (Steel Mill, Bumper Cars Vent)	Riddler Trophies	PickedUp_Steel_Pickup_9			
 Trophy (Steel Mill, Bumper Cars Freeze Nade)	Riddler Trophies	PickedUp_Steel_Pickup_10			
 Harley Head (Steel Mill, Assembly Line Office)	Harley Head	PickedUp_Steel_HarleyHead_5			
 Trophy (Steel Mill, Assembly Line Gel)	Riddler Trophies	PickedUp_Steel_Pickup_11			
 Twins Riddle	Riddles	PickedUp_Steel_Riddle_3			
-Trophy (Steel Mill, Hack)	Riddler Trophies	PickedUp_Steel_Pickup_3			
 Harley Head (Steel Mill, Joker Room)	Harley Head	PickedUp_Steel_HarleyHead_2			
 Harley Outfit Riddle	Riddles	PickedUp_Steel_Riddle_2			
 Teeth (Subway, Wonder Tower Door)	Joker Teeth	PickedUp_OWD_Teeth_6			
@@ -321,6 +317,7 @@ Trophy (Wonder Tower, Near Top)	Riddler Trophies	PickedUp_Underworld_Pickup_26
 Tyger Brain (Park Row)	Tyger Brains	PickedUp_OWA_CameraControl_1			
 Clayface Fight	Main Story	Ch8_Entered_Theatre			
 Cat Trophy (Museum, ceiling grate in path to Gladiator Pit)	Riddler Trophies (Catwoman)	PickedUp_Museum_CWPickup_1			
+Trophy (Museum, Line Launch Ceiling)	Riddler Trophies	PickedUp_Museum_Pickup_6			
 Cat Trophy (Museum, floor grate in Torture Chamber)	Riddler Trophies (Catwoman)	PickedUp_Museum_CWPickup_2			
 Cat Trophy (Museum, Torture Chamber ceiling)	Riddler Trophies (Catwoman)	PickedUp_Museum_CWPickup_3			
 Cat Trophy (Museum, on Freeze showcase)	Riddler Trophies (Catwoman)	PickedUp_Museum_CWPickup_4			
@@ -341,8 +338,8 @@ Trophy (Industrial, Rec Gun Ball)	Riddler Trophies	PickedUp_OWC_Pickup_13
 Pest Control Riddle	Riddles	PickedUp_OWC_Riddle_5			
 Trophy (Industrial, Water Alley Pipe)	Riddler Trophies	PickedUp_OWC_Pickup_25			
 Zsasz Riddle	Riddles	PickedUp_OWC_Riddle_6			
-Trophy (Industrial, 3 switch tower)	Riddler Trophies	PickedUp_OWC_Pickup_4			
 Tyger Brain (Industrial)	Tyger Brains	PickedUp_OWC_CameraControl_1			
+Trophy (Industrial, 3 switch tower)	Riddler Trophies	PickedUp_OWC_Pickup_4			
 Trophy (Industrial, Dive bomb near city wall)	Riddler Trophies	PickedUp_OWC_Pickup_3			
 Trophy (Industrial, Running Questionmarks)	Riddler Trophies	PickedUp_OWC_Pickup_5			
 Trophy (Industrial, City Wall near Tunnels)	Riddler Trophies	PickedUp_OWC_Pickup_18			
@@ -421,7 +418,6 @@ Trophy (Bowery, Wonder Tower Entrance Water)	Riddler Trophies	PickedUp_OWE_Picku
 Question Mark Riddle (Wonder Tower Entrance)	Riddles	PickedUp_OWE_Riddle_1			
 Trigger Deadshot 3 (Near Ace Chemicals)	Deadshot	SS_DeadShot_Victim3GunShot 			
 Tyger Brain (Bowery)	Tyger Brains	PickedUp_OWE_CameraControl_1			
-Ace Chemicals Riddle	Riddles	PickedUp_OWA_Riddle_15			
 Hush 3 Start (near ACE)	Hush	SS_Hush_Victim3_SceneComplete			
 Puppet Riddle	Riddles	PickedUp_OWE_Riddle_8			
 Camera (Park Row, Monarch Theater)	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_4			
@@ -460,12 +456,6 @@ Zsasz Done	Zsasz	SS_Zsasz_Confronted
 Realtor Riddle (Zsasz)	Riddles	PickedUp_OWC_Riddle_8			
 Trophy (Industrial, Zsasz Electric Batarang)	Riddler Trophies	PickedUp_OWC_Pickup_39			
 Trophy (Industrial, Zsasz Side of Room)	Riddler Trophies	PickedUp_OWC_Pickup_38			
-Balloon (Industrial, By Ferris Wheel [political prisoner])	Balloons (Industrial)	PickedUp_OWC_Balloons_4			Map this to a political prisoner
-Trophy (Industrial, 3 wood walls ferris wheel [political prisoner])	Riddler Trophies	PickedUp_OWC_Pickup_7			Map this to a political prisoner
-Trophy (Industrial, Freeze Nade mine ferris wheel [political prisoner])	Riddler Trophies	PickedUp_OWC_Pickup_10			Map this to a political prisoner
-Trophy (Industrial, 3 fast question marks ferris wheel [political prisoner])	Riddler Trophies	PickedUp_OWC_Pickup_11			Map this to a political prisoner
-Trophy (Industrial, 3 switches near Subway)	Riddler Trophies	PickedUp_OWC_Pickup_20			Map this to a political prisoner
-Trophy (Industrial, Under Excavator)	Riddler Trophies	PickedUp_OWC_Pickup_21			Map this to a political prisoner
 Trophy (Industrial, Gel Rec near dive bomb switch)	Riddler Trophies	PickedUp_OWC_Pickup_2			
 Breakable Cameras (Industrial)	[PLACEHOLDER]				
 Balloons (Industrial)	[PLACEHOLDER]				
@@ -475,6 +465,17 @@ Trophy (Amusement, Behind Bane Building)	Riddler Trophies	PickedUp_OWB_Pickup_29
 Trophy (Amusement, Freeze Nade under Bane)	Riddler Trophies	PickedUp_OWB_Pickup_28			
 Trophy (Amusement, Bane Building Roof)	Riddler Trophies	PickedUp_OWB_Pickup_30			
 Bane Done	Bane	SS_Bane_StashCrateDestroyed			
+Balloon (Industrial, By Ferris Wheel [political prisoner])	Balloons (Industrial)	PickedUp_OWC_Balloons_4			Map this to a political prisoner
+Trophy (Industrial, 3 wood walls ferris wheel [political prisoner])	Riddler Trophies	PickedUp_OWC_Pickup_7			Map this to a political prisoner
+Trophy (Industrial, Freeze Nade mine ferris wheel [political prisoner])	Riddler Trophies	PickedUp_OWC_Pickup_10			Map this to a political prisoner
+Trophy (Industrial, 3 fast question marks ferris wheel [political prisoner])	Riddler Trophies	PickedUp_OWC_Pickup_11			Map this to a political prisoner
+Trophy (Industrial, 3 switches near Subway)	Riddler Trophies	PickedUp_OWC_Pickup_20			Map this to a political prisoner
+Trophy (Industrial, Under Excavator)	Riddler Trophies	PickedUp_OWC_Pickup_21			Map this to a political prisoner
+Prisoner (Industrial, Near Subway Entrance)	Political Prisoner	ArkhamBullyOWRC3_Saved			
+Prisoner (Industrial, Ferris Wheel)	Political Prisoner	ArkhamBullyOWRC2a_Saved			
+Prisoner (Industrial, Gotham Hardware [near city wall])	Political Prisoner	ArkhamBullyOWRC1a_Saved			
+Prisoner (Industrial, North near Ferris wheel)	Political Prisoner	ArkhamBullyOWRC2b_Saved			
+Prisoner (Industrial, Near Water across Hot Dog)	Political Prisoner	ArkhamBullyOWRC1b_Saved			
 Trophy (Amusement, Wood Wall GCPD)	Riddler Trophies	PickedUp_OWB_Pickup_22			
 Gordon Parking Spot Riddle	Riddles	PickedUp_OWB_Riddle_7			
 Tyger Brain (Amusement)	Tyger Brains	PickedUp_OWB_CameraControl_1			
@@ -487,6 +488,12 @@ Trophy (Park Row, Rec Gun Alley Door [political prisoner])	Riddler Trophies	Pick
 Trophy (Park Row, Rec Gun Sphere near ace [political prisoner])	Riddler Trophies	PickedUp_OWA_Pickup_15			Map this to a political prisoner
 Trophy (Park Row, West of Courthouse [political prisoner])	Riddler Trophies	PickedUp_OWA_Pickup_23			Map this to a political prisoner
 Trophy (Park Row, Far question mark [political prisoner])	Riddler Trophies	PickedUp_OWA_Pickup_27			Map this to a political prisoner
+Prisoner (Park Row, Narrow Alley near City Wall)	Political Prisoner	ArkhamBullyOWA7b_Saved			
+Prisoner (Park Row, Near Ace)	Political Prisoner	ArkhamBullyOWA8_Saved			
+Prisoner (Park Row, Between Courthouse and church)	Political Prisoner	ArkhamBullyOWA7a_Saved			
+Prisoner (Park Row, South West of courthouse)	Political Prisoner	ArkhamBullyOWR3_Saved			
+Prisoner (Park Row, Near Church)	Political Prisoner	ArkhamBullyOWA7c_Saved			
+Ace Chemicals Riddle	Riddles	PickedUp_OWA_Riddle_15			
 Breakable Cameras (Park Row)	[PLACEHOLDER]				
 Deadshot Done	Deadshot	SS_Deadshot_DeadshotDefeated			
 AR Challenge 6	AR Training	ARChallenge6_Complete			
@@ -499,54 +506,47 @@ Arkham City Plaque Riddle	Riddles	PickedUp_OWE_Riddle_6
 Trophy (Bowery, Hack Building Across Wonder Tower Entrance)	Riddler Trophies	PickedUp_OWE_Pickup_34			
 Trophy (Bowery, 6 Questionmarks under bridge)	Riddler Trophies	PickedUp_OWE_Pickup_14			
 Trophy (Bowery, 2 far questionmarks [political prisoner])	Riddler Trophies	PickedUp_OWE_Pickup_21			Map this to a political prisoner
-Trophy (Bowery, Left of Museum)	Riddler Trophies	PickedUp_OWE_Pickup_25			Map this to a political prisoner
-Trophy (Bowery, Museum Roof)	Riddler Trophies	PickedUp_OWE_Pickup_23			Map this to a political prisoner
-Trophy (Bowery, Rec Door Near Back Museum Phone)	Riddler Trophies	PickedUp_OWE_Pickup_4			Map this to a political prisoner
 Breakable Cameras (Bowery)	[PLACEHOLDER]				
-Trophy (Bowery, Back of Museum)	Riddler Trophies	PickedUp_OWE_Pickup_3			Map this to a political prisoner
-(Industrial, Near Subway Entrance)	Political Prisoner	ArkhamBullyOWRC3_Saved			
-(Industrial, Ferris Wheel)	Political Prisoner	ArkhamBullyOWRC2a_Saved			
-(Industrial, Gotham Hardware [near city wall])	Political Prisoner	ArkhamBullyOWRC1a_Saved			
-(Industrial, North near ferris wheel)	Political Prisoner	ArkhamBullyOWRC2b_Saved			
-(Industrial, Near Water across Hot Dog)	Political Prisoner	ArkhamBullyOWRC1b_Saved			
-(Park Row, Narrow Alley near City Wall)	Political Prisoner	ArkhamBullyOWA7b_Saved			
-(Park Row, Near Ace)	Political Prisoner	ArkhamBullyOWA8_Saved			
-(Park Row, Between Courthouse and church)	Political Prisoner	ArkhamBullyOWA7a_Saved			
-(Park Row, South West of courthouse)	Political Prisoner	ArkhamBullyOWR3_Saved			
-(Park Row, Near Church)	Political Prisoner	ArkhamBullyOWA7c_Saved			
-(Bowery, Behind Museum)	Political Prisoner	ArkhamBullyOWE1a_Saved			
-(Bowery, Near Wonder Tower Entrance)	Political Prisoner	ArkhamBullyOWRE1_Saved			
-(Bowery, Middle)	Political Prisoner	ArkhamBullyOWE4_Saved			
-(Bowery, Left of Museum)	Political Prisoner	ArkhamBullyOWE5_Saved			
-(Bowery, Back Right of Museum)	Political Prisoner	ArkhamBullyOWE1b_Saved			
 Cat Trophy (Bowery, alley in front of Museum)	Riddler Trophies (Catwoman)	PickedUp_OWE_CWPickup_4			
 Cat Trophy (Bowery, on top of Museum)	Riddler Trophies (Catwoman)	PickedUp_OWE_CWPickup_3			
-Cat Trophy (Bowery, brainpower hack roof)	Riddler Trophies (Catwoman)	PickedUp_OWE_CWPickup_5			
 Cat Trophy (Bowery, under predator building)	Riddler Trophies (Catwoman)	PickedUp_OWE_CWPickup_1			
+Cat Trophy (Bowery, brainpower hack roof)	Riddler Trophies (Catwoman)	PickedUp_OWE_CWPickup_5			
 Cat Trophy (Bowery, ceiling grate near city wall)	Riddler Trophies (Catwoman)	PickedUp_OWE_CWPickup_2			
 Cat Trophy (Park Row, ceiling near Jack Ryder)	Riddler Trophies (Catwoman)	PickedUp_OWA_CWPickup_5			
 Cat Trophy (Park Row, alley west of Courthouse)	Riddler Trophies (Catwoman)	PickedUp_OWA_CWPickup_1			
 Cat Trophy (Park Row, ceiling grate near Hush)	Riddler Trophies (Catwoman)	PickedUp_OWA_CWPickup_2			
 Loot Done (Catwoman)	Catwoman Loot	CH9_CW_MainLootComplete			
-Cat Trophy (Amusement, GCR wood wall)	Riddler Trophies (Catwoman)	PickedUp_OWB_CWPickup_3			
 Cat Trophy (Amusement, under center highway)	Riddler Trophies (Catwoman)	PickedUp_OWB_CWPickup_2			
 Cat Trophy (Amusement, Under GCPD)	Riddler Trophies (Catwoman)	PickedUp_OWB_CWPickup_4			
 Cat Trophy (Amusement, Bane)	Riddler Trophies (Catwoman)	PickedUp_OWB_CWPickup_5			
+Cat Trophy (Amusement, GCR wood wall)	Riddler Trophies (Catwoman)	PickedUp_OWB_CWPickup_3			
+Cat Trophy (Industrial, under railing near city wall)	Riddler Trophies (Catwoman)	PickedUp_OWC_CWPickup_1			
 Cat Trophy (Industrial, Nora)	Riddler Trophies (Catwoman)	PickedUp_OWC_CWPickup_5			
 Cat Trophy (Industrial, ceiling near north Zsasz phone)	Riddler Trophies (Catwoman)	PickedUp_OWC_CWPickup_2			
-Cat Trophy (Industrial, under railing near city wall)	Riddler Trophies (Catwoman)	PickedUp_OWC_CWPickup_1			
-Cat Trophy (Industrial, Super Dodgems ceiling)	Riddler Trophies (Catwoman)	PickedUp_OWC_CWPickup_3			
 Cat Trophy (Industrial, on top of Steel Mill)	Riddler Trophies (Catwoman)	PickedUp_OWC_CWPickup_4			
-Cat Trophy (Steel Mill, behind fan and lavva)	Riddler Trophies (Catwoman)	PickedUp_Steel_CWPickup_1			
-Cat Trophy (Steel Mill, hack)	Riddler Trophies (Catwoman)	PickedUp_Steel_CWPickup_2			
+Trophy (Steel Mill, Behind Fan and Lava)	Riddler Trophies	PickedUp_Steel_Pickup_5			
+Trophy (Steel Mill, Behind Fan)	Riddler Trophies	PickedUp_Steel_Pickup_4			
+Cat Trophy (Steel Mill, Behind Fan and Lava)	Riddler Trophies (Catwoman)	PickedUp_Steel_CWPickup_1			
+Cat Trophy (Steel Mill, Hack)	Riddler Trophies (Catwoman)	PickedUp_Steel_CWPickup_2			
+Trophy (Steel Mill, Hack)	Riddler Trophies	PickedUp_Steel_Pickup_3			
 Cat Trophy (Steel Mill, Assembly Line above twins)	Riddler Trophies (Catwoman)	PickedUp_Steel_CWPickup_3			
 Cat Trophy (Steel Mill, Smelting Chamber)	Riddler Trophies (Catwoman)	PickedUp_Steel_CWPickup_4			
 Cat Trophy (Steel Mill, Cooling Tunnel D below bridge)	Riddler Trophies (Catwoman)	PickedUp_Steel_CWPickup_5			
+Cat Trophy (Industrial, Super Dodgems ceiling)	Riddler Trophies (Catwoman)	PickedUp_OWC_CWPickup_3			
 Cat Trophy (Subway, east entrance below bridge)	Riddler Trophies (Catwoman)	PickedUp_OWD_CWPickup_4			
 Cat Trophy (Subway, east entrance ceiling)	Riddler Trophies (Catwoman)	PickedUp_OWD_CWPickup_5			
 Cat Trophy (Subway, west entrance ceiling)	Riddler Trophies (Catwoman)	PickedUp_OWD_CWPickup_3			
 Cat Trophy (Subway, ceiling grate near electric floor room)	Riddler Trophies (Catwoman)	PickedUp_OWD_CWPickup_2			
 Cat Trophy (Subway, upper station near vent)	Riddler Trophies (Catwoman)	PickedUp_OWD_CWPickup_1			
+Trophy (Bowery, Left of Museum)	Riddler Trophies	PickedUp_OWE_Pickup_25			Map this to a political prisoner
+Trophy (Bowery, Museum Roof)	Riddler Trophies	PickedUp_OWE_Pickup_23			Map this to a political prisoner
+Trophy (Bowery, Rec Door Near Back Museum Phone)	Riddler Trophies	PickedUp_OWE_Pickup_4			Map this to a political prisoner
+Trophy (Bowery, Back of Museum)	Riddler Trophies	PickedUp_OWE_Pickup_3			Map this to a political prisoner
+Prisoner (Bowery, Behind Museum)	Political Prisoner	ArkhamBullyOWE1a_Saved			
+Prisoner (Bowery, Near Wonder Tower Entrance)	Political Prisoner	ArkhamBullyOWRE1_Saved			
+Prisoner (Bowery, Middle)	Political Prisoner	ArkhamBullyOWE4_Saved			
+Prisoner (Bowery, Left of Museum)	Political Prisoner	ArkhamBullyOWE5_Saved			
+Prisoner (Bowery, Back Right of Museum)	Political Prisoner	ArkhamBullyOWE1b_Saved			
 Trophy (Bowery, 3 switches Near Riddler)	Riddler Trophies	PickedUp_OWE_Pickup_2			
 Trophy (Bowery, Right before Riddler)	Riddler Trophies	PickedUp_OWE_Pickup_7			
 Riddler Done	Riddler Mission	RiddlerBeaten			
