@@ -342,11 +342,16 @@ namespace ArkhamDisplay{
 			UpdatePercent(doneEntries, totalEntries);
 		}
 
-		protected virtual void UpdatePercent(int doneEntries, int totalEntries)
-		{
+		protected virtual void UpdatePercent(int doneEntries, int totalEntries){
 			double percentDone = 100.0 * doneEntries / totalEntries;
-			progressCounter.Text = string.Format("{0:0.0}", percentDone) + "%";
-			riddleCounter.Text = GetRiddleCount();
+
+			if(percentDone >= 100.0){
+				progressCounter.Text = string.Format("{0:0}", percentDone) + "%";
+			}else{
+                progressCounter.Text = string.Format("{0:0.0}", percentDone) + "%";
+			}
+
+                riddleCounter.Text = GetRiddleCount();
 
 			SetStatsWindowStats();
 		}
