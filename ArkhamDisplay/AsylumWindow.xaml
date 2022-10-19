@@ -12,13 +12,15 @@
 				<MenuItem Name="SaveMenuItem" Header="Set Save File Path"	Click="OpenSavePathWindow"/>
 				<MenuItem Name="PrefMenuItem" Header="Preferences"			Click="PrefMenuItem_Click" />
 				<MenuItem Name="UpdateMenuItem" Header="Check for Updated Routes" Click="CheckForUpdatedRoutes" />
-				<MenuItem Name="GlitchlessMenuItem" Header="Glitchless"		Click="UpdatePreferences" IsCheckable="True" IsChecked="False"/>
 			</MenuItem>
 			<MenuItem Header="_Game">
 				<MenuItem Name="AsylumMenuItem"		Header="Asylum"		IsCheckable="True" IsChecked="True"		Click="SwitchGameWindow" />
 				<MenuItem Name="CityMenuItem"		Header="City"		IsCheckable="True" IsChecked="False"	Click="SwitchGameWindow" />
 				<MenuItem Name="OriginsMenuItem"	Header="Origins"	IsCheckable="True" IsChecked="False"	Click="SwitchGameWindow" />
 				<MenuItem Name="KnightMenuItem"		Header="Knight"		IsCheckable="True" IsChecked="False"	Click="SwitchGameWindow" />
+			</MenuItem>
+			<MenuItem Header="_Route">
+				<MenuItem Name="GlitchlessMenuItem" Header="Glitchless"		Click="UpdatePreferences" IsCheckable="True" IsChecked="False"/>
 			</MenuItem>
 			<MenuItem Header="_Stats" Click="OpenStatsWindow"/>
 		</Menu>
