@@ -418,6 +418,15 @@ namespace ArkhamDisplay{
 			System.Diagnostics.Process.Start("explorer.exe", Directory.GetCurrentDirectory() + Data.RoutePath);
 		}
 
+		protected void RefreshRoutes(object sender = null, RoutedEventArgs e = null){
+			Data.ReloadRoutes();
+
+			if(updateWorker.IsBusy){
+				Stop_Button_Click(sender, e);
+				Start_Button_Click(sender, e);
+			}
+		}
+
         protected void CheckForUpdatedRoutes(object sender = null, RoutedEventArgs e = null){
 			List<string> routesWithUpdates = new List<string>();
 			Dictionary<string, string> routeFileData = new Dictionary<string, string>();
