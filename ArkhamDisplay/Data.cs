@@ -58,6 +58,7 @@ namespace ArkhamDisplay{
 		private static volatile Dictionary<string, string> routeFiles = new Dictionary<string, string>();
 		private static volatile Dictionary<string, Route> routes = new Dictionary<string, Route>();
 
+		public static string RoutePath { get { return "\\Routes\\"; } }
 		public static Game SelectedGame { get { return data.selectedGame; } set { data.selectedGame = value; } }
 		public static string[] SaveLocations { get { return data.saveLocations; } }
 		public static int[] SaveIDs { get { return data.saveIDs; } }

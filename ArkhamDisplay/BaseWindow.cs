@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading;
@@ -413,7 +414,11 @@ namespace ArkhamDisplay{
 			Data.Save();
 		}
 
-		protected void CheckForUpdatedRoutes(object sender = null, RoutedEventArgs e = null){
+		protected void OpenRouteFolder(object sender = null, RoutedEventArgs e = null){
+			System.Diagnostics.Process.Start("explorer.exe", Directory.GetCurrentDirectory() + Data.RoutePath);
+		}
+
+        protected void CheckForUpdatedRoutes(object sender = null, RoutedEventArgs e = null){
 			List<string> routesWithUpdates = new List<string>();
 			Dictionary<string, string> routeFileData = new Dictionary<string, string>();
 

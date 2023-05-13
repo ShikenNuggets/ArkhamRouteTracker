@@ -11,6 +11,7 @@
 			<MenuItem Header="_Edit">
 				<MenuItem Name="SaveMenuItem" Header="Set Save File Path" Click="OpenSavePathWindow"/>
 				<MenuItem Name="PrefMenuItem" Header="Preferences" Click="PrefMenuItem_Click" />
+				<MenuItem Name="OpenRouteMenuItem" Header="Open Route Folder"	Click="OpenRouteFolder" />
 				<MenuItem Name="UpdateMenuItem" Header="Check for Updated Routes" Click="CheckForUpdatedRoutes" />
 			</MenuItem>
 			<MenuItem Header="_Game">
