@@ -421,7 +421,7 @@ namespace ArkhamDisplay{
 		protected void RefreshRoutes(object sender = null, RoutedEventArgs e = null){
 			Data.ReloadRoutes();
 
-			if(updateWorker.IsBusy){
+			if(updateWorker != null && updateWorker.IsBusy){
 				Stop_Button_Click(sender, e);
 				Start_Button_Click(sender, e);
 			}
