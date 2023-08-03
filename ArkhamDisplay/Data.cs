@@ -91,6 +91,12 @@ namespace ArkhamDisplay{
 				data = JsonConvert.DeserializeObject<DataBlock>(System.IO.File.ReadAllText(saveFileName));
 			}
 
+			if (!System.IO.File.Exists(routeFileName))
+			{
+				MessageBox.Show("Error: " + routeFileName + " not found - please re-download the application");
+				throw new System.IO.FileNotFoundException("routes.json file not found", routeFileName);
+			}
+
 			lock(routeFiles){
 				routeFiles = JsonConvert.DeserializeObject<Dictionary<string, string>>(System.IO.File.ReadAllText(routeFileName));
 			}
