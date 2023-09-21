@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ArkhamDisplay"
         mc:Ignorable="d"
-        Title="Route Tracker Stats" Height="640" Width="800">
+        Title="Route Tracker Stats" Height="400" Width="750">
 	<Grid>
-		<TextBlock Name="PercentageLabel" Text="0%" HorizontalAlignment="Right" Margin="10,10,10,0" VerticalAlignment="Top" Height="180" Width="Auto" MaxWidth="800" FontSize="100"/>
-		<TextBlock Name="RiddleLabel" Text="" HorizontalAlignment="Right" Margin="10,0,10,0" VerticalAlignment="Center" Height="180" Width="Auto" MaxWidth="800" FontSize="100"/>
-		<TextBlock Name="ExtraLabel" Text="" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Height="180" Width="Auto" MaxWidth="800" FontSize="100"/>
+		<TextBlock Name="PercentageLabel" Text="0.0%" HorizontalAlignment="Right" Margin="10,10,10,0" VerticalAlignment="Top" Height="120" Width="Auto" MaxWidth="800" FontSize="100"/>
+		<TextBlock Name="RiddleLabel" Text="" HorizontalAlignment="Right" Margin="36,0,10,0" VerticalAlignment="Center" Height="120" Width="Auto" MaxWidth="800" FontSize="100"/>
+		<TextBlock Name="ExtraLabel" Text="" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Height="120" Width="Auto" MaxWidth="800" FontSize="100"/>
 	</Grid>
 </Window>
