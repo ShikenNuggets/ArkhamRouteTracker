@@ -70,35 +70,14 @@ namespace ArkhamDisplay{
 		}
 
 		protected override void OnInitialized(EventArgs e){
-			var screenLeft = SystemParameters.VirtualScreenLeft;
-			var screenRight = SystemParameters.VirtualScreenLeft + SystemParameters.VirtualScreenWidth;
-			var screenTop = SystemParameters.VirtualScreenTop;
-			var screenBottom = SystemParameters.VirtualScreenTop + SystemParameters.VirtualScreenHeight;
-
-			//Load window stuff
 			MinWidth = 280;
 			MinHeight = 360;
 
-			Rect rect = Data.WindowRect[(int)game];
-			if(rect.Width >= MinWidth && rect.Height >= MinHeight){
-				Width = rect.Width;
-				Height = rect.Height;
-
-				if(rect.X < screenLeft){
-					rect.X = screenLeft;
-				}else if(rect.X + rect.Width > screenRight){
-					rect.X = screenRight - rect.Width;
-				}
-
-				if(rect.Y < screenTop){
-					rect.Y = screenTop;
-				}else if(rect.Y + rect.Height > screenBottom){
-					rect.Y = screenBottom - rect.Height;
-				}
-				 
-				Left = rect.X;
-				Top = rect.Y;
-			}
+			Rect rect = Utils.DetermineFinalWindowRectPosition(Data.WindowRect[(int)game], MinWidth, MinHeight);
+			Width = rect.Width;
+			Height = rect.Height;
+			Left = rect.X;
+			Top = rect.Y;
 
 			var mainGrid = FindName("MainGrid");
 			if(mainGrid != null && mainGrid is Grid){
