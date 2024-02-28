@@ -4,7 +4,7 @@ Rescue Jack Ryder	Political Prisoner	ArkhamBullyR2_JackRyder_Saved
 Rescue Catwoman	Main Story	TwofaceObjectionFinished			
 Camera (Park Row, Next to Courthouse)	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_5			
 Camera (Park Row, Near Lounge near courthouse)	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_7			
-Azrael (near courthouse)	Azrael	SS_Azrael_A6_Glyph3			
+Azrael (near courthouse)	Azrael	SS_Azrael_A6_Glyph3	SS_Azrael_GlyphScanned1		
 Camera (Park Row, Near Church)	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_10			
 Zsasz start/Church	Main Story	Ch2_Church_HarleyGone			
 Trophy (Church, Confessional)	Riddler Trophies	PickedUp_OWA_Pickup_19			
@@ -50,7 +50,7 @@ Camera (Industrial, Joker Funland Sign/phone)	Breakable Cameras (Industrial)	Pic
 Balloon (Industrial, Ferris Wheel)	Balloons (Industrial)	PickedUp_OWC_Balloons_5			
 Balloon (Industrial, Sionis)	Balloons (Industrial)	PickedUp_OWC_Balloons_10			
 Trophy (Industrial, Ferris Wheel)	Riddler Trophies	PickedUp_OWC_Pickup_12			
-Azrael (Ferris Wheel)	Azrael	SS_Azrael_C3_Glyph2a	SS_Azrael_C3_Glyph2b		
+Azrael (Ferris Wheel)	Azrael	SS_Azrael_C3_Glyph2a	SS_Azrael_GlyphScanned2		
 Trophy (Industrial, Timed Switch near Ferris Wheel)	Riddler Trophies	PickedUp_OWC_Pickup_14			
 Trophy (Amusement, Rec Gun Ball Next to Deadshot Victim)	Riddler Trophies	PickedUp_OWB_Pickup_19			
 Camera (Amusement, Bridge)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_2			
@@ -146,7 +146,7 @@ Demon Seal (Wonder, Pothole)	Demon Seals	PickedUp_Underworld_DemonSeal_6
 Camera (Bowery, Quincy Sharp Alley)	Breakable Cameras (Bowery)	PickedUp_OWE_Camera_6			
 Camera (Bowery, City Wall Near Quincy Sharp)	Breakable Cameras (Bowery)	PickedUp_OWE_Camera_5			
 Quincy Sharp Riddle	Riddles	PickedUp_OWE_Riddle_5			
-Azrael (Bowery)	Azrael	SS_Azrael_E6_Glyph4	SS_Azrael_E6_Glyph5		
+Azrael (Bowery)	Azrael	SS_Azrael_E6_Glyph4	SS_Azrael_GlyphScanned3		
 Trophy (Bowery, Fly Wood Wall near City Wall)	Riddler Trophies	PickedUp_OWE_Pickup_18			
 Trophy (Bowery, Gel Wall Near Ace)	Riddler Trophies	PickedUp_OWE_Pickup_20			
 Trophy (Park Row, Timed Gargoyle)	Riddler Trophies	PickedUp_OWA_Pickup_34			
@@ -178,7 +178,7 @@ Camera (Amusement, Next to snipers)	Breakable Cameras (Amusement)	PickedUp_OWB_C
 Circus Riddle	Riddles	PickedUp_OWB_Riddle_4			
 Rescue Vicki Vale	Main Story	Ch6_OW_R7_Vicki_Vale_Rescued			
 Trophy (Amusement, 2 wood walls near Vicki)	Riddler Trophies	PickedUp_OWB_Pickup_5			
-Azrael (Amusement)	Azrael	SS_Azrael_B4_Glyph1			
+Azrael (Amusement)	Azrael	SS_Azrael_B4_Glyph1	SS_Azrael_GlyphScanned4		
 Camera (Amusement, Sea Pier)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_4			
 Trophy (Amusement, Timed Question Marks on Water)	Riddler Trophies	PickedUp_OWB_Pickup_12			
 Trophy (Park Row, Freeze Nade [with zsasz call])	Riddler Trophies	PickedUp_OWA_Pickup_33			

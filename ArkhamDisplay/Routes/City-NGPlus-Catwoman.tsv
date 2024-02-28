@@ -1,14 +1,14 @@
 Name	Type	SaveFileId	Alternate ID	Metadata	TODO
 Rescue Jack Ryder	Political Prisoner	ArkhamBullyR2_JackRyder_Saved			
 Rescue Catwoman	Main Story	TwofaceObjectionFinished			
-Azrael (near courthouse)	Azrael	SS_Azrael_A6_Glyph3			
+Azrael (near courthouse)	Azrael	SS_Azrael_A6_Glyph3	SS_Azrael_GlyphScanned1		
 Zsasz start/Church	Main Story	Ch2_Church_HarleyGone			
 Camera (Park Row, by phone)	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_11			
 AR Training 1	AR Training	ARChallenge1_Complete			
 AR Training 2	AR Training	ARChallenge2_Complete			
 AR Training 3	AR Training	ARChallenge3_Complete			
 AR Training 4	AR Training	ARChallenge4_Complete			
-Azrael (Ferris Wheel)	Azrael	SS_Azrael_C3_Glyph2a	SS_Azrael_C3_Glyph2b		
+Azrael (Ferris Wheel)	Azrael	SS_Azrael_C3_Glyph2a	SS_Azrael_GlyphScanned2		
 Deadshot Victim 1	Deadshot	SS_DeadShot_Hobo1Dead			
 Grapnel Boost	AR Training	ARChallenge_Grapple_Boost_Collected			
 Deadshot Casing Found	Deadshot	SS_DeadShot_Hobo1_BulletCasingScanned			
@@ -23,11 +23,11 @@ Titan Container (Bowery, Near Subway)	Bane	OW_E6_ChB19.RTitanCrate_6.Broken
 Titan Container (Museum)	Bane	Museum_C2.RTitanCrate_4.Broken			
 Grundy Fight	Main Story	CH4_Museum_C1_NinjasBlood			
 Titan Container (Wonder Tower)	Bane	Under_A3.RTitanCrate_3.Broken			
-Azrael (Bowery)	Azrael	SS_Azrael_E6_Glyph4	SS_Azrael_E6_Glyph5		
+Azrael (Bowery)	Azrael	SS_Azrael_E6_Glyph4	SS_Azrael_GlyphScanned3		
 Hush 2 (next to trophy) (do zsasz call after by dent riddle)	Hush	SS_Hush_Victim2_SceneComplete			
 Camera (Park Row, Near Stripclub near courthouse)	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_6			
 Rescue Vicki Vale	Main Story	Ch6_OW_R7_Vicki_Vale_Rescued			
-Azrael (Amusement)	Azrael	SS_Azrael_B4_Glyph1			
+Azrael (Amusement)	Azrael	SS_Azrael_B4_Glyph1	SS_Azrael_GlyphScanned4		
 Camera (Amusement, Sea Pier)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_4			
 Mine Disruptor	Mine Disruptor	MuseumRear_CopOpenPlayed 			
 Riddler Church	Riddler Mission	SS_Riddler_OrganScanned			
