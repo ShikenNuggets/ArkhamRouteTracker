@@ -150,7 +150,7 @@ public abstract class BaseWindow : Window
     }
 
     protected virtual SaveParser CreateSaveParser() =>
-        new SaveParser(Data.SaveLocations[(int)game], Data.SaveIDs[(int)game]);
+        new(Data.SaveLocations[(int)game], Data.SaveIDs[(int)game]);
 
     protected void Stop_Button_Click(object sender, RoutedEventArgs e)
     {

@@ -55,7 +55,7 @@ public static class Data
 {
     private const string saveFileName = "settings.json";
     private const string routeFileName = "Routes/routes.json";
-    private static volatile DataBlock data = new DataBlock();
+    private static volatile DataBlock data = new();
     private static volatile Dictionary<string, string> routeFiles = [];
     private static readonly Dictionary<string, Route> routes = [];
     private static readonly JsonSerializerOptions jsonSerializerOptions = new()
