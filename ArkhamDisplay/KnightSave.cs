@@ -13,7 +13,7 @@ namespace ArkhamDisplay
         {
             string file = GetFile();
 
-            DateTime lastWriteTime = System.IO.File.GetLastWriteTimeUtc(file);
+            var lastWriteTime = System.IO.File.GetLastWriteTimeUtc(file);
             if (lastWriteTime == m_LastWriteTime)
             {
                 return false; //No need to update, file hasn't been written to since last check
@@ -63,10 +63,10 @@ namespace ArkhamDisplay
             string filename1 = System.IO.Path.Combine(m_filePath, SAVE_FILE_PREFIX + m_id + "x1" + SAVE_FILE_SUFFIX);
             string filename2 = System.IO.Path.Combine(m_filePath, SAVE_FILE_PREFIX + m_id + "x2" + SAVE_FILE_SUFFIX);
             string filename3 = System.IO.Path.Combine(m_filePath, SAVE_FILE_PREFIX + m_id + "x3" + SAVE_FILE_SUFFIX);
-            DateTime writetime0 = DateTime.MinValue;
-            DateTime writetime1 = DateTime.MinValue;
-            DateTime writetime2 = DateTime.MinValue;
-            DateTime writetime3 = DateTime.MinValue;
+            var writetime0 = DateTime.MinValue;
+            var writetime1 = DateTime.MinValue;
+            var writetime2 = DateTime.MinValue;
+            var writetime3 = DateTime.MinValue;
             if (System.IO.File.Exists(filename0))
             {
                 writetime0 = System.IO.File.GetLastWriteTimeUtc(filename0);
@@ -88,7 +88,7 @@ namespace ArkhamDisplay
             }
 
             string currentfile = filename0;
-            DateTime currentwritetime = writetime0;
+            var currentwritetime = writetime0;
             if (currentwritetime < writetime1)
             {
                 currentfile = filename1;

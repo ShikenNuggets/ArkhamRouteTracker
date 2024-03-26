@@ -12,10 +12,7 @@ namespace ArkhamDisplay
             PostInitialize();
         }
 
-        protected override SaveParser CreateSaveParser()
-        {
-            return new OriginsSave(Data.SaveLocations[(int)game], Data.SaveIDs[(int)game]);
-        }
+        protected override SaveParser CreateSaveParser() => new OriginsSave(Data.SaveLocations[(int)game], Data.SaveIDs[(int)game]);
 
         protected override void SetCurrentRoute()
         {
@@ -33,11 +30,11 @@ namespace ArkhamDisplay
             CrimeInProgressGrid.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(COL2_WIDTH) });
 
             int lineCount = 1;
-            foreach (Entry entry in Data.GetRoute(currentSecondaryRoute).entries)
+            foreach (var entry in Data.GetRoute(currentSecondaryRoute).entries)
             {
                 CrimeInProgressGrid.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(ROW_HEIGHT / 2) });
 
-                Rectangle rectangle = new Rectangle
+                var rectangle = new Rectangle
                 {
                     Style = FindResource("GridRectangle") as Style
                 };
@@ -45,7 +42,7 @@ namespace ArkhamDisplay
                 Grid.SetRow(rectangle, lineCount - 1);
                 CrimeInProgressGrid.Children.Add(rectangle);
 
-                TextBlock txt0 = new TextBlock
+                var txt0 = new TextBlock
                 {
                     Text = entry.name,
                     Style = FindResource("EntryText") as Style
@@ -64,7 +61,7 @@ namespace ArkhamDisplay
 
                 if (saveParser.HasKey(entry, minRequiredMatches))
                 {
-                    TextBlock txt1 = new TextBlock
+                    var txt1 = new TextBlock
                     {
                         Style = FindResource("DoneText") as Style,
                         FontSize = 15.0

@@ -181,7 +181,7 @@ namespace ArkhamDisplay
                 const string RegistryKeyPath = @"Software\Microsoft\Windows\CurrentVersion\Themes\Personalize";
                 const string RegistryValueName = "AppsUseLightTheme";
 
-                using RegistryKey key = Registry.CurrentUser.OpenSubKey(RegistryKeyPath);
+                using var key = Registry.CurrentUser.OpenSubKey(RegistryKeyPath);
                 object registryValueObject = key?.GetValue(RegistryValueName);
                 if (registryValueObject != null)
                 {

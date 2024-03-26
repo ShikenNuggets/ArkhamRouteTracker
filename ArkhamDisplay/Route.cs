@@ -31,10 +31,7 @@ namespace ArkhamDisplay
             return type_.Equals(type);
         }
 
-        public static bool IsPlaceholder(Entry e)
-        {
-            return e.IsType("[PLACEHOLDER]");
-        }
+        public static bool IsPlaceholder(Entry e) => e.IsType("[PLACEHOLDER]");
     }
 
     public class Route
@@ -104,12 +101,12 @@ namespace ArkhamDisplay
 
         public List<Entry> GetEntriesWithPlaceholdersMoved()
         {
-            List<Entry> newEntries = new List<Entry>(entries);
+            var newEntries = new List<Entry>(entries);
 
-            List<Entry> placeHolders = newEntries.FindAll(Entry.IsPlaceholder);
-            foreach (Entry p in placeHolders)
+            var placeHolders = newEntries.FindAll(Entry.IsPlaceholder);
+            foreach (var p in placeHolders)
             {
-                List<Entry> onesToMove = newEntries.FindAll(x => x.IsType(p.name));
+                var onesToMove = newEntries.FindAll(x => x.IsType(p.name));
                 newEntries.RemoveAll(x => x.IsType(p.name));
                 newEntries.InsertRange(newEntries.FindIndex(x => x == p), onesToMove);
             }
@@ -120,7 +117,7 @@ namespace ArkhamDisplay
 
         public List<Entry> GetEntriesWithoutPlaceholders()
         {
-            List<Entry> newEntries = new List<Entry>(entries);
+            var newEntries = new List<Entry>(entries);
             newEntries.RemoveAll(Entry.IsPlaceholder);
             return newEntries;
         }

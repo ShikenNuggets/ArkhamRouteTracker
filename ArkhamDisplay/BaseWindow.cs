@@ -79,7 +79,7 @@ namespace ArkhamDisplay
             MinWidth = 280;
             MinHeight = 360;
 
-            Rect rect = Utils.DetermineFinalWindowRectPosition(Data.WindowRect[(int)game], MinWidth, MinHeight);
+            var rect = Utils.DetermineFinalWindowRectPosition(Data.WindowRect[(int)game], MinWidth, MinHeight);
             Width = rect.Width;
             Height = rect.Height;
             Left = rect.X;
@@ -88,7 +88,7 @@ namespace ArkhamDisplay
             object mainGrid = FindName("MainGrid");
             if (mainGrid != null && mainGrid is Grid)
             {
-                foreach (RowDefinition row in (mainGrid as Grid).RowDefinitions)
+                foreach (var row in (mainGrid as Grid).RowDefinitions)
                 {
                     if (row.Name == "MainRow")
                     {
@@ -137,7 +137,7 @@ namespace ArkhamDisplay
             object mainGrid = FindName("MainGrid");
             if (mainGrid != null && mainGrid is Grid)
             {
-                foreach (RowDefinition row in (mainGrid as Grid).RowDefinitions)
+                foreach (var row in (mainGrid as Grid).RowDefinitions)
                 {
                     if (row.Name == "MainRow")
                     {
@@ -160,10 +160,7 @@ namespace ArkhamDisplay
             base.OnClosed(e);
         }
 
-        protected virtual SaveParser CreateSaveParser()
-        {
-            return new SaveParser(Data.SaveLocations[(int)game], Data.SaveIDs[(int)game]);
-        }
+        protected virtual SaveParser CreateSaveParser() => new SaveParser(Data.SaveLocations[(int)game], Data.SaveIDs[(int)game]);
 
         protected void Stop_Button_Click(object sender, RoutedEventArgs e)
         {
@@ -204,7 +201,7 @@ namespace ArkhamDisplay
 
         private void BackgroundWorkerOnDoWork(object sender, DoWorkEventArgs e)
         {
-            BackgroundWorker worker = (BackgroundWorker)sender;
+            var worker = (BackgroundWorker)sender;
             while (!worker.CancellationPending)
             {
                 worker.ReportProgress(0, "Dummy");
@@ -272,10 +269,7 @@ namespace ArkhamDisplay
             public bool done;
         }
 
-        protected virtual List<Entry> GetEntriesForDisplay(Route route)
-        {
-            return route.GetEntriesWithoutPlaceholders();
-        }
+        protected virtual List<Entry> GetEntriesForDisplay(Route route) => route.GetEntriesWithoutPlaceholders();
 
         protected virtual void UpdateRouteWindow()
         {
@@ -289,13 +283,13 @@ namespace ArkhamDisplay
             int lineCount = 1;
             int firstNotDone = -1;
 
-            List<Entry> routeEntries = GetEntriesForDisplay(Data.GetRoute(currentRoute));
+            var routeEntries = GetEntriesForDisplay(Data.GetRoute(currentRoute));
             int totalEntries = routeEntries.Count;
             int doneEntries = 0;
 
-            List<FinalEntry> finalEntries = new List<FinalEntry>(totalEntries);
-            List<FinalEntry> bottomEntries = new List<FinalEntry>(totalEntries);
-            foreach (Entry entry in routeEntries)
+            var finalEntries = new List<FinalEntry>(totalEntries);
+            var bottomEntries = new List<FinalEntry>(totalEntries);
+            foreach (var entry in routeEntries)
             {
                 //Hardcoded bullshit
                 int mrm = minRequiredMatches;
@@ -332,11 +326,11 @@ namespace ArkhamDisplay
             }
             finalEntries.AddRange(bottomEntries);
 
-            foreach (FinalEntry entry in finalEntries)
+            foreach (var entry in finalEntries)
             {
                 displayGrid.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(ROW_HEIGHT) });
 
-                Rectangle rectangle = new Rectangle
+                var rectangle = new Rectangle
                 {
                     Style = FindResource("GridRectangle") as Style
                 };
@@ -344,7 +338,7 @@ namespace ArkhamDisplay
                 Grid.SetRow(rectangle, lineCount - 1);
                 displayGrid.Children.Add(rectangle);
 
-                TextBlock txtBlock = new TextBlock
+                var txtBlock = new TextBlock
                 {
                     Text = entry.name,
                     Style = FindResource("EntryText") as Style
@@ -406,9 +400,9 @@ namespace ArkhamDisplay
 
         protected virtual void UpdateSecondaryRouteWindow() { }
 
-        protected virtual string GetRiddleCount() { return ""; }
+        protected virtual string GetRiddleCount() => "";
 
-        protected virtual string GetEntryName(Entry entry) { return entry.name; }
+        protected virtual string GetEntryName(Entry entry) => entry.name;
 
         protected virtual void UpdateUI()
         {
@@ -477,10 +471,7 @@ namespace ArkhamDisplay
             Data.Save();
         }
 
-        protected void OpenRouteFolder(object sender = null, RoutedEventArgs e = null)
-        {
-            System.Diagnostics.Process.Start("explorer.exe", Directory.GetCurrentDirectory() + Data.RoutePath);
-        }
+        protected void OpenRouteFolder(object sender = null, RoutedEventArgs e = null) => System.Diagnostics.Process.Start("explorer.exe", Directory.GetCurrentDirectory() + Data.RoutePath);
 
         protected void RefreshRoutes(object sender = null, RoutedEventArgs e = null)
         {
@@ -500,9 +491,9 @@ namespace ArkhamDisplay
 
             try
             {
-                Octokit.GitHubClient client = new Octokit.GitHubClient(new Octokit.ProductHeaderValue("ArkhamRouteTracker"));
-                IReadOnlyList<Octokit.RepositoryContent> routes = client.Repository.Content.GetAllContents("ShikenNuggets", "ArkhamRouteTracker", "ArkhamDisplay/Routes").Result;
-                foreach (Octokit.RepositoryContent r in routes)
+                var client = new Octokit.GitHubClient(new Octokit.ProductHeaderValue("ArkhamRouteTracker"));
+                var routes = client.Repository.Content.GetAllContents("ShikenNuggets", "ArkhamRouteTracker", "ArkhamDisplay/Routes").Result;
+                foreach (var r in routes)
                 {
                     byte[] rawData = client.Repository.Content.GetRawContent("ShikenNuggets", "ArkhamRouteTracker", r.Path).Result;
 
@@ -510,7 +501,7 @@ namespace ArkhamDisplay
                     dataString = dataString.Replace("\n", "\r\n"); //Replace Unix line endings with Windows line endings
                     routeFileData.Add(r.Name, dataString);
 
-                    List<string> split = Regex.Split(dataString, @"(?<=[\n])").ToList();
+                    var split = Regex.Split(dataString, @"(?<=[\n])").ToList();
 
                     if (!Data.HasRouteFile(r.Name))
                     {
@@ -528,8 +519,8 @@ namespace ArkhamDisplay
                     }
                     else
                     {
-                        Route r1 = new Route("Routes/" + r.Name);
-                        Route r2 = new Route(null, split);
+                        var r1 = new Route("Routes/" + r.Name);
+                        var r2 = new Route(null, split);
                         if (!r1.IsEqual(r2))
                         {
                             routesWithUpdates.Add(r.Name);
@@ -544,7 +535,7 @@ namespace ArkhamDisplay
                 return;
             }
 
-            MessageBoxResult result = MessageBoxResult.No;
+            var result = MessageBoxResult.No;
             if (routesWithUpdates.Count > 0)
             {
                 result = MessageBox.Show("The following routes have updates. Would you like to download? Any custom changes will be lost.\n" + Utils.ListToNewlinedString(routesWithUpdates), "Updates Available", MessageBoxButton.YesNo);
@@ -558,7 +549,7 @@ namespace ArkhamDisplay
             {
                 if (result == MessageBoxResult.Yes)
                 {
-                    foreach (KeyValuePair<string, string> v in routeFileData)
+                    foreach (var v in routeFileData)
                     {
                         if (routesWithUpdates.Contains(v.Key))
                         {
@@ -586,7 +577,7 @@ namespace ArkhamDisplay
 
         protected void OpenSavePathWindow(object sender = null, RoutedEventArgs e = null)
         {
-            SetSavePathWindow wnd = new SetSavePathWindow(game);
+            var wnd = new SetSavePathWindow(game);
             wnd.Activate();
             if (wnd.ShowDialog() == true)
             {
@@ -620,7 +611,7 @@ namespace ArkhamDisplay
 
         protected void PrefMenuItem_Click(object sender, RoutedEventArgs e)
         {
-            PreferencesWindow wnd = new PreferencesWindow();
+            var wnd = new PreferencesWindow();
             wnd.Activate();
             if (wnd.ShowDialog() == true)
             {

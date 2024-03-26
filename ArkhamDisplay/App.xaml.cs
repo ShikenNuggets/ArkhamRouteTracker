@@ -28,8 +28,8 @@ namespace ArkhamDisplay
 
         private void ApplyResources(string src)
         {
-            ResourceDictionary dict = new ResourceDictionary() { Source = new Uri(src, UriKind.Relative) };
-            foreach (ResourceDictionary mergeDict in dict.MergedDictionaries)
+            var dict = new ResourceDictionary() { Source = new Uri(src, UriKind.Relative) };
+            foreach (var mergeDict in dict.MergedDictionaries)
             {
                 Resources.MergedDictionaries.Add(mergeDict);
             }

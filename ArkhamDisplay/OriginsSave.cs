@@ -20,9 +20,6 @@ namespace ArkhamDisplay
             return base.HasKey(entry, requiredMatches);
         }
 
-        protected override string GetFile()
-        {
-            return System.IO.Path.Combine(m_filePath, "SpSave_v2_" + m_id.ToString() + ".sgd");
-        }
+        protected override string GetFile() => System.IO.Path.Combine(m_filePath, "SpSave_v2_" + m_id.ToString() + ".sgd");
     }
 }

@@ -81,7 +81,7 @@ namespace ArkhamDisplay
 
             int lineCount = 1;
             int savedCount = 0;
-            foreach (Entry entry in Data.GetRoute(currentSecondaryRoute).entries)
+            foreach (var entry in Data.GetRoute(currentSecondaryRoute).entries)
             {
                 bool isSaved = saveParser.HasKey(entry.id, minRequiredMatches);
 
@@ -89,7 +89,7 @@ namespace ArkhamDisplay
                 {
                     PrisonerGrid.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(ROW_HEIGHT / 2) });
 
-                    Rectangle rectangle = new Rectangle
+                    var rectangle = new Rectangle
                     {
                         Style = FindResource("GridRectangle") as Style
                     };
@@ -97,7 +97,7 @@ namespace ArkhamDisplay
                     Grid.SetRow(rectangle, lineCount - 1);
                     PrisonerGrid.Children.Add(rectangle);
 
-                    TextBlock txt0 = new TextBlock
+                    var txt0 = new TextBlock
                     {
                         Text = entry.name,
                         Style = FindResource("EntryText") as Style
@@ -115,10 +115,7 @@ namespace ArkhamDisplay
             SavedPrisoners.Text = savedCount + "/15 saved";
         }
 
-        protected override string GetRiddleCount()
-        {
-            return saveParser.GetMatch(@"\b\d*\/400|\d*\/440\b");
-        }
+        protected override string GetRiddleCount() => saveParser.GetMatch(@"\b\d*\/400|\d*\/440\b");
 
         protected override void SetStatsWindowStats()
         {

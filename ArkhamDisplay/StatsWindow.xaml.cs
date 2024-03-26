@@ -11,7 +11,7 @@ namespace ArkhamDisplay
         {
             InitializeComponent();
 
-            Rect rect = Utils.DetermineFinalWindowRectPosition(Data.StatsWindowRect);
+            var rect = Utils.DetermineFinalWindowRectPosition(Data.StatsWindowRect);
             Width = rect.Width;
             Height = rect.Height;
             Left = rect.X;

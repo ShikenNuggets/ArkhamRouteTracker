@@ -69,7 +69,7 @@ namespace ArkhamDisplay
 
         private void FileButton_Click(object sender, RoutedEventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
+            var openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() == true)
             {
                 GetDataFromFile(openFileDialog.FileName);

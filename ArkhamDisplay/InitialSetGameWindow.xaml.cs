@@ -27,7 +27,7 @@ namespace ArkhamDisplay
 
             if (!skipSaveDataCheck && string.IsNullOrWhiteSpace(Data.SaveLocations[(int)game]))
             {
-                SetSavePathWindow wnd = new SetSavePathWindow(game);
+                var wnd = new SetSavePathWindow(game);
                 wnd.Activate();
                 if (wnd.ShowDialog() == false)
                 {

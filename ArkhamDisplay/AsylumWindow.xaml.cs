@@ -19,10 +19,7 @@ namespace ArkhamDisplay
             }
         }
 
-        protected override string GetRiddleCount()
-        {
-            return saveParser.GetMatch(@"\b\d*\/240\b");
-        }
+        protected override string GetRiddleCount() => saveParser.GetMatch(@"\b\d*\/240\b");
 
         protected override void UpdateUI()
         {

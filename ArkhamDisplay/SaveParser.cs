@@ -48,7 +48,7 @@ namespace ArkhamDisplay
 
             int[] offsets = ExtractSaveOffsets(buffer);
 
-            BinaryReader reader = new BinaryReader(new MemoryStream(buffer));
+            var reader = new BinaryReader(new MemoryStream(buffer));
 
             for (int i = 0; i < offsets.Length; i++)
             {
@@ -132,7 +132,7 @@ namespace ArkhamDisplay
 
         public virtual bool Update()
         {
-            DateTime lastWriteTime = File.GetLastWriteTimeUtc(GetFile());
+            var lastWriteTime = File.GetLastWriteTimeUtc(GetFile());
             if (lastWriteTime == m_LastWriteTime)
             {
                 return false; //No need to update, file hasn't been written to since last check
@@ -148,10 +148,7 @@ namespace ArkhamDisplay
             return true;
         }
 
-        public virtual bool HasKey(Entry entry, int requiredMatches)
-        {
-            return HasKey(entry.id, requiredMatches) || HasKey(entry.alternateID, requiredMatches);
-        }
+        public virtual bool HasKey(Entry entry, int requiredMatches) => HasKey(entry.id, requiredMatches) || HasKey(entry.alternateID, requiredMatches);
 
         public virtual bool HasKey(string key, int requiredMatches)
         {
@@ -170,22 +167,22 @@ namespace ArkhamDisplay
                 return false;
             }
 
-            Regex rx = new Regex(regex);
-            MatchCollection collectibleMatches = rx.Matches(m_rawData);
+            var rx = new Regex(regex);
+            var collectibleMatches = rx.Matches(m_rawData);
             return collectibleMatches.Count >= requiredMatches;
         }
 
         public virtual string GetMatch(string regex)
         {
-            Regex rx = new Regex(regex);
-            Match match = rx.Match(m_rawData);
+            var rx = new Regex(regex);
+            var match = rx.Match(m_rawData);
             return match.ToString();
         }
 
         public virtual string GetLastMatch(string regex)
         {
-            Regex rx = new Regex(regex);
-            MatchCollection matches = rx.Matches(m_rawData);
+            var rx = new Regex(regex);
+            var matches = rx.Matches(m_rawData);
 
             if (matches.Count > 0)
             {
@@ -195,14 +192,8 @@ namespace ArkhamDisplay
             return "";
         }
 
-        protected virtual string GetFile()
-        {
-            return System.IO.Path.Combine(m_filePath, "Save" + m_id.ToString() + ".sgd");
-        }
+        protected virtual string GetFile() => System.IO.Path.Combine(m_filePath, "Save" + m_id.ToString() + ".sgd");
 
-        public int GetID()
-        {
-            return m_id;
-        }
+        public int GetID() => m_id;
     }
 }
