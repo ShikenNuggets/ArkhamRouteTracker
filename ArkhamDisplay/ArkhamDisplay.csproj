@@ -1,40 +1,32 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
-
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
-
   <ItemGroup>
     <Compile Remove="batmancompressor\**" />
     <EmbeddedResource Remove="batmancompressor\**" />
     <None Remove="batmancompressor\**" />
     <Page Remove="batmancompressor\**" />
   </ItemGroup>
-
   <ItemGroup>
     <Compile Remove="MainWindow.xaml.cs" />
     <Compile Remove="MiniLZO.cs" />
   </ItemGroup>
-
   <ItemGroup>
     <Page Remove="MainWindow.xaml" />
   </ItemGroup>
-
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
     <PackageReference Include="Octokit" Version="0.50.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
-
   <ItemGroup>
     <None Update="Arkham City 100%25 Route - Political Prisoners.tsv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -127,5 +119,4 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-
 </Project>
