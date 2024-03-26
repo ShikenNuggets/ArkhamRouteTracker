@@ -105,7 +105,7 @@ public partial class KnightWindow : BaseWindow
             // TODO: This is just a hack. Ideally, we'd know the number of rows that are NG+
             // and scale that to be 120%, while the remaining would scale to 120%. However,
             // that's too much work for me to bother.
-            int newGameEntries = 532;
+            const int newGameEntries = 532;
             if (doneEntries <= newGameEntries)
             {
                 // The number of newGame entries should be equal to 119%
