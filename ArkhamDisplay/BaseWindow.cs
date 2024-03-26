@@ -483,7 +483,7 @@ public abstract class BaseWindow : Window
             {
                 byte[] rawData = client.Repository.Content.GetRawContent("ShikenNuggets", "ArkhamRouteTracker", r.Path).Result;
 
-                string dataString = System.Text.Encoding.UTF8.GetString(rawData);
+                string dataString = Encoding.UTF8.GetString(rawData);
                 dataString = dataString.Replace("\n", "\r\n"); //Replace Unix line endings with Windows line endings
                 routeFileData.Add(r.Name, dataString);
 
