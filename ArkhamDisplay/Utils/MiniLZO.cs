@@ -155,8 +155,7 @@ namespace MiniLZO
                 }
                 m_len = 4;
                 {
-                    uint v;
-                    v = (*(uint*)(void*)(ip + m_len)) ^ (*(uint*)(void*)(m_pos + m_len));
+                    uint v = (*(uint*)(void*)(ip + m_len)) ^ (*(uint*)(void*)(m_pos + m_len));
                     if (v == 0)
                     {
                         do
