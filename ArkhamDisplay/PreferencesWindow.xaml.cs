@@ -23,15 +23,7 @@ namespace ArkhamDisplay
 
             ShowProgressCheckbox.IsChecked = Data.ShowPercent;
             ShowRiddlesCheckbox.IsChecked = Data.ShowRiddleCount;
-
-            if (Data.UseTheme() == Theme.Dark)
-            {
-                DarkThemeCheckbox.IsChecked = true;
-            }
-            else
-            {
-                DarkThemeCheckbox.IsChecked = false;
-            }
+            DarkThemeCheckbox.IsChecked = Data.UseTheme() == Theme.Dark;
 
             switch (Data.DisplayType)
             {
