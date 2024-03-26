@@ -61,6 +61,7 @@
 
 namespace MiniLZO;
 
+#pragma warning disable IDE1006 // Naming Styles
 public static class MiniLZO
 {
     private static unsafe uint lzo1x_1_compress_core(byte* @in, uint in_len, byte* @out, ref uint out_len, uint ti, void* wrkmem)
@@ -170,13 +171,13 @@ public static class MiniLZO
             ii = ip;
             if (m_len <= 8 && m_off <= 0x0800)
             {
-                m_off -= 1;
+                m_off--;
                 *op++ = (byte)(((m_len - 1) << 5) | ((m_off & 7) << 2));
                 *op++ = (byte)(m_off >> 3);
             }
             else if (m_off <= 0x4000)
             {
-                m_off -= 1;
+                m_off--;
                 if (m_len <= 33)
                 {
                     *op++ = (byte)(32 | (m_len - 2));
@@ -297,7 +298,7 @@ public static class MiniLZO
         return 0;
     }
 
-    public static unsafe int lzo1x_decompress(byte* @in, uint in_len, byte* @out, ref uint out_len, void* wrkmem)
+    public static unsafe int lzo1x_decompress(byte* @in, uint in_len, byte* @out, ref uint out_len)
     {
         byte* op;
         byte* ip;
@@ -393,7 +394,7 @@ public static class MiniLZO
             gt_match_done = true;
 
         match:
-            do
+            while (true)
             {
                 if (gt_match_done)
                 {
@@ -494,7 +495,7 @@ public static class MiniLZO
                 *op++ = *ip++;
                 if (t > 1) { *op++ = *ip++; if (t > 2) { *op++ = *ip++; } }
                 t = *ip++;
-            } while (true);
+            }
         }
     eof_found:
 
@@ -528,7 +529,7 @@ public static class MiniLZO
         uint out_len = 0;
         fixed (byte* @pIn = @in, wrkmem = new byte[IntPtr.Size * 16384], pOut = @out)
         {
-            lzo1x_decompress(pIn, (uint)@in.Length, @pOut, ref @out_len, wrkmem);
+            lzo1x_decompress(pIn, (uint)@in.Length, @pOut, ref @out_len);
         }
         return @out;
     }
@@ -537,7 +538,7 @@ public static class MiniLZO
     {
         fixed (byte* wrkmem = new byte[IntPtr.Size * 16384])
         {
-            lzo1x_decompress(r, size_in, w, ref size_out, wrkmem);
+            lzo1x_decompress(r, size_in, w, ref size_out);
         }
     }
 
@@ -561,3 +562,4 @@ public static class MiniLZO
         }
     }
 }
+#pragma warning restore IDE1006 // Naming Styles
