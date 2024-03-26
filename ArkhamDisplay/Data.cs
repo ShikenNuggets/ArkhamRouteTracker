@@ -160,11 +160,7 @@ public static class Data
 
     public static void SetTheme(Theme theme)
     {
-        if (data.savedTheme == Theme.Default && UseTheme() == theme)
-        {
-            return;
-        }
-        else
+        if (data.savedTheme != Theme.Default || UseTheme() != theme)
         {
             data.savedTheme = theme;
         }

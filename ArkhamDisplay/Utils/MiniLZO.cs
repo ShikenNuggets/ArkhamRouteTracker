@@ -153,17 +153,14 @@ public static class MiniLZO
             m_len = 4;
             {
                 uint v = (*(uint*)(void*)(ip + m_len)) ^ (*(uint*)(void*)(m_pos + m_len));
-                if (v == 0)
+                while (v == 0)
                 {
-                    do
+                    m_len += 4;
+                    v = (*(uint*)(void*)(ip + m_len)) ^ (*(uint*)(void*)(m_pos + m_len));
+                    if (ip + m_len >= ip_end)
                     {
-                        m_len += 4;
-                        v = (*(uint*)(void*)(ip + m_len)) ^ (*(uint*)(void*)(m_pos + m_len));
-                        if (ip + m_len >= ip_end)
-                        {
-                            goto m_len_done;
-                        }
-                    } while (v == 0);
+                        goto m_len_done;
+                    }
                 }
                 m_len += (uint)lzo_bitops_ctz32(v) / 8;
             }
