@@ -1,7 +1,4 @@
-﻿using System.Text;
-using System.Text.RegularExpressions;
-
-namespace ArkhamDisplay;
+﻿namespace ArkhamDisplay;
 
 public class SaveParser
 {

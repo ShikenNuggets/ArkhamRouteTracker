@@ -1,6 +1,4 @@
-﻿using Microsoft.Win32;
-
-namespace ArkhamDisplay;
+﻿namespace ArkhamDisplay;
 
 public partial class SetSavePathWindow : Window
 {

@@ -1,7 +1,4 @@
-﻿using System.Windows.Controls;
-using System.Windows.Shapes;
-
-namespace ArkhamDisplay;
+﻿namespace ArkhamDisplay;
 
 public partial class OriginsWindow : BaseWindow
 {

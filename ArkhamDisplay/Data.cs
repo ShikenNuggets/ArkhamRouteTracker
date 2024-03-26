@@ -1,7 +1,4 @@
-﻿using Microsoft.Win32;
-using Newtonsoft.Json;
-
-namespace ArkhamDisplay;
+﻿namespace ArkhamDisplay;
 
 public enum Theme
 {

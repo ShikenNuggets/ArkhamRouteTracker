@@ -1,10 +1,4 @@
-﻿using System.ComponentModel;
-using System.Text.RegularExpressions;
-using System.Threading;
-using System.Windows.Controls;
-using System.Windows.Shapes;
-
-namespace ArkhamDisplay;
+﻿namespace ArkhamDisplay;
 
 public abstract class BaseWindow : Window
 {
