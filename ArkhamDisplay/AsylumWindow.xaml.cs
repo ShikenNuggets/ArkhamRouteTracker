@@ -1,6 +1,4 @@
-﻿using System.Windows;
-
-namespace ArkhamDisplay;
+﻿namespace ArkhamDisplay;
 
 public partial class AsylumWindow : BaseWindow
 {

@@ -1,5 +1,4 @@
-﻿
-#region Copyright notice
+﻿#region Copyright notice
 /* C# port of the crude minilzo source version 2.06 by Frank Razenberg
  
   Beware, you should never want to see C# code like this. You were warned.
@@ -61,8 +60,6 @@
 #endregion
 
 namespace MiniLZO;
-
-using System;
 
 public static class MiniLZO
 {

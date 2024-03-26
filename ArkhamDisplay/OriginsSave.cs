@@ -1,7 +1,4 @@
-﻿using System;
-using System.IO;
-
-namespace ArkhamDisplay;
+﻿namespace ArkhamDisplay;
 
 public class OriginsSave(string filePath, int id) : SaveParser(filePath, id)
 {

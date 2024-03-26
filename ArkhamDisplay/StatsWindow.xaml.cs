@@ -1,7 +1,4 @@
-﻿using System;
-using System.Windows;
-
-namespace ArkhamDisplay;
+﻿namespace ArkhamDisplay;
 
 public partial class StatsWindow : Window
 {
