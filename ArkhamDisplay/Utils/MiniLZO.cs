@@ -96,7 +96,7 @@ namespace MiniLZO
                 }
 
                 dv = *(uint*)(void*)ip;
-                dindex = ((0x1824429d * dv >> (32 - 14)) & (((1u << (14)) - 1) >> (0))) << (0);
+                dindex = (((0x1824429d * dv) >> (32 - 14)) & (((1u << (14)) - 1) >> (0))) << (0);
                 m_pos = @in + dict[dindex];
                 dict[dindex] = (ushort)(uint)(ip - @in);
                 if (dv != (*(uint*)(void*)m_pos))
@@ -468,7 +468,7 @@ namespace MiniLZO
                         goto match_done;
                     }
 
-                    if (t >= 2 * 4 - (3 - 1) && (op - m_pos) >= 4)
+                    if (t >= (2 * 4) - (3 - 1) && (op - m_pos) >= 4)
                     {
                         *(uint*)op = *(uint*)m_pos;
                         op += 4; m_pos += 4; t -= 4 - (3 - 1);

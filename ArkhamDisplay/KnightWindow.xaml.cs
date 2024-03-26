@@ -118,7 +118,7 @@ namespace ArkhamDisplay
                 else
                 {
                     // The remaining entries (totalEntries - newGameEntries) should be equal to 121%
-                    percentDone = 119.0 + (doneEntries - newGameEntries) * 121 / (totalEntries - newGameEntries);
+                    percentDone = 119.0 + ((doneEntries - newGameEntries) * 121 / (totalEntries - newGameEntries));
                 }
             }
             progressCounter.Text = string.Format("{0:0.0}", percentDone) + "%";
