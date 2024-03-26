@@ -148,7 +148,8 @@ namespace ArkhamDisplay
             return true;
         }
 
-        public virtual bool HasKey(Entry entry, int requiredMatches) => HasKey(entry.id, requiredMatches) || HasKey(entry.alternateID, requiredMatches);
+        public virtual bool HasKey(Entry entry, int requiredMatches) =>
+            HasKey(entry.id, requiredMatches) || HasKey(entry.alternateID, requiredMatches);
 
         public virtual bool HasKey(string key, int requiredMatches)
         {
@@ -192,7 +193,8 @@ namespace ArkhamDisplay
             return "";
         }
 
-        protected virtual string GetFile() => System.IO.Path.Combine(m_filePath, "Save" + m_id.ToString() + ".sgd");
+        protected virtual string GetFile() =>
+            System.IO.Path.Combine(m_filePath, "Save" + m_id.ToString() + ".sgd");
 
         public int GetID() => m_id;
     }

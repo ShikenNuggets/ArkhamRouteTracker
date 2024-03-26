@@ -12,7 +12,8 @@ namespace ArkhamDisplay
             PostInitialize();
         }
 
-        protected override SaveParser CreateSaveParser() => new OriginsSave(Data.SaveLocations[(int)game], Data.SaveIDs[(int)game]);
+        protected override SaveParser CreateSaveParser() =>
+            new OriginsSave(Data.SaveLocations[(int)game], Data.SaveIDs[(int)game]);
 
         protected override void SetCurrentRoute()
         {

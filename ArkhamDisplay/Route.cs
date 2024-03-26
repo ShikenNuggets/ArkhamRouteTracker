@@ -31,7 +31,8 @@ namespace ArkhamDisplay
             return type_.Equals(type);
         }
 
-        public static bool IsPlaceholder(Entry e) => e.IsType("[PLACEHOLDER]");
+        public static bool IsPlaceholder(Entry e) =>
+            e.IsType("[PLACEHOLDER]");
     }
 
     public class Route

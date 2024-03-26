@@ -25,7 +25,8 @@ namespace ArkhamDisplay
             return GetSHA1Hash(Encoding.UTF8.GetBytes(final));
         }
 
-        public static string GetSHA1Hash(byte[] data) => BitConverter.ToString(SHA1.HashData(data));
+        public static string GetSHA1Hash(byte[] data) =>
+            BitConverter.ToString(SHA1.HashData(data));
 
         public static string ListToNewlinedString(List<string> list)
         {

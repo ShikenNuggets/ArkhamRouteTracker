@@ -115,7 +115,8 @@ namespace ArkhamDisplay
             SavedPrisoners.Text = savedCount + "/15 saved";
         }
 
-        protected override string GetRiddleCount() => saveParser.GetMatch(@"\b\d*\/400|\d*\/440\b");
+        protected override string GetRiddleCount() =>
+            saveParser.GetMatch(@"\b\d*\/400|\d*\/440\b");
 
         protected override void SetStatsWindowStats()
         {

@@ -10,7 +10,8 @@ namespace ArkhamDisplay
             PostInitialize();
         }
 
-        protected override SaveParser CreateSaveParser() => new KnightSave(Data.SaveLocations[(int)game], Data.SaveIDs[(int)game]);
+        protected override SaveParser CreateSaveParser() =>
+            new KnightSave(Data.SaveLocations[(int)game], Data.SaveIDs[(int)game]);
 
         protected override string GetEntryName(Entry entry)
         {
@@ -122,6 +123,7 @@ namespace ArkhamDisplay
             riddleCounter.Text = GetRiddleCount();
         }
 
-        protected override string GetRiddleCount() => saveParser.GetLastMatch(@"\b\d*\/243\b");
+        protected override string GetRiddleCount() =>
+            saveParser.GetLastMatch(@"\b\d*\/243\b");
     }
 }

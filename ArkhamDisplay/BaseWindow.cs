@@ -160,7 +160,8 @@ namespace ArkhamDisplay
             base.OnClosed(e);
         }
 
-        protected virtual SaveParser CreateSaveParser() => new SaveParser(Data.SaveLocations[(int)game], Data.SaveIDs[(int)game]);
+        protected virtual SaveParser CreateSaveParser() =>
+            new SaveParser(Data.SaveLocations[(int)game], Data.SaveIDs[(int)game]);
 
         protected void Stop_Button_Click(object sender, RoutedEventArgs e)
         {
@@ -269,7 +270,8 @@ namespace ArkhamDisplay
             public bool done;
         }
 
-        protected virtual List<Entry> GetEntriesForDisplay(Route route) => route.GetEntriesWithoutPlaceholders();
+        protected virtual List<Entry> GetEntriesForDisplay(Route route) =>
+            route.GetEntriesWithoutPlaceholders();
 
         protected virtual void UpdateRouteWindow()
         {
@@ -471,7 +473,8 @@ namespace ArkhamDisplay
             Data.Save();
         }
 
-        protected void OpenRouteFolder(object sender = null, RoutedEventArgs e = null) => System.Diagnostics.Process.Start("explorer.exe", Directory.GetCurrentDirectory() + Data.RoutePath);
+        protected void OpenRouteFolder(object sender = null, RoutedEventArgs e = null) =>
+            System.Diagnostics.Process.Start("explorer.exe", Directory.GetCurrentDirectory() + Data.RoutePath);
 
         protected void RefreshRoutes(object sender = null, RoutedEventArgs e = null)
         {
