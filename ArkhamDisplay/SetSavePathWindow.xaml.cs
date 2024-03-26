@@ -64,10 +64,15 @@ public partial class SetSavePathWindow : Window
 
     private void FileButton_Click(object sender, RoutedEventArgs e)
     {
-        var openFileDialog = new OpenFileDialog();
-        if (openFileDialog.ShowDialog() == true)
+        var openFolderDialog = new OpenFolderDialog
         {
-            GetDataFromFile(openFileDialog.FileName);
+            Multiselect = false,
+            Title = "Select a folder"
+        };
+
+        if (openFolderDialog.ShowDialog() == true)
+        {
+            GetDataFromFile(openFolderDialog.FolderName);
             SavePathBox.Text = savedPath;
         }
     }
