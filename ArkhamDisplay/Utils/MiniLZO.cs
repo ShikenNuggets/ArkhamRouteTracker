@@ -95,30 +95,30 @@ namespace MiniLZO
                     break;
                 }
 
-                dv = (*(uint*)(void*)(ip));
-                dindex = ((((0x1824429d) * (dv) >> (32 - 14))) & (((1u << (14)) - 1) >> (0))) << (0);
+                dv = *(uint*)(void*)ip;
+                dindex = ((0x1824429d * dv >> (32 - 14)) & (((1u << (14)) - 1) >> (0))) << (0);
                 m_pos = @in + dict[dindex];
-                dict[dindex] = ((ushort)((uint)((ip) - (@in))));
-                if (dv != (*(uint*)(void*)(m_pos)))
+                dict[dindex] = (ushort)(uint)(ip - @in);
+                if (dv != (*(uint*)(void*)m_pos))
                 {
                     goto literal;
                 }
 
                 ii -= ti; ti = 0;
                 {
-                    uint t = ((uint)((ip) - (ii)));
+                    uint t = (uint)(ip - ii);
                     if (t != 0)
                     {
                         if (t <= 3)
                         {
-                            op[-2] |= ((byte)(t));
-                            *(uint*)(op) = *(uint*)(ii);
+                            op[-2] |= (byte)t;
+                            *(uint*)op = *(uint*)ii;
                             op += t;
                         }
                         else if (t <= 16)
                         {
-                            *op++ = ((byte)(t - 3));
-                            *(uint*)(op) = *(uint*)(ii);
+                            *op++ = (byte)(t - 3);
+                            *(uint*)op = *(uint*)ii;
                             *(uint*)(op + 4) = *(uint*)(ii + 4);
                             *(uint*)(op + 8) = *(uint*)(ii + 8);
                             *(uint*)(op + 12) = *(uint*)(ii + 12);
@@ -128,7 +128,7 @@ namespace MiniLZO
                         {
                             if (t <= 18)
                             {
-                                *op++ = ((byte)(t - 3));
+                                *op++ = (byte)(t - 3);
                             }
                             else
                             {
@@ -140,11 +140,11 @@ namespace MiniLZO
                                     *op++ = 0;
                                 }
 
-                                *op++ = ((byte)(tt));
+                                *op++ = (byte)tt;
                             }
                             do
                             {
-                                *(uint*)(op) = *(uint*)(ii);
+                                *(uint*)op = *(uint*)ii;
                                 *(uint*)(op + 4) = *(uint*)(ii + 4);
                                 *(uint*)(op + 8) = *(uint*)(ii + 8);
                                 *(uint*)(op + 12) = *(uint*)(ii + 12);
@@ -172,21 +172,21 @@ namespace MiniLZO
                     m_len += (uint)lzo_bitops_ctz32(v) / 8;
                 }
             m_len_done:
-                m_off = ((uint)((ip) - (m_pos)));
+                m_off = (uint)(ip - m_pos);
                 ip += m_len;
                 ii = ip;
                 if (m_len <= 8 && m_off <= 0x0800)
                 {
                     m_off -= 1;
-                    *op++ = ((byte)(((m_len - 1) << 5) | ((m_off & 7) << 2)));
-                    *op++ = ((byte)(m_off >> 3));
+                    *op++ = (byte)(((m_len - 1) << 5) | ((m_off & 7) << 2));
+                    *op++ = (byte)(m_off >> 3);
                 }
                 else if (m_off <= 0x4000)
                 {
                     m_off -= 1;
                     if (m_len <= 33)
                     {
-                        *op++ = ((byte)(32 | (m_len - 2)));
+                        *op++ = (byte)(32 | (m_len - 2));
                     }
                     else
                     {
@@ -197,36 +197,36 @@ namespace MiniLZO
                             m_len -= 255;
                             *op++ = 0;
                         }
-                        *op++ = ((byte)(m_len));
+                        *op++ = (byte)m_len;
                     }
-                    *op++ = ((byte)(m_off << 2));
-                    *op++ = ((byte)(m_off >> 6));
+                    *op++ = (byte)(m_off << 2);
+                    *op++ = (byte)(m_off >> 6);
                 }
                 else
                 {
                     m_off -= 0x4000;
                     if (m_len <= 9)
                     {
-                        *op++ = ((byte)(16 | ((m_off >> 11) & 8) | (m_len - 2)));
+                        *op++ = (byte)(16 | ((m_off >> 11) & 8) | (m_len - 2));
                     }
                     else
                     {
                         m_len -= 9;
-                        *op++ = ((byte)(16 | ((m_off >> 11) & 8)));
+                        *op++ = (byte)(16 | ((m_off >> 11) & 8));
                         while (m_len > 255)
                         {
                             m_len -= 255;
                             *op++ = 0;
                         }
-                        *op++ = ((byte)(m_len));
+                        *op++ = (byte)m_len;
                     }
-                    *op++ = ((byte)(m_off << 2));
-                    *op++ = ((byte)(m_off >> 6));
+                    *op++ = (byte)(m_off << 2);
+                    *op++ = (byte)(m_off >> 6);
                 }
                 goto next;
             }
-            out_len = ((uint)((op) - (@out)));
-            return ((uint)((in_end) - (ii - ti)));
+            out_len = (uint)(op - @out);
+            return (uint)(in_end - (ii - ti));
         }
 
         private static readonly int[] MultiplyDeBruijnBitPosition = [
@@ -248,7 +248,7 @@ namespace MiniLZO
             {
                 uint ll = l;
                 ulong ll_end;
-                ll = ((ll) <= (49152) ? (ll) : (49152));
+                ll = ll <= 49152 ? ll : 49152;
                 ll_end = (ulong)ip + ll;
                 if ((ll_end + ((t + ll) >> 5)) <= ll_end || (byte*)(ll_end + ((t + ll) >> 5)) <= ip + ll)
                 {
@@ -271,15 +271,15 @@ namespace MiniLZO
                 byte* ii = @in + in_len - t;
                 if (op == @out && t <= 238)
                 {
-                    *op++ = ((byte)(17 + t));
+                    *op++ = (byte)(17 + t);
                 }
                 else if (t <= 3)
                 {
-                    op[-2] |= ((byte)(t));
+                    op[-2] |= (byte)t;
                 }
                 else if (t <= 18)
                 {
-                    *op++ = ((byte)(t - 3));
+                    *op++ = (byte)(t - 3);
                 }
                 else
                 {
@@ -291,7 +291,7 @@ namespace MiniLZO
                         *op++ = 0;
                     }
 
-                    *op++ = ((byte)(tt));
+                    *op++ = (byte)tt;
                 }
                 do
                 {
@@ -302,7 +302,7 @@ namespace MiniLZO
             *op++ = 16 | 1;
             *op++ = 0;
             *op++ = 0;
-            out_len = ((uint)((op) - (@out)));
+            out_len = (uint)(op - @out);
             return 0;
         }
 
@@ -433,7 +433,7 @@ namespace MiniLZO
                             t += (uint)(31 + *ip++);
                         }
                         m_pos = op - 1;
-                        m_pos -= (*(ushort*)(void*)(ip)) >> 2;
+                        m_pos -= (*(ushort*)(void*)ip) >> 2;
                         ip += 2;
                     }
                     else if (t >= 16)
@@ -511,9 +511,9 @@ namespace MiniLZO
             }
         eof_found:
 
-            out_len = ((uint)((op) - (@out)));
-            return (ip == ip_end ? 0 :
-                   (ip < ip_end ? (-8) : (-4)));
+            out_len = (uint)(op - @out);
+            return ip == ip_end ? 0 :
+                   (ip < ip_end ? (-8) : (-4));
         }
 
         private static unsafe void match_next(ref byte* op, ref byte* ip, ref uint t)

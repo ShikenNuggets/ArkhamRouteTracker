@@ -380,7 +380,7 @@ namespace ArkhamDisplay
 
             if (firstNotDone > -1)
             {
-                int scrollHeight = (firstNotDone - 4) * (ROW_HEIGHT);
+                int scrollHeight = (firstNotDone - 4) * ROW_HEIGHT;
                 gridScroll.ScrollToVerticalOffset(scrollHeight);
             }
             UpdatePercent(doneEntries, totalEntries);
