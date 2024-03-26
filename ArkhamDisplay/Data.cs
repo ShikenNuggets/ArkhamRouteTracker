@@ -58,6 +58,11 @@ public static class Data
     private static volatile DataBlock data = new DataBlock();
     private static volatile Dictionary<string, string> routeFiles = [];
     private static readonly Dictionary<string, Route> routes = [];
+    private static readonly JsonSerializerOptions jsonSerializerOptions = new()
+    {
+        IncludeFields = true,
+        WriteIndented = true
+    };
 
     public static string RoutePath => "\\Routes\\";
     public static Game SelectedGame { get => data.selectedGame; set => data.selectedGame = value; }
@@ -93,7 +98,7 @@ public static class Data
 
         lock (data)
         {
-            data = JsonConvert.DeserializeObject<DataBlock>(File.ReadAllText(saveFileName));
+            data = JsonSerializer.Deserialize<DataBlock>(File.ReadAllText(saveFileName), jsonSerializerOptions);
         }
 
         if (!File.Exists(routeFileName))
@@ -104,13 +109,13 @@ public static class Data
 
         lock (routeFiles)
         {
-            routeFiles = JsonConvert.DeserializeObject<Dictionary<string, string>>(File.ReadAllText(routeFileName));
+            routeFiles = JsonSerializer.Deserialize<Dictionary<string, string>>(File.ReadAllText(routeFileName));
         }
     }
 
     public static void Save()
     {
-        lock (data) { File.WriteAllText(saveFileName, JsonConvert.SerializeObject(data, Formatting.Indented)); }
+        lock (data) { File.WriteAllText(saveFileName, JsonSerializer.Serialize(data, jsonSerializerOptions)); }
     }
 
     public static Route GetRoute(string name)
@@ -147,7 +152,7 @@ public static class Data
 
         lock (routeFiles)
         {
-            routeFiles = JsonConvert.DeserializeObject<Dictionary<string, string>>(File.ReadAllText(routeFileName));
+            routeFiles = JsonSerializer.Deserialize<Dictionary<string, string>>(File.ReadAllText(routeFileName));
         }
     }
 
