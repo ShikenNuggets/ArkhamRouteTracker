@@ -3,6 +3,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Windows;
+using System.IO;
 
 namespace ArkhamDisplay;
 
@@ -92,31 +93,31 @@ public class Data
 
     public static void Load()
     {
-        if (!System.IO.File.Exists(saveFileName))
+        if (!File.Exists(saveFileName))
         {
             Save();
         }
 
         lock (data)
         {
-            data = JsonConvert.DeserializeObject<DataBlock>(System.IO.File.ReadAllText(saveFileName));
+            data = JsonConvert.DeserializeObject<DataBlock>(File.ReadAllText(saveFileName));
         }
 
-        if (!System.IO.File.Exists(routeFileName))
+        if (!File.Exists(routeFileName))
         {
             MessageBox.Show("Error: " + routeFileName + " not found - please re-download the application");
-            throw new System.IO.FileNotFoundException("routes.json file not found", routeFileName);
+            throw new FileNotFoundException("routes.json file not found", routeFileName);
         }
 
         lock (routeFiles)
         {
-            routeFiles = JsonConvert.DeserializeObject<Dictionary<string, string>>(System.IO.File.ReadAllText(routeFileName));
+            routeFiles = JsonConvert.DeserializeObject<Dictionary<string, string>>(File.ReadAllText(routeFileName));
         }
     }
 
     public static void Save()
     {
-        lock (data) { System.IO.File.WriteAllText(saveFileName, JsonConvert.SerializeObject(data, Formatting.Indented)); }
+        lock (data) { File.WriteAllText(saveFileName, JsonConvert.SerializeObject(data, Formatting.Indented)); }
     }
 
     public static Route GetRoute(string name)
@@ -136,7 +137,7 @@ public class Data
 
     public static bool HasRouteFile(string fileName)
     {
-        if (fileName == System.IO.Path.GetFileName(routeFileName))
+        if (fileName == Path.GetFileName(routeFileName))
         {
             return true;
         }
@@ -153,7 +154,7 @@ public class Data
 
         lock (routeFiles)
         {
-            routeFiles = JsonConvert.DeserializeObject<Dictionary<string, string>>(System.IO.File.ReadAllText(routeFileName));
+            routeFiles = JsonConvert.DeserializeObject<Dictionary<string, string>>(File.ReadAllText(routeFileName));
         }
     }
 

@@ -178,9 +178,9 @@ public abstract class BaseWindow : Window
             OpenSavePathWindow();
         }
 
-        if (!System.IO.Directory.Exists(Data.SaveLocations[(int)game]))
+        if (!Directory.Exists(Data.SaveLocations[(int)game]))
         {
-            System.Windows.MessageBox.Show("Invalid save file! Please ensure the file exists and that the path has been entered correctly");
+            MessageBox.Show("Invalid save file! Please ensure the file exists and that the path has been entered correctly");
             return;
         }
 
@@ -550,7 +550,7 @@ public abstract class BaseWindow : Window
                 {
                     if (routesWithUpdates.Contains(v.Key))
                     {
-                        System.IO.File.WriteAllText("Routes/" + v.Key, v.Value);
+                        File.WriteAllText("Routes/" + v.Key, v.Value);
                     }
                 }
 
@@ -566,7 +566,7 @@ public abstract class BaseWindow : Window
                 MessageBox.Show("Routes successfully updated.");
             }
         }
-        catch (System.IO.IOException)
+        catch (IOException)
         {
             MessageBox.Show("An error occurred while updating the route files!");
         }

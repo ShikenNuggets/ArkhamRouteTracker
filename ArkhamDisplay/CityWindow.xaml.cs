@@ -7,8 +7,6 @@ namespace ArkhamDisplay;
 
 public partial class CityWindow : BaseWindow
 {
-    private const int SECONDARY_COL_WIDTH = 250;
-
     public CityWindow() : base(Game.City)
     {
         InitializeComponent();

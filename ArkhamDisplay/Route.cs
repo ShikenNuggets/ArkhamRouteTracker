@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.IO;
 
 namespace ArkhamDisplay;
 
@@ -44,12 +45,12 @@ public class Route
         IEnumerable<string> allLines = [];
         if (fileName != null)
         {
-            if (!System.IO.File.Exists(fileName))
+            if (!File.Exists(fileName))
             {
-                throw new System.IO.FileNotFoundException("Could not find route file at [" + fileName + "]", fileName);
+                throw new FileNotFoundException("Could not find route file at [" + fileName + "]", fileName);
             }
 
-            allLines = System.IO.File.ReadAllLines(fileName).Skip(1);
+            allLines = File.ReadAllLines(fileName).Skip(1);
         }
         else if (data != null)
         {

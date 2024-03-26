@@ -194,7 +194,7 @@ public class SaveParser
     }
 
     protected virtual string GetFile() =>
-        System.IO.Path.Combine(m_filePath, "Save" + m_id.ToString() + ".sgd");
+        Path.Combine(m_filePath, "Save" + m_id.ToString() + ".sgd");
 
     public int GetID() => m_id;
 }

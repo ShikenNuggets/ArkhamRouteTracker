@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace ArkhamDisplay;
 
@@ -12,12 +13,12 @@ public class OriginsSave(string filePath, int id) : SaveParser(filePath, id)
         }
         else if ("DarkKnightFinish".Equals(entry.metadata))
         {
-            return HasKeyCustomRegex(@"\b" + entry.id + @"............" + Convert.ToChar(Convert.ToByte("0x1", 16)), requiredMatches);
+            return HasKeyCustomRegex(@"\b" + entry.id + "............" + Convert.ToChar(Convert.ToByte("0x1", 16)), requiredMatches);
         }
 
         return base.HasKey(entry, requiredMatches);
     }
 
     protected override string GetFile() =>
-        System.IO.Path.Combine(m_filePath, "SpSave_v2_" + m_id.ToString() + ".sgd");
+        Path.Combine(m_filePath, "SpSave_v2_" + m_id.ToString() + ".sgd");
 }
