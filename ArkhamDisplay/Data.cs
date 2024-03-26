@@ -33,9 +33,9 @@ namespace ArkhamDisplay
     {
         public volatile Theme savedTheme = Theme.Default;
         public volatile Game selectedGame = Game.None;
-        public volatile string[] saveLocations = { "", "", "", "" };
-        public volatile int[] saveIDs = { 0, 0, 0, 0 };
-        public volatile Rect[] windowRects = { new Rect(), new Rect(), new Rect(), new Rect() };
+        public volatile string[] saveLocations = ["", "", "", ""];
+        public volatile int[] saveIDs = [0, 0, 0, 0];
+        public volatile Rect[] windowRects = [new Rect(), new Rect(), new Rect(), new Rect()];
         public Rect statsWindowRect;
         public volatile float mainRowHeight = 7.0f;
         public volatile float secondaryRowHeight = 3.0f;
