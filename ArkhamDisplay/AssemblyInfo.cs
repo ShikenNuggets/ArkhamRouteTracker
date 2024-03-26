@@ -11,6 +11,7 @@ global using System.Threading;
 global using System.Windows;
 global using System.Windows.Controls;
 global using System.Windows.Shapes;
+global using Path = System.IO.Path;
 
 [assembly: ThemeInfo(
     ResourceDictionaryLocation.None,    //where theme specific resource dictionaries are located
