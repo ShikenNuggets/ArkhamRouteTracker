@@ -484,7 +484,6 @@ public static class MiniLZO
                 }
                 else
                 {
-                copy_match:
                     *op++ = *m_pos++; *op++ = *m_pos++;
                     do
                     {
@@ -498,8 +497,6 @@ public static class MiniLZO
                 {
                     break;
                 }
-
-            match_next:
                 *op++ = *ip++;
                 if (t > 1) { *op++ = *ip++; if (t > 2) { *op++ = *ip++; } }
                 t = *ip++;
