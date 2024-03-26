@@ -41,7 +41,7 @@ namespace ArkhamDisplay
         private RadioButton saveSelector2;
         private RadioButton saveSelector3;
 
-        public BaseWindow(Game game)
+        protected BaseWindow(Game game)
         {
             this.game = game;
             Data.SelectedGame = game;
