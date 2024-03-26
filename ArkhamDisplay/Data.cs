@@ -54,7 +54,7 @@ public class DataBlock
     public volatile bool knightMoF;
 }
 
-public class Data
+public static class Data
 {
     private const string saveFileName = "settings.json";
     private const string routeFileName = "Routes/routes.json";

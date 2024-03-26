@@ -3,7 +3,7 @@ using System.Text;
 
 namespace ArkhamDisplay;
 
-internal class Utils
+internal static class Utils
 {
     public static string GetSHA1Hash(string filePath)
     {
