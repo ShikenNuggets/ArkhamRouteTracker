@@ -123,7 +123,7 @@ namespace ArkhamDisplay
             stopButton.IsEnabled = false;
             startButton.IsEnabled = true;
 
-            if (updateWorker != null && updateWorker.IsBusy)
+            if (updateWorker?.IsBusy == true)
             {
                 updateWorker.CancelAsync();
             }
@@ -486,7 +486,7 @@ namespace ArkhamDisplay
         {
             Data.ReloadRoutes();
 
-            if (updateWorker != null && updateWorker.IsBusy)
+            if (updateWorker?.IsBusy == true)
             {
                 Stop_Button_Click(sender, e);
                 Start_Button_Click(sender, e);
@@ -569,7 +569,7 @@ namespace ArkhamDisplay
                     stopButton.IsEnabled = false;
                     startButton.IsEnabled = true;
 
-                    if (updateWorker != null && updateWorker.IsBusy)
+                    if (updateWorker?.IsBusy == true)
                     {
                         updateWorker.CancelAsync();
                     }
