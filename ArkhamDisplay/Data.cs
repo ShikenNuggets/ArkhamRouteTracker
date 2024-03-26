@@ -186,7 +186,10 @@ public static class Data
                 return registryValue > 0 ? Theme.Light : Theme.Dark;
             }
         }
-        catch (Exception) { }
+        catch (Exception ex)
+        {
+            MessageBox.Show(ex.Message);
+        }
 
         return Theme.Dark;
     }
