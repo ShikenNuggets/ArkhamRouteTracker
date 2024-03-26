@@ -9,6 +9,7 @@ public abstract class BaseWindow : Window
     public const int COL1_WIDTH = 210;
     public const int COL2_WIDTH = 40;
     public const int ROW_HEIGHT = 40;
+    protected bool IsFiltered;
 
     protected string currentRoute = "";
     protected string currentSecondaryRoute = "";
@@ -18,7 +19,7 @@ public abstract class BaseWindow : Window
     protected StatsWindow statsWindow;
 
     private Button stopButton;
-    private Button startButton;
+    protected Button startButton;
     private Grid displayGrid;
     private ScrollViewer gridScroll;
     private MenuItem asylumMenuItem;
@@ -216,7 +217,7 @@ public abstract class BaseWindow : Window
 
     protected abstract void SetCurrentRoute();
 
-    private void Update()
+    protected void Update(bool forceUpdate = false)
     {
         string saveFile = Data.SaveLocations[(int)game];
         if (string.IsNullOrWhiteSpace(saveFile))
@@ -227,7 +228,7 @@ public abstract class BaseWindow : Window
         if (saveParser != null)
         {
             bool updated = saveParser.Update();
-            if (!updated)
+            if (!updated && !forceUpdate)
             {
                 return; //Save file didn't change, no need to do anythign else
             }
@@ -309,7 +310,16 @@ public abstract class BaseWindow : Window
                 }
             }
         }
-        finalEntries.AddRange(bottomEntries);
+
+        if (Data.DisplayType == DisplayType.SortDoneToBottom)
+        {
+            bottomEntries.AddRange(finalEntries);
+            finalEntries = bottomEntries;
+        }
+        else
+        {
+            finalEntries.AddRange(bottomEntries);
+        }
 
         foreach (var entry in finalEntries)
         {
@@ -367,7 +377,7 @@ public abstract class BaseWindow : Window
 
     protected virtual void UpdatePercent(int doneEntries, int totalEntries)
     {
-        double percentDone = 100.0 * doneEntries / totalEntries;
+        double percentDone = 100.0 * doneEntries / (totalEntries == 0 ? 1 : totalEntries);
 
         if (percentDone >= 100.0)
         {
@@ -379,6 +389,11 @@ public abstract class BaseWindow : Window
         }
 
         riddleCounter.Text = GetRiddleCount();
+
+        if (IsFiltered)
+        {
+            riddleCounter.Text = $"{doneEntries}/{totalEntries}";
+        }
 
         SetStatsWindowStats();
     }

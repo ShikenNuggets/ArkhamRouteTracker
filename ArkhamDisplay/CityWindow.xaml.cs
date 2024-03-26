@@ -29,14 +29,23 @@ public partial class CityWindow : BaseWindow
 
     protected override List<Entry> GetEntriesForDisplay(Route route)
     {
+        List<Entry> entries = [];
+
         if (!Data.CityBreakablesAtEnd)
         {
-            return base.GetEntriesForDisplay(route);
+            entries = base.GetEntriesForDisplay(route);
         }
         else
         {
-            return route.GetEntriesWithPlaceholdersMoved();
+            entries = route.GetEntriesWithPlaceholdersMoved();
         }
+
+        if (!string.IsNullOrWhiteSpace(SearchBox.Text))
+        {
+            entries = entries.Where(x => x.name.Contains(SearchBox.Text, System.StringComparison.OrdinalIgnoreCase)).ToList();
+        }
+
+        return entries;
     }
 
     protected override void UpdateUI()
@@ -117,5 +126,21 @@ public partial class CityWindow : BaseWindow
         {
             statsWindow.SetStats(progressCounter.Text, riddleCounter.Text + " riddles", SavedPrisoners.Text);
         }
+    }
+
+    private void SearchBox_TextChanged(object sender, TextChangedEventArgs e)
+    {
+        IsFiltered = !string.IsNullOrWhiteSpace(SearchBox.Text);
+
+        if (!startButton.IsEnabled)
+        {
+            base.Update(true);
+        }
+    }
+
+    private void Button_Click(object sender, RoutedEventArgs e)
+    {
+        SearchBox.Text = "";
+        SearchBox.Focus();
     }
 }

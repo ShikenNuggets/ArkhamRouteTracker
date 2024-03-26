@@ -169,10 +169,31 @@
                 VerticalAlignment="Top"
                 Text="0/400" />
 
+            <TextBox
+                Name="SearchBox"
+                Grid.Row="0"
+                Width="250"
+                Height="20"
+                Margin="5,85,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                TextChanged="SearchBox_TextChanged" />
+
+            <Button
+                Grid.Row="0"
+                Width="20"
+                Height="20"
+                Margin="257,85,0,0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Click="Button_Click">
+                X
+            </Button>
+
             <ScrollViewer
                 Name="GridScroll"
                 Grid.Row="0"
-                Margin="5,85,5,0"
+                Margin="5,105,5,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 VerticalScrollBarVisibility="Auto">
