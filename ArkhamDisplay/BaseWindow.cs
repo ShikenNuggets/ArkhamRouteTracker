@@ -530,7 +530,7 @@ namespace ArkhamDisplay
                     {
                         Route r1 = new Route("Routes/" + r.Name);
                         Route r2 = new Route(null, split);
-                        if (r1.IsEqual(r2) == false)
+                        if (!r1.IsEqual(r2))
                         {
                             routesWithUpdates.Add(r.Name);
                             continue;
@@ -630,7 +630,7 @@ namespace ArkhamDisplay
 
         protected virtual void SwitchGameWindow(object sender, RoutedEventArgs e)
         {
-            if (sender == null || sender is MenuItem == false)
+            if (sender == null || sender is not MenuItem)
             {
                 return;
             }
