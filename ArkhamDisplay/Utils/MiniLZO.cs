@@ -60,7 +60,6 @@
 
 #endregion
 
-
 namespace MiniLZO
 {
     using System;
@@ -86,7 +85,6 @@ namespace MiniLZO
 
             for (; ; )
             {
-
                 uint dv;
                 uint dindex;
             literal:
@@ -537,8 +535,6 @@ namespace MiniLZO
             }
             while (--t > 0);
         }
-
-
 
         public static unsafe byte[] Decompress(byte[] @in, byte[] @out)
         {

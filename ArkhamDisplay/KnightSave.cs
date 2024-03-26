@@ -99,7 +99,6 @@ namespace ArkhamDisplay
                 currentfile = filename2;
             }
 
-
             if (currentwritetime < writetime3)
             {
                 currentfile = filename3;
