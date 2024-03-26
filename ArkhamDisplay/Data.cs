@@ -39,7 +39,7 @@ namespace ArkhamDisplay{
 		public volatile bool showPercent = true;
 		public volatile bool showRiddleCount = true;
 		public volatile int refreshRateInMS = 1000;
-		public volatile DisplayType displayType = DisplayType.All;
+		public volatile DisplayType displayType = DisplayType.SortDoneToTop;
 
 		public volatile bool asylumGlitchless = false;
 		public volatile bool cityBreakablesAtEnd = false;
