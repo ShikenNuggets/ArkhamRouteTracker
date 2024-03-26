@@ -21,7 +21,15 @@ public partial class PreferencesWindow : Window
 
         ShowProgressCheckbox.IsChecked = Data.ShowPercent;
         ShowRiddlesCheckbox.IsChecked = Data.ShowRiddleCount;
-        DarkThemeCheckbox.IsChecked = Data.UseTheme() == Theme.Dark;
+
+        if (Data.UseTheme() == Theme.Dark)
+        {
+            DarkThemeCheckbox.IsChecked = true;
+        }
+        else
+        {
+            DarkThemeCheckbox.IsChecked = false;
+        }
 
         switch (Data.DisplayType)
         {
@@ -33,6 +41,9 @@ public partial class PreferencesWindow : Window
                 break;
             case DisplayType.HideDone:
                 HideDoneButton.IsChecked = true;
+                break;
+            case DisplayType.SortDoneToBottom:
+                SortDoneBottomButton.IsChecked = true;
                 break;
         }
     }
@@ -76,6 +87,10 @@ public partial class PreferencesWindow : Window
         else if (HideDoneButton.IsChecked == true)
         {
             Data.DisplayType = DisplayType.HideDone;
+        }
+        else if (SortDoneBottomButton.IsChecked == true)
+        {
+            Data.DisplayType = DisplayType.SortDoneToBottom;
         }
 
         Data.Save();

@@ -20,7 +20,8 @@ public enum DisplayType
 {
     All = 0,
     SortDoneToTop = 1,
-    HideDone = 2
+    HideDone = 2,
+    SortDoneToBottom = 3
 }
 
 public class DataBlock

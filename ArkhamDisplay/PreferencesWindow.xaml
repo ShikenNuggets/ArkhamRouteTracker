@@ -13,7 +13,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="10*" />
             <RowDefinition Height="25*" />
-            <RowDefinition Height="25*" />
+            <RowDefinition Height="30*" />
             <RowDefinition Height="15*" />
         </Grid.RowDefinitions>
 
@@ -93,9 +93,17 @@
             Content="Sort completed entries to top"
             IsChecked="False" />
         <RadioButton
-            Name="HideDoneButton"
+            Name="SortDoneBottomButton"
             Grid.Row="2"
             Margin="10,50,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Sort completed entries to bottom"
+            IsChecked="False" />
+        <RadioButton
+            Name="HideDoneButton"
+            Grid.Row="2"
+            Margin="10,70,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
             Content="Hide completed entries"
