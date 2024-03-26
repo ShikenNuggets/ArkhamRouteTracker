@@ -120,15 +120,17 @@ public static class Data
 
     public static Route GetRoute(string name)
     {
-        if (!routes.ContainsKey(name))
+        if (routes.TryGetValue(name, out var value))
         {
-            if (!routeFiles.ContainsKey(name))
-            {
-                return null;
-            }
-
-            routes.Add(name, new Route(routeFiles[name]));
+            return value;
         }
+
+        if (!routeFiles.TryGetValue(name, out string routeFileName))
+        {
+            return null;
+        }
+
+        routes.Add(name, new Route(routeFileName));
 
         return routes[name];
     }
