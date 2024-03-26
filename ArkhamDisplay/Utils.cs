@@ -4,71 +4,90 @@ using System.IO;
 using System.Security.Cryptography;
 using System.Text;
 using System.Windows;
-using System.Windows.Media.Media3D;
 
-namespace ArkhamDisplay{
-	class Utils{
-		public static string GetSHA1Hash(string filePath){
-			if(!File.Exists(filePath)){
-				return "";
-			}
+namespace ArkhamDisplay
+{
+    internal class Utils
+    {
+        public static string GetSHA1Hash(string filePath)
+        {
+            if (!File.Exists(filePath))
+            {
+                return "";
+            }
 
-			return GetSHA1Hash(File.ReadAllBytes(filePath));
-		}
+            return GetSHA1Hash(File.ReadAllBytes(filePath));
+        }
 
-		public static string GetSHA1Hash(List<string> data){
-			string final = string.Concat(data);
-			return GetSHA1Hash(Encoding.UTF8.GetBytes(final));
-		}
+        public static string GetSHA1Hash(List<string> data)
+        {
+            string final = string.Concat(data);
+            return GetSHA1Hash(Encoding.UTF8.GetBytes(final));
+        }
 
-		public static string GetSHA1Hash(byte[] data){
-			using var cryptoProvider = new SHA1CryptoServiceProvider();
-			return BitConverter.ToString(cryptoProvider.ComputeHash(data));
-		}
+        public static string GetSHA1Hash(byte[] data)
+        {
+            using SHA1CryptoServiceProvider cryptoProvider = new SHA1CryptoServiceProvider();
+            return BitConverter.ToString(cryptoProvider.ComputeHash(data));
+        }
 
-		public static string ListToNewlinedString(List<string> list){
-			string final = "";
+        public static string ListToNewlinedString(List<string> list)
+        {
+            string final = "";
 
-			foreach(string s in list){
-				final += "\n" + s;
-			}
+            foreach (string s in list)
+            {
+                final += "\n" + s;
+            }
 
-			return final;
-		}
+            return final;
+        }
 
-		public static Rect DetermineFinalWindowRectPosition(Rect originalRect, double minWidth = 1, double minHeight = 1){
-            var screenLeft = SystemParameters.VirtualScreenLeft;
-            var screenRight = SystemParameters.VirtualScreenLeft + SystemParameters.VirtualScreenWidth;
-            var screenTop = SystemParameters.VirtualScreenTop;
-            var screenBottom = SystemParameters.VirtualScreenTop + SystemParameters.VirtualScreenHeight;
+        public static Rect DetermineFinalWindowRectPosition(Rect originalRect, double minWidth = 1, double minHeight = 1)
+        {
+            double screenLeft = SystemParameters.VirtualScreenLeft;
+            double screenRight = SystemParameters.VirtualScreenLeft + SystemParameters.VirtualScreenWidth;
+            double screenTop = SystemParameters.VirtualScreenTop;
+            double screenBottom = SystemParameters.VirtualScreenTop + SystemParameters.VirtualScreenHeight;
 
-            if(originalRect.Width < minWidth || originalRect.Height < minHeight){
+            if (originalRect.Width < minWidth || originalRect.Height < minHeight)
+            {
                 //Input is not valid, return default rect with min sizes
                 return new Rect(0.0, 0.0, minWidth, minHeight);
             }
 
-			Rect finalRect;
+            Rect finalRect;
 
             finalRect.Width = originalRect.Width;
             finalRect.Height = originalRect.Height;
 
-            if(originalRect.X < screenLeft){
+            if (originalRect.X < screenLeft)
+            {
                 finalRect.X = screenLeft;
-            }else if(originalRect.X + originalRect.Width > screenRight){
+            }
+            else if (originalRect.X + originalRect.Width > screenRight)
+            {
                 finalRect.X = screenRight - originalRect.Width;
-            }else{
-				finalRect.X = originalRect.X;
-			}
+            }
+            else
+            {
+                finalRect.X = originalRect.X;
+            }
 
-            if(originalRect.Y < screenTop){
+            if (originalRect.Y < screenTop)
+            {
                 finalRect.Y = screenTop;
-            }else if (originalRect.Y + originalRect.Height > screenBottom){
+            }
+            else if (originalRect.Y + originalRect.Height > screenBottom)
+            {
                 finalRect.Y = screenBottom - originalRect.Height;
-            }else{ 
-				finalRect.Y = originalRect.Y;
-			}
+            }
+            else
+            {
+                finalRect.Y = originalRect.Y;
+            }
 
-			return finalRect;
+            return finalRect;
         }
-	}
+    }
 }
