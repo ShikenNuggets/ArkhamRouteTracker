@@ -1,94 +1,93 @@
 ﻿using System.Windows;
 
-namespace ArkhamDisplay
+namespace ArkhamDisplay;
+
+public partial class PreferencesWindow : Window
 {
-    public partial class PreferencesWindow : Window
+    public PreferencesWindow()
     {
-        public PreferencesWindow()
+        InitializeComponent();
+
+        switch (Data.RefreshRate)
         {
-            InitializeComponent();
-
-            switch (Data.RefreshRate)
-            {
-                case 1000:
-                    OneSecond.IsChecked = true;
-                    break;
-                case 2000:
-                    TwoSeconds.IsChecked = true;
-                    break;
-                case 10000:
-                    TenSeconds.IsChecked = true;
-                    break;
-            }
-
-            ShowProgressCheckbox.IsChecked = Data.ShowPercent;
-            ShowRiddlesCheckbox.IsChecked = Data.ShowRiddleCount;
-            DarkThemeCheckbox.IsChecked = Data.UseTheme() == Theme.Dark;
-
-            switch (Data.DisplayType)
-            {
-                case DisplayType.All:
-                    ShowAllButton.IsChecked = true;
-                    break;
-                case DisplayType.SortDoneToTop:
-                    SortDoneButton.IsChecked = true;
-                    break;
-                case DisplayType.HideDone:
-                    HideDoneButton.IsChecked = true;
-                    break;
-            }
+            case 1000:
+                OneSecond.IsChecked = true;
+                break;
+            case 2000:
+                TwoSeconds.IsChecked = true;
+                break;
+            case 10000:
+                TenSeconds.IsChecked = true;
+                break;
         }
 
-        private void OKButton_Click(object sender, RoutedEventArgs e)
+        ShowProgressCheckbox.IsChecked = Data.ShowPercent;
+        ShowRiddlesCheckbox.IsChecked = Data.ShowRiddleCount;
+        DarkThemeCheckbox.IsChecked = Data.UseTheme() == Theme.Dark;
+
+        switch (Data.DisplayType)
         {
-            if (OneSecond.IsChecked == true)
-            {
-                Data.RefreshRate = 1000;
-            }
-            else if (TwoSeconds.IsChecked == true)
-            {
-                Data.RefreshRate = 2000;
-            }
-            else if (TenSeconds.IsChecked == true)
-            {
-                Data.RefreshRate = 10000;
-            }
+            case DisplayType.All:
+                ShowAllButton.IsChecked = true;
+                break;
+            case DisplayType.SortDoneToTop:
+                SortDoneButton.IsChecked = true;
+                break;
+            case DisplayType.HideDone:
+                HideDoneButton.IsChecked = true;
+                break;
+        }
+    }
 
-            Data.ShowPercent = ShowProgressCheckbox.IsChecked ?? false;
-            Data.ShowRiddleCount = ShowRiddlesCheckbox.IsChecked ?? false;
-
-            if (DarkThemeCheckbox.IsChecked == true)
-            {
-                Data.SetTheme(Theme.Dark);
-            }
-            else
-            {
-                Data.SetTheme(Theme.Light);
-            }
-            (Application.Current as App).ChangeSkin(Data.UseTheme());
-
-            if (ShowAllButton.IsChecked == true)
-            {
-                Data.DisplayType = DisplayType.All;
-            }
-            else if (SortDoneButton.IsChecked == true)
-            {
-                Data.DisplayType = DisplayType.SortDoneToTop;
-            }
-            else if (HideDoneButton.IsChecked == true)
-            {
-                Data.DisplayType = DisplayType.HideDone;
-            }
-
-            Data.Save();
-            DialogResult = true;
-            Close();
+    private void OKButton_Click(object sender, RoutedEventArgs e)
+    {
+        if (OneSecond.IsChecked == true)
+        {
+            Data.RefreshRate = 1000;
+        }
+        else if (TwoSeconds.IsChecked == true)
+        {
+            Data.RefreshRate = 2000;
+        }
+        else if (TenSeconds.IsChecked == true)
+        {
+            Data.RefreshRate = 10000;
         }
 
-        private void CancelButton_Click(object sender, RoutedEventArgs e)
+        Data.ShowPercent = ShowProgressCheckbox.IsChecked ?? false;
+        Data.ShowRiddleCount = ShowRiddlesCheckbox.IsChecked ?? false;
+
+        if (DarkThemeCheckbox.IsChecked == true)
         {
-            DialogResult = false;
-            Close();
+            Data.SetTheme(Theme.Dark);
         }
+        else
+        {
+            Data.SetTheme(Theme.Light);
+        }
+        (Application.Current as App).ChangeSkin(Data.UseTheme());
+
+        if (ShowAllButton.IsChecked == true)
+        {
+            Data.DisplayType = DisplayType.All;
+        }
+        else if (SortDoneButton.IsChecked == true)
+        {
+            Data.DisplayType = DisplayType.SortDoneToTop;
+        }
+        else if (HideDoneButton.IsChecked == true)
+        {
+            Data.DisplayType = DisplayType.HideDone;
+        }
+
+        Data.Save();
+        DialogResult = true;
+        Close();
+    }
+
+    private void CancelButton_Click(object sender, RoutedEventArgs e)
+    {
+        DialogResult = false;
+        Close();
     }
 }
