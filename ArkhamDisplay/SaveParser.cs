@@ -21,7 +21,7 @@ public class SaveParser
 
         if (id < 0 || id > 3)
         {
-            throw new ArgumentOutOfRangeException("SaveParser::id", "SaveParser ID value was invalid (must be between 0 and 3), value was " + id.ToString());
+            throw new ArgumentOutOfRangeException(nameof(id), "SaveParser ID value was invalid (must be between 0 and 3), value was " + id.ToString());
         }
 
         m_filePath = filePath;
@@ -121,7 +121,7 @@ public class SaveParser
             offsets.Add(i);
         }
 
-        return offsets.ToArray();
+        return [.. offsets];
     }
 
     public virtual bool Update()
@@ -181,7 +181,7 @@ public class SaveParser
 
         if (matches.Count > 0)
         {
-            return matches[matches.Count - 1].ToString();
+            return matches[^1].ToString();
         }
 
         return "";
