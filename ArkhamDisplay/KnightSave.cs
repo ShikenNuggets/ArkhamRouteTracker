@@ -2,12 +2,10 @@
 
 namespace ArkhamDisplay;
 
-public class KnightSave : SaveParser
+public class KnightSave(string filePath, int id) : SaveParser(filePath, id)
 {
     private const string SAVE_FILE_PREFIX = "BAK1Save";
     private const string SAVE_FILE_SUFFIX = ".sgd";
-
-    public KnightSave(string filePath, int id) : base(filePath, id) { }
 
     public override bool Update()
     {

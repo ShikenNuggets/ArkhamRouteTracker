@@ -2,10 +2,8 @@
 
 namespace ArkhamDisplay;
 
-public class OriginsSave : SaveParser
+public class OriginsSave(string filePath, int id) : SaveParser(filePath, id)
 {
-    public OriginsSave(string filePath, int id) : base(filePath, id) { }
-
     public override bool HasKey(Entry entry, int requiredMatches)
     {
         if ("Data Handler".Equals(entry.type))

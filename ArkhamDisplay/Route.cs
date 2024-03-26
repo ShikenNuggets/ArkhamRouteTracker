@@ -4,22 +4,13 @@ using System.Linq;
 
 namespace ArkhamDisplay;
 
-public class Entry
+public class Entry(string name, string type, string id, string alternateID = null, string metadata = null)
 {
-    public string name;
-    public string type;
-    public string id;
-    public string alternateID;
-    public string metadata;
-
-    public Entry(string name, string type, string id, string alternateID = null, string metadata = null)
-    {
-        this.name = name;
-        this.type = type;
-        this.id = id;
-        this.alternateID = alternateID;
-        this.metadata = metadata;
-    }
+    public string name = name;
+    public string type = type;
+    public string id = id;
+    public string alternateID = alternateID;
+    public string metadata = metadata;
 
     public bool IsType(string type_)
     {

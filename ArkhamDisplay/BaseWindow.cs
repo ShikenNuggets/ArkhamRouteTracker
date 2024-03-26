@@ -258,16 +258,10 @@ public abstract class BaseWindow : Window
         SetStatsWindowStats();
     }
 
-    private struct FinalEntry
+    private struct FinalEntry(string name_, bool done_)
     {
-        public FinalEntry(string name_, bool done_)
-        {
-            name = name_;
-            done = done_;
-        }
-
-        public string name;
-        public bool done;
+        public string name = name_;
+        public bool done = done_;
     }
 
     protected virtual List<Entry> GetEntriesForDisplay(Route route) =>
