@@ -500,7 +500,6 @@ public abstract class BaseWindow : Window
                     if (Utils.GetSHA1Hash("Routes/" + r.Name) != Utils.GetSHA1Hash(split))
                     {
                         routesWithUpdates.Add(r.Name);
-                        continue;
                     }
                 }
                 else
@@ -510,7 +509,6 @@ public abstract class BaseWindow : Window
                     if (!r1.IsEqual(r2))
                     {
                         routesWithUpdates.Add(r.Name);
-                        continue;
                     }
                 }
             }
