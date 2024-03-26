@@ -5,7 +5,7 @@ namespace ArkhamDisplay
 {
     public partial class StatsWindow : Window
     {
-        public bool isClosedByMainWindow = false;
+        public bool isClosedByMainWindow;
 
         public StatsWindow()
         {

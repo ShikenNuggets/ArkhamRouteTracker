@@ -36,25 +36,25 @@ namespace ArkhamDisplay
         public volatile string[] saveLocations = { "", "", "", "" };
         public volatile int[] saveIDs = { 0, 0, 0, 0 };
         public volatile Rect[] windowRects = { new Rect(), new Rect(), new Rect(), new Rect() };
-        public Rect statsWindowRect = new Rect();
+        public Rect statsWindowRect;
         public volatile float mainRowHeight = 7.0f;
         public volatile float secondaryRowHeight = 3.0f;
-        public volatile bool statsWindowOpen = false;
+        public volatile bool statsWindowOpen;
 
         public volatile bool showPercent = true;
         public volatile bool showRiddleCount = true;
         public volatile int refreshRateInMS = 1000;
         public volatile DisplayType displayType = DisplayType.All;
 
-        public volatile bool asylumGlitchless = false;
-        public volatile bool cityBreakablesAtEnd = false;
-        public volatile bool cityCatwoman = false;
-        public volatile bool cityNGPlus = false;
-        public volatile bool knightFirstEnding = false;
-        public volatile bool knightNGPlus = false;
-        public volatile bool knight120 = false;
-        public volatile bool knight240 = false;
-        public volatile bool knightMoF = false;
+        public volatile bool asylumGlitchless;
+        public volatile bool cityBreakablesAtEnd;
+        public volatile bool cityCatwoman;
+        public volatile bool cityNGPlus;
+        public volatile bool knightFirstEnding;
+        public volatile bool knightNGPlus;
+        public volatile bool knight120;
+        public volatile bool knight240;
+        public volatile bool knightMoF;
     }
 
     public class Data

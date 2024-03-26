@@ -14,7 +14,7 @@ namespace ArkhamDisplay
     public abstract class BaseWindow : Window
     {
         protected Game game = Game.None;
-        protected SaveParser saveParser = null;
+        protected SaveParser saveParser;
         protected int minRequiredMatches = 1;
         private BackgroundWorker updateWorker;
         public const int COL1_WIDTH = 210;
@@ -26,7 +26,7 @@ namespace ArkhamDisplay
         protected TextBlock progressCounter;
         protected TextBlock riddleCounter;
 
-        protected StatsWindow statsWindow = null;
+        protected StatsWindow statsWindow;
 
         private Button stopButton;
         private Button startButton;

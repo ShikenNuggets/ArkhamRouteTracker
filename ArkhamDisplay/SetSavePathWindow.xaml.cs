@@ -9,7 +9,7 @@ namespace ArkhamDisplay
     {
         private readonly Game selectedGame;
         private string savedPath = "";
-        private int? savedID = null;
+        private int? savedID;
 
         public SetSavePathWindow(Game game)
         {
