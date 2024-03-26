@@ -536,7 +536,6 @@ namespace ArkhamDisplay
                             continue;
                         }
                     }
-
                 }
             }
             catch (Exception)
