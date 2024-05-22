@@ -117,7 +117,6 @@ Teeth (Penitentiary, Entrance)	Joker Teeth (Penitentiary)	Cell_C6.RChatterTeeth_
 Teeth (Penitentiary, Entrance)	Joker Teeth (Penitentiary)	Cell_C6.RChatterTeeth_10.Broken			
 Clayface Riddle (Penitentiary, Control Room)	Riddles	Global.Riddler_Cell_Riddle_4			
 Trophy (Penitentiary, Control Room Above Clayface)	Riddler Trophies	Global.Riddler_Cell_Pickup_5			
-Trophy (Penitentiary, Control Room Hack)	Riddler Trophies	Global.Riddler_Cell_Pickup_4			
 Trophy (Penitentiary, Green Mile Cell)	Riddler Trophies	Global.Riddler_Cell_Pickup_3			
 Teeth (Penitentiary, Cell Block Office)	Joker Teeth (Penitentiary)	Cell_A1.RChatterTeeth_14.Broken			
 Teeth (Penitentiary, Cell Block Office)	Joker Teeth (Penitentiary)	Cell_A1.RChatterTeeth_15.Broken			
@@ -372,6 +371,7 @@ Trophy (Arkham West, Penitentiary Entrance Grate)	Riddler Trophies	Global.Riddle
 Trophy (Penitentiary, Cell Block Gel Wall)	Riddler Trophies	Global.Riddler_Cell_Pickup_2			
 Chronicle (Penitentiary, Cell Block Gel Wall)	Arkham Chronicle	Global.Riddler_Cell_Cipher_1			
 Last Chronicle (Penitentiary, Control Room)	Arkham Chronicle	Global.Riddler_Cell_Cipher_24			
+Trophy (Penitentiary, Control Room Hack)	Riddler Trophies	Global.Riddler_Cell_Pickup_4			
 Trophy (Penitentiary, Guard Room Vent)	Riddler Trophies	Global.Riddler_Cell_Pickup_8			
 Tape (Penitentiary, Guard Room Left Office)	Interview Tape	Global.Riddler_Cell_Tape_5			
 Question Mark Riddle (Penitentiary, Guard Room Right Office)	Riddles	Global.Riddler_Cell_Riddle_8			
