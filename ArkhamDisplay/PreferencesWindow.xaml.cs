@@ -5,6 +5,8 @@ namespace ArkhamDisplay{
 		public PreferencesWindow(){
 			InitializeComponent();
 
+			VersionTextBlock.Text = "Version: " + Data.VersionStr;
+
 			switch(Data.RefreshRate){
 				case 1000:
 					OneSecond.IsChecked = true;

@@ -27,6 +27,9 @@
 		<RadioButton Name="SortDoneButton"	Content="Sort completed entries to top"	Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,30,0,0" IsChecked="False"/>
 		<RadioButton Name="HideDoneButton"	Content="Hide completed entries"		Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0" IsChecked="False"/>
 
+		<TextBlock Name="VersionTextBlock" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0">
+			<TextBlock.Text>Version: X.X</TextBlock.Text>
+		</TextBlock>
 		<Button Name="OKButton"		Content="OK"		Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,80,0" Width="55" Click="OKButton_Click"/>
 		<Button Name="CancelButton"	Content="Cancel"	Grid.Row="3" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,15,0" Width="55" Click="CancelButton_Click"/>
 	</Grid>
