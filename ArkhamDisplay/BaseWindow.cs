@@ -19,6 +19,8 @@ namespace ArkhamDisplay{
 		public const int COL2_WIDTH = 40;
 		public const int ROW_HEIGHT = 40;
 
+		public bool IsClosed { get; private set; }
+
 		protected string currentRoute = "";
 		protected string currentSecondaryRoute = "";
 		protected TextBlock progressCounter;
@@ -67,9 +69,23 @@ namespace ArkhamDisplay{
 			}
 
 			UpdateUI();
+
+			if(string.IsNullOrWhiteSpace(Data.SaveLocations[(int)game])){
+				bool saveFilePathSelected = OpenSavePathWindowAndGetResult();
+				if(!saveFilePathSelected){
+					Close();
+					return;
+				}
+			}
+
+			if(Data.StatsWindowOpen){
+				OpenStatsWindow();
+			}
 		}
 
 		protected override void OnInitialized(EventArgs e){
+			base.OnInitialized(e);
+
 			MinWidth = 300;
 			MinHeight = 700;
 
@@ -89,25 +105,19 @@ namespace ArkhamDisplay{
 					}
 				}
 			}
-
-			base.OnInitialized(e);
-		}
-
-		protected override void OnActivated(EventArgs e){
-			if(string.IsNullOrWhiteSpace(Data.SaveLocations[(int)game])){
-				OpenSavePathWindow();
-			}
-
-			//if(Data.StatsWindowOpen){
-			//	OpenStatsWindow(); //This is convenient but causes problems that I'll address later
-			//}
-
-			base.OnActivated(e);
 		}
 
 		protected override void OnClosed(EventArgs e){
-			stopButton.IsEnabled = false;
-			startButton.IsEnabled = true;
+			base.OnClosed(e);
+			IsClosed = true;
+
+			if(stopButton != null){
+				stopButton.IsEnabled = false;
+			}
+			
+			if(startButton != null){
+				startButton.IsEnabled = true;
+			}
 
 			if(updateWorker != null && updateWorker.IsBusy){
 				updateWorker.CancelAsync();
@@ -135,8 +145,6 @@ namespace ArkhamDisplay{
 				statsWindow.isClosedByMainWindow = true;
 				statsWindow.Close();
 			}
-
-			base.OnClosed(e);
 		}
 
 		protected virtual SaveParser CreateSaveParser(){
@@ -478,6 +486,17 @@ namespace ArkhamDisplay{
 			}
 		}
 
+		protected bool OpenSavePathWindowAndGetResult(){
+			SetSavePathWindow wnd = new SetSavePathWindow(game);
+			wnd.Activate();
+			if(wnd.ShowDialog() == true){
+				UpdateUI();
+				return true;
+			}
+
+			return false;
+		}
+
 		protected void OpenSavePathWindow(object sender = null, RoutedEventArgs e = null){
 			SetSavePathWindow wnd = new SetSavePathWindow(game);
 			wnd.Activate();
@@ -486,8 +505,15 @@ namespace ArkhamDisplay{
 			}
 		}
 
-		private void KillWindow(Window newWindow, Game newGame, MenuItem sender){
+		private void KillWindow(BaseWindow newWindow, Game newGame, MenuItem sender){
 			if(newWindow != null){
+				if(newWindow.IsClosed){
+					newWindow.Close();
+					sender.IsChecked = false;
+					Data.SelectedGame = game;
+					return;
+				}
+
 				if(string.IsNullOrWhiteSpace(Data.SaveLocations[(int)newGame])){
 					Window wnd = new SetSavePathWindow(newGame);
 					wnd.Activate();
