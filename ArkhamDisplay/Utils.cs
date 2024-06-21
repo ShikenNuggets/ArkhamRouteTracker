@@ -22,8 +22,7 @@ namespace ArkhamDisplay{
 		}
 
 		public static string GetSHA1Hash(byte[] data){
-			using var cryptoProvider = new SHA1CryptoServiceProvider();
-			return BitConverter.ToString(cryptoProvider.ComputeHash(data));
+			return BitConverter.ToString(SHA1.HashData(data));
 		}
 
 		public static string ListToNewlinedString(List<string> list){
