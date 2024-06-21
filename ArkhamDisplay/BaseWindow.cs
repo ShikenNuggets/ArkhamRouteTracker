@@ -70,8 +70,8 @@ namespace ArkhamDisplay{
 		}
 
 		protected override void OnInitialized(EventArgs e){
-			MinWidth = 280;
-			MinHeight = 360;
+			MinWidth = 300;
+			MinHeight = 700;
 
 			Rect rect = Utils.DetermineFinalWindowRectPosition(Data.WindowRect[(int)game], MinWidth, MinHeight);
 			Width = rect.Width;

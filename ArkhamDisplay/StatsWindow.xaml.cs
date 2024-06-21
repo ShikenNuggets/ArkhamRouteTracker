@@ -17,7 +17,10 @@ namespace ArkhamDisplay{
 		public StatsWindow(){
 			InitializeComponent();
 
-            Rect rect = Utils.DetermineFinalWindowRectPosition(Data.StatsWindowRect);
+            MinWidth = 750;
+            MinHeight = 400;
+
+            Rect rect = Utils.DetermineFinalWindowRectPosition(Data.StatsWindowRect, MinWidth, MinHeight);
             Width = rect.Width;
             Height = rect.Height;
             Left = rect.X;
