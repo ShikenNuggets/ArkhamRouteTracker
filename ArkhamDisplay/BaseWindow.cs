@@ -451,8 +451,19 @@ namespace ArkhamDisplay{
 
 					
 				}
-			}catch(Exception){
-				MessageBox.Show("An error occurred while checking for updates, please try again later.");
+			}catch(AggregateException aggregate){
+				aggregate.Handle(ex => {
+					if(ex is Octokit.RateLimitExceededException || ex is Octokit.SecondaryRateLimitExceededException){
+						MessageBox.Show("GitHub rate limit exceeded - please try again later.", "Error");
+					}else{
+						MessageBox.Show("Unknown error occurred while checking for updates. Please send a screenshot of this error message to the developers, and try again later. \n\nException Type: " + ex.GetType().ToString() + "\nMessage: " + ex.Message, "Error");
+					}
+					return true;
+				});
+
+				return;
+			}catch(Exception ex){
+				MessageBox.Show("Unknown error occurred while checking for updates. Please send a screenshot of this error message to the developers, and try again later. \n\nException Type: " + ex.GetType().ToString() + "\nMessage: " + ex.Message, "Error");
 				return;
 			}
 
