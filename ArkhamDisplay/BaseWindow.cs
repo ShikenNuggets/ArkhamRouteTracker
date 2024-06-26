@@ -571,8 +571,12 @@ namespace ArkhamDisplay{
 
 		protected virtual void OpenStatsWindow(object sender = null, RoutedEventArgs e = null){
 			if(statsWindow != null){
-				if(statsWindow.IsVisible){
-					//statsWindow.Focus(); //This is convenient but it causes problems that I'll addres later
+				if(statsWindow.IsVisible && (statsWindow.WindowState == WindowState.Normal || statsWindow.WindowState == WindowState.Maximized)){
+					statsWindow.Focus();
+					return;
+				}else if(statsWindow.IsVisible && statsWindow.WindowState == WindowState.Minimized){
+					statsWindow.WindowState = WindowState.Normal;
+					statsWindow.Focus();
 					return;
 				}else{
 					statsWindow.Close();
