@@ -382,6 +382,7 @@ Blackgate Prisoner (Industrial, Amertek near Third Tower)	Blackgate Prisoners	MW
 Datapack (Industrial, Switch Gotham Rail Across Gotham Hardware)	Datapacks	PickedUp_Industrial_Pickup_4				
 Datapack (Industrial, Switch Lights Behind Amertek)	Datapacks	PickedUp_Industrial_Pickup_6				
 Datapack (Industrial, Gel Wall Amertek)	Datapacks	PickedUp_Industrial_Pickup_5				
+Crime in Progress (Industrial)	Crime in Progress	oBatmanChallenges.DarkKnight.SilentGuardian_StopCrimeInProgressInEachDistrict.MBatChalCond_Switch2_2.SwitchedOn				
 Blackgate Prisoner (On Ice Between Amusement and Industrial)	Blackgate Prisoners	MW_BGP_Prisoner_03_Captured				
 Datapack (Amusement, Dixon Docks Roof)	Datapacks	PickedUp_AmusementMile_Pickup_17				
 Datapack (Amusement, NE Roof Gel Wall)	Datapacks	PickedUp_AmusementMile_Pickup_10				
@@ -390,6 +391,7 @@ Datapack (Amusement, Vents Across Casino)	Datapacks	PickedUp_AmusementMile_Picku
 Blackgate Prisoner (Amusement, Casino/Train Station Plaza)	Blackgate Prisoners	MW_BGP_Prisoner_04_Captured				
 Datapack (Amusement, Fly To Container Across Dixon Docks)	Datapacks	PickedUp_AmusementMile_Pickup_8				
 Datapack (Amusement, Building Across Dixon Docks Sign)	Datapacks	PickedUp_AmusementMile_Pickup_9				
+Crime in Progress (Amusement)	Crime in Progress	oBatmanChallenges.DarkKnight.SilentGuardian_StopCrimeInProgressInEachDistrict.MBatChalCond_Switch2_0.SwitchedOn				
 Blackgate Prisoner (Park Row, Front of Courthouse)	Blackgate Prisoners	MW_BGP_Prisoner_01_Captured				
 Datapack (Park Row, Gliding Switches Auto Repair)	Datapacks	PickedUp_ParkRow_Pickup_3				
 Datapack (Park Row, Live Nudes Building near AR training)	Datapacks	PickedUp_ParkRow_Pickup_8				
@@ -399,17 +401,20 @@ Datapack (Park Row, Fly through Wall Across Ace)	Datapacks	PickedUp_ParkRow_Pick
 Anarky Tag (Park Row, Ace Building)	Anarky Tags	PickedUp_AnarkyScan_Anarky_27				
 Anarky Tag (Park Row, Near Monarch Theater)	Anarky Tags	PickedUp_AnarkyScan_Anarky_21				
 Blackgate Prisoner (Park Row, Under Bridge Near Casino and Church)	Blackgate Prisoners	MW_BGP_Prisoner_02_Captured				
+Crime in Progress (Park Row)	Crime in Progress	oBatmanChallenges.DarkKnight.SilentGuardian_StopCrimeInProgressInEachDistrict.MBatChalCond_Switch2_1.SwitchedOn				
 Blackgate Prisoner (Bowery, Gargoyle Building)	Blackgate Prisoners	MW_BGP_Prisoner_19_Captured				
 Blackgate Prisoner (Bowery, Jezebel Theater/GCR)	Blackgate Prisoners	MW_BGP_Prisoner_07_Captured				
 Datapack (Bowery, Hotel Under Bridge)	Datapacks	PickedUp_Bowery_Pickup_6				
 Datapack (Bowery, Soder Cola Top)	Datapacks	PickedUp_Bowery_Pickup_5				
 Datapack (Bowery, Hack Lower Across Light and Power)	Datapacks	PickedUp_Bowery_Pickup_16				
 Blackgate Prisoner (Bowery, Bank)	Blackgate Prisoners	MW_BGP_Prisoner_08_Captured				
+Crime in Progress (Bowery)	Crime in Progress	oBatmanChallenges.DarkKnight.SilentGuardian_StopCrimeInProgressInEachDistrict.MBatChalCond_Switch2_3.SwitchedOn				
 Blackgate Prisoner (Sheldon Park, Near Bridge)	Blackgate Prisoners	MW_BGP_Prisoner_09_Captured				
 Anarky Tag (Sheldon Park, Wonder Tower)	Anarky Tags	PickedUp_AnarkyScan_Anarky_22				
 Datapack (Sheldon Park, Wonder Tower Batarang Switch)	Datapacks	PickedUp_Industrial_Pickup_15				
 Datapack (Sheldon Park, Boat Crane Switch)	Datapacks	PickedUp_Industrial_Pickup_17				
 Datapack (Sheldon Park, Pier in Cage)	Datapacks	PickedUp_Industrial_Pickup_16				
+Crime in Progress (Sheldon Park)	Crime in Progress	oBatmanChallenges.DarkKnight.SilentGuardian_StopCrimeInProgressInEachDistrict.MBatChalCond_Switch2_4.SwitchedOn				
 Datapack (Coventry, Cale Anderson Roof [electric gloves])	Datapacks	PickedUp_Coventry_Pickup_16				
 Datapack (Coventry, Remote Batarang Across Anarky Tag)	Datapacks	PickedUp_Coventry_Pickup_3				
 Blackgate Prisoner (Coventry, Near Pioneers Bridge [My Alibi])	Blackgate Prisoners	MW_BGP_Prisoner_12_Captured				
@@ -419,6 +424,7 @@ Datapack (Coventry, Koul Brau Roof Switches)	Datapacks	PickedUp_Coventry_Pickup_
 Datapack (Coventry, Next to Bird Fight)	Datapacks	PickedUp_Coventry_Pickup_8				
 Datapack (Coventry, Fly through Wall near Gotham Rail)	Datapacks	PickedUp_Coventry_Pickup_12				
 Datapack (Coventry, Lacey Towers Balcony)	Datapacks	PickedUp_Coventry_Pickup_13				
+Crime in Progress (Coventry)	Crime in Progress	oBatmanChallenges.DarkKnight.SilentGuardian_StopCrimeInProgressInEachDistrict.MBatChalCond_Switch2_6.SwitchedOn				
 Anarky Tag (Coventry, Lacey Towers)	Anarky Tags	PickedUp_AnarkyScan_Anarky_12				
 Relay (Diamond, Statue Near GCR Plaza)	Relays (Diamond)	PickedUp_Diamond_Camera_9				
 Blackgate Prisoner (Diamond, Under Train Bridge)	Blackgate Prisoners	MW_BGP_Prisoner_13_Captured				
@@ -428,7 +434,7 @@ Anarky Tag (Diamond, Near Gel Wall/GCR Plaza Statue)	Anarky Tags	PickedUp_Anarky
 Blackgate Prisoner (Diamond, Hamilton Hill)	Blackgate Prisoners	MW_BGP_Prisoner_14_Captured				
 Blackgate Prisoner (Diamond, Near Pioneers Bridge [south])	Blackgate Prisoners	MW_BGP_Prisoner_15_Captured				
 Blackgate Prisoner (Diamond, Near Pioneers Bridge [furniture company])	Blackgate Prisoners	MW_BGP_Prisoner_10_Captured				
-Datapack (Diamond, Switch Batarang Furniture Sign)	Datapacks	PickedUp_Diamond_Pickup_14				
+Datapack (Diamond, Switch Batarang Furniture Sign [after crime reload])	Datapacks	PickedUp_Diamond_Pickup_14				
 Relay (Diamond, Furniture)	Relays (Diamond)	PickedUp_Diamond_Camera_10				
 Relay (Diamond, Sake Graffiti Alley)	Relays (Diamond)	PickedUp_Diamond_Camera_8				
 Datapack (Diamond, Switch Electric Batarang Vent Auto Repair)	Datapacks	PickedUp_Diamond_Pickup_16				
@@ -440,6 +446,7 @@ Relay (Diamond, GCR Across Hotel)	Relays (Diamond)	PickedUp_Diamond_Camera_1
 Datapack (Diamond, Hotel Main Entrance)	Datapacks	PickedUp_Diamond_Pickup_8				
 Relay (Diamond, Hotel)	Relays (Diamond)	PickedUp_Diamond_Camera_4				
 Datapack (Diamond, Batarang Switch Hotel)	Datapacks	PickedUp_Diamond_Pickup_9				
+Crime in Progress (Diamond)	Crime in Progress	oBatmanChallenges.DarkKnight.SilentGuardian_StopCrimeInProgressInEachDistrict.MBatChalCond_Switch2_7.SwitchedOn				
 Blackgate Prisoner (Burnley, Near Enigma)	Blackgate Prisoners	MW_BGP_Prisoner_16_Captured				
 Datapack (Burnley, Switch Glue Pipes near Enigma HQ [with bomb])	Datapacks	PickedUp_Burnley_Pickup_5				
 Datapack (Burnley, Charged Switches Near Hotel)	Datapacks	PickedUp_Burnley_Pickup_15				
@@ -447,5 +454,6 @@ Relay (Burnley, Behind GCR)	Relays (Burnley)	PickedUp_Burnley_Camera_10
 Blackgate Prisoner (Burnley, Behind GCR)	Blackgate Prisoners	MW_BGP_Prisoner_17_Captured				
 Relay (Burnley, Hamilton Hill Upper)	Relays (Burnley)	PickedUp_Burnley_Camera_8				
 Datapack (Burnley, Hack Near Electricity)	Datapacks	PickedUp_Burnley_Pickup_12				
+Crime in Progress (Burnley)	Crime in Progress	oBatmanChallenges.DarkKnight.SilentGuardian_StopCrimeInProgressInEachDistrict.MBatChalCond_Switch2_8.SwitchedOn				
 Gotham Protector (Crime in Progress in Each District)	Gotham Protector	1SilentGuardian_StopCrimeInProgressInEachDistrict		DarkKnightFinish		
 Enigma Trophy	Enigma Hideout	PickedUp_FirstTrophy_0				
