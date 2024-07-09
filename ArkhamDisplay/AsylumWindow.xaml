@@ -13,7 +13,7 @@
 				<MenuItem Name="PrefMenuItem" Header="Preferences"			Click="PrefMenuItem_Click" />
 				<MenuItem Name="OpenRouteMenuItem" Header="Open Route Folder"	Click="OpenRouteFolder" />
 				<MenuItem Name="RefreshRoutesMenuItem" Header="Refresh Routes"	Click="RefreshRoutes" />
-				<MenuItem Name="UpdateMenuItem" Header="Check for Updated Routes" Click="CheckForUpdatedRoutes" />
+				<MenuItem Name="UpdateMenuItem" Header="Check for Updates" Click="CheckForUpdates" />
 			</MenuItem>
 			<MenuItem Header="_Game">
 				<MenuItem Name="AsylumMenuItem"		Header="Asylum"		IsCheckable="True" IsChecked="True"		Click="SwitchGameWindow" />

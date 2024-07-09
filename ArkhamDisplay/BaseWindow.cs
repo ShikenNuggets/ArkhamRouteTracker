@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -412,6 +413,41 @@ namespace ArkhamDisplay{
 				Stop_Button_Click(sender, e);
 				Start_Button_Click(sender, e);
 			}
+		}
+
+		protected void CheckForUpdates(object sender = null, RoutedEventArgs e = null){
+			bool programHasUpdate = false;
+			try{
+				var client = new Octokit.GitHubClient(new Octokit.ProductHeaderValue("ArkhamRouteTracker"));
+				var latestRelease = client.Repository.Release.GetLatest("ShikenNuggets", "ArkhamRouteTracker").Result;
+				if(latestRelease.TagName != "v" + Data.VersionStr){
+					programHasUpdate = true;
+				}
+			}catch(AggregateException aggregate){
+				aggregate.Handle(ex => {
+					if(ex is Octokit.RateLimitExceededException || ex is Octokit.SecondaryRateLimitExceededException){
+						MessageBox.Show("GitHub rate limit exceeded - please try again later.", "Error");
+					}else{
+						MessageBox.Show("Unknown error occurred while checking for updates. Please send a screenshot of this error message to the developers, and try again later. \n\nException Type: " + ex.GetType().ToString() + "\nMessage: " + ex.Message, "Error");
+					}
+					return true;
+				});
+
+				return;
+			}catch(Exception ex){
+				MessageBox.Show("Unknown error occurred while checking for updates. Please send a screenshot of this error message to the developers, and try again later. \n\nException Type: " + ex.GetType().ToString() + "\nMessage: " + ex.Message, "Error");
+				return;
+			}
+
+			if(programHasUpdate){
+                MessageBoxResult result = MessageBox.Show("A new version of the route tracker is available. Would you like to download it?", "Updates Available", MessageBoxButton.YesNo);
+				if(result == MessageBoxResult.Yes){
+                    System.Diagnostics.Process.Start("explorer", "https://github.com/ShikenNuggets/ArkhamRouteTracker/releases");
+					return;
+                }
+            }
+
+			CheckForUpdatedRoutes(sender, e);
 		}
 
         protected void CheckForUpdatedRoutes(object sender = null, RoutedEventArgs e = null){
