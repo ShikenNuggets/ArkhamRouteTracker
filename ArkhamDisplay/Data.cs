@@ -59,6 +59,11 @@ namespace ArkhamDisplay{
 		private static volatile Dictionary<string, string> routeFiles = new Dictionary<string, string>();
 		private static volatile Dictionary<string, Route> routes = new Dictionary<string, Route>();
 
+		public const string GitRepoName = "ArkhamRouteTracker";
+		public const string GitRepoOwner = "ShikenNuggets";
+		public const string GitReleasesPath = "ArkhamDisplay/Routes";
+		public const string GitReleasesURL = "https://github.com/ShikenNuggets/ArkhamRouteTracker/releases";
+
 		public static string VersionStr { get { return "1.8"; } }
 
 		public static string RoutePath { get { return "\\Routes\\"; } }

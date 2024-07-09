@@ -418,8 +418,8 @@ namespace ArkhamDisplay{
 		protected void CheckForUpdates(object sender = null, RoutedEventArgs e = null){
 			bool programHasUpdate = false;
 			try{
-				var client = new Octokit.GitHubClient(new Octokit.ProductHeaderValue("ArkhamRouteTracker"));
-				var latestRelease = client.Repository.Release.GetLatest("ShikenNuggets", "ArkhamRouteTracker").Result;
+				var client = new Octokit.GitHubClient(new Octokit.ProductHeaderValue(Data.GitRepoName));
+				var latestRelease = client.Repository.Release.GetLatest(Data.GitRepoOwner, Data.GitRepoName).Result;
 				if(latestRelease.TagName != "v" + Data.VersionStr){
 					programHasUpdate = true;
 				}
@@ -442,7 +442,7 @@ namespace ArkhamDisplay{
 			if(programHasUpdate){
                 MessageBoxResult result = MessageBox.Show("A new version of the route tracker is available. Would you like to download it?", "Updates Available", MessageBoxButton.YesNo);
 				if(result == MessageBoxResult.Yes){
-                    System.Diagnostics.Process.Start("explorer", "https://github.com/ShikenNuggets/ArkhamRouteTracker/releases");
+                    System.Diagnostics.Process.Start("explorer", Data.GitReleasesURL);
 					return;
                 }
             }
@@ -455,10 +455,10 @@ namespace ArkhamDisplay{
 			Dictionary<string, string> routeFileData = new Dictionary<string, string>();
 
 			try{
-				var client = new Octokit.GitHubClient(new Octokit.ProductHeaderValue("ArkhamRouteTracker"));
-				var routes = client.Repository.Content.GetAllContents("ShikenNuggets", "ArkhamRouteTracker", "ArkhamDisplay/Routes").Result;
+				var client = new Octokit.GitHubClient(new Octokit.ProductHeaderValue(Data.GitRepoName));
+				var routes = client.Repository.Content.GetAllContents(Data.GitRepoOwner, Data.GitRepoName, Data.GitReleasesPath).Result;
 				foreach(var r in routes){
-					var rawData = client.Repository.Content.GetRawContent("ShikenNuggets", "ArkhamRouteTracker", r.Path).Result;
+					var rawData = client.Repository.Content.GetRawContent(Data.GitRepoOwner, Data.GitRepoName, r.Path).Result;
 
 					string dataString = System.Text.Encoding.UTF8.GetString(rawData);
 					dataString = dataString.Replace("\n", "\r\n"); //Replace Unix line endings with Windows line endings
