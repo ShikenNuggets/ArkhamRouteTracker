@@ -51,7 +51,6 @@ Shadow Vigilante (3 Combo Takedowns)	Shadow Vigilante	ShadowVigilante_KeepFocusM
 Pinkney Plaque (Bowery, Seasons Greetings Bell)	Pinkney Plaques	PickedUp_PinkeyPlaque_Pinkney_2				
 Gotham Protector (Grapnel Boost Takedown)	Gotham Protector	SilentGuardian_GenericStopCrimeInProgress				
 Shadow Vigilante (Focus Mode)	Shadow Vigilante	ShadowVigilante_VariationInOneFight				
-Shadow Vigilante (Combo Variation)	Shadow Vigilante	ShadowVigilante_ConcussionDetonatorKnockdown				
 Relay Tower (Bowery)	Relay Towers	SS_Enigma_Tower2_Deactivated				
 Relay (Bowery, Gargoyle Building)	Relays (Bowery)	PickedUp_Bowery_Camera_2				
 Relay (Bowery, Bottom of Relay Tower)	Relays (Bowery)	PickedUp_Bowery_Camera_1				
@@ -66,6 +65,7 @@ Datapack (Park Row, Church Switch)	Datapacks	PickedUp_ParkRow_Pickup_5
 Pinkney Plaque (Park Row, Church)	Pinkney Plaques	PickedUp_PinkeyPlaque_Pinkney_0				
 Datapack (Amusement, Gel Wall Gotham Casino)	Datapacks	PickedUp_AmusementMile_Pickup_2				
 SIM Card 1	Main Story	CH2_OW_3rdJammerDown				
+Shadow Vigilante (Combo Variation)	Shadow Vigilante	ShadowVigilante_ConcussionDetonatorKnockdown				
 Shadow Vigilante (3 Gel)	Shadow Vigilante	ShadowVigilante_TripMultipleEnemyWithOneSlide				
 Shadow Vigilante (Double Trip)	Shadow Vigilante	ShadowVigilante_CounterDuringBeatdown				
 Shadow Vigilante (Counter During Beatdown)	Shadow Vigilante	ShadowVigilante_HightThreatAndGradeA				
@@ -288,7 +288,7 @@ Datapack (Park Row, Cage on the way to Bane HQ)	Datapacks	PickedUp_ParkRow_Picku
 Datapack (Bane HQ, Ceiling)	Datapacks	PickedUp_BaneHQ_Pickup_1				
 Bane Tape (Bane HQ)	Misc	CH7_BHQ_Evidence1				
 Relay (Park Row, Back of Live Nudes Building)	Relays (Park Row)	PickedUp_ParkRow_Camera_10				
-Intermediate AR Challenge 1 (Amusement On Bridge)	AR Challenges	ARChallenges_05_Complete				
+Intermediate AR Challenge 1 (Park Row Behind Live Nudes Building)	AR Challenges	ARChallenges_05_Complete				
 Gotham Protector (Intermediate AR Challenges)	Gotham Protector	SilentGuardian_ShockWaveAttack				
 Datapack (Park Row, behind building next to Bowery GCR)	Datapacks	PickedUp_ParkRow_Pickup_12				
 Datapack (Park Row, Next to Gargoyle Building)	Datapacks	PickedUp_ParkRow_Pickup_13				
