@@ -61,7 +61,7 @@ namespace ArkhamDisplay{
 
 		public const string GitRepoName = "ArkhamRouteTracker";
 		public const string GitRepoOwner = "ShikenNuggets";
-		public const string GitReleasesPath = "ArkhamDisplay/Routes";
+		public const string GitRoutesPath = "ArkhamDisplay/Routes";
 		public const string GitReleasesURL = "https://github.com/ShikenNuggets/ArkhamRouteTracker/releases";
 
 		public static string VersionStr { get { return "1.8"; } }

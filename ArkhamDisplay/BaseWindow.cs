@@ -456,7 +456,7 @@ namespace ArkhamDisplay{
 
 			try{
 				var client = new Octokit.GitHubClient(new Octokit.ProductHeaderValue(Data.GitRepoName));
-				var routes = client.Repository.Content.GetAllContents(Data.GitRepoOwner, Data.GitRepoName, Data.GitReleasesPath).Result;
+				var routes = client.Repository.Content.GetAllContents(Data.GitRepoOwner, Data.GitRepoName, Data.GitRoutesPath).Result;
 				foreach(var r in routes){
 					var rawData = client.Repository.Content.GetRawContent(Data.GitRepoOwner, Data.GitRepoName, r.Path).Result;
 
