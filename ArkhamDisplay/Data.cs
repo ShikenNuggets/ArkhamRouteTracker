@@ -40,6 +40,7 @@ namespace ArkhamDisplay{
 		public volatile bool showRiddleCount = true;
 		public volatile int refreshRateInMS = 1000;
 		public volatile DisplayType displayType = DisplayType.SortDoneToTop;
+		public volatile bool warningsForMissedEntries = true;
 
 		public volatile bool asylumGlitchless = false;
 		public volatile bool cityBreakablesAtEnd = false;
@@ -80,6 +81,7 @@ namespace ArkhamDisplay{
 		public static bool ShowRiddleCount { get { return data.showRiddleCount; } set { data.showRiddleCount = value; } }
 		public static int RefreshRate { get { return data.refreshRateInMS; } set { data.refreshRateInMS = value; } }
 		public static DisplayType DisplayType { get { return data.displayType; } set { data.displayType = value; } }
+		public static bool WarningsForMissedEntries { get { return data.warningsForMissedEntries; } set { data.warningsForMissedEntries = value; } }
 
 		public static bool AsylumGlitchless { get { return data.asylumGlitchless; } set { data.asylumGlitchless = value; } }
 		public static bool CityBreakablesAtEnd { get { return data.cityBreakablesAtEnd; } set { data.cityBreakablesAtEnd = value; } }

@@ -292,7 +292,7 @@ namespace ArkhamDisplay{
 
 			foreach(FinalEntry entry in finalEntries){
 				string rectStyle = "GridRectangle";
-				if(!entry.done && entry.index < lastCollectedID){
+				if(Data.WarningsForMissedEntries && !entry.done && entry.index < lastCollectedID){
 					rectStyle = "WarningGridRectangle";
 				}
 
