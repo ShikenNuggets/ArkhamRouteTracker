@@ -25,4 +25,8 @@
 		<Setter Property="StrokeThickness" Value="1"/>
 		<Setter Property="Fill" Value="Transparent"/>
 	</Style>
+
+	<Style x:Key="WarningGridRectangle" TargetType="Rectangle" BasedOn="{StaticResource GridRectangle}">
+		<Setter Property="Fill" Value="#f5c85f"></Setter>
+	</Style>
 </ResourceDictionary>
