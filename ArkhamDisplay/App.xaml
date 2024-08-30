@@ -9,26 +9,6 @@
 			<Setter Property="FontSize" Value="13"></Setter>
 		</Style>
 
-		<Style x:Key="EntryText" TargetType="TextBlock">
-			<Setter Property="TextWrapping" Value="Wrap"/>
-			<Setter Property="VerticalAlignment" Value="Center"/>
-			<Setter Property="Margin" Value="5,0,0,0"/>
-		</Style>
-
-		<Style x:Key="DoneText" TargetType="TextBlock">
-			<Setter Property="Text" Value="X"/>
-			<Setter Property="FontSize" Value="18"/>
-			<Setter Property="FontWeight" Value="Bold"/>
-			<Setter Property="HorizontalAlignment" Value="Center"/>
-			<Setter Property="VerticalAlignment" Value="Center"/>
-		</Style>
-
-		<Style x:Key="GridRectangle" TargetType="Rectangle">
-			<Setter Property="Stroke" Value="Gray"/>
-			<Setter Property="StrokeThickness" Value="1"/>
-			<Setter Property="Fill" Value="Transparent"/>
-		</Style>
-
 		<ResourceDictionary x:Key="Themes">
 			<ResourceDictionary.MergedDictionaries>
 				<ResourceDictionary Source="BaseTheme.xaml" />

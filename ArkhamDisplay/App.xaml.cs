@@ -16,12 +16,12 @@ namespace ArkhamDisplay{
         public void ChangeSkin(Theme newTheme){
             Resources.Clear();
             Resources.MergedDictionaries.Clear();
-            if(newTheme == Theme.Light){
+            ApplyResources("BaseTheme.xaml");
+            if (newTheme == Theme.Light){
                 ApplyResources("LightTheme.xaml");
             }else if (newTheme == Theme.Dark){
                 ApplyResources("DarkTheme.xaml");
             }
-            ApplyResources("BaseTheme.xaml");
         }
 
         private void ApplyResources(string src){
