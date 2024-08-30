@@ -230,13 +230,15 @@ namespace ArkhamDisplay{
 		}
 
 		private struct FinalEntry{
-			public FinalEntry(string name_, bool done_){
+			public FinalEntry(string name_, bool done_, int index_){
 				name = name_;
 				done = done_;
+				index = index_;
 			}
 
 			public string name;
 			public bool done;
+			public int index;
 		}
 
 		protected virtual List<Entry> GetEntriesForDisplay(Route route){
@@ -260,6 +262,7 @@ namespace ArkhamDisplay{
 
 			List<FinalEntry> finalEntries = new List<FinalEntry>(totalEntries);
 			List<FinalEntry> bottomEntries = new List<FinalEntry>(totalEntries);
+			int lastCollectedID = -1;
 			foreach(Entry entry in routeEntries){
 				//Hardcoded bullshit
 				int mrm = minRequiredMatches;
@@ -271,26 +274,32 @@ namespace ArkhamDisplay{
 
 				if(saveParser.HasKey(entry, mrm)){
 					doneEntries++;
+					lastCollectedID = routeEntries.IndexOf(entry);
 					if(Data.DisplayType == DisplayType.HideDone){
 						continue;
 					}
 
-					finalEntries.Add(new FinalEntry(GetEntryName(entry), true));
+					finalEntries.Add(new FinalEntry(GetEntryName(entry), true, routeEntries.IndexOf(entry)));
 				}else{
 					if(Data.DisplayType == DisplayType.All || Data.DisplayType == DisplayType.HideDone){
-						finalEntries.Add(new FinalEntry(GetEntryName(entry), false));
+						finalEntries.Add(new FinalEntry(GetEntryName(entry), false, routeEntries.IndexOf(entry)));
 					}else{
-						bottomEntries.Add(new FinalEntry(GetEntryName(entry), false));
+						bottomEntries.Add(new FinalEntry(GetEntryName(entry), false, routeEntries.IndexOf(entry)));
 					}
 				}
 			}
 			finalEntries.AddRange(bottomEntries);
 
 			foreach(FinalEntry entry in finalEntries){
+				string rectStyle = "GridRectangle";
+				if(!entry.done && entry.index < lastCollectedID){
+					rectStyle = "WarningGridRectangle";
+				}
+
 				displayGrid.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(ROW_HEIGHT) });
 
 				Rectangle rectangle = new Rectangle{
-					Style = FindResource("GridRectangle") as Style
+					Style = FindResource(rectStyle) as Style
 				};
 				Grid.SetColumn(rectangle, 0);
 				Grid.SetRow(rectangle, lineCount - 1);
@@ -305,7 +314,7 @@ namespace ArkhamDisplay{
 				displayGrid.Children.Add(txtBlock);
 
 				rectangle = new Rectangle{
-					Style = FindResource("GridRectangle") as Style
+					Style = FindResource(rectStyle) as Style
 				};
 				Grid.SetColumn(rectangle, 1);
 				Grid.SetRow(rectangle, lineCount - 1);
