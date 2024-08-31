@@ -35,6 +35,6 @@
 	</Style>
 
 	<Style x:Key="WarningGridRectangle" TargetType="Rectangle" BasedOn="{StaticResource GridRectangle}">
-		<Setter Property="Fill" Value="#470101"></Setter>
+		<Setter Property="Fill" Value="#700000"></Setter>
 	</Style>
 </ResourceDictionary>
