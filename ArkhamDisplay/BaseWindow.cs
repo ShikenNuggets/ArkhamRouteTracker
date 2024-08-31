@@ -230,15 +230,17 @@ namespace ArkhamDisplay{
 		}
 
 		private struct FinalEntry{
-			public FinalEntry(string name_, bool done_, int index_){
+			public FinalEntry(string name_, bool done_, int index_, int gapIndex_ = -1){
 				name = name_;
 				done = done_;
 				index = index_;
+				gapIndex = gapIndex_;
 			}
 
 			public string name;
 			public bool done;
 			public int index;
+			public int gapIndex;
 		}
 
 		protected virtual List<Entry> GetEntriesForDisplay(Route route){
@@ -263,6 +265,8 @@ namespace ArkhamDisplay{
 			List<FinalEntry> finalEntries = new List<FinalEntry>(totalEntries);
 			List<FinalEntry> bottomEntries = new List<FinalEntry>(totalEntries);
 			int lastCollectedID = -1;
+			List<int> gapSizes = new List<int>();
+
 			foreach(Entry entry in routeEntries){
 				//Hardcoded bullshit
 				int mrm = minRequiredMatches;
@@ -275,24 +279,35 @@ namespace ArkhamDisplay{
 				if(saveParser.HasKey(entry, mrm)){
 					doneEntries++;
 					lastCollectedID = routeEntries.IndexOf(entry);
+
+					if(gapSizes.Count > 0 && gapSizes.Last() != 0){
+						gapSizes.Add(0);
+					}
+
 					if(Data.DisplayType == DisplayType.HideDone){
 						continue;
 					}
 
 					finalEntries.Add(new FinalEntry(GetEntryName(entry), true, routeEntries.IndexOf(entry)));
 				}else{
+					if(gapSizes.Count == 0){
+						gapSizes.Add(0);
+					}
+					gapSizes[gapSizes.Count - 1]++;
+
 					if(Data.DisplayType == DisplayType.All || Data.DisplayType == DisplayType.HideDone){
-						finalEntries.Add(new FinalEntry(GetEntryName(entry), false, routeEntries.IndexOf(entry)));
+						finalEntries.Add(new FinalEntry(GetEntryName(entry), false, routeEntries.IndexOf(entry), gapSizes.Count - 1));
 					}else{
-						bottomEntries.Add(new FinalEntry(GetEntryName(entry), false, routeEntries.IndexOf(entry)));
+						bottomEntries.Add(new FinalEntry(GetEntryName(entry), false, routeEntries.IndexOf(entry), gapSizes.Count - 1));
 					}
 				}
 			}
 			finalEntries.AddRange(bottomEntries);
+			gapSizes.RemoveAt(gapSizes.Count - 1); //Removes trailing 0, or removes the final "gap" since it's not really a gap
 
 			foreach(FinalEntry entry in finalEntries){
 				string rectStyle = "GridRectangle";
-				if(Data.WarningsForMissedEntries && !entry.done && entry.index < lastCollectedID){
+				if(Data.WarningsForMissedEntries && !entry.done && entry.index < lastCollectedID && entry.gapIndex >= 0 && entry.gapIndex < gapSizes.Count && gapSizes[entry.gapIndex] <= 10){
 					rectStyle = "WarningGridRectangle";
 				}
 
