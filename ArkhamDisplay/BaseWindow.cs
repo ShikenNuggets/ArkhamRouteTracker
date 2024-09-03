@@ -303,9 +303,12 @@ namespace ArkhamDisplay{
 				}
 			}
 			finalEntries.AddRange(bottomEntries);
-			gapSizes.RemoveAt(gapSizes.Count - 1); //Removes trailing 0, or removes the final "gap" since it's not really a gap
 
-			foreach(FinalEntry entry in finalEntries){
+			if(gapSizes != null && gapSizes.Count > 0){
+				gapSizes.RemoveAt(gapSizes.Count - 1); //Removes trailing 0, or removes the final "gap" since it's not really a gap
+			}
+
+			foreach (FinalEntry entry in finalEntries){
 				string rectStyle = "GridRectangle";
 				if(Data.WarningsForMissedEntries && !entry.done && entry.index < lastCollectedID && entry.gapIndex >= 0 && entry.gapIndex < gapSizes.Count && gapSizes[entry.gapIndex] <= 10){
 					rectStyle = "WarningGridRectangle";
