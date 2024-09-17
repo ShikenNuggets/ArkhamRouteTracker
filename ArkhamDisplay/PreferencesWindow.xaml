@@ -5,11 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 		mc:Ignorable="d"
         Title="Preferences" Height="280" Width="300"
-		ResizeMode="NoResize">
+		ResizeMode="NoResize"
+    Topmost="True">
 	<Grid>
 		<Grid.RowDefinitions>
 			<RowDefinition Height="10*"/>
-			<RowDefinition Height="32*"/>
+			<RowDefinition Height="38*"/>
 			<RowDefinition Height="25*"/>
 			<RowDefinition Height="15*"/>
 		</Grid.RowDefinitions>
@@ -23,6 +24,7 @@
 		<CheckBox Name="ShowRiddlesCheckbox"	Content="Show Riddle Count"	Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,28,0,0" IsChecked="True"/>
 		<CheckBox Name="ShowWarningsCheckbox"	Content="Highlight Missed Entries"	Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,48,0,0" IsChecked="True"/>
 		<CheckBox Name="DarkThemeCheckbox"		Content="Dark Mode"			Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,68,0,0" IsChecked="True"/>
+    <CheckBox Name="AlwaysOnTopCheckbox"		Content="Always Keep Main Window On Top"			Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,88,0,0" IsChecked="False"/>
 
 		<RadioButton Name="ShowAllButton"	Content="Show all entries"				Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" IsChecked="True"/>
 		<RadioButton Name="SortDoneButton"	Content="Sort completed entries to top"	Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,30,0,0" IsChecked="False"/>

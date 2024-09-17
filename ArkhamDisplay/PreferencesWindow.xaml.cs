@@ -22,6 +22,7 @@ namespace ArkhamDisplay{
 			ShowProgressCheckbox.IsChecked = Data.ShowPercent;
 			ShowRiddlesCheckbox.IsChecked = Data.ShowRiddleCount;
 			ShowWarningsCheckbox.IsChecked = Data.WarningsForMissedEntries;
+			AlwaysOnTopCheckbox.IsChecked = Data.AlwaysOnTop;
 
 			if(Data.UseTheme() == Theme.Dark){
 				DarkThemeCheckbox.IsChecked = true;
@@ -54,6 +55,7 @@ namespace ArkhamDisplay{
 			Data.ShowPercent = ShowProgressCheckbox.IsChecked ?? false;
 			Data.ShowRiddleCount = ShowRiddlesCheckbox.IsChecked ?? false;
 			Data.WarningsForMissedEntries = ShowWarningsCheckbox.IsChecked ?? false;
+			Data.AlwaysOnTop = AlwaysOnTopCheckbox.IsChecked ?? false;
 
 			if(DarkThemeCheckbox.IsChecked == true){
 				Data.SetTheme(Theme.Dark);

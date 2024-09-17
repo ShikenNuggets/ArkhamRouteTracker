@@ -409,6 +409,13 @@ namespace ArkhamDisplay{
 			}else{
 				riddleCounter.Visibility = Visibility.Collapsed;
 			}
+
+			if(Data.AlwaysOnTop){
+				this.Topmost = true;
+      }
+      else{
+				this.Topmost = false;
+      }
 		}
 
 		protected virtual void UpdatePreferences(object sender = null, RoutedEventArgs e = null){
