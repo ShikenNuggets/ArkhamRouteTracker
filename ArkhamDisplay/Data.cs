@@ -11,11 +11,6 @@ namespace ArkhamDisplay{
 		Dark = 2
 	}
 
-	public enum AlwaysOnTop{
-		Activated = 0,
-		Deactivated = 1
-	}
-
 	public enum Game{
 		None = -1,
 		Asylum = 0,
