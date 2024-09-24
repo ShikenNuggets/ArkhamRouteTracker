@@ -627,6 +627,7 @@ namespace ArkhamDisplay{
 			PreferencesWindow wnd = new PreferencesWindow();
 			wnd.Activate();
 			if(wnd.ShowDialog() == true){
+				RefreshRoutes(); //This is just an easy way to refresh the grid
 				UpdateUI();
 			}
 		}
