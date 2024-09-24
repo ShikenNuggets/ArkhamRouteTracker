@@ -70,6 +70,7 @@ namespace ArkhamDisplay{
 
 		public static bool AlwaysOnTop { get { return data.alwaysOnTop; } set { data.alwaysOnTop = value; } }
 		public static string RoutePath { get { return "\\Routes\\"; } }
+		public static string AbsoluteRoutePath { get { return System.IO.Directory.GetCurrentDirectory() + RoutePath; } }
 		public static Game SelectedGame { get { return data.selectedGame; } set { data.selectedGame = value; } }
 		public static string[] SaveLocations { get { return data.saveLocations; } }
 		public static int[] SaveIDs { get { return data.saveIDs; } }

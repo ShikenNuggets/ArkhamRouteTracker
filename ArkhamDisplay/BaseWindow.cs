@@ -412,10 +412,9 @@ namespace ArkhamDisplay{
 
 			if(Data.AlwaysOnTop){
 				this.Topmost = true;
-      }
-      else{
+			}else{
 				this.Topmost = false;
-      }
+			}
 		}
 
 		protected virtual void UpdatePreferences(object sender = null, RoutedEventArgs e = null){
@@ -546,9 +545,23 @@ namespace ArkhamDisplay{
 
 			try{
 				if(result == MessageBoxResult.Yes){
+					string backupDir = Data.AbsoluteRoutePath + "Backups\\";
+					System.IO.Directory.CreateDirectory(backupDir);
+
 					foreach(var v in routeFileData){
 						if(routesWithUpdates.Contains(v.Key)){
-							System.IO.File.WriteAllText("Routes/" + v.Key, v.Value);
+							string curRoutePath = Data.AbsoluteRoutePath + v.Key;
+							string backupPath = backupDir +  Utils.AppendTimestampToFileName(v.Key);
+
+							if(System.IO.File.Exists(curRoutePath)){
+								//Make a copy of the old version in case the user wants to restore it
+								FileStream fs = System.IO.File.Create(backupPath);
+								fs.Close();
+
+								System.IO.File.Copy(curRoutePath, backupPath, true);
+							}
+							
+							System.IO.File.WriteAllText(curRoutePath, v.Value);
 						}
 					}
 
