@@ -27,6 +27,7 @@ namespace ArkhamDisplay{
 
 	public class DataBlock{
 		public volatile Theme savedTheme = Theme.Default;
+		public volatile bool alwaysOnTop = false;
 		public volatile Game selectedGame = Game.None;
 		public volatile string[] saveLocations = { "", "", "", "" };
 		public volatile int[] saveIDs = { 0, 0, 0, 0 };
@@ -67,6 +68,7 @@ namespace ArkhamDisplay{
 
 		public static string VersionStr { get { return "1.8"; } }
 
+		public static bool AlwaysOnTop { get { return data.alwaysOnTop; } set { data.alwaysOnTop = value; } }
 		public static string RoutePath { get { return "\\Routes\\"; } }
 		public static Game SelectedGame { get { return data.selectedGame; } set { data.selectedGame = value; } }
 		public static string[] SaveLocations { get { return data.saveLocations; } }
@@ -76,7 +78,6 @@ namespace ArkhamDisplay{
 		public static double MainRowHeight { get { return (double)data.mainRowHeight; } set { data.mainRowHeight = (float)value; } }
 		public static double SecondaryRowHeight { get { return (double)data.secondaryRowHeight; } set { data.secondaryRowHeight = (float)value; } }
 		public static bool StatsWindowOpen { get { return data.statsWindowOpen; } set { data.statsWindowOpen = value; } }
-
 		public static bool ShowPercent { get { return data.showPercent; } set { data.showPercent = value; } }
 		public static bool ShowRiddleCount { get { return data.showRiddleCount; } set { data.showRiddleCount = value; } }
 		public static int RefreshRate { get { return data.refreshRateInMS; } set { data.refreshRateInMS = value; } }
