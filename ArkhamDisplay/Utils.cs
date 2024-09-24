@@ -69,5 +69,23 @@ namespace ArkhamDisplay{
 
 			return finalRect;
         }
+
+		public static string AppendTimestampToFileName(string fileName){
+			if(fileName == null){
+				return null;
+			}
+
+			string ext = Path.GetExtension(fileName);
+			if(ext == null){
+				return fileName;
+			}
+
+			string result = Path.GetFileNameWithoutExtension(fileName);
+			if(result == null){
+				return fileName;
+			}
+
+			return result + "_" + DateTime.Now.ToString("yyyy-MM-dd_H-mm-ss") + ext;
+		}
 	}
 }
