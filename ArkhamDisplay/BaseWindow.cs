@@ -440,10 +440,14 @@ namespace ArkhamDisplay{
 		}
 
 		protected void RefreshRoutes(object sender = null, RoutedEventArgs e = null){
+			bool shouldRestart = updateWorker != null && updateWorker.IsBusy;
+			if(shouldRestart){
+				Stop_Button_Click(sender, e);
+			}
+
 			Data.ReloadRoutes();
 
-			if(updateWorker != null && updateWorker.IsBusy){
-				Stop_Button_Click(sender, e);
+			if(shouldRestart){
 				Start_Button_Click(sender, e);
 			}
 		}
@@ -565,14 +569,7 @@ namespace ArkhamDisplay{
 						}
 					}
 
-					stopButton.IsEnabled = false;
-					startButton.IsEnabled = true;
-
-					if(updateWorker != null && updateWorker.IsBusy){
-						updateWorker.CancelAsync();
-					}
-
-					Data.ReloadRoutes();
+					RefreshRoutes();
 					MessageBox.Show("Routes successfully updated.");
 				}
 			}catch(System.IO.IOException){
