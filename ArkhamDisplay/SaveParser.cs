@@ -36,7 +36,20 @@ namespace ArkhamDisplay{
 				return finalResult;
 			}
 
-			var buffer = File.ReadAllBytes(GetFile());
+			byte[] buffer = null;
+			int numRetries = 0;
+			while(buffer == null){
+				try{
+					buffer = File.ReadAllBytes(GetFile());
+				}catch(IOException e){
+					numRetries++;
+					if(numRetries >= 3){
+						throw;
+					}
+
+					System.Threading.Thread.Sleep(100);
+				}
+			}
 
 			var offsets = ExtractSaveOffsets(buffer);
 
