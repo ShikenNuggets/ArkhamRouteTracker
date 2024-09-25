@@ -308,9 +308,10 @@ namespace ArkhamDisplay{
 				gapSizes.RemoveAt(gapSizes.Count - 1); //Removes trailing 0, or removes the final "gap" since it's not really a gap
 			}
 
+			const int maxGapSize = 10;
 			foreach (FinalEntry entry in finalEntries){
 				string rectStyle = "GridRectangle";
-				if(Data.WarningsForMissedEntries && !entry.done && entry.index < lastCollectedID && entry.gapIndex >= 0 && entry.gapIndex < gapSizes.Count && gapSizes[entry.gapIndex] <= 10){
+				if(Data.WarningsForMissedEntries && finalEntries.Count > maxGapSize && !entry.done && entry.index < lastCollectedID && entry.gapIndex >= 0 && entry.gapIndex < gapSizes.Count && gapSizes[entry.gapIndex] <= maxGapSize){
 					rectStyle = "WarningGridRectangle";
 				}
 
