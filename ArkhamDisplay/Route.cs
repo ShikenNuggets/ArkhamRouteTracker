@@ -102,6 +102,7 @@ namespace ArkhamDisplay{
 			List<Entry> placeHolders = newEntries.FindAll(Entry.IsPlaceholder);
 			foreach(Entry p in placeHolders){
 				List<Entry> onesToMove = newEntries.FindAll(x => x.IsType(p.name));
+				onesToMove.ForEach(x => x.metadata += "IGNORE_GAP");
 				newEntries.RemoveAll(x => x.IsType(p.name));
 				newEntries.InsertRange(newEntries.FindIndex(x => x == p), onesToMove);
 			}
