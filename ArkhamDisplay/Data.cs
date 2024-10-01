@@ -25,6 +25,12 @@ namespace ArkhamDisplay{
 		HideDone = 2
 	}
 
+	class Metadata{
+		public const string DarkKnightFinish = "DarkKnightFinish";
+		public const string AlternateDarkKnightFinish = "ALTERNATE_DarkKnightFinish";
+		public const string IgnoreGap = "IGNORE_GAP";
+	}
+
 	public class DataBlock{
 		public volatile Theme savedTheme = Theme.Default;
 		public volatile bool alwaysOnTop = false;

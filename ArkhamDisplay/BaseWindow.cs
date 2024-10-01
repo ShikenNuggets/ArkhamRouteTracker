@@ -280,7 +280,7 @@ namespace ArkhamDisplay{
 					doneEntries++;
 					lastCollectedID = routeEntries.IndexOf(entry);
 
-					if(gapSizes.Count > 0 && gapSizes.Last() != 0 && !entry.metadata.Contains("IGNORE_GAP")){
+					if(gapSizes.Count > 0 && gapSizes.Last() != 0 && !entry.metadata.Contains(Metadata.IgnoreGap)){
 						gapSizes.Add(0);
 					}
 
