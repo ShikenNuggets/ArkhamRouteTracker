@@ -41,7 +41,7 @@ namespace ArkhamDisplay{
 		public volatile bool showRiddleCount = true;
 		public volatile int refreshRateInMS = 1000;
 		public volatile DisplayType displayType = DisplayType.SortDoneToTop;
-		public volatile bool warningsForMissedEntries = true;
+		public volatile bool warningsForMissedEntries = false;
 
 		public volatile bool asylumGlitchless = false;
 		public volatile bool cityBreakablesAtEnd = false;
