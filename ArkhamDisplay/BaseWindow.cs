@@ -434,6 +434,8 @@ namespace ArkhamDisplay{
 			}
 
 			Data.Save();
+
+			RefreshRoutes();
 		}
 
 		protected void OpenRouteFolder(object sender = null, RoutedEventArgs e = null){
