@@ -49,19 +49,9 @@ namespace ArkhamDisplay{
 					throw new System.IO.FileNotFoundException("Could not find route file at [" + fileName + "]", fileName);
 				}
 
-				int numRetries = 0;
-				while(allLines == null || !allLines.Any()){
-					try{
-						allLines = System.IO.File.ReadAllLines(fileName).Skip(1);
-					}catch(System.IO.IOException){
-						numRetries++;
-						if(numRetries >= 3){
-							throw;
-						}
-
-						System.Threading.Thread.Sleep(100);
-					}
-				}
+				Utils.RetryFileIO(() => {
+					allLines = System.IO.File.ReadAllLines(fileName).Skip(1);
+				});
 			}else if(data != null){
 				allLines = data.Skip(1);
 			}

@@ -37,19 +37,7 @@ namespace ArkhamDisplay{
 			}
 
 			byte[] buffer = null;
-			int numRetries = 0;
-			while(buffer == null){
-				try{
-					buffer = File.ReadAllBytes(GetFile());
-				}catch(IOException){
-					numRetries++;
-					if(numRetries >= 3){
-						throw;
-					}
-
-					System.Threading.Thread.Sleep(100);
-				}
-			}
+			Utils.RetryFileIO(() => { buffer = File.ReadAllBytes(GetFile()); });
 
 			var offsets = ExtractSaveOffsets(buffer);
 

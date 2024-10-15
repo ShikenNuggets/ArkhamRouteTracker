@@ -21,20 +21,10 @@ namespace ArkhamDisplay{
 				return false;
 			}
 
-			int numRetries = 0;
-			while(m_rawData == null){
-				try{
-					m_rawData = System.IO.File.ReadAllText(file);
-					m_rawData = m_rawData.Trim('\0');
-				}catch(System.IO.IOException){
-					numRetries++;
-					if(numRetries >= 3){
-						throw;
-					}
-
-					System.Threading.Thread.Sleep(100);
-				}
-			}
+			Utils.RetryFileIO(() => {
+				m_rawData = System.IO.File.ReadAllText(file);
+				m_rawData = m_rawData.Trim('\0');
+			});
 
 			return true;
 		}
