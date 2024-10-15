@@ -41,7 +41,7 @@ namespace ArkhamDisplay{
 			while(buffer == null){
 				try{
 					buffer = File.ReadAllBytes(GetFile());
-				}catch(IOException e){
+				}catch(IOException){
 					numRetries++;
 					if(numRetries >= 3){
 						throw;
