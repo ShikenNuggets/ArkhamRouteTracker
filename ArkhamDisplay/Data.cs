@@ -159,7 +159,7 @@ namespace ArkhamDisplay{
 			if(data.savedTheme == Theme.Default && UseTheme() == theme){
 				return;
 			}else{
-				data.savedTheme = theme;
+				lock(data){ data.savedTheme = theme; }
 			}
 		}
 
@@ -178,7 +178,10 @@ namespace ArkhamDisplay{
 					int registryValue = (int)registryValueObject;
 					return registryValue > 0 ? Theme.Light : Theme.Dark;
 				}
-			}catch(Exception){}
+			}catch(Exception){
+				//A registry call throwing an exception is not strictly an error
+				//We'll just fall back on a reasonable default instead of bothering the user
+			}
 
 			return Theme.Dark;
 		}
