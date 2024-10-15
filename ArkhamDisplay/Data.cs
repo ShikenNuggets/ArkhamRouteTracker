@@ -61,7 +61,7 @@ namespace ArkhamDisplay{
 	}
 
 	public class Data{
-		private static readonly string saveFileName = "settings.json";
+		private static readonly string settingsFileName = "settings.json";
 		private static readonly string routeFileName = "Routes/routes.json";
 		private static volatile DataBlock data = new DataBlock();
 		private static volatile Dictionary<string, string> routeFiles = new Dictionary<string, string>();
@@ -102,12 +102,12 @@ namespace ArkhamDisplay{
 		public static bool KnightMoF {  get { return data.knightMoF;  } set { data.knightMoF = value; } }
 
 		public static void Load(){
-			if(!System.IO.File.Exists(saveFileName)){
+			if(!System.IO.File.Exists(settingsFileName)){
 				Save();
 			}
 
 			lock(data){
-				data = JsonConvert.DeserializeObject<DataBlock>(System.IO.File.ReadAllText(saveFileName));
+				data = JsonConvert.DeserializeObject<DataBlock>(System.IO.File.ReadAllText(settingsFileName));
 			}
 
 			if (!System.IO.File.Exists(routeFileName))
@@ -122,7 +122,7 @@ namespace ArkhamDisplay{
 		}
 
 		public static void Save(){
-			lock(data){ System.IO.File.WriteAllText(saveFileName, JsonConvert.SerializeObject(data, Formatting.Indented)); }
+			lock(data){ System.IO.File.WriteAllText(settingsFileName, JsonConvert.SerializeObject(data, Formatting.Indented)); }
 		}
 
 		public static Route GetRoute(string name){
