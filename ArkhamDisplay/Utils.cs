@@ -87,5 +87,22 @@ namespace ArkhamDisplay{
 
 			return result + "_" + DateTime.Now.ToString("yyyy-MM-dd_H-mm-ss") + ext;
 		}
+
+		public static void RetryFileIO(Action action, int retryCount = 3, int waitTimeInMs = 100){
+			int numRetries = 0;
+			while(true){
+				try{
+					action.Invoke();
+					break;
+				}catch(System.IO.IOException){
+					numRetries++;
+					if(numRetries >= retryCount){
+						throw;
+					}
+
+					System.Threading.Thread.Sleep(waitTimeInMs);
+				}
+			}
+		}
 	}
 }
