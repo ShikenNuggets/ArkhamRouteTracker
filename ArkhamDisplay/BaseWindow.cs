@@ -20,6 +20,8 @@ namespace ArkhamDisplay{
 		public const int COL2_WIDTH = 40;
 		public const int ROW_HEIGHT = 40;
 
+		HashSet<string> ignoreGapsForCurrentSession = new();
+
 		public bool IsClosed { get; private set; }
 
 		protected string currentRoute = "";
@@ -156,6 +158,7 @@ namespace ArkhamDisplay{
 			updateWorker.CancelAsync();
 			stopButton.IsEnabled = false;
 			startButton.IsEnabled = true;
+			ignoreGapsForCurrentSession.Clear();
 			lock(saveParser){ saveParser = null; }
 		}
 
@@ -198,6 +201,7 @@ namespace ArkhamDisplay{
 				stopButton.IsEnabled = false;
 				startButton.IsEnabled = true;
 				updateWorker.CancelAsync();
+				ignoreGapsForCurrentSession.Clear();
 				MessageBox.Show("Error: " + ex.Message);
 			}
 		}
@@ -247,6 +251,10 @@ namespace ArkhamDisplay{
 			return route.GetEntriesWithoutPlaceholders();
 		}
 
+		private bool EntryIsIgnoreGap(Entry entry){
+			return entry.metadata.Contains(Metadata.IgnoreGap) || ignoreGapsForCurrentSession.Contains(entry.id);
+		}
+
 		protected virtual void UpdateRouteWindow(){
 			displayGrid.Children.Clear();
 			displayGrid.RowDefinitions.Clear();
@@ -280,7 +288,11 @@ namespace ArkhamDisplay{
 					doneEntries++;
 					lastCollectedID = routeEntries.IndexOf(entry);
 
-					if(gapSizes.Count > 0 && gapSizes.Last() != 0 && !entry.metadata.Contains(Metadata.IgnoreGap)){
+					if(gapSizes.Count > 0 && gapSizes.Last() >= 10){
+						ignoreGapsForCurrentSession.Add(entry.id);
+					}
+
+					if(gapSizes.Count > 0 && gapSizes.Last() != 0 && !EntryIsIgnoreGap(entry)){
 						gapSizes.Add(0);
 					}
 
@@ -306,6 +318,10 @@ namespace ArkhamDisplay{
 
 			if(gapSizes != null && gapSizes.Count > 0){
 				gapSizes.RemoveAt(gapSizes.Count - 1); //Removes trailing 0, or removes the final "gap" since it's not really a gap
+			}
+
+			if(doneEntries <= 0){
+				ignoreGapsForCurrentSession.Clear();
 			}
 
 			const int maxGapSize = 10;
