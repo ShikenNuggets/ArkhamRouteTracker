@@ -72,7 +72,7 @@ namespace ArkhamDisplay{
 		public const string GitRoutesPath = "ArkhamDisplay/Routes";
 		public const string GitReleasesURL = "https://github.com/" + GitRepoOwner + "/" + GitRepoName + "/releases";
 
-		public static string VersionStr { get { return "1.8"; } }
+		public static string VersionStr { get { return "1.9"; } }
 
 		public static bool AlwaysOnTop { get { return data.alwaysOnTop; } set { data.alwaysOnTop = value; } }
 		public static string RoutePath { get { return "\\Routes\\"; } }
