@@ -26,8 +26,8 @@ Question Mark Riddle (IT, Lobby)	Riddles	Global.Riddler_Max_Riddle_8
 Radio Riddle (IT, Utility Corridor)	Riddles	Global.Riddler_Max_Riddle_7			
 Wayne Tower Riddle (Arkham East)	Riddles	Global.Riddler_OverworldEast_Riddle_3			
 Explosive Gel	Main Story	Global.Equip_ExplosiveGoo			
-Trophy (Arkham North, Gel Floor)	Riddler Trophies	Global.Riddler_Overworld_Pickup_14			
 Secrets Map (Arkham North, Gel Office)	Secrets Map	Global.Riddler_Overworld_Map			
+Trophy (Arkham North, Gel Floor)	Riddler Trophies	Global.Riddler_Overworld_Pickup_14				
 Trophy (Arkham West, Waterfall Bottom)	Riddler Trophies	Global.Riddler_OverworldWest_Pickup_2			
 Trophy (Medical, Vent)	Riddler Trophies	Global.Riddler_Medical_Pickup_1			
 Tape (Medical, Sanatorium Office by Elevator)	Interview Tape	Global.Riddler_Medical_Tape_2			
@@ -76,9 +76,9 @@ Trophy (Arkham North, Cave Entrance Gel Wall)	Riddler Trophies	Global.Riddler_Ov
 Batclaw	Main Story	Global.Equip_HarpoonGun			
 Chronicle (Sewer near Batcave)	Arkham Chronicle	Global.Riddler_Cave_Cipher_1			
 Teeth (Sewer, Hallway)	Joker Teeth (Sewer)	Cave_C1.RChatterTeeth_3.Broken			
+Trophy (Sewer, Gel Wall)	Riddler Trophies	Global.Riddler_Cave_Pickup_6			
 Teeth (Sewer, Hallway)	Joker Teeth (Sewer)	Cave_C1.RChatterTeeth_4.Broken			
 Teeth (Sewer, Hallway)	Joker Teeth (Sewer)	Cave_C1.RChatterTeeth_5.Broken			
-Trophy (Sewer, Gel Wall)	Riddler Trophies	Global.Riddler_Cave_Pickup_6			
 Teeth (Sewer Junction, North-East Corner)	Joker Teeth (Sewer)	Cave_A.RChatterTeeth_3.Broken			
 Teeth (Sewer Junction, North-East Corner)	Joker Teeth (Sewer)	Cave_A.RChatterTeeth_4.Broken			
 Teeth (Sewer Junction, Upper Exit)	Joker Teeth (Sewer)	Cave_A.RChatterTeeth_0.Broken			
@@ -125,9 +125,6 @@ Puppet Riddle (Mansion, Warden's Office)	Riddles	Global.Riddler_Admin_Riddle_6
 Teeth (Mansion, Warden's Office Upper)	Joker Teeth (Mansion)	Admin_B4.RChatterTeeth_5.Broken			
 Teeth (Mansion, Warden's Office Upper)	Joker Teeth (Mansion)	Admin_B4.RChatterTeeth_3.Broken			
 Teeth (Mansion, Warden's Office Upper)	Joker Teeth (Mansion)	Admin_B4.RChatterTeeth_4.Broken			
-Teeth (Mansion, East Wing)	Joker Teeth (Mansion)	Admin_C4.RChatterTeethFromBox_1.Broken			
-Teeth (Mansion, East Wing)	Joker Teeth (Mansion)	Admin_C4.RChatterTeethFromBox_2.Broken			
-Teeth (Mansion, East Wing)	Joker Teeth (Mansion)	Admin_C4.RChatterTeethFromBox_0.Broken			
 Trophy (Arkham East, Pier by Mansion)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_31			
 Tape (Penitentiary, Entrance)	Interview Tape	Global.Riddler_Cell_Tape_1			
 Trophy (Penitentiary, Entrance Toilet)	Riddler Trophies	Global.Riddler_Cell_Pickup_1			
@@ -221,7 +218,9 @@ Secrets Map (IT, Elevator Bottom Office)	Secrets Map	Global.Riddler_Max_Map
 Tape (Sewer, Control Room Access)	Interview Tape	Global.Riddler_Cave_Tape_2			
 Trophy (Sewer, Croc's Lair Far End)	Riddler Trophies	Global.Riddler_Cave_Pickup_1			
 Killer Croc	Main Story	Global.C5_Cave_CROCFIGHTOVER			
-Tape (Sewer, by Croc's Lair)	Interview Tape	Global.Riddler_Cave_Tape_3			
+Teeth (Sewer, Croc's Lair)	Joker Teeth (Sewer)	Cave_B5.RChatterTeeth_2.Broken			
+Teeth (Sewer, Croc's Lair)	Joker Teeth (Sewer)	Cave_B5.RChatterTeeth_0.Broken			
+Teeth (Sewer, Croc's Lair)	Joker Teeth (Sewer)	Cave_B5.RChatterTeeth_1.Broken			
 Trophy (Sewer, Line Launch by Batcave)	Riddler Trophies	Global.Riddler_Cave_Pickup_3			
 Ultra Batclaw	Main Story	Global.Equip_HarpoonGunLv2			
 Trophy (Batcave, First Island)	Riddler Trophies	Global.Riddler_Cave_Pickup_16			
@@ -280,6 +279,9 @@ Teeth (Abandoned Tunnel)	Joker Teeth (Arkham West)	Overworld_C3.RChatterTeeth_8.
 Teeth (Abandoned Tunnel)	Joker Teeth (Arkham West)	Overworld_C3.RChatterTeeth_10.Broken			
 Teeth (Arkham East, Watchtower)	Joker Teeth (Arkham East)	Overworld_A3.RChatterTeeth_8.Broken			
 Teeth (Arkham East, Watchtower)	Joker Teeth (Arkham East)	Overworld_A3.RChatterTeeth_9.Broken			
+Teeth (Gardens, Flood Room)	Joker Teeth (Botannical)	Garden_C2.RChatterTeeth_5.Broken			
+Teeth (Gardens, Flood Room)	Joker Teeth (Botannical)	Garden_C2.RChatterTeeth_6.Broken			
+Teeth (Gardens, Flood Room)	Joker Teeth (Botannical)	Garden_C2.RChatterTeeth_7.Broken			
 Humpty Dumpty Riddle (Gardens, Flooded Corridor)	Riddles	Global.Riddler_Garden_Riddle_6			
 Trophy (Arkham North, East Rocks)	Riddler Trophies	Global.Riddler_Overworld_Pickup_20			
 Seesaw Riddle (Arkham North)	Riddles	Global.Riddler_Overworld_Riddle_2			
@@ -293,10 +295,8 @@ Teeth (Arkham North. Watchtower)	Joker Teeth (Arkham North)	Overworld_A2.RChatte
 Teeth (Arkham North. Watchtower)	Joker Teeth (Arkham North)	Overworld_A2.RChatterTeeth_11.Broken			
 Tape (Arkham North. Watchtower)	Interview Tape	Global.Riddler_Overworld_Tape_3			
 Trophy (Arkham North, Line Launch from Watchtower)	Riddler Trophies	Global.Riddler_Overworld_Pickup_12			
+Tape (Sewer, by Croc's Lair)	Interview Tape	Global.Riddler_Cave_Tape_3			
 Trophy (Sewer, Hallway Grate)	Riddler Trophies	Global.Riddler_Cave_Pickup_5			
-Teeth (Sewer, Croc's Lair)	Joker Teeth (Sewer)	Cave_B5.RChatterTeeth_2.Broken			
-Teeth (Sewer, Croc's Lair)	Joker Teeth (Sewer)	Cave_B5.RChatterTeeth_0.Broken			
-Teeth (Sewer, Croc's Lair)	Joker Teeth (Sewer)	Cave_B5.RChatterTeeth_1.Broken			
 Trophy (Sewer, Croc's Lair Batclaw Ceiling)	Riddler Trophies	Global.Riddler_Cave_Pickup_2			
 Penguin Riddle (IT, Transfer Loop Office)	Riddles	Global.Riddler_Max_Riddle_6			
 Chronicle (IT, Transfer Loop Grate)	Arkham Chronicle	Global.Riddler_Max_Cipher_2			
@@ -324,13 +324,6 @@ Teeth (Arkham East, by Office)	Joker Teeth (Arkham East)	Overworld_A3.RChatterTe
 Teeth (Arkham East, by Office)	Joker Teeth (Arkham East)	Overworld_A3.RChatterTeeth_4.Broken			
 Trophy (Arkham East, Hack Office)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_24			
 Secrets Map (Arkham East, Hack Office)	Secrets Map	Global.Riddler_OverworldEast_Map			
-Trophy (Arkham East, Gel Floor by Mansion)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_25			
-Chronicle (Arkham East, beside Mansion)	Arkham Chronicle	Global.Riddler_OverworldEast_Cipher_5			
-Trophy (Arkham East, Mansion Balcony)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_26			
-Trophy (Arkham East, Mansion Roof)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_28			
-Question Mark Riddle (Arkham East, Clock Tower)	Riddles	Global.Riddler_OverworldEast_Riddle_4			
-Trophy (Arkham East, Clock Tower)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_22			
-Trophy (Arkham East, Mansion Roof)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_27			
 Tape (Mansion, Library Entry Level)	Interview Tape	Global.Riddler_Admin_Tape_4			
 Trophy (Mansion, Main Hall Statue Vent)	Riddler Trophies	Global.Riddler_Admin_Pickup_2			
 Teeth (Mansion, Main Hall Office Grate)	Joker Teeth (Mansion)	Admin_A.RChatterTeeth_0.Broken			
@@ -339,9 +332,19 @@ Trophy (Mansion, Records Far Vent)	Riddler Trophies	Global.Riddler_Admin_Pickup_
 Tape (Mansion, Records Near Vent)	Interview Tape	Global.Riddler_Admin_Tape_2			
 Strange Riddle (Mansion, Records Hack)	Riddles	Global.Riddler_Admin_Riddle_2			
 Tape (Mansion, Main Hall Office Vent)	Interview Tape	Global.Riddler_Admin_Tape_5			
+Teeth (Mansion, East Wing)	Joker Teeth (Mansion)	Admin_C4.RChatterTeethFromBox_1.Broken			
+Teeth (Mansion, East Wing)	Joker Teeth (Mansion)	Admin_C4.RChatterTeethFromBox_2.Broken			
+Teeth (Mansion, East Wing)	Joker Teeth (Mansion)	Admin_C4.RChatterTeethFromBox_0.Broken			
 Trophy (Mansion, East Wing Batclaw Wall)	Riddler Trophies	Global.Riddler_Admin_Pickup_9			
 Teeth (Arkham East, Mansion Entrance)	Joker Teeth (Arkham East)	Overworld_A3.RChatterTeeth_10.Broken			
 Teeth (Arkham East, Mansion Entrance)	Joker Teeth (Arkham East)	Overworld_A3.RChatterTeeth_11.Broken			
+Trophy (Arkham East, Gel Floor by Mansion)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_25			
+Chronicle (Arkham East, beside Mansion)	Arkham Chronicle	Global.Riddler_OverworldEast_Cipher_5			
+Trophy (Arkham East, Mansion Balcony)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_26			
+Trophy (Arkham East, Mansion Roof)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_28			
+Question Mark Riddle (Arkham East, Clock Tower)	Riddles	Global.Riddler_OverworldEast_Riddle_4			
+Trophy (Arkham East, Clock Tower)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_22			
+Trophy (Arkham East, Mansion Roof)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_27			
 Trophy (Arkham East, Graveyard Far)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_29			
 Trophy (Arkham East, Graveyard Hut)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_23			
 Tomb Riddle (Arkham East, Graveyard)	Riddles	Global.Riddler_OverworldEast_Riddle_2			
@@ -351,9 +354,6 @@ Teeth (Arkham East, Gardens Entrance)	Joker Teeth (Arkham East)	Overworld_A3.RCh
 Trophy (Gardens, Glasshouse Gel Wall)	Riddler Trophies	Global.Riddler_Garden_Pickup_2			
 Trophy (Gardens, Glasshouse Grate)	Riddler Trophies	Global.Riddler_Garden_Pickup_1			
 Mad Hatter Riddle (Gardens, Glasshouse)	Riddles	Global.Riddler_Garden_Riddle_1			
-Teeth (Gardens, Flood Room)	Joker Teeth (Botannical)	Garden_C2.RChatterTeeth_5.Broken			
-Teeth (Gardens, Flood Room)	Joker Teeth (Botannical)	Garden_C2.RChatterTeeth_6.Broken			
-Teeth (Gardens, Flood Room)	Joker Teeth (Botannical)	Garden_C2.RChatterTeeth_7.Broken			
 Chronicle (Gardens, Titan Batclaw Wall)	Arkham Chronicle	Global.Riddler_Garden_Cipher_2			
 Trophy (Gardens, Abandoned Chamber, Climb to Top)	Riddler Trophies	Global.Riddler_Garden_Pickup_8			
 Trophy (Gardens, Abandoned Chamber, Climb to Top Wall)	Riddler Trophies	Global.Riddler_Garden_Pickup_4			
@@ -374,5 +374,5 @@ Chronicle (Penitentiary, Cell Block Gel Wall)	Arkham Chronicle	Global.Riddler_Ce
 Last Chronicle (Penitentiary, Control Room)	Arkham Chronicle	Global.Riddler_Cell_Cipher_24			
 Trophy (Penitentiary, Guard Room Vent)	Riddler Trophies	Global.Riddler_Cell_Pickup_8			
 Tape (Penitentiary, Guard Room Left Office)	Interview Tape	Global.Riddler_Cell_Tape_5			
-Question Mark Riddle (Penitentiary, Guard Room Right Office)	Riddles	Global.Riddler_Cell_Riddle_8			
 Trophy (Penitentiary, Guard Room Right Office)	Riddler Trophies	Global.Riddler_Cell_Pickup_10			
+Question Mark Riddle (Penitentiary, Guard Room Right Office)	Riddles	Global.Riddler_Cell_Riddle_8			
