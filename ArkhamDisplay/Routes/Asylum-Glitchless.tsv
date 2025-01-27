@@ -27,7 +27,7 @@ Radio Riddle (IT, Utility Corridor)	Riddles	Global.Riddler_Max_Riddle_7
 Wayne Tower Riddle (Arkham East)	Riddles	Global.Riddler_OverworldEast_Riddle_3			
 Explosive Gel	Main Story	Global.Equip_ExplosiveGoo			
 Secrets Map (Arkham North, Gel Office)	Secrets Map	Global.Riddler_Overworld_Map			
-Trophy (Arkham North, Gel Floor)	Riddler Trophies	Global.Riddler_Overworld_Pickup_14				
+Trophy (Arkham North, Gel Floor)	Riddler Trophies	Global.Riddler_Overworld_Pickup_14			
 Trophy (Arkham West, Waterfall Bottom)	Riddler Trophies	Global.Riddler_OverworldWest_Pickup_2			
 Trophy (Medical, Vent)	Riddler Trophies	Global.Riddler_Medical_Pickup_1			
 Tape (Medical, Sanatorium Office by Elevator)	Interview Tape	Global.Riddler_Medical_Tape_2			
@@ -171,7 +171,7 @@ Question Mark Riddle (Arkham West, Above Penitentiary)	Riddles	Global.Riddler_Ov
 Zsasz Riddle (Arkham West, Above Penitentiary)	Riddles	Global.Riddler_OverworldWest_Riddle_1			
 Trophy (Arkham West, Above Penitentiary)	Riddler Trophies	Global.Riddler_OverworldWest_Pickup_6			
 Trophy (Abandoned Tunnel, Gel)	Riddler Trophies	Global.Riddler_OverworldWest_Pickup_32			
-Tape (Arkham East, Watchtower)	Interview Tape	Global.Riddler_OverworldEast_Tape_5	
+Tape (Arkham East, Watchtower)	Interview Tape	Global.Riddler_OverworldEast_Tape_5			
 Teeth (Arkham East, by Watchtower)	Joker Teeth (Arkham East)	Overworld_A3.RChatterTeeth_13.Broken			
 Teeth (Arkham East, by Watchtower)	Joker Teeth (Arkham East)	Overworld_A3.RChatterTeeth_12.Broken			
 Chronicle (Gardens, Entrance Vent)	Arkham Chronicle	Global.Riddler_Garden_Cipher_3			
@@ -199,6 +199,7 @@ Teeth (Gardens, Aviary Top)	Joker Teeth (Botannical)	Garden_B3.RChatterTeeth_1.B
 Teeth (Gardens, Aviary Top)	Joker Teeth (Botannical)	Garden_B3.RChatterTeeth_0.Broken			
 Trophy (Gardens, Titan Line Launch)	Riddler Trophies	Global.Riddler_Garden_Pickup_9			
 Skeleton Riddle (Gardens, Aviary)	Riddles	Global.Riddler_Garden_Riddle_2			
+Talk to Ivy	Main Story	Global.C5_Garden_B6_Visited			
 Trophy (Gardens, Flooded Corridor by Ivy)	Riddler Trophies	Global.Riddler_Garden_Pickup_7			
 Teeth (Gardens, Flooded Corridor by Ivy)	Joker Teeth (Botannical)	Garden_C2.RChatterTeeth_10.Broken			
 Teeth (Gardens, Flooded Corridor by Ivy)	Joker Teeth (Botannical)	Garden_C2.RChatterTeeth_8.Broken			
@@ -360,7 +361,7 @@ Trophy (Gardens, Abandoned Chamber, Climb to Top Wall)	Riddler Trophies	Global.R
 Question Mark Riddle (Gardens, Abandoned Chamber Climb to Top)	Riddles	Global.Riddler_Garden_Riddle_8			
 Chronicle (Gardens, Abandoned Chamber Climb to Top)	Arkham Chronicle	Global.Riddler_Garden_Cipher_1			
 Trophy (Arkham East, Watchtower Roof)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_30			
-Trophy (Arkham East, Watchtower Hack)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_35	
+Trophy (Arkham East, Watchtower Hack)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_35			
 Tape (Arkham East, Watchtower Hack)	Interview Tape	Global.Riddler_OverworldEast_Tape_2			
 Teeth (Arkham North, East Door)	Joker Teeth (Arkham North)	Overworld_A2.RChatterTeeth_14.Broken			
 Teeth (Arkham North, East Door)	Joker Teeth (Arkham North)	Overworld_A2.RChatterTeeth_13.Broken			
