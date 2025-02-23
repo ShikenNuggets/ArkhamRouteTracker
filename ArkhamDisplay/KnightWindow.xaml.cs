@@ -99,7 +99,13 @@ namespace ArkhamDisplay{
 					percentDone = 119.0 + (doneEntries - newGameEntries) * 121 / (totalEntries - newGameEntries);
 				}
 			}
-			progressCounter.Text = string.Format("{0:0.0}", percentDone) + "%";
+
+			if(percentDone >= 100.0 && !Data.Knight240){
+				progressCounter.Text = string.Format("{0:0}", percentDone) + "%";
+			}else{
+				progressCounter.Text = string.Format("{0:0.0}", percentDone) + "%";
+			}
+
 			riddleCounter.Text = GetRiddleCount();
 		}
 
