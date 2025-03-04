@@ -46,8 +46,11 @@ namespace ArkhamDisplay{
 
 		public BaseWindow(Game game){
 			this.game = game;
-			Data.SelectedGame = game;
-			Data.Save();
+
+			if(Data.SelectedGame != game){
+				Data.SelectedGame = game;
+				Data.Save();
+			}
 		}
 
 		protected void PostInitialize(){
@@ -127,22 +130,43 @@ namespace ArkhamDisplay{
 			}
 
 			//Save window stuff
-			Data.WindowRect[(int)game].X = Left;
-			Data.WindowRect[(int)game].Y = Top;
-			Data.WindowRect[(int)game].Width = Width;
-			Data.WindowRect[(int)game].Height = Height;
+			bool shouldSave = false;
+			if(Data.WindowRect[(int)game].X != Left){
+				shouldSave = true;
+				Data.WindowRect[(int)game].X = Left;
+			}
+
+			if(Data.WindowRect[(int)game].Y != Top){
+				shouldSave = true;
+				Data.WindowRect[(int)game].Y = Top;
+			}
+
+			if(Data.WindowRect[(int)game].Width != Width){
+				shouldSave = true;
+				Data.WindowRect[(int)game].Width = Width;
+			}
+
+			if(Data.WindowRect[(int)game].Height != Height){
+				shouldSave = true;
+				Data.WindowRect[(int)game].Height = Height;
+			}
 
 			var mainGrid = FindName("MainGrid");
 			if(mainGrid != null && mainGrid is Grid){
 				foreach(RowDefinition row in (mainGrid as Grid).RowDefinitions){
-					if(row.Name == "MainRow"){
+					if(row.Name == "MainRow" && Data.MainRowHeight != row.Height.Value){
+						shouldSave = true;
 						Data.MainRowHeight = row.Height.Value;
-					}else if(row.Name == "SecondaryRow"){
+					}else if(row.Name == "SecondaryRow" && Data.SecondaryRowHeight != row.Height.Value){
+						shouldSave = true;
 						Data.SecondaryRowHeight = row.Height.Value;
 					}
 				}
 			}
-			Data.Save();
+
+			if(shouldSave){
+				Data.Save();
+			}
 
 			if(statsWindow != null){
 				statsWindow.isClosedByMainWindow = true;
@@ -689,8 +713,10 @@ namespace ArkhamDisplay{
 			statsWindow.Show();
 			SetStatsWindowStats();
 
-			Data.StatsWindowOpen = true;
-			Data.Save();
+			if(!Data.StatsWindowOpen){
+				Data.StatsWindowOpen = true;
+				Data.Save();
+			}
 		}
 
 		protected virtual void SetStatsWindowStats(){

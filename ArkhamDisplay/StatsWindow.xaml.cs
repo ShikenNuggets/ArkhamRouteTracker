@@ -28,15 +28,13 @@ namespace ArkhamDisplay{
         }
 
 		protected override void OnClosed(EventArgs e){
-			Data.StatsWindowRect = new Rect(Left, Top, 750, 400); //Window size is hardcoded for now, TODO - actual scaling logic for this would be nice
-
-            if(!isClosedByMainWindow){ //This feels stupid and gross but whatever it works
+			if(!isClosedByMainWindow){ //This feels stupid and gross but whatever it works
+				Data.StatsWindowRect = new Rect(Left, Top, 750, 400); //Window size is hardcoded for now, TODO - actual scaling logic for this would be nice
 				Data.StatsWindowOpen = false;
+				Data.Save();
 			}
 
-            Data.Save();
-
-            base.OnClosed(e);
+			base.OnClosed(e);
 		}
 
 		public void SetStats(string percent, string riddles, string extra = ""){
