@@ -103,7 +103,10 @@ namespace ArkhamDisplay{
 
 		public static void Load(){
 			if(!System.IO.File.Exists(settingsFileName)){
-				Save();
+				System.Threading.Thread.Sleep(100); // Wait a bit and then try again, so we don't overwrite a valid settings file in case of some minor filesystem hiccup
+				if(!System.IO.File.Exists(settingsFileName)){
+					Save();
+				}
 			}
 
 			lock(data){
