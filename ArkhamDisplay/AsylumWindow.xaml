@@ -13,6 +13,7 @@
 				<MenuItem Name="PrefMenuItem" Header="Preferences"			Click="PrefMenuItem_Click" />
 				<MenuItem Name="OpenRouteMenuItem" Header="Open Route Folder"	Click="OpenRouteFolder" />
 				<MenuItem Name="RefreshRoutesMenuItem" Header="Refresh Routes"	Click="RefreshRoutes" />
+				<MenuItem Name="AutoRefreshRoutesMenuItem" Header="Auto Refresh Routes" ToolTip="Automatically refresh route when changes to route files are detected.&#x0a;May have undesirable side effects. You should only use this when modifying routes. " IsCheckable="True" IsChecked="False" />
 				<MenuItem Name="UpdateMenuItem" Header="Check for Updates" Click="CheckForUpdates" />
 			</MenuItem>
 			<MenuItem Header="_Game">

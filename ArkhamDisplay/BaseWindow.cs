@@ -43,6 +43,7 @@ namespace ArkhamDisplay{
 		private RadioButton saveSelector1;
 		private RadioButton saveSelector2;
 		private RadioButton saveSelector3;
+		private MenuItem autoRefreshRoutesMenuItem;
 
 		public BaseWindow(Game game){
 			this.game = game;
@@ -68,8 +69,9 @@ namespace ArkhamDisplay{
 			saveSelector1 = FindName("Save1") as RadioButton;
 			saveSelector2 = FindName("Save2") as RadioButton;
 			saveSelector3 = FindName("Save3") as RadioButton;
+			autoRefreshRoutesMenuItem = FindName("AutoRefreshRoutesMenuItem") as MenuItem;
 
-			if(stopButton == null || startButton == null || displayGrid == null || gridScroll == null || progressCounter == null || riddleCounter == null || saveSelector0 == null || saveSelector1 == null || saveSelector2 == null || saveSelector3 == null){
+			if(stopButton == null || startButton == null || displayGrid == null || gridScroll == null || progressCounter == null || riddleCounter == null || saveSelector0 == null || saveSelector1 == null || saveSelector2 == null || saveSelector3 == null) {
 				MessageBox.Show("Could not find all expected elements in the main window!");
 				throw new NullReferenceException("Could not find all expected elements in the main window!");
 			}
@@ -233,6 +235,11 @@ namespace ArkhamDisplay{
 		protected abstract void SetCurrentRoute();
 
 		private void Update(){
+			if(autoRefreshRoutesMenuItem != null && autoRefreshRoutesMenuItem.IsChecked && Data.HaveRouteFilesChangedSinceLastReload()){
+				RefreshRoutes();
+				return;
+			}
+
 			string saveFile = Data.SaveLocations[(int)game];
 			if(string.IsNullOrWhiteSpace(saveFile)){
 				throw new Exception("Save file path is not valid");

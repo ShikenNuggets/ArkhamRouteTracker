@@ -67,6 +67,8 @@ namespace ArkhamDisplay{
 		private static volatile Dictionary<string, string> routeFiles = new Dictionary<string, string>();
 		private static volatile Dictionary<string, Route> routes = new Dictionary<string, Route>();
 
+		private static DateTime lastRouteFileEditTime = DateTime.MinValue;
+
 		public const string GitRepoName = "ArkhamRouteTracker";
 		public const string GitRepoOwner = "ShikenNuggets";
 		public const string GitRoutesPath = "ArkhamDisplay/Routes";
@@ -156,6 +158,24 @@ namespace ArkhamDisplay{
 			lock(routeFiles){
 				routeFiles = JsonConvert.DeserializeObject<Dictionary<string, string>>(System.IO.File.ReadAllText(routeFileName));
 			}
+
+			foreach (var routeFile in routeFiles){
+				var lastWriteTime = System.IO.File.GetLastWriteTime(routeFile.Value);
+				if (lastWriteTime > lastRouteFileEditTime){
+					lastRouteFileEditTime = lastWriteTime;
+				}
+			}
+		}
+
+		public static bool HaveRouteFilesChangedSinceLastReload(){
+			foreach (var routeFile in routeFiles) {
+				var lastWriteTime = System.IO.File.GetLastWriteTime(routeFile.Value);
+				if (lastWriteTime > lastRouteFileEditTime) {
+					return true;
+				}
+			}
+
+			return false;
 		}
 
 		public static void SetTheme(Theme theme){
