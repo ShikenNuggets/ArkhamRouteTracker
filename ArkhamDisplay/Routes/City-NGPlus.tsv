@@ -39,7 +39,8 @@ Titan Container (Steel Mill)	Bane	Steel_C4.RTitanCrate_2.Broken
 Titan Container (Industrial)	Bane	OW_RC5_ChB1.RTitanCrate_7.Broken			
 Freeze Cluster Grenade	Freeze Cluster Grenade	Ch6_ClusterBombCollected			
 Clayface Fight	Main Story	Ch8_Entered_Theatre			
-Deadshot Victim 2	Deadshot	SS_DeadShot_Hobo2_RustScanned			
+Deadshot Victim 2 Start	Deadshot	SS_DeadShot_Hobo2_BulletholeScanned			
+Deadshot Victim 2 End	Deadshot	SS_DeadShot_Hobo2_RustScanned			
 Visit Freeze	Freeze	SS_Nora_NoraLocKnownToFreeze			
 Trigger Deadshot 3 (Near Ace Chemicals)	Deadshot	SS_DeadShot_Victim3GunShot 			
 Hush 3 Start (near ACE)	Hush	SS_Hush_Victim3_SceneComplete			

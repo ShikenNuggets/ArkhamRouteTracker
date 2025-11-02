@@ -335,8 +335,9 @@ Clayface Fight	Main Story	Ch8_Entered_Theatre
 Trophy (Bowery, Rec gun sphere)	Riddler Trophies	PickedUp_OWE_Pickup_28			
 Trophy (Park Row, 2 mine disrupts [with zsasz call])	Riddler Trophies	PickedUp_OWA_Pickup_29			
 Trophy (Park Row, 3 questionmark gel by hoboshelter)	Riddler Trophies	PickedUp_OWA_Pickup_9			
-Deadshot Victim 2	Deadshot	SS_DeadShot_Hobo2_RustScanned			
+Deadshot Victim 2 Start	Deadshot	SS_DeadShot_Hobo2_BulletholeScanned			
 Camera (Amusement, Across Church)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_1			
+Deadshot Victim 2 End	Deadshot	SS_DeadShot_Hobo2_RustScanned			
 Arkham Asylum Riddle	Riddles	PickedUp_OWB_Riddle_2			
 Batsignal Riddle	Riddles	PickedUp_OWB_Riddle_8			
 Trophy (Amusement, Water Alcove Under GCPD)	Riddler Trophies	PickedUp_OWB_Pickup_24			
