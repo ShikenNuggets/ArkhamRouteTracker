@@ -22,6 +22,8 @@ namespace ArkhamDisplay{
 				currentRoute = "CityCatwoman";
 			}else if(Data.CityNGPlus){
 				currentRoute = "CityNG+";
+			}else if (Data.CityGlitchless){
+				// currentRoute = "CityGlitchless"; // TODO - Finalize and add the Glitchless route
 			}
 		}
 
@@ -36,12 +38,14 @@ namespace ArkhamDisplay{
 		protected override void UpdateUI(){
 			BreakablesAtBottomMenuItem.IsChecked = Data.CityBreakablesAtEnd;
 			CatwomanMenuItem.IsChecked = Data.CityCatwoman;
+			GlitchlessMenuItem.IsChecked = Data.CityGlitchless;
 			base.UpdateUI();
 		}
 
 		protected override void UpdatePreferences(object sender = null, RoutedEventArgs e = null){
 			Data.CityBreakablesAtEnd = BreakablesAtBottomMenuItem.IsChecked;
 			Data.CityCatwoman = CatwomanMenuItem.IsChecked;
+			Data.CityGlitchless = GlitchlessMenuItem.IsChecked;
 			Data.CityNGPlus = NGPlusMenuItem.IsChecked;
 
 			if(NGPlusMenuItem.IsChecked){

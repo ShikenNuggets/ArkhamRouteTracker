@@ -25,6 +25,7 @@
 			<MenuItem Header="_Route">
 				<MenuItem Name="BreakablesAtBottomMenuItem" Header="Cameras and Balloons at Bottom" IsCheckable="True" IsChecked="False" Click="UpdatePreferences"/>
 				<MenuItem Name="CatwomanMenuItem" Header="Catwoman" IsCheckable="True" IsChecked="False" Click="UpdatePreferences"/>
+				<MenuItem Name="GlitchlessMenuItem" Header="Glitchless" IsCheckable="True" IsChecked="False" Click="UpdatePreferences"/>
 				<MenuItem Name="NGPlusMenuItem" Header="NG+" IsCheckable="True" IsChecked="False" Click="UpdatePreferences"/>
 			</MenuItem>
 			<MenuItem Header="_Stats" Click="OpenStatsWindow"/>
