@@ -253,11 +253,24 @@ namespace ArkhamDisplay{
 			}
 
 			SetCurrentRoute();
-			if(!string.IsNullOrWhiteSpace(currentRoute)){
-				UpdateRouteWindow();
+			if(string.IsNullOrWhiteSpace(currentRoute)){
+				MessageBox.Show("Current route was invalid.\nPlease restart the program and try again.");
+				return;
 			}
 
+			if(Data.GetRoute(currentRoute) == null){
+				MessageBox.Show("Failed to load route \"" + currentRoute + "\"\nYou may need to reinstall the application.");
+				return;
+			}
+
+			UpdateRouteWindow();
+
 			if(!string.IsNullOrWhiteSpace(currentSecondaryRoute)){
+				if (Data.GetRoute(currentSecondaryRoute) == null) {
+					MessageBox.Show("Failed to load secondary route \"" + currentRoute + "\"\nYou may need to reinstall the application.");
+					return;
+				}
+
 				UpdateSecondaryRouteWindow();
 			}
 
@@ -298,6 +311,10 @@ namespace ArkhamDisplay{
 			int firstNotDone = -1;
 
 			List<Entry> routeEntries = GetEntriesForDisplay(Data.GetRoute(currentRoute));
+			if(routeEntries == null || routeEntries.Count == 0){
+				return;
+			}
+
 			int totalEntries = routeEntries.Count;
 			int doneEntries = 0;
 
