@@ -39,6 +39,7 @@ namespace ArkhamDisplay{
 			BreakablesAtBottomMenuItem.IsChecked = Data.CityBreakablesAtEnd;
 			CatwomanMenuItem.IsChecked = Data.CityCatwoman;
 			GlitchlessMenuItem.IsChecked = Data.CityGlitchless;
+			NGPlusMenuItem.IsChecked = Data.CityNGPlus;
 			base.UpdateUI();
 		}
 
