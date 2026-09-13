@@ -20,8 +20,8 @@ Teeth (IT, Elevator Top)	Joker Teeth (Intensive)	2Max_B1_CH234567_LiftDebris.RCh
 Teeth (IT, Lobby by Boles Body)	Joker Teeth (Intensive)	Max_A1_CH2567.RChatterTeeth_7.Broken			
 Teeth (IT, Lobby by Boles Body)	Joker Teeth (Intensive)	Max_A1_CH2567.RChatterTeeth_8.Broken			
 Teeth (IT, Lobby by Boles Body)	Joker Teeth (Intensive)	Max_A1_CH2567.RChatterTeeth_0.Broken			
+Portrait Riddle (IT, Lobby)	Riddles	Global.Riddler_Max_Riddle_1		
 Tape (IT, Lobby Office)	Interview Tape	Global.Riddler_Max_Tape_2			
-Portrait Riddle (IT, Lobby)	Riddles	Global.Riddler_Max_Riddle_1			
 Question Mark Riddle (IT, Lobby)	Riddles	Global.Riddler_Max_Riddle_8			
 Radio Riddle (IT, Utility Corridor)	Riddles	Global.Riddler_Max_Riddle_7			
 Wayne Tower Riddle (Arkham East)	Riddles	Global.Riddler_OverworldEast_Riddle_3			
@@ -42,9 +42,11 @@ Teeth (Medical, Blue Room)	Joker Teeth (Medical)	Medical_B1.RChatterTeeth_8.Brok
 Teeth (Medical, Blue Room)	Joker Teeth (Medical)	Medical_B1.RChatterTeeth_10.Broken			
 Firefly Riddle (Medical, Blue Room)	Riddles	Global.Riddler_Medical_Riddle_2			
 Tape (Medical, Blue Room Office)	Interview Tape	Global.Riddler_Medical_Tape_3			
+Trophy (Medical, Blue Room Batclaw Grate)	Riddler Trophies	Global.Riddler_Medical_Pickup_5			
 Teeth (Medical, Blue Trail)	Joker Teeth (Medical)	Medical_C1.RChatterTeethFromBox_0.Broken			
 Teeth (Medical, Blue Trail)	Joker Teeth (Medical)	Medical_C1.RChatterTeethFromBox_2.Broken			
 Teeth (Medical, Blue Trail)	Joker Teeth (Medical)	Medical_C1.RChatterTeethFromBox_1.Broken			
+Whiteboard Riddle (Medical, Red Room)	Riddles	Global.Riddler_Medical_Riddle_3			
 Teeth (Medical, Red Trail)	Joker Teeth (Medical)	Medical_C1.RChatterBox_0.Broken0			
 Teeth (Medical, Red Trail)	Joker Teeth (Medical)	Medical_C1.RChatterBox_0.Broken1			
 Teeth (Medical, Red Trail)	Joker Teeth (Medical)	Medical_C1.RChatterBox_0.Broken2			
@@ -59,7 +61,7 @@ Teeth (Medical, Sanatorium Elevator)	Joker Teeth (Medical)	Medical_A.RChatterTee
 Shark Riddle (Medical, Morgue)	Riddles	Global.Riddler_Medical_Riddle_5			
 Teeth (Medical, 3 goon door)	Joker Teeth (Medical)	Medical_C2.RChatterTeeth_13.Broken			
 Teeth (Medical, 3 goon door)	Joker Teeth (Medical)	Medical_C2.RChatterTeeth_11.Broken			
-Teeth (Medical, Lower Corridor by Bane)	Joker Teeth (Medical)	Medical_C2.RChatterTeeth_12.Broken			
+Teeth (Medical, 3 goon door)	Joker Teeth (Medical)	Medical_C2.RChatterTeeth_12.Broken			
 Secrets Map (Medical, Bane Entrance)	Secrets Map	Global.Riddler_Medical_Map			
 Bear Riddle (Medical, Bane Entrance)	Riddles	Global.Riddler_Medical_Riddle_6			
 Trophy (Medical, Bane Vent)	Riddler Trophies	Global.Riddler_Medical_Pickup_10			
@@ -68,11 +70,17 @@ Trophy (Medical, Bane Room above Harley)	Riddler Trophies	Global.Riddler_Medical
 Trophy (Arkham West, Shack)	Riddler Trophies	Global.Riddler_OverworldWest_Pickup_7			
 Tape (Arkham West, Shack)	Interview Tape	Global.Riddler_OverworldWest_Tape_1			
 Chronicle (Arkham West, below Cell Block Gel Wall)	Arkham Chronicle	Global.Riddler_OverworldWest_Cipher_1			
+Teeth (Arkham West, North Corridor)	Joker Teeth (Arkham West)	Overworld_A1.RChatterTeeth_5.Broken			
+Teeth (Arkham West, North Corridor)	Joker Teeth (Arkham West)	Overworld_A1.RChatterTeeth_6.Broken	
+Teeth (Arkham West, North Corridor)	Joker Teeth (Arkham West)	Overworld_A1.RChatterTeeth_7.Broken			
 Chronicle (Arkham North, Cave Entrance)	Arkham Chronicle	Global.Riddler_Overworld_Cipher_4			
 Trophy (Arkham North, Cave Entrance Gel Wall)	Riddler Trophies	Global.Riddler_Overworld_Pickup_33			
 Batclaw	Main Story	Global.Equip_HarpoonGun			
 Chronicle (Sewer near Batcave)	Arkham Chronicle	Global.Riddler_Cave_Cipher_1			
 Trophy (Sewer, Gel Wall)	Riddler Trophies	Global.Riddler_Cave_Pickup_6			
+Teeth (Sewer, Hallway)	Joker Teeth (Sewer)	Cave_C1.RChatterTeeth_3.Broken			
+Teeth (Sewer, Hallway)	Joker Teeth (Sewer)	Cave_C1.RChatterTeeth_4.Broken			
+Teeth (Sewer, Hallway)	Joker Teeth (Sewer)	Cave_C1.RChatterTeeth_5.Broken	
 Trophy (Sewer Junction, upper across gap)	Riddler Trophies	Global.Riddler_Cave_Pickup_14			
 Teeth (Sewer Junction, North-East Corner)	Joker Teeth (Sewer)	Cave_A.RChatterTeeth_3.Broken			
 Teeth (Sewer Junction, North-East Corner)	Joker Teeth (Sewer)	Cave_A.RChatterTeeth_4.Broken			
@@ -118,11 +126,12 @@ Teeth (Penitentiary, Entrance)	Joker Teeth (Penitentiary)	Cell_C6.RChatterTeeth_
 Clayface Riddle (Penitentiary, Control Room)	Riddles	Global.Riddler_Cell_Riddle_4			
 Trophy (Penitentiary, Control Room Above Clayface)	Riddler Trophies	Global.Riddler_Cell_Pickup_5			
 Trophy (Penitentiary, Green Mile Cell)	Riddler Trophies	Global.Riddler_Cell_Pickup_3			
+Tommy Gun Riddle (Penitentiary, Cell Block Office)	Riddles	Global.Riddler_Cell_Riddle_1			
 Teeth (Penitentiary, Cell Block Office)	Joker Teeth (Penitentiary)	Cell_A1.RChatterTeeth_14.Broken			
 Teeth (Penitentiary, Cell Block Office)	Joker Teeth (Penitentiary)	Cell_A1.RChatterTeeth_15.Broken			
 Teeth (Penitentiary, Cell Block Office)	Joker Teeth (Penitentiary)	Cell_A1.RChatterTeeth_13.Broken			
 Tape (Penitentiary, Cell Block Office)	Interview Tape	Global.Riddler_Cell_Tape_2			
-Tommy Gun Riddle (Penitentiary, Cell Block Office)	Riddles	Global.Riddler_Cell_Riddle_1			
+Calendar Man Riddle (Penitentiary, Cell Block)	Riddles	Global.Riddler_Cell_Riddle_6			
 Trophy (Penitentiary, Cell Block near Guard Room)	Riddler Trophies	Global.Riddler_Cell_Pickup_9			
 Chronicle (Penitentiary, Guard Room Gel Wall)	Arkham Chronicle	Global.Riddler_Cell_Cipher_3			
 Prometheus Riddle (Penitentiary, Guard Room)	Riddles	Global.Riddler_Cell_Riddle_3			
@@ -132,7 +141,6 @@ Teeth (Penitentiary, Guard Room Exit)	Joker Teeth (Penitentiary)	Cell_B3.RChatte
 Teeth (Penitentiary, Cell Block by Calendar Man)	Joker Teeth (Penitentiary)	Cell_A1.RChatterTeeth_6.Broken			
 Teeth (Penitentiary, Cell Block by Calendar Man)	Joker Teeth (Penitentiary)	Cell_A1.RChatterTeeth_7.Broken			
 Teeth (Penitentiary, Cell Block by Calendar Man)	Joker Teeth (Penitentiary)	Cell_A1.RChatterTeeth_5.Broken			
-Calendar Man Riddle (Penitentiary, Cell Block)	Riddles	Global.Riddler_Cell_Riddle_6			
 Teeth (Penitentiary, Cell Block, East)	Joker Teeth (Penitentiary)	Cell_A1.RChatterTeeth_17.Broken			
 Teeth (Penitentiary, Cell Block East)	Joker Teeth (Penitentiary)	Cell_A1.RChatterTeeth_16.Broken			
 Teeth (Penitentiary, Cell Block, East)	Joker Teeth (Penitentiary)	Cell_A1.RChatterTeeth_18.Broken			
@@ -152,6 +160,7 @@ Teeth (Penitentiary, Controlled Access)	Joker Teeth (Penitentiary)	Cell_C2.RChat
 Question Mark Riddle (Arkham West, Above Penitentiary)	Riddles	Global.Riddler_OverworldWest_Riddle_3			
 Zsasz Riddle (Arkham West, Above Penitentiary)	Riddles	Global.Riddler_OverworldWest_Riddle_1			
 Trophy (Arkham West, Above Penitentiary)	Riddler Trophies	Global.Riddler_OverworldWest_Pickup_6			
+Trophy (Arkham West, Above North Door)	Riddler Trophies	Global.Riddler_OverworldWest_Pickup_34			
 Trophy (Arkham East, Watchtower Roof)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_30			
 Teeth (Arkham East, by Watchtower)	Joker Teeth (Arkham East)	Overworld_A3.RChatterTeeth_13.Broken			
 Teeth (Arkham East, by Watchtower)	Joker Teeth (Arkham East)	Overworld_A3.RChatterTeeth_12.Broken			
@@ -162,12 +171,12 @@ Teeth (Gardens, Entrance)	Joker Teeth (Botannical)	Garden_C1.RChatterTeeth_1.Bro
 Dead Guards Riddle (Gardens, Left of Entrance)	Riddles	Global.Riddler_Garden_Riddle_3			
 Plaque Riddle (Gardens, Flooded Corridor by Aviary)	Riddles	Global.Riddler_Garden_Riddle_7			
 Tape (Gardens, Flooded Corridor by Aviary)	Interview Tape	Global.Riddler_Garden_Tape_1			
+Tape (Gardens, Aviary Bench by Janitors)	Interview Tape	Global.Riddler_Garden_Tape_2			
 Teeth (Gardens, Aviary Top)	Joker Teeth (Botannical)	Garden_B3.RChatterTeeth_2.Broken			
 Teeth (Gardens, Aviary Top)	Joker Teeth (Botannical)	Garden_B3.RChatterTeeth_1.Broken			
 Teeth (Gardens, Aviary Top)	Joker Teeth (Botannical)	Garden_B3.RChatterTeeth_0.Broken			
-Trophy (Gardens, Titan Line Launch)	Riddler Trophies	Global.Riddler_Garden_Pickup_9			
-Tape (Gardens, Aviary Bench by Janitors)	Interview Tape	Global.Riddler_Garden_Tape_2			
 Skeleton Riddle (Gardens, Aviary)	Riddles	Global.Riddler_Garden_Riddle_2			
+Trophy (Gardens, Titan Line Launch)	Riddler Trophies	Global.Riddler_Garden_Pickup_9			
 Talk to Ivy	Main Story	Global.C5_Garden_B6_Visited			
 Teeth (Gardens, Entrance)	Joker Teeth (Botannical)	Garden_C1.RChatterTeeth_5.Broken			
 Teeth (Gardens, Entrance)	Joker Teeth (Botannical)	Garden_C1.RChatterTeeth_4.Broken			
@@ -211,9 +220,7 @@ Trophy (Arkham West, Medical Roof)	Riddler Trophies	Global.Riddler_OverworldWest
 Wayne Plaque Riddle (Medical, Entrance)	Riddles	Global.Riddler_Medical_Riddle_7			
 Tape (Medical, Entrance)	Interview Tape	Global.Riddler_Medical_Tape_1			
 Chronicle (Medical, Entrance Batclaw Wall)	Arkham Chronicle	Global.Riddler_Medical_Cipher_2			
-Trophy (Medical, Blue Room Batclaw Grate)	Riddler Trophies	Global.Riddler_Medical_Pickup_5			
 Trophy (Medical, Red Room Hack)	Riddler Trophies	Global.Riddler_Medical_Pickup_6			
-Whiteboard Riddle (Medical, Red Room)	Riddles	Global.Riddler_Medical_Riddle_3			
 Chronicle (Medical, Yellow Room Batclaw Wall)	Arkham Chronicle	Global.Riddler_Medical_Cipher_3			
 Trophy (Medical, Sanatorium Left Vent)	Riddler Trophies	Global.Riddler_Medical_Pickup_2			
 Harley Riddle (Medical, Lower Elevator Vent)	Riddles	Global.Riddler_Medical_Riddle_4			
@@ -228,6 +235,9 @@ Teeth (Abandoned Tunnel)	Joker Teeth (Arkham West)	Overworld_C3.RChatterTeeth_10
 Teeth (Arkham East, Watchtower)	Joker Teeth (Arkham East)	Overworld_A3.RChatterTeeth_8.Broken			
 Teeth (Arkham East, Watchtower)	Joker Teeth (Arkham East)	Overworld_A3.RChatterTeeth_9.Broken			
 Tape (Arkham East, Watchtower)	Interview Tape	Global.Riddler_OverworldEast_Tape_5			
+Teeth (Gardens, Flood Room)	Joker Teeth (Botannical)	Garden_C2.RChatterTeeth_5.Broken			
+Teeth (Gardens, Flood Room)	Joker Teeth (Botannical)	Garden_C2.RChatterTeeth_6.Broken			
+Teeth (Gardens, Flood Room)	Joker Teeth (Botannical)	Garden_C2.RChatterTeeth_7.Broken		
 Humpty Dumpty Riddle (Gardens, Flooded Corridor)	Riddles	Global.Riddler_Garden_Riddle_6			
 Trophy (Gardens, Flooded Corridor by Ivy)	Riddler Trophies	Global.Riddler_Garden_Pickup_7			
 Teeth (Gardens, Flooded Corridor by Ivy)	Joker Teeth (Botannical)	Garden_C2.RChatterTeeth_10.Broken			
@@ -251,9 +261,6 @@ Trophy (Sewer Junction, Under Surface Access)	Riddler Trophies	Global.Riddler_Ca
 Trophy (Sewer Junction, Across Surface Access)	Riddler Trophies	Global.Riddler_Cave_Pickup_11			
 Trophy (Sewer Junction, Lower Gap)	Riddler Trophies	Global.Riddler_Cave_Pickup_9			
 Trophy (Sewer Junction, Lower Pillar)	Riddler Trophies	Global.Riddler_Cave_Pickup_10			
-Teeth (Sewer, Hallway)	Joker Teeth (Sewer)	Cave_C1.RChatterTeeth_3.Broken			
-Teeth (Sewer, Hallway)	Joker Teeth (Sewer)	Cave_C1.RChatterTeeth_4.Broken			
-Teeth (Sewer, Hallway)	Joker Teeth (Sewer)	Cave_C1.RChatterTeeth_5.Broken			
 Trophy (Sewer, Hallway Grate)	Riddler Trophies	Global.Riddler_Cave_Pickup_5			
 Trophy (Sewer, Croc's Lair Batclaw Ceiling)	Riddler Trophies	Global.Riddler_Cave_Pickup_2			
 Trophy (Sewer, Croc's Lair Far End)	Riddler Trophies	Global.Riddler_Cave_Pickup_1			
@@ -337,20 +344,17 @@ Teeth (Gardens, Statue Corridor)	Joker Teeth (Botannical)	Garden_C3.RChatterTeet
 Tape (Gardens, Generator)	Interview Tape	Global.Riddler_Garden_Tape_5			
 Trophy (Gardens, Generator Hack)	Riddler Trophies	Global.Riddler_Garden_Pickup_10			
 Secrets Map (Gardens, Generator Hack)	Secrets Map	Global.Riddler_Garden_Map			
-Teeth (Gardens, Flood Room)	Joker Teeth (Botannical)	Garden_C2.RChatterTeeth_5.Broken			
-Teeth (Gardens, Flood Room)	Joker Teeth (Botannical)	Garden_C2.RChatterTeeth_6.Broken			
-Teeth (Gardens, Flood Room)	Joker Teeth (Botannical)	Garden_C2.RChatterTeeth_7.Broken			
 Teeth (Gardens, Flood Room)	Joker Teeth (Botannical)	Garden_C2.RChatterTeeth_3.Broken			
 Teeth (Gardens, Flood Room)	Joker Teeth (Botannical)	Garden_C2.RChatterTeeth_4.Broken			
 Ratcatcher Riddle (Gardens, Flood Vent)	Riddles	Global.Riddler_Garden_Riddle_4			
 Trophy (Gardens, Flood Vent)	Riddler Trophies	Global.Riddler_Garden_Pickup_3			
+Chronicle (Gardens, Titan Batclaw Wall)	Arkham Chronicle	Global.Riddler_Garden_Cipher_2	
 Trophy (Gardens, Abandoned Chamber Sewer)	Riddler Trophies	Global.Riddler_Garden_Pickup_5			
 Trophy (Gardens, Abandoned Chamber Grate)	Riddler Trophies	Global.Riddler_Garden_Pickup_6			
-Trophy (Gardens, Abandoned Chamber, Climb to Top)	Riddler Trophies	Global.Riddler_Garden_Pickup_8			
+Chronicle (Gardens, Abandoned Chamber Climb to Top)	Arkham Chronicle	Global.Riddler_Garden_Cipher_1	
+Question Mark Riddle (Gardens, Abandoned Chamber Climb to Top)	Riddles	Global.Riddler_Garden_Riddle_8	
 Trophy (Gardens, Abandoned Chamber, Climb to Top Wall)	Riddler Trophies	Global.Riddler_Garden_Pickup_4			
-Question Mark Riddle (Gardens, Abandoned Chamber Climb to Top)	Riddles	Global.Riddler_Garden_Riddle_8			
-Chronicle (Gardens, Abandoned Chamber Climb to Top)	Arkham Chronicle	Global.Riddler_Garden_Cipher_1			
-Chronicle (Gardens, Titan Batclaw Wall)	Arkham Chronicle	Global.Riddler_Garden_Cipher_2			
+Trophy (Gardens, Abandoned Chamber, Climb to Top)	Riddler Trophies	Global.Riddler_Garden_Pickup_8			
 Tape (Arkham East, Watchtower Hack)	Interview Tape	Global.Riddler_OverworldEast_Tape_2			
 Trophy (Arkham East, Watchtower Hack)	Riddler Trophies	Global.Riddler_OverworldEast_Pickup_35			
 Teeth (Arkham North, East Door)	Joker Teeth (Arkham North)	Overworld_A2.RChatterTeeth_14.Broken			
@@ -360,14 +364,10 @@ Trophy (Arkham North, Above Cave Entrance)	Riddler Trophies	Global.Riddler_Overw
 Teeth (Arkham North, IT Top Entrance)	Joker Teeth (Arkham North)	Overworld_A2.RChatterTeeth_16.Broken			
 Teeth (Arkham North, IT Top Entrance)	Joker Teeth (Arkham North)	Overworld_A2.RChatterTeeth_17.Broken			
 Teeth (Arkham North, IT Top Entrance)	Joker Teeth (Arkham North)	Overworld_A2.RChatterTeeth_15.Broken			
-Trophy (IT, Roof Entrance)	Riddler Trophies	Global.Riddler_Max_Pickup_10			
+Trophy (IT, Maintenance Access)	Riddler Trophies	Global.Riddler_Max_Pickup_10			
 Trophy (Arkham North, IT Lower Roof)	Riddler Trophies	Global.Riddler_Overworld_Pickup_19			
-Teeth (Arkham West, North Corridor)	Joker Teeth (Arkham West)	Overworld_A1.RChatterTeeth_7.Broken			
 Trophy (Arkham West, North Corridor Batclaw Grate)	Riddler Trophies	Global.Riddler_OverworldWest_Pickup_9			
 Trophy (Arkham West, North Corridor Batclaw Wall)	Riddler Trophies	Global.Riddler_OverworldWest_Pickup_1			
-Teeth (Arkham West, North Corridor)	Joker Teeth (Arkham West)	Overworld_A1.RChatterTeeth_5.Broken			
-Teeth (Arkham West, North Corridor)	Joker Teeth (Arkham West)	Overworld_A1.RChatterTeeth_6.Broken			
-Trophy (Arkham West, Above North Door)	Riddler Trophies	Global.Riddler_OverworldWest_Pickup_34			
 Trophy (Arkham West, Penitentiary Entrance Grate)	Riddler Trophies	Global.Riddler_OverworldWest_Pickup_5			
 Trophy (Penitentiary, Cell Block Gel Wall)	Riddler Trophies	Global.Riddler_Cell_Pickup_2			
 Chronicle (Penitentiary, Cell Block Gel Wall)	Arkham Chronicle	Global.Riddler_Cell_Cipher_1			
