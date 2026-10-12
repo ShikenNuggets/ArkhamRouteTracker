@@ -12,6 +12,10 @@ namespace ArkhamDisplay{
 			PostInitialize();
 		}
 
+		protected override SaveParser CreateSaveParser() {
+			return new CitySave(Data.SaveLocations[(int)game], Data.SaveIDs[(int)game]);
+		}
+
 		protected override void SetCurrentRoute(){
 			currentRoute = "CityDefault";
 			currentSecondaryRoute = "CityPrisoners";
