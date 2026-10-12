@@ -32,7 +32,7 @@ namespace ArkhamDisplay{
 			m_LastWriteTime = DateTime.MinValue;
 		}
 
-		protected string Decompress(){
+		protected virtual string Decompress(){
 			string finalResult = "";
 			if(!File.Exists(GetFile())){
 				return finalResult;
