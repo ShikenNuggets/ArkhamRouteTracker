@@ -294,6 +294,8 @@ Hush 1	Hush	SS_Hush_Victim1_HoboConv
 Best Behavior Tyger Riddle	Riddles	PickedUp_OWE_Riddle_9			
 Trophy (Bowery, City Wall Bottom Left)	Riddler Trophies	PickedUp_OWE_Pickup_32			
 Camera (Bowery, Across from City Wall Trophy)	Breakable Cameras (Bowery)	PickedUp_OWE_Camera_4			
+Trophy (Industrial, City Wall near Tunnels)	Riddler Trophies	PickedUp_OWC_Pickup_18			
+Trophy (Industrial, Running Questionmarks)	Riddler Trophies	PickedUp_OWC_Pickup_5			
 Trophy (Bowery, Remote Batarang Vent)	Riddler Trophies	PickedUp_OWE_Pickup_31			
 Trophy (Bowery, 3 switches gliding)	Riddler Trophies	PickedUp_OWE_Pickup_30			
 Reverse Batarang	[PARSER] Physical Challenge Done	33			
@@ -359,8 +361,6 @@ Trophy (Industrial, 3 switches near Subway)	Riddler Trophies	PickedUp_OWC_Pickup
 Trophy (Industrial, Alley Super Dodgems [gel])	Riddler Trophies	PickedUp_OWC_Pickup_23			
 Trophy(Industrial, Alley Super Dodgems  [hack])	Riddler Trophies	PickedUp_OWC_Pickup_24			
 Camera (Industrial, Across Super Dodgems)	Breakable Cameras (Industrial)	PickedUp_OWC_Camera_12			
-Trophy (Industrial, Running Questionmarks)	Riddler Trophies	PickedUp_OWC_Pickup_5			
-Trophy (Industrial, City Wall near Tunnels)	Riddler Trophies	PickedUp_OWC_Pickup_18			
 Trophy (Industrial, 5 running questionmarks)	Riddler Trophies	PickedUp_OWC_Pickup_19			
 Tyger Brain (Industrial)	Tyger Brains	PickedUp_OWC_CameraControl_1			
 Trophy (Industrial, Tricorner building glide)	Riddler Trophies	PickedUp_OWC_Pickup_22			
