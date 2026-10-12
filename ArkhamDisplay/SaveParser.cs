@@ -11,6 +11,8 @@ namespace ArkhamDisplay{
 		protected string m_rawData;
 		protected DateTime m_LastWriteTime;
 
+		protected byte[] m_rawCompressedBytes;
+
 		public SaveParser(string filePath, int id){
 			if(string.IsNullOrWhiteSpace(filePath)){
 				throw new NullReferenceException("Invalid file name!");
@@ -36,12 +38,12 @@ namespace ArkhamDisplay{
 				return finalResult;
 			}
 
-			byte[] buffer = null;
-			Utils.RetryFileIO(() => { buffer = File.ReadAllBytes(GetFile()); });
+			m_rawCompressedBytes = null;
+			Utils.RetryFileIO(() => { m_rawCompressedBytes = File.ReadAllBytes(GetFile()); });
 
-			var offsets = ExtractSaveOffsets(buffer);
+			var offsets = ExtractSaveOffsets(m_rawCompressedBytes);
 
-			var reader = new BinaryReader(new MemoryStream(buffer));
+			var reader = new BinaryReader(new MemoryStream(m_rawCompressedBytes));
 
 			for(int i = 0; i < offsets.Length; i++){
 				reader.BaseStream.Seek(offsets[i], SeekOrigin.Begin);
