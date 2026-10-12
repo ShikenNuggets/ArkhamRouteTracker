@@ -48,6 +48,9 @@ AR Challenge 5	AR Training	ARChallenge5_Complete
 Trophy (Industrial, Low Water Glide Cage)	Riddler Trophies	PickedUp_OWC_Pickup_36			
 Balloon (Industrial, Steel Mill)	Balloons (Industrial)	PickedUp_OWC_Balloons_11			
 Trophy (Steel Mill, Entrance)	Riddler Trophies	PickedUp_Steel_Pickup_1			
+Critical Strikes	Upgrade	Unlocked_DoublePowerCombo			
+Multi-Ground Takedown	Upgrade	Unlocked_MultiGroundTakedown			
+Special Combo Boost	Upgrade	Unlocked_SpecialMoveCost			
 3x Counter Throws	[PARSER] Physical Challenge Done	12			
 Trophy (Steel Mill, Bumper Cars Vent)	Riddler Trophies	PickedUp_Steel_Pickup_9			
 Trophy (Steel Mill, Bumper Cars Freeze Nade)	Riddler Trophies	PickedUp_Steel_Pickup_10			
@@ -77,6 +80,7 @@ Trophy (Amusement, Bane Room)	Riddler Trophies	PickedUp_OWB_Pickup_34
 REC Scare	[PARSER] Physical Challenge Done	22			
 Smoke Takedown	[PARSER] Physical Challenge Done	28			
 Trophy (GCPD, Electric Batarang) [storage trick]	Riddler Trophies	PickedUp_OWB_Pickup_36			
+Crypto Range	Upgrade	Unlocked_ResonatorRange			
 Balloon (Amusement, Olympus)	Balloons (Amusement)	PickedUp_OWB_Balloons_2		IGNORE_GAP	
 Trophy (Amusement, Olympus)	Riddler Trophies	PickedUp_OWB_Pickup_17			
 250m Glide [Zip]	[PARSER] Physical Challenge Done	2			
@@ -126,6 +130,7 @@ Trophy (Subway, Electric Switch Right of Predator)	Riddler Trophies	PickedUp_OWD
 Trophy (Subway, Hack under gargoyle)	Riddler Trophies	PickedUp_OWD_Pickup_15			
 Trophy (Subway, fly through wall)	Riddler Trophies	PickedUp_OWD_Pickup_11			
 Trophy (Subway, Grate Room Left of Entrance)	Riddler Trophies	PickedUp_OWD_Pickup_12			
+Hack to Unlock Tightrope	Misc	Line_Launcher_Tightrope_Unlocked
 Teeth (Subway, Predator Room Entrance from Industrial)	Joker Teeth	PickedUp_OWD_Teeth_5			
 Trophy (Subway, Corner Terminal Rec door)	Riddler Trophies	PickedUp_OWD_Pickup_18			
 Trophy (Subway, Hack Wonder Tower Door)	Riddler Trophies	PickedUp_OWD_Pickup_20			
@@ -151,9 +156,12 @@ Trophy (Wonder, Questionmark Gel)	Riddler Trophies	PickedUp_Underworld_Pickup_20
 Trophy (Wonder Tower, Wonder City Mine)	Riddler Trophies	PickedUp_Underworld_Pickup_23			
 Trophy (Wonder, Left Chamber Door)	Riddler Trophies	PickedUp_Underworld_Pickup_24			
 Demon Seal (Wonder, Pothole)	Demon Seals	PickedUp_Underworld_DemonSeal_6			
+Tightrope Upgrade	Upgrade	Unlocked_LineLauncherTightrope			
+Glide Boost Attack Upgrade	Unlocked_GlideBoostAttack			
 Grundy Riddle	Riddles	PickedUp_Underworld_Riddle_4			
 Statue Riddle	Riddles	PickedUp_Underworld_Riddle_5			
 5x Quickfire Gel	[PARSER] Physical Challenge Done	18			
+Unlock Reverse Batarang	Misc	Equip_ControllableBatarang			
 Demon Seal (Wonder, By Exit Door)	Demon Seals	PickedUp_Underworld_DemonSeal_8			
 Demon Seal (Wonder, By Exit Door)	Demon Seals	PickedUp_Underworld_DemonSeal_7			
 Demon Seal (Wonder, Wonder City Corridor)	Demon Seals	PickedUp_Underworld_DemonSeal_4			
@@ -171,6 +179,8 @@ Trophy (Amusement, GCPD Gel Door)	Riddler Trophies	PickedUp_OWB_Pickup_21
 Trophy (Amusement, Wood Wall GCPD) [Batclaw Through Fence]	Riddler Trophies	PickedUp_OWB_Pickup_22			
 Trophy (GCPD, Hack Door)	Riddler Trophies	PickedUp_OWB_Pickup_38			
 Trophy (GCPD, Switches)	Riddler Trophies	PickedUp_OWB_Pickup_35			
+Disruptor Upgrade	Upgrade	Unlocked_JammerWeaponJam			
+Batclaw Disarm Upgrade	Upgrade	Unlocked_BatclawDisarm			
 Remote Batarang Catch	[PARSER] Physical Challenge Done	39			
 Gordon Parking Spot Riddle	Riddles	PickedUp_OWB_Riddle_7			
 Camera (Amusement, GCPD Door)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_5			
@@ -313,6 +323,7 @@ Trophy (Bowery, Wonder Tower Entrance Gel)	Riddler Trophies	PickedUp_OWE_Pickup_
 Dead Guard Riddle	Riddles	PickedUp_OWE_Riddle_10			
 Trophy (Bowery, Wonder Tower Entrance Water)	Riddler Trophies	PickedUp_OWE_Pickup_36			
 Question Mark Riddle (Wonder Tower Entrance)	Riddles	PickedUp_OWE_Riddle_1			
+Crypto Power Upgrade	Upgrade	Unlocked_ResonatorEasy
 Trophy (Bowery, Subway car)	Riddler Trophies	PickedUp_OWE_Pickup_15			
 Camera (Bowery, Gotham Bank)	Breakable Cameras (Bowery)	PickedUp_OWE_Camera_9			
 Maroni Riddle	Riddles	PickedUp_OWE_Riddle_3			
@@ -395,6 +406,7 @@ Trophy (Amusement, City Wall near Ivy)	Riddler Trophies	PickedUp_OWB_Pickup_3
 Ivy Container Riddle	Riddles	PickedUp_OWB_Riddle_3			
 Trophy (Amusement, Gel Wall Near Ivy)	Riddler Trophies	PickedUp_OWB_Pickup_1			
 Last Riddler Hostage	Riddler Mission	SS_Riddler_Hostage5_Saved			
+Ballistic Armor Upgrade	Upgrade	Unlocked_BallisticArmour1			
 Trophy (Park Row, 5 question marks)	Riddler Trophies	PickedUp_OWA_Pickup_35			
 Trophy (Park Row, Timed Gargoyle)	Riddler Trophies	PickedUp_OWA_Pickup_34			
 Trophy (Bowery, Hack Monorail Car)	Riddler Trophies	PickedUp_OWE_Pickup_24			
@@ -440,6 +452,7 @@ Trophy (Park Row, 3 wallbounces [Get with Zsasz call])	Riddler Trophies	PickedUp
 Trophy (Park Row, dive bomb [Get with Zsasz call])	Riddler Trophies	PickedUp_OWA_Pickup_10			
 Camera (Park Row, Shelter [Get with Zsasz call])	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_12			
 Trophy (Park Row, In Shelter [Get with Zsasz call])	Riddler Trophies	PickedUp_OWA_Pickup_13			
+Zsasz Location Tracked	Zsasz	SS_Zsasz_Location_Tracked			
 Construction Riddle	Riddles	PickedUp_OWA_Riddle_6			
 Trophy (Park Row, Disarm Turret Explosive Gel [Get with Zsasz])	Riddler Trophies	PickedUp_OWA_Pickup_7			
 Camera (Amusement, Across Church)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_1			
