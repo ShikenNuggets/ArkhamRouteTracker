@@ -2,14 +2,16 @@ Name	Type	SaveFileId	Alternate ID	Metadata	TODO
 Trophy (Park Row, Under Car Near Beginning)	Riddler Trophies	PickedUp_OWA_Pickup_31			
 Beatdown (1/5)	[PARSER] Physical Challenge Progress	11_1			
 5x Aerials	[PARSER] Physical Challenge Done	9			
-5x Quickfire Gel	[PARSER] Physical Challenge Done	18			
+Quickfire Gel (4/5)	[PARSER] Physical Challenge Progress	18_4			
 5x Variation	[PARSER] Physical Challenge Done	8			
 5x Batclaw Slams	[PARSER] Physical Challenge Done	16			
 3 Quickfire Gadgets	[PARSER] Physical Challenge Done	7			
+Combo Batarang Finisher	[PARSER] Physical Challenge Done	21			
 Rescue Jack Ryder	Political Prisoner	ArkhamBullyR2_JackRyder_Saved			
 Rescue Catwoman	Main Story	TwofaceObjectionFinished			
 Camera (Park Row, Next to Courthouse)	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_5			
 Camera (Park Row, Near Lounge near courthouse)	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_7			
+Remote Batarang Boosted Throw	[PARSER] Physical Challenge Done	40			
 Camera (Park Row, Near Church)	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_10			
 Zsasz start/Church	Main Story	Ch2_Church_HarleyGone			
 Trophy (Church, Confessional)	Riddler Trophies	PickedUp_OWA_Pickup_19			
@@ -20,7 +22,9 @@ Camera (Park Row, by phone)	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_11
 Trophy (Amusement, 6 question mark gel)	Riddler Trophies	PickedUp_OWB_Pickup_13			
 Balloon (Amusement, Gotham Casino)	Balloons (Amusement)	PickedUp_OWB_Balloons_1		IGNORE_GAP	
 Balloon (Amusement, GCR)	Balloons (Amusement)	PickedUp_OWB_Balloons_3			
+150m Glide	[PARSER] Physical Challenge Done	1			
 Trophy (Industrial, next to phone [get with Zsasz call])	Riddler Trophies	PickedUp_OWC_Pickup_6			
+Smoke Pellet Friendly Fire	[PARSER] Physical Challenge Done	20			
 Balloon (Industrial, Path to AR training)	Balloons (Industrial)	PickedUp_OWC_Balloons_1			
 Balloon (Amusement, On Bridge)	Balloons (Amusement)	PickedUp_OWB_Balloons_5			
 AR Training 1	AR Training	ARChallenge1_Complete			
@@ -44,9 +48,11 @@ AR Challenge 5	AR Training	ARChallenge5_Complete
 Trophy (Industrial, Low Water Glide Cage)	Riddler Trophies	PickedUp_OWC_Pickup_36			
 Balloon (Industrial, Steel Mill)	Balloons (Industrial)	PickedUp_OWC_Balloons_11			
 Trophy (Steel Mill, Entrance)	Riddler Trophies	PickedUp_Steel_Pickup_1			
+3x Counter Throws	[PARSER] Physical Challenge Done	12			
 Trophy (Steel Mill, Bumper Cars Vent)	Riddler Trophies	PickedUp_Steel_Pickup_9			
 Trophy (Steel Mill, Bumper Cars Freeze Nade)	Riddler Trophies	PickedUp_Steel_Pickup_10			
 Trophy (Steel Mill, Smelting Chamber in Pipe)	Riddler Trophies	PickedUp_Steel_Pickup_14 			
+Inverted Takedown	[PARSER] Physical Challenge Done	37			
 Trophy (Steel Mill, Center of Smelting Chamber)	Riddler Trophies	PickedUp_Steel_Pickup_12			
 Trophy (Steel Mill, Wall Behind Smelting Office)	Riddler Trophies	PickedUp_Steel_Pickup_13			
 Harley Head (Steel Mill, Smelting Office)	Harley Head	PickedUp_Steel_HarleyHead_7			
@@ -64,11 +70,16 @@ Trophy (Industrial, Timed Switch near Ferris Wheel)	Riddler Trophies	PickedUp_OW
 Camera (Industrial, west of phone [with crane])	Breakable Cameras (Industrial)	PickedUp_OWC_Camera_4			
 Trophy (Amusement, Raise Crane)	Riddler Trophies	PickedUp_OWB_Pickup_33			
 AR Challenge 7	AR Training	ARChallenge7_Complete			
+30m Glide on Water	[PARSER] Physical Challenge Done	5			
+Grapnel Boost Takedown	[PARSER] Physical Challenge Done	32			
 Start Bane	Bane	SS_Bane_FirstConvo			
 Trophy (Amusement, Bane Room)	Riddler Trophies	PickedUp_OWB_Pickup_34			
+REC Scare	[PARSER] Physical Challenge Done	22			
+Smoke Takedown	[PARSER] Physical Challenge Done	28			
 Trophy (GCPD, Electric Batarang) [storage trick]	Riddler Trophies	PickedUp_OWB_Pickup_36			
 Balloon (Amusement, Olympus)	Balloons (Amusement)	PickedUp_OWB_Balloons_2		IGNORE_GAP	
 Trophy (Amusement, Olympus)	Riddler Trophies	PickedUp_OWB_Pickup_17			
+250m Glide [Zip]	[PARSER] Physical Challenge Done	2			
 Camera (Amusement, Across Gotham Casino)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_7			
 Riddler Church	Riddler Mission	SS_Riddler_OrganScanned			
 Aaron Cash Riddle	Riddles	PickedUp_OWA_Riddle_7			
@@ -82,6 +93,7 @@ Trophy (Bowery, Glide to Wall under Museum)	Riddler Trophies	PickedUp_OWE_Pickup
 Trophy (Bowery, Other wall under museum)	Riddler Trophies	PickedUp_OWE_Pickup_26			
 Camera (Bowery, Museum)	Breakable Cameras (Bowery)	PickedUp_OWE_Camera_3			
 Hat Shop Riddle	Riddles	PickedUp_OWE_Riddle_4			
+Slide Trip	[PARSER] Physical Challenge Done	10			
 Penguin (Museum, right of entrance)	Penguins	PickedUp_Museum_Penguin_1			
 Camera (Bowery, Across from Museum)	Breakable Cameras (Bowery)	PickedUp_OWE_Camera_11			
 Jammer 3	Main Story	Ch3c_OW_D3_Jammer_Panel_3			
@@ -98,6 +110,7 @@ Hyena Riddle	Riddles	PickedUp_Museum_Riddle_4
 Abramovici Riddle	Riddles	PickedUp_Museum_Riddle_5			
 Titan Container (Museum)	Bane	Museum_C2.RTitanCrate_4.Broken			
 Penguin (Museum, Path to Predator)	Penguins	PickedUp_Museum_Penguin_7			
+Sonic Batarang	[PARSER] Physical Challenge Done	34			
 Penguin (Museum, Center Predator Room)	Penguins	PickedUp_Museum_Penguin_9			
 Trophy (Museum, Hack under Bridge)	Riddler Trophies	PickedUp_Museum_Pickup_17			
 Trophy (Museum, Hack Far Right)	Riddler Trophies	PickedUp_Museum_Pickup_23			
@@ -120,6 +133,7 @@ Trophy (Wonder Tower, Collapsed South Freeze Pipes)	Riddler Trophies	PickedUp_Un
 Trophy (Wonder Tower, Collapsed South Gel Batclaw)	Riddler Trophies	PickedUp_Underworld_Pickup_5			
 Trophy (Wonder Tower, Collapsed South Upper Room Ceiling)	Riddler Trophies	PickedUp_Underworld_Pickup_6			
 Trophy (Wonder Tower, Collapsed South Across Door)	Riddler Trophies	PickedUp_Underworld_Pickup_3			
+REC Jammer Backpack	[PARSER] Physical Challenge Done	31			
 Titan Container (Wonder Tower)	Bane	Under_A3.RTitanCrate_3.Broken			
 Globe Riddle	Riddles	PickedUp_Underworld_Riddle_2			
 Demon Seal (Wonder, Elevator)	Demon Seals	PickedUp_Underworld_DemonSeal_1			
@@ -139,12 +153,14 @@ Trophy (Wonder, Left Chamber Door)	Riddler Trophies	PickedUp_Underworld_Pickup_2
 Demon Seal (Wonder, Pothole)	Demon Seals	PickedUp_Underworld_DemonSeal_6			
 Grundy Riddle	Riddles	PickedUp_Underworld_Riddle_4			
 Statue Riddle	Riddles	PickedUp_Underworld_Riddle_5			
+5x Quickfire Gel	[PARSER] Physical Challenge Done	18			
 Demon Seal (Wonder, By Exit Door)	Demon Seals	PickedUp_Underworld_DemonSeal_8			
 Demon Seal (Wonder, By Exit Door)	Demon Seals	PickedUp_Underworld_DemonSeal_7			
 Demon Seal (Wonder, Wonder City Corridor)	Demon Seals	PickedUp_Underworld_DemonSeal_4			
 Demon Seal (Wonder, Wonder City Corridor)	Demon Seals	PickedUp_Underworld_DemonSeal_3			
 Trophy (Wonder Tower, Collapsed West Questionmark Gel)	Riddler Trophies	PickedUp_Underworld_Pickup_17			
 Trophy (Bowery, Gel Mine)	Riddler Trophies	PickedUp_OWE_Pickup_16			
+Glide Boost Attack	[PARSER] Physical Challenge Done	14			
 Camera (Bowery, Quincy Sharp Alley)	Breakable Cameras (Bowery)	PickedUp_OWE_Camera_6			
 Quincy Sharp Riddle	Riddles	PickedUp_OWE_Riddle_5			
 Azrael (Bowery)	Azrael	SS_Azrael_E6_Glyph4	SS_Azrael_GlyphScanned3		
@@ -155,11 +171,13 @@ Trophy (Amusement, GCPD Gel Door)	Riddler Trophies	PickedUp_OWB_Pickup_21
 Trophy (Amusement, Wood Wall GCPD) [Batclaw Through Fence]	Riddler Trophies	PickedUp_OWB_Pickup_22			
 Trophy (GCPD, Hack Door)	Riddler Trophies	PickedUp_OWB_Pickup_38			
 Trophy (GCPD, Switches)	Riddler Trophies	PickedUp_OWB_Pickup_35			
+Remote Batarang Catch	[PARSER] Physical Challenge Done	39			
 Gordon Parking Spot Riddle	Riddles	PickedUp_OWB_Riddle_7			
 Camera (Amusement, GCPD Door)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_5			
 Trophy (Amusement, Outside GCPD Hack)	Riddler Trophies	PickedUp_OWB_Pickup_23			
 Trophy (Amusement, Roof next to GCPD)	Riddler Trophies	PickedUp_OWB_Pickup_16			
 Balloon (Amusement, Gotham Casino Dice)	Balloons (Amusement)	PickedUp_OWB_Balloons_7			
+Freeze Takedown	[PARSER] Physical Challenge Done	26			
 Camera (Amusement, Next to phone Casino)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_3		IGNORE_GAP	
 Camera (Amusement, Casino Terrace)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_12			
 Camera (Amusement, Ivy)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_11			
@@ -179,6 +197,7 @@ Deadshot Victim 1	Deadshot	SS_DeadShot_Hobo1Dead
 Trophy (Amusement, GCR)	Riddler Trophies	PickedUp_OWB_Pickup_20			
 Trophy (Industrial, 3 switch tower)	Riddler Trophies	PickedUp_OWC_Pickup_4			
 Balloon (Industrial, Crane)	Balloons (Industrial)	PickedUp_OWC_Balloons_2			
+50m Dive	[PARSER] Physical Challenge Done	3			
 Trophy (Industrial, Dive bomb near city wall)	Riddler Trophies	PickedUp_OWC_Pickup_3			
 Trophy (Industrial, Gel Rec near dive bomb switch)	Riddler Trophies	PickedUp_OWC_Pickup_2			
 Wonder Tower Riddle	Riddles	PickedUp_OWE_Riddle_2			
@@ -225,6 +244,8 @@ Trophy (Steel Mill, In Floor)	Riddler Trophies	PickedUp_Steel_Pickup_2
 Trophy (Steel Mill, Pipe near Elevator)	Riddler Trophies	PickedUp_Steel_Pickup_6			
 Trophy (Steel Mill, Under Elevator)	Riddler Trophies	PickedUp_Steel_Pickup_8			
 Harley Head (Steel Mill, Cluster Grenade Room)	Harley Head	PickedUp_Steel_HarleyHead_12			
+REC Blast Armor	[PARSER] Physical Challenge Done	24			
+Batarang Explosive	[PARSER] Physical Challenge Done	13			
 Trophy (Steel Mill, Penguins)	Riddler Trophies	PickedUp_Steel_Pickup_23			
 Box of Tricks Riddle	Riddles	PickedUp_Steel_Riddle_7			
 Freeze Cluster Grenade	Freeze Cluster Grenade	Ch6_ClusterBombCollected			
@@ -246,6 +267,9 @@ Question Mark Riddle (Wonder Tower)	Riddles	PickedUp_Underworld_Riddle_1
 Trophy (Wonder Tower, Near Top)	Riddler Trophies	PickedUp_Underworld_Pickup_26			
 Tyger Brain (Bowery)	Tyger Brains	PickedUp_OWE_CameraControl_1			
 Tyger Brain (Park Row)	Tyger Brains	PickedUp_OWA_CameraControl_1			
+5x Batclaw Disarm	[PARSER] Physical Challenge Done	29			
+5x Knockout Smashes	[PARSER] Physical Challenge Done	38			
+Disrupt Weapon	[PARSER] Physical Challenge Done	30			
 Clayface Fight	Main Story	Ch8_Entered_Theatre			
 Trophy (Bowery, Rec gun sphere)	Riddler Trophies	PickedUp_OWE_Pickup_28			
 Trophy (Bowery, Lower Level Near Back of Museum Phone)	Riddler Trophies	PickedUp_OWE_Pickup_12			
@@ -272,6 +296,7 @@ Trophy (Bowery, City Wall Bottom Left)	Riddler Trophies	PickedUp_OWE_Pickup_32
 Camera (Bowery, Across from City Wall Trophy)	Breakable Cameras (Bowery)	PickedUp_OWE_Camera_4			
 Trophy (Bowery, Remote Batarang Vent)	Riddler Trophies	PickedUp_OWE_Pickup_31			
 Trophy (Bowery, 3 switches gliding)	Riddler Trophies	PickedUp_OWE_Pickup_30			
+Reverse Batarang	[PARSER] Physical Challenge Done	33			
 Camera (Bowery, Near Subway)	Breakable Cameras (Bowery)	PickedUp_OWE_Camera_7			
 Titan Container (Bowery, Near Subway)	Bane	OW_E6_ChB19.RTitanCrate_6.Broken			
 Trophy (Bowery, Gel Wall after 3 switches)	Riddler Trophies	PickedUp_OWE_Pickup_29			
@@ -304,6 +329,7 @@ Trophy (Behind Subway Car)	Riddler Trophies	PickedUp_OWD_Pickup_6
 Subway Question Mark Riddle	Riddles	PickedUp_OWD_Riddle_1			
 Titan Container (Subway)	Bane	OW_D2_ChB19.RTitanCrate_5.Broken			
 Grundy Riddle	Riddles	PickedUp_OWD_Riddle_3			
+5 Line Launches	[PARSER] Physical Challenge Done	4			
 Trophy (Subway, Electric Floor Room)	Riddler Trophies	PickedUp_OWD_Pickup_9			
 Trophy (Subway, Electric Floor Room)	Riddler Trophies	PickedUp_OWD_Pickup_10			
 Trophy (Subway, Electric Floor Room)	Riddler Trophies	PickedUp_OWD_Pickup_8			
@@ -343,6 +369,8 @@ Trophy (Industrial, Water Alley Pipe)	Riddler Trophies	PickedUp_OWC_Pickup_25
 Zsasz Riddle	Riddles	PickedUp_OWC_Riddle_6			
 Trophy (Industrial, cage mines)	Riddler Trophies	PickedUp_OWC_Pickup_16			
 Trophy (Industrial, 2 switches near ferris wheel and caged mines)	Riddler Trophies	PickedUp_OWC_Pickup_15			
+5x Quickfire REC	[PARSER] Physical Challenge Done	17			
+5x Beatdowns	[PARSER] Physical Challenge Done	11			
 Nora	Freeze	SS_Nora_RoomExitUnlocked			
 Balloon (Industrial, south of phone)	Balloons (Industrial)	PickedUp_OWC_Balloons_3			
 Trophy (Industrial, Line Launch near Water)	Riddler Trophies	PickedUp_OWC_Pickup_8			
@@ -375,6 +403,8 @@ Trophy (Bowery, Back Museum Statue)	Riddler Trophies	PickedUp_OWE_Pickup_6
 Trophy (Bowery, 3 gel question marks near Back Museum)	Riddler Trophies	PickedUp_OWE_Pickup_1			
 Trophy (Bowery, Gel Behind City Wall)	Riddler Trophies	PickedUp_OWE_Pickup_5			
 Camera (Bowery, Across from Back of Museum)	Breakable Cameras (Bowery)	PickedUp_OWE_Camera_1			
+Quickfire Freeze Grenade	[PARSER] Physical Challenge Done	19			
+Freeze + Batarang Knockdown	[PARSER] Physical Challenge Done	27			
 Mine Disruptor	Mine Disruptor	MuseumRear_CopOpenPlayed 			
 Umbrella Cop Riddle	Riddles	PickedUp_Museum_Riddle_8			
 Top Hats Riddle	Riddles	PickedUp_Museum_Riddle_7			
@@ -450,6 +480,9 @@ Trophy (Park Row, Courthouse cell electric cell)	Riddler Trophies	PickedUp_OWA_P
 Calendar Man Riddle	Riddles	PickedUp_OWA_Riddle_4			
 Trophy (Park Row, Courthouse ceiling above stairs)	Riddler Trophies	PickedUp_OWA_Pickup_5			
 Two face riddle	Riddles	PickedUp_OWA_Riddle_3			
+Freeze Cluster	[PARSER] Physical Challenge Done	25			
+3x Line Launcher Kicks	[PARSER] Physical Challenge Done	35			
+Line Launcher Takedown	[PARSER] Physical Challenge Done	36			
 Riddler Courthouse Hostage	Riddler Mission	Riddler_Court_Hostage_Saved			
 Catwoman House Riddle	Riddles	PickedUp_OWA_Riddle_5			
 Hush Done	Hush	SS_Hush_Complete			
@@ -487,6 +520,9 @@ Trophy (Industrial, 3 fast question marks ferris wheel [political prisoner])	Rid
 Breakable Cameras (Industrial)	[PLACEHOLDER]				
 Balloons (Industrial)	[PLACEHOLDER]				
 Question Mark Riddle (Industrial)	Riddles	PickedUp_OWC_Riddle_1			
+3x REC Friendly Fire	[PARSER] Physical Challenge Done	23			
+20x Combo	[PARSER] Physical Challenge Done	6			
+Combo Batarang in Combat	[PARSER] Physical Challenge Done	15			
 Bane Done	Bane	SS_Bane_StashCrateDestroyed			
 Krank & co Riddle	Riddles	PickedUp_OWB_Riddle_10			
 Trophy (Amusement, Terrible Water Gel Puzzle)	Riddler Trophies	PickedUp_OWB_Pickup_9			
@@ -520,39 +556,4 @@ Breakable Cameras (Bowery)	[PLACEHOLDER]
 Trophy (Bowery, Back of Museum)	Riddler Trophies	PickedUp_OWE_Pickup_3		IGNORE_GAP	Map this to a political prisoner
 Trophy (Bowery, 3 switches Near Riddler)	Riddler Trophies	PickedUp_OWE_Pickup_2			
 Trophy (Bowery, Right before Riddler)	Riddler Trophies	PickedUp_OWE_Pickup_7			
-150m Glide	[PARSER] Physical Challenge Done	1			
-250m Glide	[PARSER] Physical Challenge Done	2			
-50m Dive	[PARSER] Physical Challenge Done	3			
-5 Line Launches	[PARSER] Physical Challenge Done	4			
-30m Glide on Water	[PARSER] Physical Challenge Done	5			
-20x Combo	[PARSER] Physical Challenge Done	6			
-Slide Trip	[PARSER] Physical Challenge Done	10			
-5x Beatdowns	[PARSER] Physical Challenge Done	11			
-3x Counter Throws	[PARSER] Physical Challenge Done	12			
-Batarang Explosive	[PARSER] Physical Challenge Done	13			
-Glide Boost Attack	[PARSER] Physical Challenge Done	14			
-Combo Batarang in Combat	[PARSER] Physical Challenge Done	15			
-Quickfire REC	[PARSER] Physical Challenge Done	17			
-Quickfire Freeze Grenade	[PARSER] Physical Challenge Done	19			
-Smoke Pellet Friendly Fire	[PARSER] Physical Challenge Done	20			
-Combo Batarang Finisher	[PARSER] Physical Challenge Done	21			
-REC Scare	[PARSER] Physical Challenge Done	22			
-3x REC Friendly Fire	[PARSER] Physical Challenge Done	23			
-REC Blast Armor	[PARSER] Physical Challenge Done	24			
-Freeze Cluster	[PARSER] Physical Challenge Done	25			
-Freeze Takedown	[PARSER] Physical Challenge Done	26			
-Freeze + Batarang Knockdown	[PARSER] Physical Challenge Done	27			
-Smoke Takedown	[PARSER] Physical Challenge Done	28			
-5x Batclaw Disarm	[PARSER] Physical Challenge Done	29			
-Disrupt Weapon	[PARSER] Physical Challenge Done	30			
-REC Jammer Backpack	[PARSER] Physical Challenge Done	31			
-Grapnel Boost Takedown	[PARSER] Physical Challenge Done	32			
-Reverse Batarang [PARSER] Physical Challenge Done	33			
-Sonic Batarang	[PARSER] Physical Challenge Done	34			
-Line Launcher Kicks	[PARSER] Physical Challenge Done	35			
-Line Launcher Takedown	[PARSER] Physical Challenge Done	36			
-Inverted Takedown	[PARSER] Physical Challenge Done	37			
-5x Knockout Smashes	[PARSER] Physical Challenge Done	38			
-Remote Batarang Catch	[PARSER] Physical Challenge Done	39			
-Remote Batarang Boosted Throw	[PARSER] Physical Challenge Done	40			
 Riddler Done	Riddler Mission	RiddlerBeaten			
