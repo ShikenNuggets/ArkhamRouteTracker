@@ -1,5 +1,11 @@
 Name	Type	SaveFileId	Alternate ID	Metadata	TODO
 Trophy (Park Row, Under Car Near Beginning)	Riddler Trophies	PickedUp_OWA_Pickup_31			
+Beatdown (1/5)	[PARSER] Physical Challenge Progress	11_1			
+5x Aerials	[PARSER] Physical Challenge Done	9			
+5x Quickfire Gel	[PARSER] Physical Challenge Done	18			
+5x Variation	[PARSER] Physical Challenge Done	8			
+5x Batclaw Slams	[PARSER] Physical Challenge Done	16			
+3 Quickfire Gadgets	[PARSER] Physical Challenge Done	7			
 Rescue Jack Ryder	Political Prisoner	ArkhamBullyR2_JackRyder_Saved			
 Rescue Catwoman	Main Story	TwofaceObjectionFinished			
 Camera (Park Row, Next to Courthouse)	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_5			
@@ -514,4 +520,39 @@ Breakable Cameras (Bowery)	[PLACEHOLDER]
 Trophy (Bowery, Back of Museum)	Riddler Trophies	PickedUp_OWE_Pickup_3		IGNORE_GAP	Map this to a political prisoner
 Trophy (Bowery, 3 switches Near Riddler)	Riddler Trophies	PickedUp_OWE_Pickup_2			
 Trophy (Bowery, Right before Riddler)	Riddler Trophies	PickedUp_OWE_Pickup_7			
+150m Glide	[PARSER] Physical Challenge Done	1			
+250m Glide	[PARSER] Physical Challenge Done	2			
+50m Dive	[PARSER] Physical Challenge Done	3			
+5 Line Launches	[PARSER] Physical Challenge Done	4			
+30m Glide on Water	[PARSER] Physical Challenge Done	5			
+20x Combo	[PARSER] Physical Challenge Done	6			
+Slide Trip	[PARSER] Physical Challenge Done	10			
+5x Beatdowns	[PARSER] Physical Challenge Done	11			
+3x Counter Throws	[PARSER] Physical Challenge Done	12			
+Batarang Explosive	[PARSER] Physical Challenge Done	13			
+Glide Boost Attack	[PARSER] Physical Challenge Done	14			
+Combo Batarang in Combat	[PARSER] Physical Challenge Done	15			
+Quickfire REC	[PARSER] Physical Challenge Done	17			
+Quickfire Freeze Grenade	[PARSER] Physical Challenge Done	19			
+Smoke Pellet Friendly Fire	[PARSER] Physical Challenge Done	20			
+Combo Batarang Finisher	[PARSER] Physical Challenge Done	21			
+REC Scare	[PARSER] Physical Challenge Done	22			
+3x REC Friendly Fire	[PARSER] Physical Challenge Done	23			
+REC Blast Armor	[PARSER] Physical Challenge Done	24			
+Freeze Cluster	[PARSER] Physical Challenge Done	25			
+Freeze Takedown	[PARSER] Physical Challenge Done	26			
+Freeze + Batarang Knockdown	[PARSER] Physical Challenge Done	27			
+Smoke Takedown	[PARSER] Physical Challenge Done	28			
+5x Batclaw Disarm	[PARSER] Physical Challenge Done	29			
+Disrupt Weapon	[PARSER] Physical Challenge Done	30			
+REC Jammer Backpack	[PARSER] Physical Challenge Done	31			
+Grapnel Boost Takedown	[PARSER] Physical Challenge Done	32			
+Reverse Batarang [PARSER] Physical Challenge Done	33			
+Sonic Batarang	[PARSER] Physical Challenge Done	34			
+Line Launcher Kicks	[PARSER] Physical Challenge Done	35			
+Line Launcher Takedown	[PARSER] Physical Challenge Done	36			
+Inverted Takedown	[PARSER] Physical Challenge Done	37			
+5x Knockout Smashes	[PARSER] Physical Challenge Done	38			
+Remote Batarang Catch	[PARSER] Physical Challenge Done	39			
+Remote Batarang Boosted Throw	[PARSER] Physical Challenge Done	40			
 Riddler Done	Riddler Mission	RiddlerBeaten			
