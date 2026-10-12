@@ -1,0 +1,3 @@
+[submodule "ArkhamSaveParser"]
+	path = ArkhamSaveParser
+	url = https://github.com/ShikenNuggets/ArkhamSaveParser.git
