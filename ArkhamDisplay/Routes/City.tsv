@@ -44,6 +44,7 @@ Trophy (Steel Mill, Smelting Chamber in Pipe)	Riddler Trophies	PickedUp_Steel_Pi
 Trophy (Steel Mill, Center of Smelting Chamber)	Riddler Trophies	PickedUp_Steel_Pickup_12			
 Trophy (Steel Mill, Wall Behind Smelting Office)	Riddler Trophies	PickedUp_Steel_Pickup_13			
 Harley Head (Steel Mill, Smelting Office)	Harley Head	PickedUp_Steel_HarleyHead_7			
+Harley Head (Steel Mill, Assembly Line Office)	Harley Head	PickedUp_Steel_HarleyHead_5		IGNORE_GAP	
 Harley Head (Steel Mill, Assembly Line before loading bay)	Harley Head	PickedUp_Steel_HarleyHead_4			
 Trophy (Industrial, Rec Gun Ball)	Riddler Trophies	PickedUp_OWC_Pickup_13			
 Trophy (Industrial, Ferris Wheel)	Riddler Trophies	PickedUp_OWC_Pickup_12			
@@ -60,6 +61,9 @@ AR Challenge 7	AR Training	ARChallenge7_Complete
 Start Bane	Bane	SS_Bane_FirstConvo			
 Trophy (Amusement, Bane Room)	Riddler Trophies	PickedUp_OWB_Pickup_34			
 Trophy (GCPD, Electric Batarang) [storage trick]	Riddler Trophies	PickedUp_OWB_Pickup_36			
+Balloon (Amusement, Olympus)	Balloons (Amusement)	PickedUp_OWB_Balloons_2		IGNORE_GAP	
+Trophy (Amusement, Olympus)	Riddler Trophies	PickedUp_OWB_Pickup_17			
+Camera (Amusement, Across Gotham Casino)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_7			
 Riddler Church	Riddler Mission	SS_Riddler_OrganScanned			
 Aaron Cash Riddle	Riddles	PickedUp_OWA_Riddle_7			
 Trophy (Park Row, Roof Punch Wood Wall)	Riddler Trophies	PickedUp_OWA_Pickup_26			
@@ -109,6 +113,7 @@ Trophy (Subway, Hack Wonder Tower Door)	Riddler Trophies	PickedUp_OWD_Pickup_20
 Trophy (Wonder Tower, Collapsed South Freeze Pipes)	Riddler Trophies	PickedUp_Underworld_Pickup_2			
 Trophy (Wonder Tower, Collapsed South Gel Batclaw)	Riddler Trophies	PickedUp_Underworld_Pickup_5			
 Trophy (Wonder Tower, Collapsed South Upper Room Ceiling)	Riddler Trophies	PickedUp_Underworld_Pickup_6			
+Trophy (Wonder Tower, Collapsed South Across Door)	Riddler Trophies	PickedUp_Underworld_Pickup_3			
 Titan Container (Wonder Tower)	Bane	Under_A3.RTitanCrate_3.Broken			
 Globe Riddle	Riddles	PickedUp_Underworld_Riddle_2			
 Demon Seal (Wonder, Elevator)	Demon Seals	PickedUp_Underworld_DemonSeal_1			
@@ -116,22 +121,22 @@ Demon Seal (Wonder, West Elevator Room)	Demon Seals	PickedUp_Underworld_DemonSea
 Trophy (Wonder Tower, Gel East Elevator Room)	Riddler Trophies	PickedUp_Underworld_Pickup_11			
 Trophy (Wonder Tower, East lower level)	Riddler Trophies	PickedUp_Underworld_Pickup_10			
 Demon Seal (Wonder, Wonder City Entrance)	Demon Seals	PickedUp_Underworld_DemonSeal_2			
-Demon Seal (Wonder, Wonder City Corridor)	Demon Seals	PickedUp_Underworld_DemonSeal_4			
-Demon Seal (Wonder, Wonder City Corridor)	Demon Seals	PickedUp_Underworld_DemonSeal_3			
-Trophy (Wonder, Right of Corridor near Robot)	Riddler Trophies	PickedUp_Underworld_Pickup_19			
-Trophy (Wonder, Line Launch 3 Switches)	Riddler Trophies	PickedUp_Underworld_Pickup_18			
-Gotham City Times Riddle	Riddles	PickedUp_Underworld_Riddle_3			
 Trophy (Wonder, Stroller)	Riddler Trophies	PickedUp_Underworld_Pickup_22			
 Trophy (Wonder, Across Question Mark)	Riddler Trophies	PickedUp_Underworld_Pickup_21			
 Demon Seal (Wonder, Wonder City end of Corridor)	Demon Seals	PickedUp_Underworld_DemonSeal_5			
+Trophy (Wonder, Right of Corridor near Robot)	Riddler Trophies	PickedUp_Underworld_Pickup_19			
+Trophy (Wonder, Line Launch 3 Switches)	Riddler Trophies	PickedUp_Underworld_Pickup_18			
+Gotham City Times Riddle	Riddles	PickedUp_Underworld_Riddle_3			
 Trophy (Wonder, Questionmark Gel)	Riddler Trophies	PickedUp_Underworld_Pickup_20			
 Trophy (Wonder Tower, Wonder City Mine)	Riddler Trophies	PickedUp_Underworld_Pickup_23			
 Trophy (Wonder, Left Chamber Door)	Riddler Trophies	PickedUp_Underworld_Pickup_24			
+Demon Seal (Wonder, Pothole)	Demon Seals	PickedUp_Underworld_DemonSeal_6			
 Grundy Riddle	Riddles	PickedUp_Underworld_Riddle_4			
 Statue Riddle	Riddles	PickedUp_Underworld_Riddle_5			
 Demon Seal (Wonder, By Exit Door)	Demon Seals	PickedUp_Underworld_DemonSeal_8			
 Demon Seal (Wonder, By Exit Door)	Demon Seals	PickedUp_Underworld_DemonSeal_7			
-Demon Seal (Wonder, Pothole)	Demon Seals	PickedUp_Underworld_DemonSeal_6			
+Demon Seal (Wonder, Wonder City Corridor)	Demon Seals	PickedUp_Underworld_DemonSeal_4			
+Demon Seal (Wonder, Wonder City Corridor)	Demon Seals	PickedUp_Underworld_DemonSeal_3			
 Trophy (Wonder Tower, Collapsed West Questionmark Gel)	Riddler Trophies	PickedUp_Underworld_Pickup_17			
 Trophy (Bowery, Gel Mine)	Riddler Trophies	PickedUp_OWE_Pickup_16			
 Camera (Bowery, Quincy Sharp Alley)	Breakable Cameras (Bowery)	PickedUp_OWE_Camera_6			
@@ -139,7 +144,6 @@ Quincy Sharp Riddle	Riddles	PickedUp_OWE_Riddle_5
 Azrael (Bowery)	Azrael	SS_Azrael_E6_Glyph4	SS_Azrael_GlyphScanned3		
 Trophy (Bowery, Brainpower hack near subway)	Riddler Trophies	PickedUp_OWE_Pickup_35			
 Camera (Park Row, Near Stripclub near courthouse) [Zsasz 2]	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_6		IGNORE_GAP	
-Balloon (Amusement, Olympus)	Balloons (Amusement)	PickedUp_OWB_Balloons_2		IGNORE_GAP	
 Olympus Riddle	Riddles	PickedUp_OWB_Riddle_6			
 Trophy (Amusement, GCPD Gel Door)	Riddler Trophies	PickedUp_OWB_Pickup_21			
 Trophy (Amusement, Wood Wall GCPD) [Batclaw Through Fence]	Riddler Trophies	PickedUp_OWB_Pickup_22			
@@ -157,6 +161,7 @@ Camera (Amusement, Next to snipers)	Breakable Cameras (Amusement)	PickedUp_OWB_C
 Trophy (Amusement, Timed Question Marks on Water)	Riddler Trophies	PickedUp_OWB_Pickup_12			
 Camera (Amusement, Sea Pier)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_4			
 Circus Riddle	Riddles	PickedUp_OWB_Riddle_4			
+Camera (Amusement, Gotham Casino)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_8			
 Rescue Vicki Vale	Main Story	Ch6_OW_R7_Vicki_Vale_Rescued			
 Trophy (Amusement, 2 wood walls near Vicki)	Riddler Trophies	PickedUp_OWB_Pickup_5			
 Azrael (Amusement)	Azrael	SS_Azrael_B4_Glyph1	SS_Azrael_GlyphScanned4		
@@ -209,7 +214,6 @@ Joker Riddle	Riddles	PickedUp_Steel_Riddle_4
 Harley Head (Steel Mill, Smelting Predator)	Harley Head	PickedUp_Steel_HarleyHead_6			
 Trophy (Steel Mill, Assembly Line Gel)	Riddler Trophies	PickedUp_Steel_Pickup_11			
 Twins Riddle	Riddles	PickedUp_Steel_Riddle_3			
-Harley Head (Steel Mill, Assembly Line Office)	Harley Head	PickedUp_Steel_HarleyHead_5		IGNORE_GAP	
 Trophy (Steel Mill, Hack)	Riddler Trophies	PickedUp_Steel_Pickup_3			
 Trophy (Steel Mill, In Floor)	Riddler Trophies	PickedUp_Steel_Pickup_2			
 Trophy (Steel Mill, Pipe near Elevator)	Riddler Trophies	PickedUp_Steel_Pickup_6			
@@ -226,9 +230,6 @@ Trophy (Steel Mill, Behind Fan and Lava)	Riddler Trophies	PickedUp_Steel_Pickup_
 Trophy (Steel Mill, Behind Fan)	Riddler Trophies	PickedUp_Steel_Pickup_4			
 Harley Outfit Riddle	Riddles	PickedUp_Steel_Riddle_2			
 Harley Head (Steel Mill, Joker Room)	Harley Head	PickedUp_Steel_HarleyHead_2			
-Trophy (Subway, Line Launch after impossible room)	Riddler Trophies	PickedUp_OWD_Pickup_22			
-Teeth (Subway, After line launch)	Joker Teeth	PickedUp_OWD_Teeth_4			
-Trophy (Subway, Frozen Water Wonder Tower Door)	Riddler Trophies	PickedUp_OWD_Pickup_19			
 Teeth (Subway, Wonder Tower Door)	Joker Teeth	PickedUp_OWD_Teeth_6		IGNORE_GAP	
 Gotham City Plaque Riddle	Riddles	PickedUp_Underworld_Riddle_6			
 Demon Seal (Wonder Tower, Elevator Entrance)	Demon Seals	PickedUp_Underworld_DemonSeal_9			
@@ -302,12 +303,14 @@ Trophy (Subway, Electric Floor Room)	Riddler Trophies	PickedUp_OWD_Pickup_10
 Trophy (Subway, Electric Floor Room)	Riddler Trophies	PickedUp_OWD_Pickup_8			
 Trophy (Subway, Timed switch 3 questionmarks)	Riddler Trophies	PickedUp_OWD_Pickup_7			
 Teeth (Subway, Before Titan Door)	Joker Teeth	PickedUp_OWD_Teeth_8			
+Trophy (Subway, Frozen Water Wonder Tower Door)	Riddler Trophies	PickedUp_OWD_Pickup_19			
 Trophy (Wonder Tower, Collapsed South Hack Door)	Riddler Trophies	PickedUp_Underworld_Pickup_8			
 Trophy (Wonder Tower, Collapsed South Freeze Water)	Riddler Trophies	PickedUp_Underworld_Pickup_7			
 Trophy (Wonder Tower, Hack)	Riddler Trophies	PickedUp_Underworld_Pickup_9			
-Trophy (Wonder Tower, Collapsed South Across Door)	Riddler Trophies	PickedUp_Underworld_Pickup_3			
 Trophy (Wonder Tower, Collapsed South Grapnel Boost)	Riddler Trophies	PickedUp_Underworld_Pickup_4			
 Trophy (Wonder Tower, Collapsed South Room up top)	Riddler Trophies	PickedUp_Underworld_Pickup_1			
+Teeth (Subway, After line launch)	Joker Teeth	PickedUp_OWD_Teeth_4			
+Trophy (Subway, Line Launch after impossible room)	Riddler Trophies	PickedUp_OWD_Pickup_22			
 Trophy (Subway, Impossible)	Riddler Trophies	PickedUp_OWD_Pickup_24			
 Trophy (Subway, Impossible)	Riddler Trophies	PickedUp_OWD_Pickup_25			
 Trophy (Subway, Impossible)	Riddler Trophies	PickedUp_OWD_Pickup_26			
@@ -454,9 +457,6 @@ Trophy (Park Row, Hack top of church)	Riddler Trophies	PickedUp_OWA_Pickup_18
 Azrael Done	Azrael	SS_Azrael_FinalConversationFinished			
 Trophy (Park Row, Line Launch Switches Behind church)	Riddler Trophies	PickedUp_OWA_Pickup_20			
 Trophy (Park Row, City Wall Behind Church)	Riddler Trophies	PickedUp_OWA_Pickup_21			
-Trophy (Amusement, Olympus)	Riddler Trophies	PickedUp_OWB_Pickup_17			
-Camera (Amusement, Gotham Casino)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_8			
-Camera (Amusement, Across Gotham Casino)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_7			
 Trophy (Amusement, 3 Question Mark switches [across Olympus])	Riddler Trophies	PickedUp_OWB_Pickup_15			
 Balloon (Amusement, City Wall)	Balloons (Amusement)	PickedUp_OWB_Balloons_9			
 Trophy (Amusement, Gliding Switches)	Riddler Trophies	PickedUp_OWB_Pickup_27			
