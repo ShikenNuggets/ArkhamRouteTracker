@@ -1,17 +1,19 @@
 Name	Type	SaveFileId	Alternate ID	Metadata	TODO
+Trophy (Park Row, Freeze Nade)	Riddler Trophies	PickedUp_OWA_Pickup_33			
+Camera (Park Row, Monarch Theater)	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_4			
+Camera (Park Row, Near Beginning)	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_2			
 Trophy (Park Row, Under Car Near Beginning)	Riddler Trophies	PickedUp_OWA_Pickup_31			
 Beatdown (1/5)	[PARSER] Physical Challenge Progress	11_1			
-5x Aerials	[PARSER] Physical Challenge Done	9			
+3x Aerials	[PARSER] Physical Challenge Done	9			
 Quickfire Gel (4/5)	[PARSER] Physical Challenge Progress	18_4			
 5x Variation	[PARSER] Physical Challenge Done	8			
 5x Batclaw Slams	[PARSER] Physical Challenge Done	16			
-3 Quickfire Gadgets	[PARSER] Physical Challenge Done	7			
-Combo Batarang Finisher	[PARSER] Physical Challenge Done	21			
+3 Quickfire Gadgets in one Combo	[PARSER] Physical Challenge Done	7			
 Rescue Jack Ryder	Political Prisoner	ArkhamBullyR2_JackRyder_Saved			
 Rescue Catwoman	Main Story	TwofaceObjectionFinished			
 Camera (Park Row, Next to Courthouse)	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_5			
 Camera (Park Row, Near Lounge near courthouse)	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_7			
-Remote Batarang Boosted Throw	[PARSER] Physical Challenge Done	40			
+Remote Batarang Boost	[PARSER] Physical Challenge Done	40			
 Camera (Park Row, Near Church)	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_10			
 Zsasz start/Church	Main Story	Ch2_Church_HarleyGone			
 Trophy (Church, Confessional)	Riddler Trophies	PickedUp_OWA_Pickup_19			
@@ -24,7 +26,6 @@ Balloon (Amusement, Gotham Casino)	Balloons (Amusement)	PickedUp_OWB_Balloons_1	
 Balloon (Amusement, GCR)	Balloons (Amusement)	PickedUp_OWB_Balloons_3			
 150m Glide	[PARSER] Physical Challenge Done	1			
 Trophy (Industrial, next to phone [get with Zsasz call])	Riddler Trophies	PickedUp_OWC_Pickup_6			
-Smoke Pellet Friendly Fire	[PARSER] Physical Challenge Done	20			
 Balloon (Industrial, Path to AR training)	Balloons (Industrial)	PickedUp_OWC_Balloons_1			
 Balloon (Amusement, On Bridge)	Balloons (Amusement)	PickedUp_OWB_Balloons_5			
 AR Training 1	AR Training	ARChallenge1_Complete			
@@ -97,7 +98,7 @@ Trophy (Bowery, Glide to Wall under Museum)	Riddler Trophies	PickedUp_OWE_Pickup
 Trophy (Bowery, Other wall under museum)	Riddler Trophies	PickedUp_OWE_Pickup_26			
 Camera (Bowery, Museum)	Breakable Cameras (Bowery)	PickedUp_OWE_Camera_3			
 Hat Shop Riddle	Riddles	PickedUp_OWE_Riddle_4			
-Slide Trip	[PARSER] Physical Challenge Done	10			
+3x Slide Trip	[PARSER] Physical Challenge Done	10			
 Penguin (Museum, right of entrance)	Penguins	PickedUp_Museum_Penguin_1			
 Camera (Bowery, Across from Museum)	Breakable Cameras (Bowery)	PickedUp_OWE_Camera_11			
 Jammer 3	Main Story	Ch3c_OW_D3_Jammer_Panel_3			
@@ -114,7 +115,7 @@ Hyena Riddle	Riddles	PickedUp_Museum_Riddle_4
 Abramovici Riddle	Riddles	PickedUp_Museum_Riddle_5			
 Titan Container (Museum)	Bane	Museum_C2.RTitanCrate_4.Broken			
 Penguin (Museum, Path to Predator)	Penguins	PickedUp_Museum_Penguin_7			
-Sonic Batarang	[PARSER] Physical Challenge Done	34			
+Sonic Shock Takedown	[PARSER] Physical Challenge Done	34			
 Penguin (Museum, Center Predator Room)	Penguins	PickedUp_Museum_Penguin_9			
 Trophy (Museum, Hack under Bridge)	Riddler Trophies	PickedUp_Museum_Pickup_17			
 Trophy (Museum, Hack Far Right)	Riddler Trophies	PickedUp_Museum_Pickup_23			
@@ -187,7 +188,7 @@ Camera (Amusement, GCPD Door)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_
 Trophy (Amusement, Outside GCPD Hack)	Riddler Trophies	PickedUp_OWB_Pickup_23			
 Trophy (Amusement, Roof next to GCPD)	Riddler Trophies	PickedUp_OWB_Pickup_16			
 Balloon (Amusement, Gotham Casino Dice)	Balloons (Amusement)	PickedUp_OWB_Balloons_7			
-Freeze Takedown	[PARSER] Physical Challenge Done	26			
+Freeze Blast Takedown	[PARSER] Physical Challenge Done	26			
 Camera (Amusement, Next to phone Casino)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_3		IGNORE_GAP	
 Camera (Amusement, Casino Terrace)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_12			
 Camera (Amusement, Ivy)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_11			
@@ -270,15 +271,16 @@ Harley Head (Steel Mill, Joker Room)	Harley Head	PickedUp_Steel_HarleyHead_2
 Teeth (Subway, Wonder Tower Door)	Joker Teeth	PickedUp_OWD_Teeth_6		IGNORE_GAP	
 Gotham City Plaque Riddle	Riddles	PickedUp_Underworld_Riddle_6			
 Demon Seal (Wonder Tower, Elevator Entrance)	Demon Seals	PickedUp_Underworld_DemonSeal_9			
+Smoke Pellet Friendly Fire	[PARSER] Physical Challenge Done	20			
 Demon Head (Wonder Tower, Elevator Shaft)	Demon Heads	PickedUp_Underworld_DemonSeal_11			
 Trophy (Wonder Tower, Side of building)	Riddler Trophies	PickedUp_Underworld_Pickup_25			
 Demon Seal (Wonder Tower, Elevator Shaft)	Demon Seals	PickedUp_Underworld_DemonSeal_10			
 Question Mark Riddle (Wonder Tower)	Riddles	PickedUp_Underworld_Riddle_1			
 Trophy (Wonder Tower, Near Top)	Riddler Trophies	PickedUp_Underworld_Pickup_26			
+5x Knockout Smashes	[PARSER] Physical Challenge Done	38			
 Tyger Brain (Bowery)	Tyger Brains	PickedUp_OWE_CameraControl_1			
 Tyger Brain (Park Row)	Tyger Brains	PickedUp_OWA_CameraControl_1			
-5x Batclaw Disarm	[PARSER] Physical Challenge Done	29			
-5x Knockout Smashes	[PARSER] Physical Challenge Done	38			
+3x Batclaw Disarm	[PARSER] Physical Challenge Done	29			
 Disrupt Weapon	[PARSER] Physical Challenge Done	30			
 Clayface Fight	Main Story	Ch8_Entered_Theatre			
 Trophy (Bowery, Rec gun sphere)	Riddler Trophies	PickedUp_OWE_Pickup_28			
@@ -308,7 +310,7 @@ Trophy (Industrial, City Wall near Tunnels)	Riddler Trophies	PickedUp_OWC_Pickup
 Trophy (Industrial, Running Questionmarks)	Riddler Trophies	PickedUp_OWC_Pickup_5			
 Trophy (Bowery, Remote Batarang Vent)	Riddler Trophies	PickedUp_OWE_Pickup_31			
 Trophy (Bowery, 3 switches gliding)	Riddler Trophies	PickedUp_OWE_Pickup_30			
-Reverse Batarang	[PARSER] Physical Challenge Done	33			
+Reverse Batarang Hit	[PARSER] Physical Challenge Done	33			
 Camera (Bowery, Near Subway)	Breakable Cameras (Bowery)	PickedUp_OWE_Camera_7			
 Titan Container (Bowery, Near Subway)	Bane	OW_E6_ChB19.RTitanCrate_6.Broken			
 Trophy (Bowery, Gel Wall after 3 switches)	Riddler Trophies	PickedUp_OWE_Pickup_29			
@@ -415,7 +417,7 @@ Trophy (Bowery, Back Museum Statue)	Riddler Trophies	PickedUp_OWE_Pickup_6
 Trophy (Bowery, 3 gel question marks near Back Museum)	Riddler Trophies	PickedUp_OWE_Pickup_1			
 Trophy (Bowery, Gel Behind City Wall)	Riddler Trophies	PickedUp_OWE_Pickup_5			
 Camera (Bowery, Across from Back of Museum)	Breakable Cameras (Bowery)	PickedUp_OWE_Camera_1			
-Quickfire Freeze Grenade	[PARSER] Physical Challenge Done	19			
+5x Quickfire Freeze Grenades	[PARSER] Physical Challenge Done	19			
 Freeze + Batarang Knockdown	[PARSER] Physical Challenge Done	27			
 Mine Disruptor	Mine Disruptor	MuseumRear_CopOpenPlayed 			
 Umbrella Cop Riddle	Riddles	PickedUp_Museum_Riddle_8			
@@ -469,8 +471,6 @@ Deadshot Victim 2 End	Deadshot	SS_DeadShot_Hobo2_RustScanned
 Crime Alley Riddle	Riddles	PickedUp_OWA_Riddle_13			
 Hush 2 (next to trophy)	Hush	SS_Hush_Victim2_SceneComplete			
 Terror Movie Riddle	Riddles	PickedUp_OWA_Riddle_12			
-Camera (Park Row, Near Beginning)	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_2			
-Trophy (Park Row, Freeze Nade)	Riddler Trophies	PickedUp_OWA_Pickup_33			
 Trigger Deadshot 3 (Near Ace Chemicals)	Deadshot	SS_DeadShot_Victim3GunShot 			
 Hush 3 Start (near ACE)	Hush	SS_Hush_Victim3_SceneComplete			
 Trophy (Park Row, Switch across from courthouse)	Riddler Trophies	PickedUp_OWA_Pickup_24			
@@ -483,7 +483,6 @@ Deadshot Victim 3 Start	Deadshot	SS_DeadShot_Hobo3_RicochetScanned
 Harvey Dent Riddle	Riddles	PickedUp_OWA_Riddle_2			
 Question Mark Riddle (Park Row Courthouse)	Riddles	PickedUp_OWA_Riddle_1			
 Strange Riddle	Riddles	PickedUp_OWA_Riddle_11			
-Camera (Park Row, Monarch Theater)	Breakable Cameras (Park Row)	PickedUp_OWA_Camera_4			
 Azrael (near courthouse)	Azrael	SS_Azrael_A6_Glyph3	SS_Azrael_GlyphScanned1		
 AR Challenge 8	AR Training	ARChallenge8_Complete			
 Trophy (Park Row, City Wall near Courthouse)	Riddler Trophies	PickedUp_OWA_Pickup_4			
@@ -535,7 +534,8 @@ Balloons (Industrial)	[PLACEHOLDER]
 Question Mark Riddle (Industrial)	Riddles	PickedUp_OWC_Riddle_1			
 3x REC Friendly Fire	[PARSER] Physical Challenge Done	23			
 20x Combo	[PARSER] Physical Challenge Done	6			
-Combo Batarang in Combat	[PARSER] Physical Challenge Done	15			
+10x Combo Batarang	[PARSER] Physical Challenge Done	15			
+3x Combo Batarang Finisher	[PARSER] Physical Challenge Done	21			
 Bane Done	Bane	SS_Bane_StashCrateDestroyed			
 Krank & co Riddle	Riddles	PickedUp_OWB_Riddle_10			
 Trophy (Amusement, Terrible Water Gel Puzzle)	Riddler Trophies	PickedUp_OWB_Pickup_9			
