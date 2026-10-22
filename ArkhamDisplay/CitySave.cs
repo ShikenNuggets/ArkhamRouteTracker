@@ -14,7 +14,9 @@ namespace ArkhamDisplay {
 			try {
 				var compressedSave = new ArkhamSaveParser.CompressedSave(m_rawCompressedBytes);
 				m_citySave = new ArkhamSaveParser.ArkhamCitySave(compressedSave);
-			} catch { } // TODO: Error handling
+			} catch {
+				m_citySave = null;
+			} // TODO: Error handling
 
 			return result;
 		}

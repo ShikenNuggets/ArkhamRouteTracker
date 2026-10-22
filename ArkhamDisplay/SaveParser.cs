@@ -33,12 +33,12 @@ namespace ArkhamDisplay{
 		}
 
 		protected virtual string Decompress(){
+			m_rawCompressedBytes = null;
 			string finalResult = "";
 			if(!File.Exists(GetFile())){
 				return finalResult;
 			}
 
-			m_rawCompressedBytes = null;
 			Utils.RetryFileIO(() => { m_rawCompressedBytes = File.ReadAllBytes(GetFile()); });
 
 			var offsets = ExtractSaveOffsets(m_rawCompressedBytes);
