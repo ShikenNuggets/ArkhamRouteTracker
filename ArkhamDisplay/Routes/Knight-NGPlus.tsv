@@ -1,11 +1,9 @@
 Name	Type	SaveFileId	Alternate ID	Metadata	Image	Video
 Visit Gordon	Main Story	Ch1b_CityZ_Met_Gordon 		NG+		
-Pyg (Bleake, South Failure; Arm Chest Knee)	Pyg	SS_Pyg_Victim1Done		NG+	https://static.gosunoob.com/img/1/2015/07/The_Perfect_Crime_Batman_Arkham_Knight_1-1024x576.jpg	https://youtu.be/0SnppYd7wSg?t=331
 Even the Odds	Main Story	Ch1b_CityZ_Suspicious_Vehicle_Driver_Interrogated 		NG+		
 Ivy	Main Story	Ch1bc_CityZ_Light_Tank_Reinforcements_Destroyed 		NG+		
 Firemen (Bleake Island, Dixon Docks)	Firemen	SS_FireCrew_0_Rescued 		NG+	https://static.gosunoob.com/img/1/2015/07/Bleake_Island_Missing_Firefighter_Batman_Arkham_Knight-1024x576.jpg	
 PanessaTankFight	Main Story	Ch1b_CityZ_All_Light_Tanks_Destroyed 		NG+		
-Pyg (Bleake, MerchantBridge; Ear Abdomen Hip)	Pyg	SS_Pyg_Victim2Done		NG+	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_The_Perfect_Crime_Bleake_Island_1-1024x576.jpg	
 IvyToGCPD	Main Story	Ch1bc_CityZ_Gordon_Ivy_Convo_done 		NG+		
 Clock Tower (Main Story)	Main Story	Ch1c2_Clocktower_C1_Meet_Oracle_Cine_Complete 		NG+		
 Panessa Antenna (Main Story)	Main Story	Ch2_CityZ_10_Batman_On_Movie_Studios		NG+		
@@ -19,7 +17,6 @@ Firemen (Bleake Island, PierNearClockTower)	Firemen	SS_FireCrew_13_Rescued 		NG+
 Escort Gordon to Clock Tower (Main Story)	Main Story	Ch3a_CityZ_Protect_Gordon_Chase_Started     		NG+		
 Track Oracle (Main Story)	Main Story	Ch3b_TireTrailActive 		NG+		
 First Bomb (Part of main story)	Bombs	SS_CommandBeacons_CityZ_15_ChD1_Ch3456789_LOD1.RCommandBeacon_1_destroyed 		NG+		
-Pyg (Miagani, NearMercyBridge; Chest Arm Toe)	Pyg	SS_Pyg_Victim3Done 		NG+	https://static.gosunoob.com/img/1/2015/07/Miagani_Island_The_Perfect_Crime_Batman_Arkham_Knight_1-1024x576.jpg	
 Riddler Orphanage 1	Riddler Mission	Orphan_A1_Intro_Robots_Done 		NG+		
 Firemen (Miagani Island, Gotham Herald)	Firemen	SS_FireCrew_5_Rescued 		NG+	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Missing_Firefighter_Miagani_Island-1024x576.jpg	
 Investigate Oracle Crash	Main Story	Ch3_CityX_08_APC_Forensics_Complete		NG+		
@@ -43,7 +40,6 @@ APC 3	APC	SS_APC_APC3Complete 		NG+
 GCPD/Ivy/Cobras	Main Story	Ch5b_CityZ_17_Heavy_Tank_Scanning_Complete 		NG+		
 Bomb (Miagani Island, Botanical Gardens Overpass)	Bombs	SS_CommandBeacons_CityX_09_ChD1ab_Ch3456789.RCommandBeacon_0_destroyed		NG+	https://static.gosunoob.com/img/1/2015/07/arkham-knight-miagani-island-landmine-1024x576.jpg	
 Checkpoint (Miagani, Near Orphanage)	Checkpoints	Checkpoint_X_KDestroyed 		NG+	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Own_the_Roads_Miagani_Island_1-1024x576.jpg	
-Pyg (Miagani, NearFoundersIsland; Torso Eye Arm)	Pyg	SS_Pyg_Victim4Done 		NG+	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Mutilated_Body_Miagani_Island_1-1024x576.jpg	
 Watchtower (Miagani, Near Bridge By Orphanage)	Watchtower	SS_Watchtowers_CityX_28_ChX1_Ch56789_LOD1.RRadarTower_12_destroyed 		NG+	https://static.gosunoob.com/img/1/2015/07/miagani-island-militia-watchtower-1024x576.jpg	
 Riddler Orphanage 2 (B: 31452; C:13524)	Riddler Mission	Orphan_01_Complete 		NG+		
 Riddler Race 2 (Elliot Memorial Hospital 2 0)	Riddler Mission	Orphan_C8_RaceComplete 		NG+		
@@ -73,7 +69,6 @@ Checkpoint (Founders, NearBleakeBridgeAndWater)	Checkpoints	Checkpoint_Y_NDestro
 Watchtower (Founders, ContinueAlongWater)	Watchtower	SS_Watchtowers_CityY_10_ChX1_Ch3456789_LOD1.RRadarTower_15_destroyed 		NG+	https://static.gosunoob.com/img/1/2015/07/bruford-tower-militia-watchtower-1024x576.jpg	
 Checkpoint (Founders, ContinueAlongWater)	Checkpoints	Checkpoint_Y_LDestroyed 		NG+	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Own_the_Roads_Founders_Island_1-1024x576.jpg	
 Watchtower (Founders, Continue Near Dock)	Watchtower	SS_Watchtowers_CityY_15_ChX1_Ch3456789_LOD1.RRadarTower_1_destroyed 		NG+	https://static.gosunoob.com/img/1/2015/07/dock-militia-watchtower-founders-island-1024x576.jpg	
-Pyg (Founders, EastNearWater; leg abdomen skull)	Pyg	SS_Pyg_Victim5Done 		NG+	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Unidentified_Body_The_Perfect_Crime_1-1024x576.jpg	
 Checkpoint (Founders, EastPullDownDoor)	Checkpoints	Checkpoint_Y_MDestroyed		NG+	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Own_the_Roads_Founders_Island_4-1024x576.jpg	
 Firemen (Founders, Winch Pulldown Wall NearStagg)	Firemen	SS_FireCrew_14_Rescued 		NG+	https://static.gosunoob.com/img/1/2015/07/Missing_Firefighter_Batman_Arkham_Knight_Founders_Island-1024x576.jpg	
 Checkpoint (Founders, AmertekNearNorthMiaganiBridge)	Checkpoints	Checkpoint_Y_PDestroyed 		NG+	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_Own_the_Roads_Founders_Island_7-1024x576.jpg	
@@ -93,7 +88,6 @@ Watchtower (Bleake, Chinatown Roundabout)	Watchtower	SS_Watchtowers_CityZ_08_ChX
 Azrael 3 (Roundabout, use map)	Azrael	SS_Azrael_Fight3_Complete		NG+		
 Penguin 2	Penguin	PenguinCache_C3_Thugs_Done 		NG+		
 Bomb (Founders, North Underground Tunnel Near Pyg)	Bombs	SS_CommandBeacons_CityY_04_ChD1ab_Ch3456789.RCommandBeacon_1_destroyed 		NG+	https://static.gosunoob.com/img/1/2015/07/founders-island-side-mission-landmine-1024x576.jpg	
-Pyg (Founders, North; Thigh Shoulder Hand)	Pyg	SS_Pyg_Victim6Done		NG+	https://static.gosunoob.com/img/1/2015/07/Batman_Arkham_Knight_The_Perfect_Crime_Body_Founders_Island_1-1024x576.jpg	
 Firemen (Founders, Northwest-most area)	Firemen	SS_FireCrew_3_Rescued		NG+	https://static.gosunoob.com/img/1/2015/07/Founders_Island_The_Line_of_Duty_Batman_Arkham_Knight-1024x576.jpg	
 Bomb (Founders, Urbarail Middle)	Bombs	SS_CommandBeacons_CityY_08_ChD1ab_Ch3456789.RCommandBeacon_1_destroyed     		NG+	https://static.gosunoob.com/img/1/2015/07/founders-island-explosive-device-1024x576.jpg	
 Firemen (Founders, MiddleRaisedPlatform)	Firemen	SS_FireCrew_7_Rescued 		NG+	https://static.gosunoob.com/img/1/2015/07/Missing_Firefighter_Founders_Island_Batman_Arkham_Knight-1024x576.jpg	
