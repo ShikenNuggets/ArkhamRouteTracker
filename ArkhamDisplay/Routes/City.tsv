@@ -86,8 +86,8 @@ Balloon (Amusement, Olympus)	Balloons (Amusement)	PickedUp_OWB_Balloons_2		IGNOR
 Trophy (Amusement, Olympus)	Riddler Trophies	PickedUp_OWB_Pickup_17			
 250m Glide [Zip]	[PARSER] Physical Challenge Done	2			
 Camera (Amusement, Across Gotham Casino)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_7			
-Riddler Church	Riddler Mission	SS_Riddler_OrganScanned			
 Aaron Cash Riddle	Riddles	PickedUp_OWA_Riddle_7			
+Riddler Church	Riddler Mission	SS_Riddler_OrganScanned			
 Trophy (Park Row, Roof Punch Wood Wall)	Riddler Trophies	PickedUp_OWA_Pickup_26			
 Ace Chemicals Riddle	Riddles	PickedUp_OWA_Riddle_15			
 Trophy (Bowery, 6 Questionmarks under bridge)	Riddler Trophies	PickedUp_OWE_Pickup_14			
@@ -98,9 +98,9 @@ Trophy (Bowery, Glide to Wall under Museum)	Riddler Trophies	PickedUp_OWE_Pickup
 Trophy (Bowery, Other wall under museum)	Riddler Trophies	PickedUp_OWE_Pickup_26			
 Camera (Bowery, Museum)	Breakable Cameras (Bowery)	PickedUp_OWE_Camera_3			
 Hat Shop Riddle	Riddles	PickedUp_OWE_Riddle_4			
+Camera (Bowery, Across from Museum)	Breakable Cameras (Bowery)	PickedUp_OWE_Camera_11			
 3x Slide Trip	[PARSER] Physical Challenge Done	10			
 Penguin (Museum, right of entrance)	Penguins	PickedUp_Museum_Penguin_1			
-Camera (Bowery, Across from Museum)	Breakable Cameras (Bowery)	PickedUp_OWE_Camera_11			
 Jammer 3	Main Story	Ch3c_OW_D3_Jammer_Panel_3			
 Jammer 2	Main Story	Ch3c_OW_A8_Jammer_Panel_3			
 Trophy (Bowery, Corner Building near shockwave dive)	Riddler Trophies	PickedUp_OWE_Pickup_10			
@@ -155,10 +155,10 @@ Trophy (Wonder, Line Launch 3 Switches)	Riddler Trophies	PickedUp_Underworld_Pic
 Gotham City Times Riddle	Riddles	PickedUp_Underworld_Riddle_3			
 Trophy (Wonder, Questionmark Gel)	Riddler Trophies	PickedUp_Underworld_Pickup_20			
 Trophy (Wonder Tower, Wonder City Mine)	Riddler Trophies	PickedUp_Underworld_Pickup_23			
-Trophy (Wonder, Left Chamber Door)	Riddler Trophies	PickedUp_Underworld_Pickup_24			
-Demon Seal (Wonder, Pothole)	Demon Seals	PickedUp_Underworld_DemonSeal_6			
 Tightrope Upgrade	Upgrade	Unlocked_LineLauncherTightrope			
-Glide Boost Attack	Upgrade	Unlocked_GlideBoostAttack			
+Glide Boost Attack Upgrade	Upgrade	Unlocked_GlideBoostAttack			
+Demon Seal (Wonder, Pothole)	Demon Seals	PickedUp_Underworld_DemonSeal_6			
+Trophy (Wonder, Left Chamber Door)	Riddler Trophies	PickedUp_Underworld_Pickup_24			
 Grundy Riddle	Riddles	PickedUp_Underworld_Riddle_4			
 Statue Riddle	Riddles	PickedUp_Underworld_Riddle_5			
 5x Quickfire Gel	[PARSER] Physical Challenge Done	18			
@@ -189,9 +189,9 @@ Trophy (Amusement, Outside GCPD Hack)	Riddler Trophies	PickedUp_OWB_Pickup_23
 Trophy (Amusement, Roof next to GCPD)	Riddler Trophies	PickedUp_OWB_Pickup_16			
 Balloon (Amusement, Gotham Casino Dice)	Balloons (Amusement)	PickedUp_OWB_Balloons_7			
 Freeze Blast Takedown	[PARSER] Physical Challenge Done	26			
-Camera (Amusement, Next to phone Casino)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_3		IGNORE_GAP	
-Camera (Amusement, Casino Terrace)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_12			
 Camera (Amusement, Ivy)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_11			
+Camera (Amusement, Casino Terrace)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_12			
+Camera (Amusement, Next to phone Casino)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_3		IGNORE_GAP	
 Camera (Amusement, Next to snipers)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_6			
 Trophy (Amusement, Timed Question Marks on Water)	Riddler Trophies	PickedUp_OWB_Pickup_12			
 Camera (Amusement, Sea Pier)	Breakable Cameras (Amusement)	PickedUp_OWB_Camera_4			
@@ -302,10 +302,10 @@ Trophy (Bowery, Wonder Tower Wall)	Riddler Trophies	PickedUp_OWE_Pickup_22
 Camera (Bowery, City Wall Near Quincy Sharp)	Breakable Cameras (Bowery)	PickedUp_OWE_Camera_5			
 Trophy (Bowery, Hack Building Across Wonder Tower Entrance)	Riddler Trophies	PickedUp_OWE_Pickup_34			
 Trophy (Bowery, 3 switches near hush body)	Riddler Trophies	PickedUp_OWE_Pickup_33			
-Hush 1	Hush	SS_Hush_Victim1_HoboConv			
 Best Behavior Tyger Riddle	Riddles	PickedUp_OWE_Riddle_9			
-Trophy (Bowery, City Wall Bottom Left)	Riddler Trophies	PickedUp_OWE_Pickup_32			
 Camera (Bowery, Across from City Wall Trophy)	Breakable Cameras (Bowery)	PickedUp_OWE_Camera_4			
+Trophy (Bowery, City Wall Bottom Left)	Riddler Trophies	PickedUp_OWE_Pickup_32			
+Hush 1	Hush	SS_Hush_Victim1_HoboConv			
 Trophy (Industrial, City Wall near Tunnels)	Riddler Trophies	PickedUp_OWC_Pickup_18			
 Trophy (Industrial, Running Questionmarks)	Riddler Trophies	PickedUp_OWC_Pickup_5			
 Trophy (Bowery, Remote Batarang Vent)	Riddler Trophies	PickedUp_OWE_Pickup_31			
