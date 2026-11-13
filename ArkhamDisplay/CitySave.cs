@@ -11,12 +11,16 @@ namespace ArkhamDisplay {
 		protected override string Decompress() {
 			string result = base.Decompress();
 
-			try {
-				var compressedSave = new ArkhamSaveParser.CompressedSave(m_rawCompressedBytes);
-				m_citySave = new ArkhamSaveParser.ArkhamCitySave(compressedSave);
-			} catch {
+			if (Data.CityTrackPhysicalChallenges) {
+				try {
+					var compressedSave = new ArkhamSaveParser.CompressedSave(m_rawCompressedBytes);
+					m_citySave = new ArkhamSaveParser.ArkhamCitySave(compressedSave);
+				} catch {
+					m_citySave = null;
+				} // TODO: Error handling
+			} else {
 				m_citySave = null;
-			} // TODO: Error handling
+			}
 
 			return result;
 		}
@@ -34,14 +38,16 @@ namespace ArkhamDisplay {
 		}
 
 		public override bool HasKey(Entry entry, int requiredMatches) {
-			uint physicalChallengeId = 0;
-			if (m_citySave != null && "[PARSER] Physical Challenge Done".Equals(entry.type) && uint.TryParse(entry.id, out physicalChallengeId)) {
-				return m_citySave.GetPhysicalChallengeInfo((ArkhamSaveParser.PhysicalChallenges)physicalChallengeId).beaten;
-			}
+			if (Data.CityTrackPhysicalChallenges && m_citySave != null) {
+				uint physicalChallengeId = 0;
+				if ("[PARSER] Physical Challenge Done".Equals(entry.type) && uint.TryParse(entry.id, out physicalChallengeId)) {
+					return m_citySave.GetPhysicalChallengeInfo((ArkhamSaveParser.PhysicalChallenges)physicalChallengeId).beaten;
+				}
 
-			if (m_citySave != null && "[PARSER] Physical Challenge Progress".Equals(entry.type) && TryParsePhysicalChallengeProgressPair(entry.id, out physicalChallengeId, out uint physicalChallengeProgress)) {
-				var challengeInfo = m_citySave.GetPhysicalChallengeInfo((ArkhamSaveParser.PhysicalChallenges)physicalChallengeId);
-				return challengeInfo.bestValue >= physicalChallengeProgress || challengeInfo.beaten;
+				if ("[PARSER] Physical Challenge Progress".Equals(entry.type) && TryParsePhysicalChallengeProgressPair(entry.id, out physicalChallengeId, out uint physicalChallengeProgress)) {
+					var challengeInfo = m_citySave.GetPhysicalChallengeInfo((ArkhamSaveParser.PhysicalChallenges)physicalChallengeId);
+					return challengeInfo.bestValue >= physicalChallengeProgress || challengeInfo.beaten;
+				}
 			}
 
 			return base.HasKey(entry, requiredMatches);

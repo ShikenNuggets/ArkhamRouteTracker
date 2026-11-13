@@ -64,6 +64,7 @@
 						</Style>
 					</MenuItem.Style>
 				</MenuItem>
+				<MenuItem Name="TrackPhysicalChallengesMenuItem" Header="Track Physical Challenges (Beta)" IsCheckable="True" IsChecked="True" Click="UpdatePreferences"/>
 			</MenuItem>
 			<MenuItem Header="_Stats" Click="OpenStatsWindow"/>
 		</Menu>

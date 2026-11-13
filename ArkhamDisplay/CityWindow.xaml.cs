@@ -32,11 +32,18 @@ namespace ArkhamDisplay{
 		}
 
 		protected override List<Entry> GetEntriesForDisplay(Route route){
+			List<Entry> entries;
 			if(!Data.CityBreakablesAtEnd){
-				return base.GetEntriesForDisplay(route);
+				entries = base.GetEntriesForDisplay(route);
 			}else{
-				return route.GetEntriesWithPlaceholdersMoved();
+				entries = route.GetEntriesWithPlaceholdersMoved();
 			}
+
+			if(!Data.CityTrackPhysicalChallenges){
+				entries.RemoveAll(x => (x.type != null && x.type.StartsWith("[PARSER]")) || (x.name != null && x.name.StartsWith("[PARSER]")));
+			}
+
+			return entries;
 		}
 
 		protected override void UpdateUI(){
@@ -44,6 +51,7 @@ namespace ArkhamDisplay{
 			CatwomanMenuItem.IsChecked = Data.CityCatwoman;
 			GlitchlessMenuItem.IsChecked = Data.CityGlitchless;
 			NGPlusMenuItem.IsChecked = Data.CityNGPlus;
+			TrackPhysicalChallengesMenuItem.IsChecked = Data.CityTrackPhysicalChallenges;
 			base.UpdateUI();
 		}
 
@@ -52,6 +60,7 @@ namespace ArkhamDisplay{
 			Data.CityCatwoman = CatwomanMenuItem.IsChecked;
 			Data.CityGlitchless = GlitchlessMenuItem.IsChecked;
 			Data.CityNGPlus = NGPlusMenuItem.IsChecked;
+			Data.CityTrackPhysicalChallenges = TrackPhysicalChallengesMenuItem.IsChecked;
 
 			if(NGPlusMenuItem.IsChecked){
 				minRequiredMatches = 2;
